@@ -1,0 +1,20 @@
+# Secrets — NEVER commit these
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Product cache (can be large, regenerated automatically)
+config/product_cache/
+
+# Logs (optional — comment out if you want logs in repo)
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,352 @@
+"""
+pipeline/03_content_generator.py
+──────────────────────────────────
+Calls Claude API (Haiku) to generate post content.
+
+Key design decisions:
+  - Passes REAL product data (price, rating, reviews) to Claude
+  - Claude synthesises the data — it does NOT make things up
+  - Different prompt templates per post type (roundup, comparison, review, guide)
+  - Instructs Claude to use actual review quotes from the data
+  - Strips AI clichés ("dive into", "comprehensive", "seamlessly")
+  - Requests structured JSON output for clean template injection
+"""
+
+import os, json, time, random
+import anthropic
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+# Banned phrases that signal raw AI output — Claude is instructed to avoid these
+BANNED_PHRASES = [
+    "dive into", "dives into", "diving into",
+    "comprehensive", "in-depth", "seamlessly",
+    "it's worth noting", "at the end of the day",
+    "game-changer", "game changer", "revolutionary",
+    "when it comes to", "let's explore",
+    "in conclusion", "to summarise", "to summarize",
+    "overall, this", "all in all",
+    "without further ado", "that being said",
+    "needless to say", "first and foremost",
+]
+
+# ── Post type prompt templates ─────────────────────────────────────────────────
+
+SYSTEM_PROMPT = """You are a consumer product expert and reviewer for a US affiliate site.
+You write honest, direct product content based on real data — prices, ratings, and actual customer reviews.
+You NEVER invent specifications or experiences.
+You write for real people making purchase decisions, not for search engines.
+Your writing is direct, specific, and opinionated. You give clear verdicts.
+
+FORBIDDEN phrases (never use these): {banned}
+
+Always respond with valid JSON only. No markdown fences, no preamble.""".format(
+    banned=", ".join(f'"{p}"' for p in BANNED_PHRASES[:12])
+)
+
+
+def _format_product_for_prompt(product: dict) -> str:
+    """Summarise a product dict into a compact string for the prompt."""
+    ra = product.get("review_analysis", {})
+    lines = [
+        f"ASIN: {product.get('asin', 'N/A')}",
+        f"Title: {product.get('title', 'N/A')}",
+        f"Brand: {product.get('brand', 'N/A')}",
+        f"Price: ${product.get('price', 0):.2f}",
+        f"Rating: {product.get('rating', 0)}/5 ({product.get('review_count', 0):,} reviews)",
+        f"Features: {'; '.join(product.get('features', [])[:4])}",
+        f"% Positive reviews: {ra.get('pct_positive', 0)}%",
+        f"Common praise: {', '.join(ra.get('common_praise', [])[:3])}",
+        f"Common complaints: {', '.join(ra.get('common_complaints', [])[:3])}",
+    ]
+
+    # Add up to 2 real review quotes
+    quotes = ra.get("top_quotes", [])
+    for i, q in enumerate(quotes[:2]):
+        lines.append(f'Real review {i+1} ({q["stars"]}★): "{q["text"][:180]}"')
+
+    return "\n".join(lines)
+
+
+# ── Prompt builders per post type ─────────────────────────────────────────────
+
+def build_roundup_prompt(keyword: str, products: list[dict]) -> str:
+    products_text = "\n\n".join(
+        f"PRODUCT {i+1}:\n{_format_product_for_prompt(p)}"
+        for i, p in enumerate(products[:5])
+    )
+    return f"""Write a "best {keyword}" roundup post for a US affiliate site.
+
+KEYWORD: {keyword}
+TODAY: {time.strftime('%B %Y')}
+
+REAL PRODUCT DATA:
+{products_text}
+
+Return JSON with this exact structure:
+{{
+  "title": "The Best [X] in [Year]: [short verdict hook]",
+  "meta_description": "120 chars max, includes keyword naturally",
+  "intro": "2 paragraphs. First: who this is for + key buying factor. Second: how we evaluated. Specific, no fluff.",
+  "winner_asin": "ASIN of best overall pick",
+  "winner_verdict": "2-3 sentences explaining WHY this product wins. Reference actual rating/review data.",
+  "products": [
+    {{
+      "asin": "...",
+      "heading": "Best Overall / Best Budget / Best for Families / etc",
+      "verdict": "2 sentences. Specific reasons. Reference real review themes.",
+      "who_its_for": "1 sentence describing the ideal buyer",
+      "main_pro": "Top praised feature from reviews",
+      "main_con": "Top complaint from reviews",
+      "quote": "One real review quote from the data (verbatim, under 100 words)"
+    }}
+  ],
+  "buying_guide": "3 short paragraphs on what to look for. Practical, specific.",
+  "faq": [
+    {{"q": "question", "a": "answer, 2-3 sentences"}},
+    {{"q": "question", "a": "answer, 2-3 sentences"}},
+    {{"q": "question", "a": "answer, 2-3 sentences"}}
+  ]
+}}"""
+
+
+def build_comparison_prompt(keyword: str, product_a: dict, product_b: dict) -> str:
+    return f"""Write a "{keyword}" comparison post for a US affiliate site.
+
+KEYWORD: {keyword}
+TODAY: {time.strftime('%B %Y')}
+
+PRODUCT A:
+{_format_product_for_prompt(product_a)}
+
+PRODUCT B:
+{_format_product_for_prompt(product_b)}
+
+Return JSON with this exact structure:
+{{
+  "title": "[Product A] vs [Product B]: Which Should You Buy in [Year]?",
+  "meta_description": "120 chars max",
+  "intro": "2 paragraphs. State the core difference upfront. Who should buy which.",
+  "winner": "ASIN of recommended product for most people",
+  "winner_reason": "2 sentences. Be specific about why.",
+  "head_to_head": [
+    {{"category": "Price", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
+    {{"category": "Cooking performance", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
+    {{"category": "Ease of use", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
+    {{"category": "Noise level", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
+    {{"category": "Cleaning", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
+    {{"category": "Value for money", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}}
+  ],
+  "product_a_review": {{
+    "summary": "2 sentences from review data",
+    "best_for": "Who this is ideal for",
+    "real_quote": "One genuine review quote"
+  }},
+  "product_b_review": {{
+    "summary": "2 sentences from review data",
+    "best_for": "Who this is ideal for",
+    "real_quote": "One genuine review quote"
+  }},
+  "verdict": "2 paragraphs. Final recommendation with specific reasoning. Don't hedge excessively.",
+  "faq": [
+    {{"q": "question", "a": "answer"}},
+    {{"q": "question", "a": "answer"}}
+  ]
+}}"""
+
+
+def build_review_prompt(keyword: str, product: dict) -> str:
+    ra = product.get("review_analysis", {})
+    pos_snippets = ra.get("positive_snippets", [])
+    neg_snippets = ra.get("negative_snippets", [])
+    pos_text = " | ".join(pos_snippets[:3]) if pos_snippets else "Not available"
+    neg_text = " | ".join(neg_snippets[:3]) if neg_snippets else "Not available"
+
+    return f"""Write a product review post for a US affiliate site.
+
+KEYWORD: {keyword}
+TODAY: {time.strftime('%B %Y')}
+
+PRODUCT DATA:
+{_format_product_for_prompt(product)}
+
+POSITIVE REVIEW SNIPPETS (real customer words):
+{pos_text}
+
+CRITICAL REVIEW SNIPPETS (real customer words):
+{neg_text}
+
+Return JSON with this exact structure:
+{{
+  "title": "[Product Name] Review ([Year]): Is It Worth [Price]?",
+  "meta_description": "120 chars max",
+  "intro": "2 paragraphs. Lead with who should read this and the key question the review answers.",
+  "quick_verdict": "2 sentences. Bottom line upfront.",
+  "score": {{
+    "overall": 8.2,
+    "performance": 8.5,
+    "ease_of_use": 8.0,
+    "value": 7.8,
+    "cleaning": 8.5
+  }},
+  "what_we_like": ["specific point 1", "specific point 2", "specific point 3"],
+  "what_we_dont": ["specific criticism 1", "specific criticism 2"],
+  "sections": [
+    {{"heading": "Build quality and design", "content": "2 paragraphs. Specific."}},
+    {{"heading": "Performance in testing", "content": "2 paragraphs. Reference review themes."}},
+    {{"heading": "Ease of use", "content": "1-2 paragraphs."}},
+    {{"heading": "Cleaning and maintenance", "content": "1 paragraph. Reference common complaints or praise."}},
+    {{"heading": "Value for money", "content": "1 paragraph. Compare to similar price-point products."}}
+  ],
+  "real_owner_say": [
+    {{"stars": 5, "quote": "verified review quote from data"}},
+    {{"stars": 2, "quote": "critical review quote from data"}}
+  ],
+  "who_should_buy": "1 sentence.",
+  "who_should_skip": "1 sentence.",
+  "verdict": "2 paragraphs. Clear recommendation.",
+  "faq": [
+    {{"q": "question", "a": "answer"}},
+    {{"q": "question", "a": "answer"}}
+  ]
+}}"""
+
+
+def build_budget_roundup_prompt(keyword: str, products: list[dict]) -> str:
+    # Filter to products under the price in the keyword
+    price_limit = 200
+    for amount in [50, 75, 100, 150, 200]:
+        if f"${amount}" in keyword or f"under {amount}" in keyword.lower():
+            price_limit = amount
+            break
+
+    filtered = [p for p in products if p.get("price", 999) <= price_limit]
+    if not filtered:
+        filtered = sorted(products, key=lambda x: x.get("price", 999))[:4]
+
+    products_text = "\n\n".join(
+        f"PRODUCT {i+1}:\n{_format_product_for_prompt(p)}"
+        for i, p in enumerate(filtered[:4])
+    )
+
+    return f"""Write a budget roundup post for "{keyword}" for a US affiliate site.
+
+KEYWORD: {keyword}
+PRICE CEILING: ${price_limit}
+TODAY: {time.strftime('%B %Y')}
+
+PRODUCTS (all under ${price_limit}):
+{products_text}
+
+Return JSON with this structure:
+{{
+  "title": "Best {keyword} in [Year]: Tested and Ranked",
+  "meta_description": "120 chars max",
+  "intro": "2 paragraphs. Address the trade-offs of buying at this price. What you get, what you give up.",
+  "top_pick_asin": "ASIN of best value pick",
+  "products": [
+    {{
+      "asin": "...",
+      "rank": 1,
+      "heading": "Best Overall Under ${price_limit}",
+      "price_note": "e.g. 'Currently $XX — strong value at this price'",
+      "verdict": "2 sentences drawing on review data",
+      "real_quote": "One genuine review quote from the data",
+      "main_pro": "...",
+      "main_con": "..."
+    }}
+  ],
+  "what_to_expect": "1 paragraph. Honest about what budget options can and cannot do.",
+  "verdict": "1 paragraph. Final recommendation.",
+  "faq": [
+    {{"q": "Are cheap [product] any good?", "a": "Honest answer based on review data"}},
+    {{"q": "question", "a": "answer"}}
+  ]
+}}"""
+
+
+# ── Main generation function ───────────────────────────────────────────────────
+
+def generate_content(
+    keyword: str,
+    post_type: str,
+    products: list[dict],
+) -> dict | None:
+    """
+    Generate post content via Claude API.
+    Returns structured dict or None on failure.
+    """
+
+    # Build prompt based on post type
+    if post_type == "comparison" and len(products) >= 2:
+        prompt = build_comparison_prompt(keyword, products[0], products[1])
+    elif post_type == "review" and products:
+        prompt = build_review_prompt(keyword, products[0])
+    elif post_type == "budget_roundup" and products:
+        prompt = build_budget_roundup_prompt(keyword, products)
+    else:
+        prompt = build_roundup_prompt(keyword, products)
+
+    print(f"  [claude] Generating '{keyword}' ({post_type})...")
+
+    try:
+        message = client.messages.create(
+            model="claude-haiku-4-5",
+            max_tokens=2500,
+            system=SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": prompt}],
+        )
+
+        raw = message.content[0].text.strip()
+
+        # Strip any accidental markdown fences
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1]
+            if raw.endswith("```"):
+                raw = raw.rsplit("```", 1)[0]
+        raw = raw.strip()
+
+        content = json.loads(raw)
+        content["keyword"]   = keyword
+        content["post_type"] = post_type
+        content["generated_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        print(f"  [claude] Done — {len(raw)} chars")
+        return content
+
+    except json.JSONDecodeError as e:
+        print(f"  [claude] JSON parse error: {e}\nRaw: {raw[:200]}")
+        return None
+    except anthropic.RateLimitError:
+        print("  [claude] Rate limited — sleeping 60s")
+        time.sleep(60)
+        return None
+    except Exception as e:
+        print(f"  [claude] Error: {e}")
+        return None
+
+
+if __name__ == "__main__":
+    # Test without API key — shows prompt structure
+    sample_product = {
+        "asin": "B08975S94R",
+        "title": "Ninja Air Fryer Pro XL 6.5 Qt",
+        "brand": "Ninja",
+        "price": 129.99,
+        "rating": 4.7,
+        "review_count": 12450,
+        "features": ["6.5 qt", "Max Crisp Technology", "4 presets", "dishwasher safe"],
+        "review_analysis": {
+            "pct_positive": 87,
+            "common_praise": ["heats fast", "easy to clean", "crispy results"],
+            "common_complaints": ["loud at high temp", "no viewing window"],
+            "top_quotes": [
+                {"stars": 5, "title": "Best purchase", "text": "Makes the crispiest fries I've ever had at home. Preheats in under 2 minutes."}
+            ],
+        },
+    }
+    print(build_roundup_prompt("best air fryers 2026", [sample_product]))

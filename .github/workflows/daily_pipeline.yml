@@ -1,0 +1,117 @@
+# .github/workflows/daily_pipeline.yml
+# ──────────────────────────────────────
+# Runs the full affiliate content pipeline daily.
+# No human input required after initial setup.
+#
+# SETUP STEPS (one-time):
+# 1. In GitHub repo → Settings → Secrets → Actions, add:
+#    - ANTHROPIC_API_KEY
+#    - AMAZON_ACCESS_KEY
+#    - AMAZON_SECRET_KEY
+#    - AMAZON_ASSOCIATE_TAG
+#    - SERPAPI_KEY
+#    - APIFY_TOKEN
+#    - SITE_DOMAIN
+#    - SITE_NAME
+#    - AUTHOR_NAME
+#    - AUTHOR_BIO
+#    - GH_PAT  (GitHub Personal Access Token with repo write scope)
+#
+# 2. Connect this repo to Cloudflare Pages (one-time in Cloudflare dashboard)
+#    Set build command: (none — static files)
+#    Set output directory: output
+
+name: Daily Content Pipeline
+
+on:
+  schedule:
+    # Runs at 03:00 UTC daily
+    # Adjust timing to spread API calls away from peak hours
+    - cron: '0 3 * * *'
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (no API calls, no git push)'
+        required: false
+        default: 'false'
+        type: boolean
+      posts_override:
+        description: 'Override posts per day (leave blank to use .env)'
+        required: false
+        type: string
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      # ── Checkout with write permissions ───────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 1
+
+      # ── Python setup ──────────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── Write .env from secrets ───────────────────────────────────────────
+      - name: Create .env file
+        run: |
+          cat > .env << 'EOF'
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          AMAZON_ACCESS_KEY=${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY=${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_ASSOCIATE_TAG=${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          SERPAPI_KEY=${{ secrets.SERPAPI_KEY }}
+          APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
+          SITE_DOMAIN=${{ secrets.SITE_DOMAIN }}
+          SITE_NAME=${{ secrets.SITE_NAME }}
+          AUTHOR_NAME=${{ secrets.AUTHOR_NAME }}
+          AUTHOR_BIO=${{ secrets.AUTHOR_BIO }}
+          OUTPUT_DIR=./output
+          NICHES=air fryers,coffee makers,blenders,food processors,stand mixers,toaster ovens
+          EOF
+          # Override posts per day if manual trigger supplied one
+          if [ -n "${{ github.event.inputs.posts_override }}" ]; then
+            echo "POSTS_PER_DAY=${{ github.event.inputs.posts_override }}" >> .env
+          else
+            echo "POSTS_PER_DAY=5" >> .env
+          fi
+
+      # ── Configure git identity for the commit ─────────────────────────────
+      - name: Configure git
+        run: |
+          git config user.name  "Pipeline Bot"
+          git config user.email "pipeline@noreply.github.com"
+
+      # ── Run the pipeline ──────────────────────────────────────────────────
+      - name: Run pipeline
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python run_pipeline.py --dry-run
+          else
+            python run_pipeline.py
+          fi
+        env:
+          # Make secrets available as env vars too (belt and braces)
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # ── Upload logs as artifact (for debugging) ───────────────────────────
+      - name: Upload run logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 14

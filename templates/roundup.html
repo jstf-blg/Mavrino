@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ content.title }}</title>
+<meta name="description" content="{{ content.meta_description }}">
+<meta name="author" content="{{ site.author_name }}">
+<link rel="canonical" href="{{ site.domain }}/{{ slug }}">
+<!-- Affiliate disclosure required by FTC -->
+<meta name="affiliate-disclosure" content="true">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ content.title | e }}",
+  "description": "{{ content.meta_description | e }}",
+  "author": {"@type": "Person", "name": "{{ site.author_name }}"},
+  "publisher": {"@type": "Organization", "name": "{{ site.name }}"},
+  "datePublished": "{{ generated_date }}",
+  "dateModified": "{{ generated_date }}"
+}
+</script>
+<style>
+:root{--ink:#1a1814;--mid:#4a4540;--faint:#8a8480;--bg:#faf8f4;--surface:#fff;--border:#e4e0d8;--orange:#d4500a;--green:#2d6a4f;--amber:#b8841a}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;font-size:17px;line-height:1.72;background:var(--bg);color:var(--ink)}
+a{color:var(--orange);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:800px;margin:0 auto;padding:0 1.5rem 4rem}
+header{background:var(--ink);color:#fff;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:3rem}
+.site-name{font-family:sans-serif;font-size:1rem;font-weight:700;color:#fff}
+.disclosure{background:#fff8e6;border:1px solid #e8d48a;border-radius:6px;padding:.8rem 1rem;margin-bottom:2rem;font-size:.82rem;color:#6b5800;font-family:sans-serif}
+h1{font-size:2rem;line-height:1.2;margin-bottom:1rem;color:var(--ink)}
+.meta{font-size:.8rem;color:var(--faint);font-family:sans-serif;margin-bottom:2rem;display:flex;gap:1.5rem}
+.intro{font-size:1.05rem;color:var(--mid);margin-bottom:2.5rem;border-bottom:1px solid var(--border);padding-bottom:2rem}
+.intro p{margin-bottom:1rem}
+/* Winner banner */
+.winner-banner{background:var(--ink);color:#fff;border-radius:10px;padding:1.5rem;margin-bottom:2.5rem;display:grid;grid-template-columns:auto 1fr;gap:1.2rem;align-items:center}
+.winner-label{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-family:sans-serif;color:#aaa;margin-bottom:.3rem}
+.winner-banner h2{font-size:1.15rem;color:#fff;margin-bottom:.4rem}
+.winner-banner p{font-size:.9rem;color:#ccc;line-height:1.55}
+.winner-badge{background:var(--orange);color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+/* Product cards */
+.products{display:flex;flex-direction:column;gap:2rem;margin-bottom:3rem}
+.product-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.product-card.top-pick{border-color:var(--orange);border-width:2px}
+.card-header{background:#f5f2ec;padding:1rem 1.4rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+.card-pick{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;font-family:sans-serif;font-weight:700;color:var(--orange)}
+.card-price{font-size:1.1rem;font-weight:700;font-family:sans-serif;color:var(--ink)}
+.card-body{padding:1.4rem}
+.card-body h3{font-size:1.1rem;margin-bottom:.6rem}
+.card-verdict{color:var(--mid);margin-bottom:1rem;font-size:.95rem}
+.who-for{font-size:.85rem;color:var(--faint);font-family:sans-serif;margin-bottom:1rem;padding:.6rem .8rem;background:#f5f2ec;border-radius:6px}
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1rem}
+.pro,.con{font-size:.83rem}
+.pro-label{color:var(--green);font-weight:700;font-family:sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem}
+.con-label{color:var(--orange);font-weight:700;font-family:sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem}
+.review-quote{background:#f5f2ec;border-left:3px solid var(--orange);padding:.8rem 1rem;margin:.8rem 0;font-style:italic;font-size:.88rem;color:var(--mid)}
+.rating-stars{color:#f59e0b;font-size:.85rem;font-family:sans-serif;margin-bottom:.5rem}
+.btn-amazon{display:inline-block;background:var(--orange);color:#fff;padding:.7rem 1.4rem;border-radius:6px;font-family:sans-serif;font-size:.88rem;font-weight:600;margin-top:.5rem}
+.btn-amazon:hover{background:#b84008;text-decoration:none}
+/* Buying guide */
+.buying-guide{margin-bottom:3rem}
+.buying-guide h2{font-size:1.4rem;margin-bottom:1rem;color:var(--ink)}
+.buying-guide p{color:var(--mid);margin-bottom:1rem;font-size:.95rem}
+/* FAQ */
+.faq{margin-bottom:3rem}
+.faq h2{font-size:1.4rem;margin-bottom:1.2rem}
+.faq-item{border-bottom:1px solid var(--border);padding:1rem 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-weight:700;margin-bottom:.4rem;color:var(--ink);font-size:.95rem}
+.faq-a{color:var(--mid);font-size:.9rem}
+/* Author */
+.author-box{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem;display:flex;gap:1rem;align-items:flex-start;margin-bottom:2rem;font-family:sans-serif;font-size:.82rem}
+.author-label{font-weight:700;margin-bottom:.2rem;font-size:.85rem}
+.author-bio{color:var(--mid)}
+footer{border-top:1px solid var(--border);padding:2rem 1.5rem;font-family:sans-serif;font-size:.78rem;color:var(--faint);text-align:center;max-width:800px;margin:0 auto}
+@media(max-width:600px){h1{font-size:1.5rem}.winner-banner{grid-template-columns:1fr}.pros-cons{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <span class="site-name">{{ site.name }}</span>
+  <span style="font-size:.75rem;color:#aaa;font-family:sans-serif">Tested & Reviewed</span>
+</header>
+
+<div class="wrap">
+
+  <div class="disclosure">
+    <strong>Disclosure:</strong> {{ site.name }} earns commissions from qualifying purchases made through links on this page. This does not affect our editorial recommendations.
+  </div>
+
+  <h1>{{ content.title }}</h1>
+  <div class="meta">
+    <span>By {{ site.author_name }}</span>
+    <span>Updated {{ generated_date_display }}</span>
+    <span>{{ products | length }} products tested</span>
+  </div>
+
+  <div class="intro">
+    {% for para in content.intro.split('\n\n') %}
+    <p>{{ para }}</p>
+    {% endfor %}
+  </div>
+
+  {% if content.winner_verdict %}
+  <div class="winner-banner">
+    <div class="winner-badge">🏆</div>
+    <div>
+      <div class="winner-label">Our top pick</div>
+      {% for p in products %}{% if p.asin == content.winner_asin %}<h2>{{ p.title | truncate(60) }}</h2>{% endif %}{% endfor %}
+      <p>{{ content.winner_verdict }}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="products">
+  {% for item in content.products %}
+    {% set product = products_by_asin.get(item.asin, {}) %}
+    <div class="product-card {% if loop.first %}top-pick{% endif %}">
+      <div class="card-header">
+        <span class="card-pick">{{ item.heading }}</span>
+        {% if product.price %}<span class="card-price">${{ "%.2f" | format(product.price) }}</span>{% endif %}
+      </div>
+      <div class="card-body">
+        {% if product.rating %}
+        <div class="rating-stars">
+          {% for i in range(product.rating | int) %}★{% endfor %}{% if product.rating % 1 >= 0.5 %}½{% endif %}
+          <span style="color:var(--faint)"> {{ product.rating }}/5 ({{ "{:,}".format(product.review_count) }} reviews)</span>
+        </div>
+        {% endif %}
+        <h3>{{ product.title | default(item.asin) }}</h3>
+        <p class="card-verdict">{{ item.verdict }}</p>
+        <div class="who-for">👤 <strong>Best for:</strong> {{ item.who_its_for }}</div>
+        <div class="pros-cons">
+          <div class="pro"><div class="pro-label">+ What we like</div>{{ item.main_pro }}</div>
+          <div class="con"><div class="con-label">− What to know</div>{{ item.main_con }}</div>
+        </div>
+        {% if item.quote %}
+        <div class="review-quote">"{{ item.quote }}"<br><small style="color:var(--faint)">— Verified Amazon buyer</small></div>
+        {% endif %}
+        {% if product.affiliate_url %}
+        <a class="btn-amazon" href="{{ product.affiliate_url }}" rel="nofollow sponsored" target="_blank">
+          Check price on Amazon →
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <div class="buying-guide">
+    <h2>How to choose</h2>
+    {% for para in content.buying_guide.split('\n\n') %}
+    <p>{{ para }}</p>
+    {% endfor %}
+  </div>
+
+  {% if content.faq %}
+  <div class="faq">
+    <h2>Frequently asked questions</h2>
+    {% for item in content.faq %}
+    <div class="faq-item">
+      <div class="faq-q">{{ item.q }}</div>
+      <div class="faq-a">{{ item.a }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="author-box">
+    <div>
+      <div class="author-label">{{ site.author_name }}</div>
+      <div class="author-bio">{{ site.author_bio }}</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© {{ year }} {{ site.name }} · <a href="/privacy">Privacy Policy</a> · <a href="/about">About</a> · <a href="/disclosure">Affiliate Disclosure</a></p>
+  <p style="margin-top:.5rem">As an Amazon Associate, {{ site.name }} earns from qualifying purchases.</p>
+</footer>
+</body>
+</html>
