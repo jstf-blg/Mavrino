@@ -1,0 +1,55 @@
+# .github/workflows/nightly_taxonomy_health.yml
+# Runs nightly taxonomy health monitor — separate from content pipeline
+# Fixes thin/fat categories, reclassifies orphaned posts, merges duplicates
+
+name: Nightly Taxonomy Health Monitor
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 4am UTC — 1 hour after content pipeline
+  workflow_dispatch:      # allow manual trigger
+
+jobs:
+  taxonomy-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create .env
+        run: |
+          cat > .env << 'EOF'
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          WP_CLIENT_ID=${{ secrets.WP_CLIENT_ID }}
+          WP_CLIENT_SECRET=${{ secrets.WP_CLIENT_SECRET }}
+          WP_SITE=${{ secrets.WP_SITE }}
+          WP_USERNAME=${{ secrets.WP_USERNAME }}
+          WP_PASSWORD=${{ secrets.WP_PASSWORD }}
+          AUTHOR_NAME=${{ secrets.AUTHOR_NAME }}
+          EOF
+
+      - name: Run taxonomy health monitor
+        run: |
+          cd pipeline
+          python taxonomy_manager.py --health
+
+      - name: Commit taxonomy state if changed
+        run: |
+          git config user.name "Taxonomy Bot"
+          git config user.email "taxonomy@noreply.github.com"
+          git add config/taxonomy.json || true
+          git diff --cached --quiet || git commit -m "Update taxonomy state $(date +%Y-%m-%d)"
+          git push || true
