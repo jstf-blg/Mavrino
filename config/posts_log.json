@@ -194,5 +194,25 @@
     "wp_post_id": 0,
     "wp_url": "dry-run",
     "products": 3
+  },
+  {
+    "date": "2026-06-09",
+    "keyword": "food processors buying guide",
+    "post_type": "guide",
+    "slug": "47555d8c",
+    "title": "The Best Food Processors in 2026: Our Top Picks for Every Budget",
+    "wp_post_id": 13,
+    "wp_url": "http://mavrino.com/2026/06/09/the-best-food-processors-in-2026-our-top-picks-for-every-budget/",
+    "products": 3
+  },
+  {
+    "date": "2026-06-09",
+    "keyword": "best stand mixers under $100",
+    "post_type": "roundup",
+    "slug": "346c9277",
+    "title": "The Best Stand Mixers Under $100 in 2026: Hamilton Beach Dominates the Budget Category",
+    "wp_post_id": 14,
+    "wp_url": "http://mavrino.com/2026/06/09/the-best-stand-mixers-under-100-in-2026-hamilton-beach-dominates-the-budget-category/",
+    "products": 3
   }
 ]
