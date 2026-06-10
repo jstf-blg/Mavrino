@@ -65,7 +65,7 @@ jobs:
           [ -f config/keyword_queue.json ] || echo "[]" > config/keyword_queue.json
           [ -f config/keywords_done.json ] || echo "[]" > config/keywords_done.json
           [ -f config/posts_log.json ]     || echo "[]" > config/posts_log.json
-          [ -f config/taxonomy.json ]      || echo "{}" > config/taxonomy.json
+          [ -f config/taxonomy.json ]      || echo '{"wp_category_ids":{},"wp_tag_ids":{},"post_index":[],"category_counts":{},"pending_splits":[],"last_health_check":null}' > config/taxonomy.json
 
       - name: Configure git
         run: |

@@ -154,7 +154,7 @@ def run(dry_run: bool = False):
         })
 
         if i < len(batch) - 1:
-            time.sleep(10)
+            time.sleep(30)
 
     # ── Save state ─────────────────────────────────────────────────────────
     save_queue(remaining)
