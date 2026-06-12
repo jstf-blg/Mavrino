@@ -45,9 +45,10 @@ jobs:
           WP_SITE=${{ secrets.WP_SITE }}
           WP_USERNAME=${{ secrets.WP_USERNAME }}
           WP_PASSWORD=${{ secrets.WP_PASSWORD }}
-          AUTHOR_NAME=${{ secrets.AUTHOR_NAME }}
+          AUTHOR_NAME=Mavrino
           AUTHOR_BIO=${{ secrets.AUTHOR_BIO }}
           AMAZON_ASSOCIATE_TAG=${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          UNSPLASH_ACCESS_KEY=${{ secrets.UNSPLASH_ACCESS_KEY }}
           SERPAPI_KEY=${{ secrets.SERPAPI_KEY }}
           APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
           OUTPUT_DIR=./output
@@ -61,7 +62,7 @@ jobs:
 
       - name: Create required directories
         run: |
-          mkdir -p config logs output config/product_cache
+          mkdir -p config logs output config/product_cache config/image_cache
           [ -f config/keyword_queue.json ] || echo "[]" > config/keyword_queue.json
           [ -f config/keywords_done.json ] || echo "[]" > config/keywords_done.json
           [ -f config/posts_log.json ]     || echo "[]" > config/posts_log.json
