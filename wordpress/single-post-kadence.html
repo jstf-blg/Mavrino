@@ -1,0 +1,66 @@
+<!--
+  Mavrino — single post template (WordPress block markup for the Kadence theme)
+  =============================================================================
+  Brand:  rust #b8431a · cream #f5f0e8 · ink #1c1814 · muted #6b655f
+  Where:  Appearance → Editor → Templates → Single Posts → ⋮ → Code editor.
+          Paste this BETWEEN the existing Header and Footer template parts
+          (keep <!-- wp:template-part {"slug":"header"} /--> and the footer).
+  Note:   Posts already embed the Unsplash hero + author box inside their
+          content, so this header is text-only to avoid duplicating the image.
+-->
+
+<!-- ===================== POST HEADER (cream band) ===================== -->
+<!-- wp:group {"tagName":"header","align":"full","style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"56px","bottom":"56px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<header class="wp-block-group alignfull" style="background-color:#f5f0e8;padding-top:56px;padding-right:24px;padding-bottom:56px;padding-left:24px">
+
+	<!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"13px","fontWeight":"700","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#b8431a"},"elements":{"link":{"color":{"text":"#b8431a"}}}}} /-->
+
+	<!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"clamp(32px, 4.5vw, 46px)","fontWeight":"800","lineHeight":"1.1"},"color":{"text":"#1c1814"},"spacing":{"margin":{"top":"12px","bottom":"16px"}}}} /-->
+
+	<!-- wp:group {"style":{"spacing":{"blockGap":"12px"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+	<div class="wp-block-group">
+		<!-- wp:post-author-name {"isLink":false,"style":{"typography":{"fontSize":"14px","fontWeight":"600"},"color":{"text":"#1c1814"}}} /-->
+		<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#b8431a"}}} -->
+		<p style="color:#b8431a;font-size:14px">·</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:post-date {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} /-->
+	</div>
+	<!-- /wp:group -->
+</header>
+<!-- /wp:group -->
+
+<!-- ===================== ARTICLE BODY (white sheet) ===================== -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"48px","bottom":"56px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#ffffff;padding-top:48px;padding-right:24px;padding-bottom:56px;padding-left:24px">
+	<!-- wp:post-content {"layout":{"type":"constrained","contentSize":"820px"}} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- ===================== MORE REVIEWS (cream band) ===================== -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"56px","bottom":"64px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#f5f0e8;padding-top:56px;padding-right:24px;padding-bottom:64px;padding-left:24px">
+
+	<!-- wp:heading {"style":{"typography":{"fontSize":"26px","fontWeight":"800"},"color":{"text":"#1c1814"},"spacing":{"margin":{"bottom":"24px"}}}} -->
+	<h2 class="wp-block-heading" style="color:#1c1814;font-size:26px;font-weight:800;margin-bottom:24px">More reviews</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:query {"queryId":2,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","exclude":[],"inherit":false},"align":"wide"} -->
+	<div class="wp-block-query alignwide">
+		<!-- wp:post-template {"style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"0px","bottom":"16px","left":"0px","right":"0px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#ffffff;padding-top:0px;padding-right:0px;padding-bottom:16px;padding-left:0px">
+				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":{"topLeft":"10px","topRight":"10px"}}}} /-->
+				<!-- wp:group {"style":{"spacing":{"padding":{"left":"18px","right":"18px","top":"14px"},"blockGap":"8px"}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group" style="padding-top:14px;padding-right:18px;padding-left:18px">
+					<!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} /-->
+					<!-- wp:post-title {"isLink":true,"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700","lineHeight":"1.25"},"color":{"text":"#1c1814"},"elements":{"link":{"color":{"text":"#1c1814"}}}}} /-->
+					<!-- wp:post-date {"style":{"typography":{"fontSize":"12px"},"color":{"text":"#8a8480"}}} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+	</div>
+	<!-- /wp:query -->
+</div>
+<!-- /wp:group -->

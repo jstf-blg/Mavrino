@@ -1,0 +1,62 @@
+<!--
+  Mavrino — category / archive template (WordPress block markup, Kadence theme)
+  =============================================================================
+  Brand:  rust #b8431a · cream #f5f0e8 · ink #1c1814 · muted #6b655f
+  Where:  Appearance → Editor → Templates → Category Archives (or "Archive")
+          → ⋮ → Code editor. Paste BETWEEN the existing Header and Footer
+          template parts (keep the header/footer parts in place).
+  Note:   The post grid uses "inherit": true, so it automatically shows the
+          posts for whichever category/term is being viewed.
+-->
+
+<!-- ===================== ARCHIVE HEADER (cream band) ===================== -->
+<!-- wp:group {"tagName":"header","align":"full","style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"56px","bottom":"48px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<header class="wp-block-group alignfull" style="background-color:#f5f0e8;padding-top:56px;padding-right:24px;padding-bottom:48px;padding-left:24px">
+
+	<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px","fontWeight":"700","letterSpacing":"3px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->
+	<p style="color:#b8431a;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase">Mavrino reviews</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:query-title {"type":"archive","style":{"typography":{"fontSize":"clamp(32px, 4.5vw, 46px)","fontWeight":"800","lineHeight":"1.1"},"color":{"text":"#1c1814"},"spacing":{"margin":{"top":"8px","bottom":"12px"}}}} /-->
+
+	<!-- wp:term-description {"style":{"typography":{"fontSize":"17px","lineHeight":"1.6"},"color":{"text":"#6b655f"}}} /-->
+</header>
+<!-- /wp:group -->
+
+<!-- ===================== POST GRID (cream band) ===================== -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"8px","bottom":"72px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#f5f0e8;padding-top:8px;padding-right:24px;padding-bottom:72px;padding-left:24px">
+
+	<!-- wp:query {"queryId":3,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true},"align":"wide"} -->
+	<div class="wp-block-query alignwide">
+		<!-- wp:post-template {"style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"0px","bottom":"16px","left":"0px","right":"0px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#ffffff;padding-top:0px;padding-right:0px;padding-bottom:16px;padding-left:0px">
+				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":{"topLeft":"10px","topRight":"10px"}}}} /-->
+				<!-- wp:group {"style":{"spacing":{"padding":{"left":"18px","right":"18px","top":"14px"},"blockGap":"8px"}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group" style="padding-top:14px;padding-right:18px;padding-left:18px">
+					<!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} /-->
+					<!-- wp:post-title {"isLink":true,"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700","lineHeight":"1.25"},"color":{"text":"#1c1814"},"elements":{"link":{"color":{"text":"#1c1814"}}}}} /-->
+					<!-- wp:post-excerpt {"excerptLength":18,"style":{"typography":{"fontSize":"14px","lineHeight":"1.5"},"color":{"text":"#6b655f"}}} /-->
+					<!-- wp:post-date {"style":{"typography":{"fontSize":"12px"},"color":{"text":"#8a8480"}}} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"style":{"color":{"text":"#6b655f"}}} -->
+			<p style="color:#6b655f">No reviews in this category yet — check back soon.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+</div>
+<!-- /wp:group -->
