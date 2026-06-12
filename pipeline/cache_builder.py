@@ -50,6 +50,9 @@ SEED_PRODUCTS = {
         {"asin": "B09BDKRV4V", "title": "Philips 2000 Series Air Fryer 4.1L",         "brand": "Philips",  "price": 69.99,  "rating": 4.5, "review_count": 6123,  "image_url": "https://m.media-amazon.com/images/I/61gXDnCdpXL._AC_SL1500_.jpg"},
         {"asin": "B0CNNR8YKS", "title": "Ninja Foodi DZ550 Dual Zone Air Fryer 10Qt", "brand": "Ninja",    "price": 179.99, "rating": 4.8, "review_count": 4521,  "image_url": "https://m.media-amazon.com/images/I/71nMnHgHWAL._AC_SL1500_.jpg"},
         {"asin": "B0953DKJDY", "title": "Instant Vortex Plus 6-in-1 Air Fryer 6Qt",   "brand": "Instant",  "price": 89.99,  "rating": 4.5, "review_count": 15632, "image_url": "https://m.media-amazon.com/images/I/71UJRfgdxBL._AC_SL1500_.jpg"},
+        {"asin": "B07FDJMC9Q", "title": "Ninja AF101 Air Fryer 4 Qt",                 "brand": "Ninja",    "price": 99.99,  "rating": 4.8, "review_count": 98765},
+        {"asin": "B07GJBBGHG", "title": "COSORI Pro II Air Fryer 5.8 Qt",             "brand": "COSORI",   "price": 119.99, "rating": 4.7, "review_count": 41234},
+        {"asin": "B07PNG3ZGN", "title": "Chefman TurboFry Touch Air Fryer 8 Qt",      "brand": "Chefman",  "price": 69.99,  "rating": 4.6, "review_count": 28900},
     ],
     "blenders": [
         {"asin": "B08JBDS3WV", "title": "Ninja BN701 Professional Plus Blender 1400W", "brand": "Ninja",   "price": 99.99,  "rating": 4.7, "review_count": 28765, "image_url": "https://m.media-amazon.com/images/I/71RmxNIEFAL._AC_SL1500_.jpg"},
@@ -57,6 +60,9 @@ SEED_PRODUCTS = {
         {"asin": "B07QY639QY", "title": "NutriBullet Pro 900W Personal Blender",       "brand": "NutriBullet", "price": 79.99, "rating": 4.6, "review_count": 32456, "image_url": "https://m.media-amazon.com/images/I/71xCpCpvZEL._AC_SL1500_.jpg"},
         {"asin": "B08B3XNRM3", "title": "Oster Pro 1200 Blender with Glass Jar",      "brand": "Oster",   "price": 59.99,  "rating": 4.4, "review_count": 12341, "image_url": "https://m.media-amazon.com/images/I/81qBtSBMxEL._AC_SL1500_.jpg"},
         {"asin": "B07T9BXGK7", "title": "KitchenAid K400 Variable Speed Blender",     "brand": "KitchenAid", "price": 199.99, "rating": 4.6, "review_count": 7654, "image_url": "https://m.media-amazon.com/images/I/71Y7kHkYqGL._AC_SL1500_.jpg"},
+        {"asin": "B07Y8GBL9D", "title": "Ninja BL660 Professional Blender 1100W",     "brand": "Ninja",      "price": 89.99,  "rating": 4.7, "review_count": 52300},
+        {"asin": "B003KGENCA", "title": "Magic Bullet Blender 11-Piece Set",          "brand": "Magic Bullet", "price": 39.88, "rating": 4.6, "review_count": 98700},
+        {"asin": "B0758JHZM6", "title": "Vitamix A3500 Ascent Series Smart Blender",  "brand": "Vitamix",    "price": 549.95, "rating": 4.7, "review_count": 7800},
     ],
     "coffee makers": [
         {"asin": "B07Y3LXNMK", "title": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker 14 Cup", "brand": "Cuisinart", "price": 99.95, "rating": 4.5, "review_count": 18234, "image_url": "https://m.media-amazon.com/images/I/81RuiZWoTCL._AC_SL1500_.jpg"},
@@ -64,26 +70,45 @@ SEED_PRODUCTS = {
         {"asin": "B078RQZM3D", "title": "Ninja CE251 Programmable Brewer 12 Cup",              "brand": "Ninja",     "price": 59.99,  "rating": 4.5, "review_count": 22341, "image_url": "https://m.media-amazon.com/images/I/71h2FUQMiVL._AC_SL1500_.jpg"},
         {"asin": "B07CTTXKXF", "title": "Mr. Coffee 12-Cup Coffee Maker with Strong Brew",     "brand": "Mr. Coffee","price": 29.99,  "rating": 4.4, "review_count": 31245, "image_url": "https://m.media-amazon.com/images/I/81kKTIMonzL._AC_SL1500_.jpg"},
         {"asin": "B01N3LJ5JO", "title": "Breville BES870XL Barista Express Espresso Machine",  "brand": "Breville",  "price": 699.95, "rating": 4.7, "review_count": 8765,  "image_url": "https://m.media-amazon.com/images/I/81BKKN7zFpL._AC_SL1500_.jpg"},
+        {"asin": "B00MVWNICK", "title": "Technivorm Moccamaster KBGV Select 10-Cup",           "brand": "Technivorm", "price": 359.00, "rating": 4.7, "review_count": 6200},
+        {"asin": "B07VBM3HBR", "title": "Hamilton Beach FlexBrew Trio 2-Way Coffee Maker",     "brand": "Hamilton Beach", "price": 99.99, "rating": 4.4, "review_count": 24500},
+        {"asin": "B07GWGY5G2", "title": "BLACK+DECKER 12-Cup Programmable Coffee Maker",       "brand": "BLACK+DECKER", "price": 29.99, "rating": 4.5, "review_count": 33800},
     ],
     "food processors": [
         {"asin": "B00PUZT9OG", "title": "Cuisinart DFP-14BCWB 14-Cup Food Processor",   "brand": "Cuisinart", "price": 199.95, "rating": 4.6, "review_count": 9876,  "image_url": "https://m.media-amazon.com/images/I/71ycXCkOAnL._AC_SL1500_.jpg"},
         {"asin": "B007XP3MTO", "title": "Hamilton Beach 70740 Food Processor 10 Cup",   "brand": "Hamilton Beach", "price": 49.99, "rating": 4.4, "review_count": 14532, "image_url": "https://m.media-amazon.com/images/I/71cSBMZ3c8L._AC_SL1500_.jpg"},
         {"asin": "B00BVPNKBE", "title": "Breville BFP800XL Sous Chef Food Processor",   "brand": "Breville",  "price": 449.95, "rating": 4.7, "review_count": 4321,  "image_url": "https://m.media-amazon.com/images/I/71qbmBtKxML._AC_SL1500_.jpg"},
+        {"asin": "B01AXM4WV2", "title": "KitchenAid KFP0718 7-Cup Food Processor",      "brand": "KitchenAid", "price": 99.99,  "rating": 4.6, "review_count": 14300},
+        {"asin": "B0858XYHCX", "title": "Ninja BN601 Professional Plus Food Processor", "brand": "Ninja",     "price": 99.99,  "rating": 4.7, "review_count": 19800},
+        {"asin": "B0036FD4FY", "title": "Cuisinart DLC-2ABC Mini-Prep Plus Processor",  "brand": "Cuisinart", "price": 49.95,  "rating": 4.6, "review_count": 22100},
+        {"asin": "B00LBZOYAK", "title": "Hamilton Beach Stack & Snap 12-Cup Processor", "brand": "Hamilton Beach", "price": 59.99, "rating": 4.5, "review_count": 13400},
     ],
     "stand mixers": [
         {"asin": "B00005UP2P", "title": "KitchenAid KSM150PSER Artisan Series 5-Qt Stand Mixer", "brand": "KitchenAid", "price": 379.99, "rating": 4.8, "review_count": 23456, "image_url": "https://m.media-amazon.com/images/I/71wu1e0PFjL._AC_SL1500_.jpg"},
         {"asin": "B000Y0V8I8", "title": "Hamilton Beach 63325 6-Speed Stand Mixer",              "brand": "Hamilton Beach", "price": 69.99, "rating": 4.4, "review_count": 8765, "image_url": "https://m.media-amazon.com/images/I/71mDAYGNp2L._AC_SL1500_.jpg"},
         {"asin": "B07D4WKRK5", "title": "Cuisinart SM-50BK 5.5-Quart Stand Mixer",              "brand": "Cuisinart", "price": 249.95, "rating": 4.5, "review_count": 6543, "image_url": "https://m.media-amazon.com/images/I/71mxCQNfgGL._AC_SL1500_.jpg"},
+        {"asin": "B00IRH09GU", "title": "KitchenAid Professional 5 Plus 5-Qt Stand Mixer",      "brand": "KitchenAid", "price": 449.99, "rating": 4.7, "review_count": 12800},
+        {"asin": "B07GSTBC68", "title": "Cuisinart Precision Master 5.5-Qt Stand Mixer",        "brand": "Cuisinart", "price": 229.95, "rating": 4.6, "review_count": 8400},
+        {"asin": "B0058VCRP6", "title": "Hamilton Beach Electric Stand Mixer 4-Qt",            "brand": "Hamilton Beach", "price": 89.99, "rating": 4.5, "review_count": 11200},
+        {"asin": "B07QK2WL4Q", "title": "Aucma Stand Mixer 6.5-Qt 660W",                       "brand": "Aucma",     "price": 129.99, "rating": 4.6, "review_count": 18900},
     ],
     "toaster ovens": [
         {"asin": "B08J5DFHGQ", "title": "Breville BOV900BSS Smart Oven Air Fryer Pro", "brand": "Breville",   "price": 399.95, "rating": 4.7, "review_count": 7654,  "image_url": "https://m.media-amazon.com/images/I/81S7QBbRdpL._AC_SL1500_.jpg"},
         {"asin": "B07WQ3HJVL", "title": "Cuisinart TOA-60 Convection Toaster Oven",   "brand": "Cuisinart",  "price": 199.95, "rating": 4.5, "review_count": 12345, "image_url": "https://m.media-amazon.com/images/I/71yzVHCOBKL._AC_SL1500_.jpg"},
         {"asin": "B07PGBKXPP", "title": "Ninja DT201 Foodi 10-in-1 XL Pro Air Fry",  "brand": "Ninja",      "price": 249.99, "rating": 4.6, "review_count": 9876,  "image_url": "https://m.media-amazon.com/images/I/71KJeAVf3FL._AC_SL1500_.jpg"},
+        {"asin": "B00XBR5BR2", "title": "Hamilton Beach Easy Reach Toaster Oven",     "brand": "Hamilton Beach", "price": 54.99, "rating": 4.5, "review_count": 21345},
+        {"asin": "B009G0LXTU", "title": "BLACK+DECKER TO3250XSB 8-Slice Toaster Oven", "brand": "BLACK+DECKER", "price": 79.99, "rating": 4.6, "review_count": 33210},
+        {"asin": "B01D9WUNFW", "title": "Breville BOV450XL Mini Smart Toaster Oven",  "brand": "Breville",   "price": 119.95, "rating": 4.7, "review_count": 9123},
+        {"asin": "B0936M0F1Z", "title": "COSORI Air Fryer Toaster Oven 12-in-1",      "brand": "COSORI",     "price": 149.99, "rating": 4.5, "review_count": 18760},
     ],
     "electric kettles": [
         {"asin": "B073H2LHFJ", "title": "Hamilton Beach 40880 Stainless Steel Electric Kettle", "brand": "Hamilton Beach", "price": 29.99, "rating": 4.5, "review_count": 18765, "image_url": "https://m.media-amazon.com/images/I/71oUCHLwMBL._AC_SL1500_.jpg"},
         {"asin": "B004HPMQ12", "title": "Cuisinart CPK-17 PerfecTemp Electric Kettle",          "brand": "Cuisinart",      "price": 79.95,  "rating": 4.6, "review_count": 9234,  "image_url": "https://m.media-amazon.com/images/I/81XCvVWh1nL._AC_SL1500_.jpg"},
         {"asin": "B01N5YUQCA", "title": "OXO Brew Adjustable Temperature Pour-Over Kettle",    "brand": "OXO",            "price": 99.95,  "rating": 4.7, "review_count": 6543,  "image_url": "https://m.media-amazon.com/images/I/71JJWlkkznL._AC_SL1500_.jpg"},
+        {"asin": "B07CVDLQLZ", "title": "COSORI Electric Kettle 1.7L Stainless Steel",         "brand": "COSORI",         "price": 39.99,  "rating": 4.7, "review_count": 31200},
+        {"asin": "B084GLBN6B", "title": "Amazon Basics Stainless Steel Electric Kettle 1.7L",  "brand": "Amazon Basics",  "price": 24.99,  "rating": 4.5, "review_count": 15400},
+        {"asin": "B07Z6CB4X6", "title": "Fellow Stagg EKG Electric Pour-Over Kettle",          "brand": "Fellow",         "price": 165.00, "rating": 4.7, "review_count": 8900},
+        {"asin": "B003TOAOY8", "title": "Hamilton Beach Glass Electric Kettle 1.7L",           "brand": "Hamilton Beach", "price": 34.99,  "rating": 4.5, "review_count": 24500},
     ],
     "robot vacuums": [
         {"asin": "B09PKFPZGB", "title": "iRobot Roomba j7+ Self-Emptying Robot Vacuum",  "brand": "iRobot", "price": 599.99, "rating": 4.4, "review_count": 8765,  "image_url": "https://m.media-amazon.com/images/I/71YjRZkCLVL._AC_SL1500_.jpg"},
@@ -304,14 +329,34 @@ def build_all_caches() -> dict:
     return results
 
 
+def _keyword_qualifiers(kw: str) -> dict:
+    """Parse buyer-intent qualifiers from a keyword so different posts in the
+    same niche get genuinely different product selections."""
+    import re
+    q = {"budget": False, "premium": False, "price_cap": None}
+    if any(w in kw for w in ["cheap", "cheapest", "budget", "affordable", "value", "under $"]):
+        q["budget"] = True
+    if any(w in kw for w in ["premium", "high-end", "high end", "professional", "luxury", "splurge"]):
+        q["premium"] = True
+    m = re.search(r"under \$?(\d+)", kw)
+    if m:
+        q["price_cap"] = float(m.group(1))
+    return q
+
+
 def get_products_for_keyword(keyword: str, count: int = 3) -> list[dict]:
     """
     Get relevant cached products for a keyword.
-    Called by run_pipeline.py instead of random sampling.
+
+    Only returns products that genuinely match the keyword's niche/brand/title —
+    never a global top-rated fallback (which caused the same high-rated product to
+    appear on unrelated posts). Returns [] when nothing matches so the caller skips
+    the keyword rather than publishing irrelevant products. Selection is qualifier
+    aware (budget/premium/price cap) and rotates the supporting picks so same-niche
+    posts aren't carbon copies.
     """
     kw = keyword.lower()
     all_files = list(CACHE_DIR.glob("*.json"))
-
     if not all_files:
         return []
 
@@ -322,44 +367,48 @@ def get_products_for_keyword(keyword: str, count: int = 3) -> list[dict]:
         except Exception:
             continue
 
-    # Score each product by relevance to keyword
-    def relevance(product):
-        score  = 0
-        title  = product.get("title", "").lower()
-        niche  = product.get("niche", "").lower()
-        brand  = product.get("brand", "").lower()
+    kw_words = set(w for w in kw.split() if len(w) > 2)
 
-        # Niche match is strongest signal
+    # Match score — niche/brand/title only, NO rating (rating must not create relevance)
+    def match_score(product) -> int:
+        score = 0
+        title = product.get("title", "").lower()
+        niche = product.get("niche", "").lower()
+        brand = product.get("brand", "").lower()
         if niche and niche in kw:
             score += 10
-        if niche and any(word in kw for word in niche.split()):
+        if niche and any(w in kw for w in niche.split() if len(w) > 2):
             score += 5
-
-        # Title word overlap
-        title_words = set(title.split())
-        kw_words    = set(kw.split())
-        overlap     = len(title_words & kw_words)
-        score      += overlap * 2
-
-        # Brand mention in keyword
+        score += len(set(title.split()) & kw_words) * 2
         if brand and brand in kw:
             score += 8
-
-        # Boost highly rated products
-        score += float(product.get("rating", 0))
-
         return score
 
-    scored = sorted(all_products, key=relevance, reverse=True)
+    relevant = [p for p in all_products if match_score(p) > 0]
+    if not relevant:
+        return []
 
-    # Only return products with some relevance
-    relevant = [p for p in scored if relevance(p) > 0]
+    q = _keyword_qualifiers(kw)
 
-    if relevant:
-        return relevant[:count]
+    # Honour an explicit price cap when one is stated (fall back if it empties the list)
+    if q["price_cap"] is not None:
+        capped = [p for p in relevant if p.get("price", 0) <= q["price_cap"]]
+        relevant = capped or relevant
 
-    # If nothing relevant, return top-rated products as fallback
-    return sorted(all_products, key=lambda x: float(x.get("rating", 0)), reverse=True)[:count]
+    if q["budget"]:
+        relevant.sort(key=lambda p: p.get("price", 9999))                       # cheapest first
+    elif q["premium"]:
+        relevant.sort(key=lambda p: (-p.get("price", 0), -float(p.get("rating", 0))))
+    else:
+        # Best match/rating leads; rotate the rest so "quiet" vs "compact" vs "2026"
+        # posts in the same niche surface a different supporting cast.
+        relevant.sort(key=lambda p: (match_score(p), float(p.get("rating", 0))), reverse=True)
+        if len(relevant) > count:
+            head, tail = relevant[0], relevant[1:]
+            offset = sum(ord(c) for c in kw) % len(tail)
+            relevant = [head] + tail[offset:] + tail[:offset]
+
+    return relevant[:count]
 
 
 if __name__ == "__main__":

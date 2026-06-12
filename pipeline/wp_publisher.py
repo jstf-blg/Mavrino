@@ -97,6 +97,29 @@ def amazon_search_url(product_title: str) -> str:
     return f"https://www.amazon.com/s?k={query}"
 
 
+_IMG_OK_CACHE: dict = {}
+
+def _image_ok(url: str) -> bool:
+    """Return True if an image URL is actually reachable (HTTP 200).
+
+    Seed Amazon image URLs are frequently stale (404) or hotlink-blocked, which
+    produces broken images in posts. Results are cached per-process so we issue
+    at most one HEAD request per distinct URL per run.
+    """
+    if not url:
+        return False
+    if url in _IMG_OK_CACHE:
+        return _IMG_OK_CACHE[url]
+    ok = False
+    try:
+        r = requests.head(url, timeout=8, allow_redirects=True)
+        ok = (r.status_code == 200)
+    except Exception:
+        ok = False
+    _IMG_OK_CACHE[url] = ok
+    return ok
+
+
 def build_wp_content(content: dict, products: list[dict], hero_image: dict = None) -> str:
     """Build Gutenberg block HTML from generated content."""
     parts        = []
@@ -183,6 +206,9 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
     # ── Product cards ──────────────────────────────────────────────────────
     for item in content.get("products", []):
         asin    = item.get("asin", "")
+        # Don't list the winner again — it already has the Top Pick callout above
+        if asin and asin == winner_asin:
+            continue
         product = products_by_asin.get(asin, {})
         title   = product.get("title", asin)
         price   = product.get("price", 0)
@@ -192,7 +218,10 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         aff_url = amazon_search_url(title)
         stars   = "★" * int(rating) + ("½" if rating % 1 >= 0.5 else "")
 
-        # Try to get Unsplash image if no product image
+        # Seed/Amazon image URLs are often stale or hotlink-blocked — drop any
+        # that don't actually load, then fall back to an Unsplash category image
+        if img_url and not _image_ok(img_url):
+            img_url = ""
         if not img_url:
             try:
                 import image_fetcher as imf
@@ -372,6 +401,11 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
         "format":     "standard",
         "metadata":   seo_metadata,
     }
+
+    # Set the Unsplash hero as the post's Featured Image so it shows in Kadence's
+    # blog/archive/related thumbnails. WordPress.com v1.1 sideloads a URL passed here.
+    if hero_image and hero_image.get("url"):
+        post_data["featured_image"] = hero_image["url"]
 
     print(f"  [wp] Publishing '{title[:55]}...'")
     result = wp_request("POST", "posts/new", token, post_data)

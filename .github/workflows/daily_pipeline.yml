@@ -57,7 +57,9 @@ jobs:
           if [ -n "${{ github.event.inputs.posts_override }}" ]; then
             echo "POSTS_PER_DAY=${{ github.event.inputs.posts_override }}" >> .env
           else
-            echo "POSTS_PER_DAY=5" >> .env
+            # Kept low while content quality is being tuned for AdSense review.
+            # Raise once posts are reliably unique per keyword.
+            echo "POSTS_PER_DAY=2" >> .env
           fi
 
       - name: Create required directories
