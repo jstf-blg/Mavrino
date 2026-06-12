@@ -168,15 +168,25 @@ def get_or_create_category(name: str, parent_name: str, token: str, tax: dict) -
         if parent_name in tax["wp_category_ids"]:
             parent_id = tax["wp_category_ids"][parent_name]
         else:
-            # Create parent
-            result = _wp_post("categories/new", {
-                "name":        parent_name,
-                "description": f"Reviews and comparisons of {parent_name.lower()} products",
-            }, token)
-            if result and result.get("ID"):
-                parent_id = result["ID"]
+            # Search for an existing parent before creating (avoids a 400
+            # "term exists" when the local cache has been reset)
+            existing = _wp_get("categories", token, {"search": parent_name, "number": 10})
+            if existing:
+                for cat in existing.get("categories", []):
+                    if cat["name"].lower() == parent_name.lower():
+                        parent_id = cat["ID"]
+                        break
+            # Create parent only if it doesn't already exist
+            if not parent_id:
+                result = _wp_post("categories/new", {
+                    "name":        parent_name,
+                    "description": f"Reviews and comparisons of {parent_name.lower()} products",
+                }, token)
+                if result and result.get("ID"):
+                    parent_id = result["ID"]
+                    print(f"  [taxonomy] Created parent category: {parent_name} (ID: {parent_id})")
+            if parent_id:
                 tax["wp_category_ids"][parent_name] = parent_id
-                print(f"  [taxonomy] Created parent category: {parent_name} (ID: {parent_id})")
 
     # Search for existing child category
     result = _wp_get("categories", token, {"search": name, "number": 10})
