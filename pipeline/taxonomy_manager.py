@@ -90,9 +90,7 @@ MERGE_THRESHOLD = 3    # merge category when under this many posts
 # TAXONOMY STATE — persisted to config/taxonomy.json
 # ══════════════════════════════════════════════════════════════════════════════
 
-def load_taxonomy() -> dict:
-    if TAXONOMY_FILE.exists():
-        return json.loads(TAXONOMY_FILE.read_text())
+def _default_taxonomy() -> dict:
     return {
         "wp_category_ids":  {},   # name → WordPress category ID
         "wp_tag_ids":       {},   # name → WordPress tag ID
@@ -101,6 +99,22 @@ def load_taxonomy() -> dict:
         "pending_splits":   [],   # categories flagged for splitting
         "last_health_check": None,
     }
+
+def load_taxonomy() -> dict:
+    """Load taxonomy state, always returning a dict with every expected key.
+
+    Merges whatever is on disk onto the default structure so that an empty
+    ({}), partial, or corrupt taxonomy.json can't cause KeyErrors downstream.
+    """
+    data = _default_taxonomy()
+    if TAXONOMY_FILE.exists():
+        try:
+            loaded = json.loads(TAXONOMY_FILE.read_text())
+            if isinstance(loaded, dict):
+                data.update(loaded)
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"  [taxonomy] Could not read {TAXONOMY_FILE} ({e}) — using defaults")
+    return data
 
 def save_taxonomy(data: dict):
     TAXONOMY_FILE.write_text(json.dumps(data, indent=2))
