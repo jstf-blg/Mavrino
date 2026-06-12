@@ -1,0 +1,317 @@
+<!--
+  Mavrino — magazine homepage (WordPress block markup for the Kadence theme)
+  ==========================================================================
+  Brand:  rust orange #b8431a · cream #f5f0e8 · ink #1c1814 · muted #6b655f
+  Paste:  New Page → ⋮ (Options) → Code editor → paste ALL of this → Update.
+          Then Settings → Reading → "Your homepage displays: A static page".
+  Sections: 1) Hero grid  2) Category browser  3) Top picks strip  4) Latest posts grid
+  Edit the # links, category slugs and Top Pick cards to taste.
+-->
+
+<!-- ============================ 1. HERO GRID ============================ -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"72px","bottom":"72px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#f5f0e8;padding-top:72px;padding-right:24px;padding-bottom:72px;padding-left:24px">
+
+	<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px","fontWeight":"700","letterSpacing":"3px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->
+	<p style="color:#b8431a;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase">Mavrino · Honest product reviews</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"24px","left":"24px"}}}} -->
+	<div class="wp-block-columns alignwide">
+
+		<!-- wp:column {"width":"58%","style":{"spacing":{"blockGap":"20px"}}} -->
+		<div class="wp-block-column" style="flex-basis:58%">
+			<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"clamp(38px, 5vw, 56px)","lineHeight":"1.04","fontWeight":"800"},"color":{"text":"#1c1814"}}} -->
+			<h1 class="wp-block-heading" style="color:#1c1814;font-size:clamp(38px, 5vw, 56px);font-weight:800;line-height:1.04">The gear worth your money — tested, ranked, and explained.</h1>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","lineHeight":"1.6"},"color":{"text":"#6b655f"}}} -->
+			<p style="color:#6b655f;font-size:18px;line-height:1.6">We read thousands of real customer reviews and the latest pricing so you don't have to. Clear verdicts, honest trade-offs, no fluff.</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons">
+				<!-- wp:button {"style":{"color":{"background":"#b8431a","text":"#ffffff"},"border":{"radius":"6px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"26px","right":"26px"}},"typography":{"fontWeight":"700"}}} -->
+				<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" href="#latest" style="border-radius:6px;color:#ffffff;background-color:#b8431a;padding-top:14px;padding-right:26px;padding-bottom:14px;padding-left:26px;font-weight:700">Browse the latest reviews →</a></div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"42%","style":{"spacing":{"blockGap":"16px"}}} -->
+		<div class="wp-block-column" style="flex-basis:42%">
+
+			<!-- wp:group {"style":{"color":{"background":"#b8431a","text":"#ffffff"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":"10px"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-text-color has-background" style="border-radius:10px;color:#ffffff;background-color:#b8431a;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"2px","textTransform":"uppercase"}}} -->
+				<p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Editor's choice</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"22px","fontWeight":"700"},"color":{"text":"#ffffff"}}} -->
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:22px;font-weight:700">Best air fryers of 2026</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"15px"}}} -->
+				<p style="font-size:15px">Five models tested for crispiness, noise and ease of cleaning.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700"}}} -->
+				<p style="font-size:14px;font-weight:700"><a href="/category/air-fryers/" style="color:#ffffff">Read the roundup →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:group {"style":{"color":{"background":"#1c1814","text":"#ffffff"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":"10px"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-text-color has-background" style="border-radius:10px;color:#ffffff;background-color:#1c1814;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#e0a17f"}}} -->
+				<p style="color:#e0a17f;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase">Buying guide</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"22px","fontWeight":"700"},"color":{"text":"#ffffff"}}} -->
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:22px;font-weight:700">How to choose a coffee maker</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"15px"},"color":{"text":"#c9c4bd"}}} -->
+				<p style="color:#c9c4bd;font-size:15px">Drip vs. pod vs. espresso — what actually matters for your kitchen.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700"}}} -->
+				<p style="font-size:14px;font-weight:700"><a href="/category/coffee-makers/" style="color:#ffffff">Read the guide →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- ========================= 2. CATEGORY BROWSER ========================= -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"64px","bottom":"64px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#ffffff;padding-top:64px;padding-right:24px;padding-bottom:64px;padding-left:24px">
+
+	<!-- wp:heading {"style":{"typography":{"fontSize":"30px","fontWeight":"800"},"color":{"text":"#1c1814"}}} -->
+	<h2 class="wp-block-heading" style="color:#1c1814;font-size:30px;font-weight:800">Browse by category</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#6b655f"},"spacing":{"margin":{"bottom":"28px"}}}} -->
+	<p style="color:#6b655f;font-size:16px;margin-bottom:28px">Find honest, data-backed picks for every room and routine.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"16px","left":"16px"}}}} -->
+	<div class="wp-block-columns alignwide">
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#f5f0e8;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:19px;font-weight:700"><a href="/category/kitchen/">Kitchen</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Air fryers, blenders, coffee makers &amp; more</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#f5f0e8;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:19px;font-weight:700"><a href="/category/home/">Home</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Vacuums, air purifiers, mattresses &amp; more</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#f5f0e8;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:19px;font-weight:700"><a href="/category/home-office/">Home Office</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Desks, chairs, monitors &amp; accessories</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"16px","left":"16px"},"margin":{"top":"16px"}}}} -->
+	<div class="wp-block-columns alignwide" style="margin-top:16px">
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#f5f0e8;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:19px;font-weight:700"><a href="/category/travel/">Travel</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Luggage, backpacks &amp; travel accessories</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#f5f0e8;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:19px;font-weight:700"><a href="/category/fitness-wellness/">Fitness &amp; Wellness</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Massage guns, trackers, treadmills &amp; more</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#f5f0e8;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:19px;font-weight:700"><a href="/category/outdoors/">Outdoors</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Grills, camping gear, garden tools &amp; more</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- ========================== 3. TOP PICKS STRIP ========================== -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#b8431a"},"spacing":{"padding":{"top":"56px","bottom":"56px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#b8431a;padding-top:56px;padding-right:24px;padding-bottom:56px;padding-left:24px">
+
+	<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px","fontWeight":"700","letterSpacing":"3px","textTransform":"uppercase"},"color":{"text":"#ffffff"}}} -->
+	<p style="color:#ffffff;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase">Top picks this month</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:heading {"style":{"typography":{"fontSize":"30px","fontWeight":"800"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"28px"}}}} -->
+	<h2 class="wp-block-heading" style="color:#ffffff;font-size:30px;font-weight:800;margin-bottom:28px">What our editors are recommending right now</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"16px","left":"16px"}}}} -->
+	<div class="wp-block-columns alignwide">
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":"10px"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-radius:10px;background-color:#ffffff;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->
+				<p style="color:#b8431a;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Best overall</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:18px;font-weight:700">Ninja Air Fryer Pro XL</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Fast, even, and easy to clean — our top kitchen pick.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700"}}} -->
+				<p style="font-size:14px;font-weight:700"><a href="/category/air-fryers/" style="color:#b8431a">See why →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":"10px"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-radius:10px;background-color:#ffffff;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->
+				<p style="color:#b8431a;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Best value</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:18px;font-weight:700">Mr. Coffee 12-Cup</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Dependable brewing at a price that's hard to beat.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700"}}} -->
+				<p style="font-size:14px;font-weight:700"><a href="/category/coffee-makers/" style="color:#b8431a">See why →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":"10px"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-radius:10px;background-color:#ffffff;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->
+				<p style="color:#b8431a;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Best premium</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontWeight":"700"},"color":{"text":"#1c1814"}}} -->
+				<h3 class="wp-block-heading" style="color:#1c1814;font-size:18px;font-weight:700">Vitamix A3500 Blender</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#6b655f"}}} -->
+				<p style="color:#6b655f;font-size:14px">Pro-grade power and presets for serious kitchens.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontWeight":"700"}}} -->
+				<p style="font-size:14px;font-weight:700"><a href="/category/blenders/" style="color:#b8431a">See why →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- ========================= 4. LATEST POSTS GRID ========================= -->
+<!-- wp:group {"align":"full","anchor":"latest","style":{"color":{"background":"#f5f0e8"},"spacing":{"padding":{"top":"64px","bottom":"72px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1160px"}} -->
+<div id="latest" class="wp-block-group alignfull" style="background-color:#f5f0e8;padding-top:64px;padding-right:24px;padding-bottom:72px;padding-left:24px">
+
+	<!-- wp:heading {"style":{"typography":{"fontSize":"30px","fontWeight":"800"},"color":{"text":"#1c1814"}}} -->
+	<h2 class="wp-block-heading" style="color:#1c1814;font-size:30px;font-weight:800">Latest reviews</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#6b655f"},"spacing":{"margin":{"bottom":"28px"}}}} -->
+	<p style="color:#6b655f;font-size:16px;margin-bottom:28px">Fresh, data-backed picks added regularly.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:query {"queryId":1,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false},"align":"wide"} -->
+	<div class="wp-block-query alignwide">
+		<!-- wp:post-template {"style":{"spacing":{"blockGap":"24px"}},"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"style":{"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"0px","bottom":"16px","left":"0px","right":"0px"}},"border":{"radius":"10px","width":"1px","color":"#e7ddcd"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="border-color:#e7ddcd;border-width:1px;border-radius:10px;background-color:#ffffff;padding-top:0px;padding-right:0px;padding-bottom:16px;padding-left:0px">
+				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":{"topLeft":"10px","topRight":"10px"}}}} /-->
+				<!-- wp:group {"style":{"spacing":{"padding":{"left":"18px","right":"18px","top":"14px"},"blockGap":"8px"}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group" style="padding-top:14px;padding-right:18px;padding-left:18px">
+					<!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"12px","fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} /-->
+					<!-- wp:post-title {"isLink":true,"level":3,"style":{"typography":{"fontSize":"19px","fontWeight":"700","lineHeight":"1.25"},"color":{"text":"#1c1814"},"elements":{"link":{"color":{"text":"#1c1814"}}}}} /-->
+					<!-- wp:post-excerpt {"excerptLength":18,"style":{"typography":{"fontSize":"14px","lineHeight":"1.5"},"color":{"text":"#6b655f"}}} /-->
+					<!-- wp:post-date {"style":{"typography":{"fontSize":"12px"},"color":{"text":"#8a8480"}}} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"style":{"color":{"text":"#6b655f"}}} -->
+			<p style="color:#6b655f">No reviews published yet — check back soon.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+</div>
+<!-- /wp:group -->
