@@ -1,8 +1,53 @@
 {
-  "wp_category_ids": {},
-  "wp_tag_ids": {},
-  "post_index": [],
-  "category_counts": {},
+  "wp_category_ids": {
+    "Kitchen/Toaster Ovens": 5389108
+  },
+  "wp_tag_ids": {
+    "cuisinart": 284323,
+    "breville": 435992,
+    "ninja": 96021,
+    "under-$200": 1596093,
+    "under-$300": 1529842,
+    "$300-$500": 543471,
+    "quiet-operation": 13415487,
+    "for-apartments": 84943211,
+    "low-noise": 3130705,
+    "quiet-motor": 46786983,
+    "convection": 1892726,
+    "air-fryer": 42040731,
+    "smart-oven": 8315593,
+    "10-in-1-functionality": 789922763
+  },
+  "post_index": [
+    {
+      "slug": "",
+      "title": "The Best Quiet Toaster Ovens in 2026: Our Top Picks for Silent Cooking",
+      "wp_post_id": 37,
+      "wp_url": "http://mavrino.com/2026/06/12/the-best-quiet-toaster-ovens-in-2026-our-top-picks-for-silent-cooking/",
+      "parent_category": "Kitchen",
+      "child_category": "Toaster Ovens",
+      "tags": [
+        "cuisinart",
+        "breville",
+        "ninja",
+        "under-$200",
+        "under-$300",
+        "$300-$500",
+        "quiet-operation",
+        "for-apartments",
+        "low-noise",
+        "quiet-motor",
+        "convection",
+        "air-fryer",
+        "smart-oven",
+        "10-in-1-functionality"
+      ],
+      "published_at": "2026-06-12"
+    }
+  ],
+  "category_counts": {
+    "Toaster Ovens": 1
+  },
   "pending_splits": [],
   "last_health_check": null
 }
