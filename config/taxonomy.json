@@ -16,7 +16,13 @@
     "convection": 1892726,
     "air-fryer": 42040731,
     "smart-oven": 8315593,
-    "10-in-1-functionality": 789922763
+    "10-in-1-functionality": 789922763,
+    "space-saving": 303118,
+    "budget-friendly": 5760908,
+    "premium": 11373,
+    "smart-features": 11757640,
+    "counter-space-efficient": 789922813,
+    "10-in-1": 4080983
   },
   "post_index": [
     {
@@ -43,10 +49,35 @@
         "10-in-1-functionality"
       ],
       "published_at": "2026-06-12"
+    },
+    {
+      "slug": "",
+      "title": "The Best Toaster Ovens in 2026: We Tested the Top Models So You Don't Have To",
+      "wp_post_id": 38,
+      "wp_url": "http://mavrino.com/2026/06/12/the-best-toaster-ovens-in-2026-we-tested-the-top-models-so-you-dont-have-to/",
+      "parent_category": "Kitchen",
+      "child_category": "Toaster Ovens",
+      "tags": [
+        "cuisinart",
+        "breville",
+        "ninja",
+        "under-$300",
+        "$300-$500",
+        "space-saving",
+        "budget-friendly",
+        "premium",
+        "smart-features",
+        "convection",
+        "air-fryer",
+        "smart-oven",
+        "counter-space-efficient",
+        "10-in-1"
+      ],
+      "published_at": "2026-06-12"
     }
   ],
   "category_counts": {
-    "Toaster Ovens": 1
+    "Toaster Ovens": 2
   },
   "pending_splits": [],
   "last_health_check": null
