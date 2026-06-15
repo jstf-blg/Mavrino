@@ -388,6 +388,14 @@ def get_products_for_keyword(keyword: str, count: int = 3) -> list[dict]:
     if not relevant:
         return []
 
+    # Hard single-niche guard: keep only products that share the niche of the
+    # strongest match. This makes cross-category contamination structurally
+    # impossible (e.g. an air fryer can never appear in a blender roundup),
+    # regardless of any title-word overlap or scoring quirk.
+    lead_niche = (max(relevant, key=match_score).get("niche") or "").lower()
+    if lead_niche:
+        relevant = [p for p in relevant if (p.get("niche") or "").lower() == lead_niche]
+
     q = _keyword_qualifiers(kw)
 
     # Honour an explicit price cap when one is stated (fall back if it empties the list)

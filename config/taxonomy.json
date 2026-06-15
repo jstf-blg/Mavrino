@@ -67,7 +67,30 @@
     "stainless-steel": 789922856,
     "1.7l-capacity": 789922857,
     "high-rating": 789922858,
-    "durable-build": 789922859
+    "durable-build": 789922859,
+    "vitamix": 789922860,
+    "magic bullet": 789922861,
+    "nutribullet": 789922862,
+    "for-early-mornings": 789922863,
+    "noise-reduction": 789922864,
+    "powerful-blending": 789922865,
+    "for-smoothies": 789922866,
+    "for-soups": 789922867,
+    "for-nut-butters": 789922868,
+    "professional-grade": 789922869,
+    "daily-use": 789922870,
+    "high-performance": 789922871,
+    "durable": 789922872,
+    "powerful-motor": 789922873,
+    "professional-capacity": 789922874,
+    "chopping": 789922875,
+    "mixing": 789922876,
+    "pureeing": 789922877,
+    "10-cup-capacity": 789922878,
+    "12-cup-capacity": 789922879,
+    "mini-prep": 789922880,
+    "for-small-kitchens": 789922881,
+    "mini-processor": 789922882
   },
   "post_index": [
     {
@@ -260,7 +283,9 @@
   "category_counts": {
     "Toaster Ovens": 5,
     "Electric Kettles": 2,
-    "Air Fryers": 3
+    "Air Fryers": 3,
+    "Blenders": 2,
+    "Food Processors": 2
   },
   "pending_splits": [],
   "last_health_check": null
