@@ -354,6 +354,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
             parts.append(_ad_slot("in-content-1"))            # ad after the intro
         elif i == len(middle) - 2 and len(middle) > 2:
             parts.append(_ad_slot("in-content-2"))            # ad before the final section
+    parts.append(_subscribe_block())
     parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 
@@ -380,6 +381,16 @@ def _ad_slot(slot: str = "in-content") -> str:
     return (f'<!-- wp:html -->\n'
             f'<div class="mavrino-ad" data-ad-slot="{slot}" style="margin:24px 0;text-align:center"></div>\n'
             f'<!-- /wp:html -->')
+
+
+def _subscribe_block() -> str:
+    """Email-capture form (Jetpack subscription shortcode — renders reliably without
+    needing the block picker; requires Jetpack Subscriptions enabled, which it is)."""
+    return ('<!-- wp:shortcode -->\n'
+            '[jetpack_subscription_form title="Get our weekly picks" '
+            'subscribe_text="New, data-ranked buying guides straight to your inbox. No spam." '
+            'subscribe_button="Subscribe"]\n'
+            '<!-- /wp:shortcode -->')
 
 
 def _updated_line() -> str:
@@ -555,6 +566,7 @@ def build_comparison_content(content: dict, products: list[dict], hero_image: di
         parts += _intro_blocks(content["verdict"])
 
     parts += _faq_blocks(content.get("faq", []))
+    parts.append(_subscribe_block())
     parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 
@@ -631,6 +643,7 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
         parts.append(_cta_button("Check Price on Amazon →", aff, bg="#b8431a"))
 
     parts += _faq_blocks(content.get("faq", []))
+    parts.append(_subscribe_block())
     parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 

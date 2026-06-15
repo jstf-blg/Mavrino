@@ -82,8 +82,11 @@ def build_digest(posts: list) -> dict | None:
 
 
 def _subscribe_block() -> str:
-    return ('<!-- wp:jetpack/subscriptions {"buttonText":"Subscribe","borderRadius":6} -->\n'
-            '<div class="wp-block-jetpack-subscriptions"></div>\n<!-- /wp:jetpack/subscriptions -->')
+    return ('<!-- wp:shortcode -->\n'
+            '[jetpack_subscription_form title="Get our weekly picks" '
+            'subscribe_text="New, data-ranked buying guides straight to your inbox. No spam." '
+            'subscribe_button="Subscribe"]\n'
+            '<!-- /wp:shortcode -->')
 
 
 def run():
