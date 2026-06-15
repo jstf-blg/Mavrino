@@ -434,5 +434,14 @@
       }
     ],
     "errors": 0
+  },
+  {
+    "ran_at": "2026-06-15T18:51:33.727685+00:00",
+    "source": "fallback",
+    "products": 0,
+    "refreshed": 0,
+    "price_changes": [],
+    "dead_images": [],
+    "errors": 0
   }
 ]
