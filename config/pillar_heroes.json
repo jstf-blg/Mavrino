@@ -1,0 +1,32 @@
+{
+  "kitchen": {
+    "id": 659,
+    "url": "https://mavrino.com/wp-content/uploads/2026/06/kitchen-hero.jpg",
+    "credit": "Photo by <a href=\"https://unsplash.com/@bluewaterglobe?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Bluewater Sweden</a> on <a href=\"https://unsplash.com/photos/a-kitchen-with-white-cabinets-ZFz78dSdaRc?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Unsplash</a>"
+  },
+  "home-appliances": {
+    "id": 661,
+    "url": "https://mavrino.com/wp-content/uploads/2026/06/home-appliances-hero.jpg",
+    "credit": "Photo by <a href=\"https://unsplash.com/@spacejoy?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Spacejoy</a> on <a href=\"https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-mirror-c0JoR_-2x3E?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Unsplash</a>"
+  },
+  "travel": {
+    "id": 663,
+    "url": "https://mavrino.com/wp-content/uploads/2026/06/travel-hero.jpg",
+    "credit": "Photo by <a href=\"https://unsplash.com/@dkfra19?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Dimitri Karastelev</a> on <a href=\"https://unsplash.com/photos/gray-hardside-luggage-W4ZctsWkveU?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Unsplash</a>"
+  },
+  "home-office": {
+    "id": 665,
+    "url": "https://mavrino.com/wp-content/uploads/2026/06/home-office-hero.jpg",
+    "credit": "Photo by <a href=\"https://unsplash.com/@domenicoloia?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Domenico Loia</a> on <a href=\"https://unsplash.com/photos/macbook-pro-on-table-beside-white-imac-and-magic-mouse-hGV2TfOh0ns?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Unsplash</a>"
+  },
+  "fitness-wellness": {
+    "id": 667,
+    "url": "https://mavrino.com/wp-content/uploads/2026/06/fitness-wellness-hero.jpg",
+    "credit": "Photo by <a href=\"https://unsplash.com/@alexgoesglobal?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Alexandra Tran</a> on <a href=\"https://unsplash.com/photos/blue-and-black-nike-athletic-shoes-fS3tGOkp0xY?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Unsplash</a>"
+  },
+  "outdoors": {
+    "id": 669,
+    "url": "https://mavrino.com/wp-content/uploads/2026/06/outdoors-hero.jpg",
+    "credit": "Photo by <a href=\"https://unsplash.com/@scottagoodwill?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Scott Goodwill</a> on <a href=\"https://unsplash.com/photos/orange-camping-tent-near-green-trees-y8Ngwq34_Ak?utm_source=mavrino&utm_medium=referral\" rel=\"nofollow\">Unsplash</a>"
+  }
+}
