@@ -1,5 +1,7 @@
 # Secrets — NEVER commit these
 .env
+config/wp_token.json
+config/*token*.json
 
 # Python
 __pycache__/
