@@ -54,7 +54,7 @@ jobs:
           UNSPLASH_ACCESS_KEY=${{ secrets.UNSPLASH_ACCESS_KEY }}
           SERPAPI_KEY=${{ secrets.SERPAPI_KEY }}
           APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
-          MAVRINO_SEARCH_SECRET=mvr_sk_a7f3e91c8b2d4f60
+          MAVRINO_SEARCH_SECRET=${{ secrets.MAVRINO_SEARCH_SECRET }}
           OUTPUT_DIR=./output
           DRIP_CATCHUP_DATE=2026-06-15
           DRIP_TODAY_TARGET=2

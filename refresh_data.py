@@ -37,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).parent / "pipeline"))
 
 import amazon_data as ad
 import requests
+from url_safety import is_safe_public_url
 
 CACHE_DIR = Path("config/product_cache")
 LOG_FILE  = Path("config/refresh_log.json")
@@ -52,7 +53,7 @@ PRICE_DELTA_THRESHOLD = 0.05
 
 
 def _image_reachable(url: str) -> bool:
-    if not url:
+    if not url or not is_safe_public_url(url):
         return False
     try:
         r = requests.get(url, timeout=10, stream=True)

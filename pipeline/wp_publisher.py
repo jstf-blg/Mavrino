@@ -14,6 +14,8 @@ from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
 
+from url_safety import is_safe_public_url
+
 load_dotenv()
 
 WP_CLIENT_ID     = os.getenv("WP_CLIENT_ID")
@@ -152,6 +154,10 @@ def upload_media_from_url(image_url: str, token: str, filename: str = "image") -
         return None
     if image_url in _MEDIA_CACHE:
         return _MEDIA_CACHE[image_url]
+    if not is_safe_public_url(image_url):
+        print(f"  [wp] Refused unsafe image URL ({filename}): {image_url[:80]}")
+        _MEDIA_CACHE[image_url] = None
+        return None
 
     result = None
     try:
@@ -193,6 +199,9 @@ def _image_ok(url: str) -> bool:
         return False
     if url in _IMG_OK_CACHE:
         return _IMG_OK_CACHE[url]
+    if not is_safe_public_url(url):
+        _IMG_OK_CACHE[url] = False
+        return False
     ok = False
     try:
         r = requests.head(url, timeout=8, allow_redirects=True)
