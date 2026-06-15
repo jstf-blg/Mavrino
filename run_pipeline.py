@@ -3,10 +3,18 @@ run_pipeline.py — Mavrino automated content pipeline
 Uses cache_builder for smart product matching per keyword.
 """
 
-import os, json, time, sys, random
+import os, json, time, sys, random, re
 from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
+
+# Windows consoles default to cp1252, which can't encode characters the pipeline
+# prints (→, —, ⭐, …). Force UTF-8 so scheduled runs don't crash on output.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
 
 load_dotenv()
 
@@ -57,6 +65,23 @@ def get_asins_for_keyword(keyword_data: dict) -> list:
     return asins
 
 
+def products_needed(keyword: str, post_type: str) -> int:
+    """How many products this post format needs.
+
+    review → 1, comparison → 2, 'top N' listicle → N (clamped 3-7),
+    everything else (roundup/budget/use-case guide) → 3.
+    """
+    kw = keyword.lower()
+    if post_type == "review":
+        return 1
+    if post_type == "comparison":
+        return 2
+    m = re.search(r"\btop\s+(\d+)\b", kw)
+    if m:
+        return max(3, min(7, int(m.group(1))))
+    return 3
+
+
 def run(dry_run: bool = False):
     today = datetime.utcnow().strftime("%Y-%m-%d")
     start = time.time()
@@ -97,8 +122,9 @@ def run(dry_run: bool = False):
         if asins:
             products = ad.get_multiple_products(asins)
         else:
-            # Use cache builder for smart keyword matching
-            products = cb.get_products_for_keyword(keyword, count=3)
+            # Use cache builder for smart keyword matching; fetch as many as the
+            # post format needs (e.g. a "top 7" listicle pulls 7 products).
+            products = cb.get_products_for_keyword(keyword, count=products_needed(keyword, post_type))
 
         if not products:
             print(f"  [skip] No product data for '{keyword}'")

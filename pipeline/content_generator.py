@@ -12,10 +12,13 @@ Key design decisions:
   - Requests structured JSON output for clean template injection
 """
 
-import os, json, time, random
+import os, json, time, random, re
 import anthropic
 from pathlib import Path
 from dotenv import load_dotenv
+
+# "top 5", "top 7 air fryers", etc. → render as a ranked, numbered listicle
+LISTICLE_RE = re.compile(r"\btop\s+(\d+)\b", re.IGNORECASE)
 
 load_dotenv()
 
@@ -74,22 +77,53 @@ def _format_product_for_prompt(product: dict) -> str:
 
 # ── Prompt builders per post type ─────────────────────────────────────────────
 
+def _title_guidance(keyword: str, n: int) -> str:
+    """Title instructions: numbered listicle for 'top N', else a rotated style.
+
+    Rotation is keyword-seeded so the same keyword is stable but different
+    keywords pick different styles — avoids every post being 'The Best X in Year'.
+    """
+    if LISTICLE_RE.search(keyword):
+        return (f'A numbered listicle headline using the actual count of {n} products, e.g. '
+                f'"{n} Best [Category] Worth Buying in [Year]" or "Top {n} [Category], Ranked for [Year]".')
+
+    styles = [
+        'Verdict-hook style: "The Best [Category] in [Year]: [punchy 3-5 word verdict]"',
+        f'Numbered style: "{n} Best [Category] We\'d Actually Buy in [Year]"',
+        'Buyer/use-case style: "Best [Category] for [the specific buyer or use case in the keyword] in [Year]"',
+        'Tested-angle style: "We Compared the Top [Category] — Here Are the Best in [Year]"',
+    ]
+    pick = styles[sum(ord(c) for c in keyword) % len(styles)]
+    return f'Use THIS title style (do not default to "The Best X in Year"): {pick}'
+
+
 def build_roundup_prompt(keyword: str, products: list[dict]) -> str:
+    items = products[:7]
+    n     = len(items)
+    is_listicle = bool(LISTICLE_RE.search(keyword))
     products_text = "\n\n".join(
         f"PRODUCT {i+1}:\n{_format_product_for_prompt(p)}"
-        for i, p in enumerate(products[:5])
+        for i, p in enumerate(items)
     )
-    return f"""Write a "best {keyword}" roundup post for a US affiliate site.
+    heading_hint = (
+        '"#1 Best Overall", "#2 Best Value", "#3 ..." — number every pick in rank order'
+        if is_listicle else
+        '"Best Overall", "Best Budget", "Best for Families", etc — match the keyword\'s angle'
+    )
+    return f"""Write a {"ranked listicle" if is_listicle else "best-of roundup"} post for "{keyword}" for a US affiliate site.
 
 KEYWORD: {keyword}
 TODAY: {time.strftime('%B %Y')}
+PRODUCTS TO COVER: {n}
 
 REAL PRODUCT DATA:
 {products_text}
 
+TITLE: {_title_guidance(keyword, n)}
+
 Return JSON with this exact structure:
 {{
-  "title": "The Best [X] in [Year]: [short verdict hook]",
+  "title": "<headline following the TITLE guidance above>",
   "meta_description": "120 chars max, includes keyword naturally",
   "intro": "2 paragraphs. First: who this is for + key buying factor. Second: how we evaluated. Specific, no fluff.",
   "winner_asin": "ASIN of best overall pick",
@@ -97,7 +131,7 @@ Return JSON with this exact structure:
   "products": [
     {{
       "asin": "...",
-      "heading": "Best Overall / Best Budget / Best for Families / etc",
+      "heading": {heading_hint},
       "verdict": "2 sentences. Specific reasons. Reference real review themes.",
       "who_its_for": "1 sentence describing the ideal buyer",
       "main_pro": "Top praised feature from reviews",
@@ -111,7 +145,9 @@ Return JSON with this exact structure:
     {{"q": "question", "a": "answer, 2-3 sentences"}},
     {{"q": "question", "a": "answer, 2-3 sentences"}}
   ]
-}}"""
+}}
+
+Cover all {n} products in the "products" array{', in ranked order from #1' if is_listicle else ''}."""
 
 
 def build_comparison_prompt(keyword: str, product_a: dict, product_b: dict) -> str:

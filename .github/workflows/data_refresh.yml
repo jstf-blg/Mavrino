@@ -1,0 +1,78 @@
+name: Data Refresh (images & prices)
+
+# Re-checks every cached product's price and image. In fallback mode this just
+# validates data; once the Amazon PA-API / Apify keys are added it pulls LIVE
+# prices and images and rewrites the cache — no workflow change needed.
+on:
+  schedule:
+    # Daily at 02:00 UTC — an hour before the content pipeline (03:00) so posts
+    # generate from freshly refreshed data.
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Report only, do not rewrite cache'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create .env file
+        run: |
+          cat > .env << 'EOF'
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          WP_CLIENT_ID=${{ secrets.WP_CLIENT_ID }}
+          WP_CLIENT_SECRET=${{ secrets.WP_CLIENT_SECRET }}
+          WP_SITE=${{ secrets.WP_SITE }}
+          WP_USERNAME=${{ secrets.WP_USERNAME }}
+          WP_PASSWORD=${{ secrets.WP_PASSWORD }}
+          SITE_DOMAIN=https://mavrino.com
+          AMAZON_ACCESS_KEY=${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY=${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_ASSOCIATE_TAG=${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
+          OUTPUT_DIR=./output
+          EOF
+
+      - name: Create required directories
+        run: |
+          mkdir -p config logs config/product_cache config/image_cache
+
+      - name: Configure git
+        run: |
+          git config user.name  "Pipeline Bot"
+          git config user.email "pipeline@noreply.github.com"
+
+      - name: Run data refresh
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python refresh_data.py --dry-run
+          else
+            python refresh_data.py
+          fi
+
+      - name: Commit refreshed data
+        run: |
+          git add config/ || true
+          git diff --cached --quiet || git commit -m "Data refresh $(date +%Y-%m-%d)"
+          git push || true

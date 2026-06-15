@@ -7,7 +7,7 @@ Used as placeholder images until Amazon PA-API images are available.
 Free tier: 50 requests/hour — plenty for our pipeline.
 """
 
-import os, requests, json, time
+import os, requests, json, time, hashlib
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -55,95 +55,144 @@ def get_search_term(keyword: str) -> str:
     return " ".join(words) + " product"
 
 
-def fetch_image(keyword: str, orientation: str = "landscape") -> dict | None:
-    """
-    Fetch a relevant image URL from Unsplash for a keyword.
-    Returns dict with url, photographer, photographer_url or None.
-    Caches results to avoid hitting rate limits.
+def _photo_to_image(photo: dict, search_term: str) -> dict:
+    """Map a raw Unsplash photo object to our compact image dict."""
+    return {
+        "url":               photo["urls"]["regular"],
+        "url_small":         photo["urls"]["small"],
+        "url_thumb":         photo["urls"]["thumb"],
+        "photographer":      photo["user"]["name"],
+        "photographer_url":  photo["user"]["links"]["html"],
+        "unsplash_url":      photo["links"]["html"],
+        "alt":               photo.get("alt_description") or search_term,
+        "width":             photo["width"],
+        "height":            photo["height"],
+    }
+
+
+def _fetch_pool(search_term: str, orientation: str = "landscape",
+                n: int = 30, page: int = 1) -> list[dict]:
+    """Fetch and cache a *pool* of Unsplash images for a search term + page.
+
+    Caching the whole result set (not just the first hit) lets callers pick a
+    distinct image per item. Pagination lets us keep finding fresh, never-reused
+    hero images even for categories with many posts.
     """
     if not UNSPLASH_KEY or UNSPLASH_KEY == "your_key_here":
-        return None
+        return []
 
-    search_term = get_search_term(keyword)
-    cache_key   = search_term.replace(" ", "_")[:40]
-    cache_file  = CACHE_DIR / f"{cache_key}.json"
+    cache_key  = f"{search_term.replace(' ', '_')[:32]}_{orientation}_p{page}"
+    cache_file = CACHE_DIR / f"{cache_key}.json"
 
-    # Check cache (images are cached for 7 days)
     if cache_file.exists():
         try:
             cached = json.loads(cache_file.read_text())
-            age    = time.time() - cached.get("cached_at", 0)
-            if age < 7 * 86400:
-                return cached["image"]
+            if time.time() - cached.get("cached_at", 0) < 7 * 86400 and cached.get("images"):
+                return cached["images"]
         except Exception:
             pass
 
     try:
         r = requests.get(
             "https://api.unsplash.com/search/photos",
-            params={
-                "query":       search_term,
-                "per_page":    5,
-                "orientation": orientation,
-                "content_filter": "high",
-            },
+            params={"query": search_term, "per_page": min(n, 30), "page": page,
+                    "orientation": orientation, "content_filter": "high"},
             headers={"Authorization": f"Client-ID {UNSPLASH_KEY}"},
             timeout=10,
         )
         r.raise_for_status()
-        data    = r.json()
-        results = data.get("results", [])
-
-        if not results:
-            return None
-
-        # Pick the best result (highest quality, most relevant)
-        photo = results[0]
-        image = {
-            "url":               photo["urls"]["regular"],
-            "url_small":         photo["urls"]["small"],
-            "url_thumb":         photo["urls"]["thumb"],
-            "photographer":      photo["user"]["name"],
-            "photographer_url":  photo["user"]["links"]["html"],
-            "unsplash_url":      photo["links"]["html"],
-            "alt":               photo.get("alt_description") or search_term,
-            "width":             photo["width"],
-            "height":            photo["height"],
-        }
-
-        # Cache it
-        cache_file.write_text(json.dumps({
-            "image":     image,
-            "cached_at": time.time(),
-        }, indent=2))
-
-        return image
-
+        images = [_photo_to_image(p, search_term) for p in r.json().get("results", [])]
+        if images:
+            cache_file.write_text(json.dumps({"images": images, "cached_at": time.time()}, indent=2))
+        return images
     except Exception as e:
         print(f"  [images] Unsplash error for '{search_term}': {e}")
-        return None
+        return []
 
 
-def get_hero_image(keyword: str) -> dict | None:
-    """Get a wide hero/banner image for the top of a post."""
-    return fetch_image(keyword, orientation="landscape")
+# ── Global registry of already-used hero images (never reuse one) ──────────────
+USED_HEROES_FILE = CACHE_DIR.parent / "used_heroes.json"
 
 
-def get_product_image(product_title: str, fallback_keyword: str = "") -> str:
+def _load_used_heroes() -> set:
+    try:
+        return set(json.loads(USED_HEROES_FILE.read_text()))
+    except Exception:
+        return set()
+
+
+def _save_used_heroes(used: set):
+    try:
+        USED_HEROES_FILE.write_text(json.dumps(sorted(used), indent=2))
+    except Exception:
+        pass
+
+
+def mark_hero_used(image: dict):
+    """Record a hero image so it is never selected again."""
+    if image and image.get("url"):
+        used = _load_used_heroes()
+        used.add(image["url"])
+        _save_used_heroes(used)
+
+
+def fetch_image(keyword: str, orientation: str = "landscape") -> dict | None:
+    """Return the lead (best) Unsplash image for a keyword, or None."""
+    pool = _fetch_pool(get_search_term(keyword), orientation)
+    return pool[0] if pool else None
+
+
+def get_hero_image(keyword: str, unique: bool = True, max_pages: int = 4) -> dict | None:
+    """Get a wide hero image — guaranteed never to repeat a previously used one.
+
+    Walks Unsplash result pages for the keyword's category until it finds an image
+    whose URL isn't already in the used-heroes registry, reserves it, and returns
+    it. Falls back to the lead image only if every candidate is exhausted.
     """
-    Get the best available image URL for a product.
-    Priority: Amazon product image → Unsplash category image
-    Returns image URL string or empty string.
-    """
-    # If we have a direct Amazon image URL use it
-    # (will be populated once PA-API is set up)
+    term = get_search_term(keyword)
+    if not unique:
+        pool = _fetch_pool(term, "landscape")
+        return pool[0] if pool else None
 
-    # Fall back to Unsplash
-    keyword = product_title or fallback_keyword
-    image   = fetch_image(keyword)
-    if image:
-        return image["url_small"]
-    return ""
+    used = _load_used_heroes()
+    for page in range(1, max_pages + 1):
+        pool = _fetch_pool(term, "landscape", page=page)
+        if not pool:
+            break
+        for img in pool:
+            if img.get("url") and img["url"] not in used:
+                used.add(img["url"])
+                _save_used_heroes(used)
+                return img
+    # Everything exhausted (very unlikely) — return the lead image without reserving.
+    pool = _fetch_pool(term, "landscape")
+    return pool[0] if pool else None
+
+
+def get_product_image(product_title: str, fallback_keyword: str = "", variant_key: str = "") -> str:
+    """
+    Get a distinct, relevant image URL for a product.
+
+    Until the Amazon PA-API supplies real per-product photos, we pull from the
+    Unsplash category pool but pick a *different* image per product (keyed on the
+    product title/ASIN) so a roundup never shows the same photo on every card.
+    Index 0 is reserved for the post hero to avoid an immediate duplicate.
+    Returns an image URL string, or empty string when nothing is available.
+    """
+    # Build the pool from the post's category keyword (consistent, relevant
+    # results) and only vary which image is selected per product.
+    pool_basis = fallback_keyword or product_title
+    pool       = _fetch_pool(get_search_term(pool_basis), orientation="landscape")
+    if not pool and product_title and product_title != pool_basis:
+        pool = _fetch_pool(get_search_term(product_title), orientation="landscape")
+    if not pool:
+        return ""
+    key = variant_key or product_title or fallback_keyword or "0"
+    if len(pool) > 1:
+        idx = 1 + (int(hashlib.md5(key.encode()).hexdigest(), 16) % (len(pool) - 1))
+    else:
+        idx = 0
+    return pool[idx]["url_small"]
 
 
 def build_image_credit(image: dict) -> str:

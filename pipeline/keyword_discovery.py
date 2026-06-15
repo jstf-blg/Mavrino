@@ -37,18 +37,29 @@ BUYER_MODIFIERS = [
 
 COMPARISON_TEMPLATES = [
     "{a} vs {b}",
+    # ── Top-N listicles ──────────────────────────────────────────────
+    "top 5 {niche}",
+    "top 7 {niche} for 2026",
+    "top 5 {niche} for the money",
+    # ── Budget / price roundups ──────────────────────────────────────
     "best {niche} under $100",
     "best {niche} under $150",
     "best {niche} under $200",
+    "best budget {niche}",
+    "cheapest {niche} that actually works",
+    # ── Use-case guides ──────────────────────────────────────────────
     "best {niche} for small kitchen",
     "best {niche} for large family",
     "best {niche} for beginners",
+    "best {niche} for apartments",
     "best compact {niche}",
     "best quiet {niche}",
+    "best {niche} for everyday use",
+    # ── Standard roundups + reviews + guides ─────────────────────────
     "best {niche} 2026",
-    "{niche} buying guide",
-    "cheapest {niche} that actually works",
     "best {niche} reviewed",
+    "best {niche} review",
+    "{niche} buying guide",
 ]
 
 
@@ -164,6 +175,38 @@ def generate_comparison_pairs(products: list[dict]) -> list[dict]:
                     "asin_a":    titles[i].get("asin"),
                     "asin_b":    titles[j].get("asin"),
                     "score":     75,
+                    "post_type": "comparison",
+                })
+    return pairs
+
+
+def generate_seed_comparison_pairs() -> list[dict]:
+    """Build 'X vs Y' comparison keywords from the curated seed products.
+
+    Live bestseller scraping is off (fallback mode), so without this no comparison
+    posts would ever be produced. Pairs the top few products in each active niche.
+    """
+    try:
+        import cache_builder
+        seed = cache_builder.SEED_PRODUCTS
+    except Exception:
+        return []
+
+    pairs        = []
+    niches_lower = [n.lower() for n in NICHES]
+    for niche, items in seed.items():
+        if not any(niche in nl or nl in niche for nl in niches_lower):
+            continue
+        top = [p for p in items if p.get("asin") and p.get("title")][:3]
+        for i in range(len(top)):
+            for j in range(i + 1, len(top)):
+                a, b = top[i], top[j]
+                pairs.append({
+                    "keyword":   f"{_clean_product_title(a['title'])} vs {_clean_product_title(b['title'])}",
+                    "source":    "seed_comparison",
+                    "asin_a":    a["asin"],
+                    "asin_b":    b["asin"],
+                    "score":     70,
                     "post_type": "comparison",
                 })
     return pairs
@@ -296,8 +339,8 @@ def run():
         templates = generate_template_keywords(niche)
         all_kws.extend(templates)
 
-    # 4. VS comparison pairs from top products
-    pairs = generate_comparison_pairs(products)
+    # 4. VS comparison pairs — from live bestsellers (if any) + curated seed data
+    pairs = generate_comparison_pairs(products) + generate_seed_comparison_pairs()
     all_kws.extend(pairs)
     print(f"\n[pairs] Generated {len(pairs)} comparison pairs")
 

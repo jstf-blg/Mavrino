@@ -1,6 +1,11 @@
 {
   "wp_category_ids": {
-    "Kitchen/Toaster Ovens": 5389108
+    "Kitchen/Toaster Ovens": 5389108,
+    "Kitchen": 8613,
+    "Kitchen/Electric Kettles": 789922825,
+    "Kitchen/Air Fryers": 789922838,
+    "Kitchen/Blenders": 214668,
+    "Kitchen/Food Processors": 756009
   },
   "wp_tag_ids": {
     "cuisinart": 284323,
@@ -22,7 +27,47 @@
     "premium": 11373,
     "smart-features": 11757640,
     "counter-space-efficient": 789922813,
-    "10-in-1": 4080983
+    "10-in-1": 4080983,
+    "under-$150": 789922818,
+    "compact": 789922819,
+    "weeknight-cooking": 789922820,
+    "air-frying": 789922821,
+    "multi-function": 789922822,
+    "smart-technology": 789922823,
+    "reheating": 789922824,
+    "amazon basics": 789922826,
+    "hamilton beach": 789922827,
+    "under-$50": 789922828,
+    "under-$100": 789922829,
+    "budget": 789922830,
+    "fast-heating": 789922831,
+    "reliable": 789922832,
+    "affordable": 789922833,
+    "stainless steel": 789922834,
+    "1.7l capacity": 789922835,
+    "high-ratings": 789922836,
+    "glass": 789922837,
+    "cosori": 789922839,
+    "for-families": 789922840,
+    "crispy-results": 789922841,
+    "oil-free-cooking": 789922842,
+    "large-capacity": 789922843,
+    "customer-rated": 789922844,
+    "performance-focused": 789922845,
+    "max-crisp-technology": 789922846,
+    "fast-preheat": 789922847,
+    "6-quart-capacity": 789922848,
+    "dual-basket": 789922849,
+    "for-beginners": 789922850,
+    "entry-level": 789922851,
+    "first-time-buyers": 789922852,
+    "4-quart-capacity": 789922853,
+    "high-rated": 789922854,
+    "fast-boiling": 789922855,
+    "stainless-steel": 789922856,
+    "1.7l-capacity": 789922857,
+    "high-rating": 789922858,
+    "durable-build": 789922859
   },
   "post_index": [
     {
@@ -74,10 +119,148 @@
         "10-in-1"
       ],
       "published_at": "2026-06-12"
+    },
+    {
+      "slug": "",
+      "title": "Best Toaster Ovens Reviewed: Our Top 3 Picks for 2026",
+      "wp_post_id": 48,
+      "wp_url": "https://mavrino.com/2026/06/14/best-toaster-ovens-reviewed-our-top-3-picks-for-2026/",
+      "parent_category": "Kitchen",
+      "child_category": "Toaster Ovens",
+      "tags": [
+        "breville",
+        "ninja",
+        "under-$150",
+        "under-$300",
+        "$300-$500",
+        "compact",
+        "space-saving",
+        "weeknight-cooking",
+        "air-frying",
+        "air-fryer",
+        "multi-function",
+        "smart-technology",
+        "reheating"
+      ],
+      "published_at": "2026-06-14"
+    },
+    {
+      "slug": "",
+      "title": "The Best Electric Kettles Under $100 in 2026: Fast, Reliable, and Affordable",
+      "wp_post_id": 52,
+      "wp_url": "https://mavrino.com/2026/06/14/the-best-electric-kettles-under-100-in-2026-fast-reliable-and-affordable/",
+      "parent_category": "Kitchen",
+      "child_category": "Electric Kettles",
+      "tags": [
+        "amazon basics",
+        "hamilton beach",
+        "under-$50",
+        "under-$100",
+        "budget",
+        "fast-heating",
+        "reliable",
+        "affordable",
+        "stainless steel",
+        "1.7l capacity",
+        "high-ratings",
+        "glass"
+      ],
+      "published_at": "2026-06-14"
+    },
+    {
+      "slug": "",
+      "title": "Top 5 Air Fryers, Ranked for 2026",
+      "wp_post_id": 103,
+      "wp_url": "https://mavrino.com/2026/06/14/top-5-air-fryers-ranked-for-2026/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "ninja",
+        "cosori",
+        "under-$100",
+        "under-$150",
+        "for-families",
+        "budget-friendly",
+        "crispy-results",
+        "oil-free-cooking",
+        "large-capacity",
+        "customer-rated"
+      ],
+      "published_at": "2026-06-14"
+    },
+    {
+      "slug": "",
+      "title": "Ninja Air Fryer Pro XL 6.5 Qt vs COSORI TurboBlaze Air Fryer 6 Quart: Which Should You Buy in 2026?",
+      "wp_post_id": 106,
+      "wp_url": "https://mavrino.com/2026/06/14/ninja-air-fryer-pro-xl-6-5-qt-vs-cosori-turboblaze-air-fryer-6-quart-which-should-you-buy-in-2026/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "ninja",
+        "cosori",
+        "under-$150",
+        "under-$200",
+        "for-families",
+        "large-capacity",
+        "budget-friendly",
+        "performance-focused",
+        "max-crisp-technology",
+        "fast-preheat",
+        "6-quart-capacity",
+        "dual-basket"
+      ],
+      "published_at": "2026-06-14"
+    },
+    {
+      "slug": "",
+      "title": "Ninja AF101 Air Fryer Review (2026): Is It Worth $99.99?",
+      "wp_post_id": 108,
+      "wp_url": "https://mavrino.com/2026/06/14/ninja-af101-air-fryer-review-2026-is-it-worth-99-99/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "ninja",
+        "under-$100",
+        "under-$150",
+        "for-beginners",
+        "budget-friendly",
+        "entry-level",
+        "first-time-buyers",
+        "4-quart-capacity",
+        "affordable",
+        "high-rated"
+      ],
+      "published_at": "2026-06-14"
+    },
+    {
+      "slug": "",
+      "title": "3 Best Electric Kettles Under $150 We'd Actually Buy in 2026",
+      "wp_post_id": 113,
+      "wp_url": "https://mavrino.com/2026/06/15/3-best-electric-kettles-under-150-wed-actually-buy-in-2026/",
+      "parent_category": "Kitchen",
+      "child_category": "Electric Kettles",
+      "tags": [
+        "amazon basics",
+        "hamilton beach",
+        "under-$50",
+        "under-$100",
+        "under-$150",
+        "budget-friendly",
+        "for-beginners",
+        "fast-boiling",
+        "quiet-operation",
+        "stainless-steel",
+        "1.7l-capacity",
+        "high-rating",
+        "durable-build"
+      ],
+      "published_at": "2026-06-15"
     }
   ],
   "category_counts": {
-    "Toaster Ovens": 4
+    "Toaster Ovens": 5,
+    "Electric Kettles": 2,
+    "Air Fryers": 3
   },
   "pending_splits": [],
   "last_health_check": null

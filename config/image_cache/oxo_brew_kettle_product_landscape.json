@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1741992556910-7ab0bb21e0a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzM4Mjh8MHwxfHNlYXJjaHwxfHxveG8lMjBicmV3JTIwa2V0dGxlJTIwcHJvZHVjdHxlbnwxfDB8fHwxNzgxNDM4ODk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "url_small": "https://images.unsplash.com/photo-1741992556910-7ab0bb21e0a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzM4Mjh8MHwxfHNlYXJjaHwxfHxveG8lMjBicmV3JTIwa2V0dGxlJTIwcHJvZHVjdHxlbnwxfDB8fHwxNzgxNDM4ODk1fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "url_thumb": "https://images.unsplash.com/photo-1741992556910-7ab0bb21e0a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzM4Mjh8MHwxfHNlYXJjaHwxfHxveG8lMjBicmV3JTIwa2V0dGxlJTIwcHJvZHVjdHxlbnwxfDB8fHwxNzgxNDM4ODk1fDA&ixlib=rb-4.1.0&q=80&w=200",
+      "photographer": "Zoshua Colah",
+      "photographer_url": "https://unsplash.com/@zoshuacolah",
+      "unsplash_url": "https://unsplash.com/photos/kitchen-tools-are-displayed-on-a-store-shelf-0yLBhkpr9Ro",
+      "alt": "Kitchen tools are displayed on a store shelf.",
+      "width": 4691,
+      "height": 3277
+    }
+  ],
+  "cached_at": 1781438896.0059683
+}

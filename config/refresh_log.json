@@ -1,0 +1,438 @@
+[
+  {
+    "ran_at": "2026-06-14T12:21:00.779211",
+    "source": "fallback",
+    "products": 52,
+    "refreshed": 52,
+    "price_changes": [],
+    "dead_images": [
+      {
+        "asin": "B00005UP2P",
+        "title": "KitchenAid KSM150PSER Artisan Series 5-Qt Stand Mi"
+      },
+      {
+        "asin": "B000Y0V8I8",
+        "title": "Hamilton Beach 63325 6-Speed Stand Mixer"
+      },
+      {
+        "asin": "B0036FD4FY",
+        "title": "Cuisinart DLC-2ABC Mini-Prep Plus Processor"
+      },
+      {
+        "asin": "B003KGENCA",
+        "title": "Magic Bullet Blender 11-Piece Set"
+      },
+      {
+        "asin": "B003KYSLMC",
+        "title": "Keurig K-Classic Coffee Maker Single Serve"
+      },
+      {
+        "asin": "B003TOAOY8",
+        "title": "Hamilton Beach Glass Electric Kettle 1.7L"
+      },
+      {
+        "asin": "B004HPMQ12",
+        "title": "Cuisinart CPK-17 PerfecTemp Electric Kettle"
+      },
+      {
+        "asin": "B0058VCRP6",
+        "title": "Hamilton Beach Electric Stand Mixer 4-Qt"
+      },
+      {
+        "asin": "B007XP3MTO",
+        "title": "Hamilton Beach 70740 Food Processor 10 Cup"
+      },
+      {
+        "asin": "B009G0LXTU",
+        "title": "BLACK+DECKER TO3250XSB 8-Slice Toaster Oven"
+      },
+      {
+        "asin": "B00BVPNKBE",
+        "title": "Breville BFP800XL Sous Chef Food Processor"
+      },
+      {
+        "asin": "B00IRH09GU",
+        "title": "KitchenAid Professional 5 Plus 5-Qt Stand Mixer"
+      },
+      {
+        "asin": "B00LBZOYAK",
+        "title": "Hamilton Beach Stack & Snap 12-Cup Processor"
+      },
+      {
+        "asin": "B00MVWNICK",
+        "title": "Technivorm Moccamaster KBGV Select 10-Cup"
+      },
+      {
+        "asin": "B00PUZT9OG",
+        "title": "Cuisinart DFP-14BCWB 14-Cup Food Processor"
+      },
+      {
+        "asin": "B00XBR5BR2",
+        "title": "Hamilton Beach Easy Reach Toaster Oven"
+      },
+      {
+        "asin": "B01AXM4WV2",
+        "title": "KitchenAid KFP0718 7-Cup Food Processor"
+      },
+      {
+        "asin": "B01D9WUNFW",
+        "title": "Breville BOV450XL Mini Smart Toaster Oven"
+      },
+      {
+        "asin": "B01N3LJ5JO",
+        "title": "Breville BES870XL Barista Express Espresso Machine"
+      },
+      {
+        "asin": "B01N5YUQCA",
+        "title": "OXO Brew Adjustable Temperature Pour-Over Kettle"
+      },
+      {
+        "asin": "B073H2LHFJ",
+        "title": "Hamilton Beach 40880 Stainless Steel Electric Kett"
+      },
+      {
+        "asin": "B0758JHZM6",
+        "title": "Vitamix A3500 Ascent Series Smart Blender"
+      },
+      {
+        "asin": "B078RQZM3D",
+        "title": "Ninja CE251 Programmable Brewer 12 Cup"
+      },
+      {
+        "asin": "B07CTTXKXF",
+        "title": "Mr. Coffee 12-Cup Coffee Maker with Strong Brew"
+      },
+      {
+        "asin": "B07CVDLQLZ",
+        "title": "COSORI Electric Kettle 1.7L Stainless Steel"
+      },
+      {
+        "asin": "B07D4WKRK5",
+        "title": "Cuisinart SM-50BK 5.5-Quart Stand Mixer"
+      },
+      {
+        "asin": "B07FDJMC9Q",
+        "title": "Ninja AF101 Air Fryer 4 Qt"
+      },
+      {
+        "asin": "B07GJBBGHG",
+        "title": "COSORI Pro II Air Fryer 5.8 Qt"
+      },
+      {
+        "asin": "B07GSTBC68",
+        "title": "Cuisinart Precision Master 5.5-Qt Stand Mixer"
+      },
+      {
+        "asin": "B07GWGY5G2",
+        "title": "BLACK+DECKER 12-Cup Programmable Coffee Maker"
+      },
+      {
+        "asin": "B07PGBKXPP",
+        "title": "Ninja DT201 Foodi 10-in-1 XL Pro Air Fry"
+      },
+      {
+        "asin": "B07PNG3ZGN",
+        "title": "Chefman TurboFry Touch Air Fryer 8 Qt"
+      },
+      {
+        "asin": "B07QK2WL4Q",
+        "title": "Aucma Stand Mixer 6.5-Qt 660W"
+      },
+      {
+        "asin": "B07QY639QY",
+        "title": "NutriBullet Pro 900W Personal Blender"
+      },
+      {
+        "asin": "B07T9BXGK7",
+        "title": "KitchenAid K400 Variable Speed Blender"
+      },
+      {
+        "asin": "B07VBM3HBR",
+        "title": "Hamilton Beach FlexBrew Trio 2-Way Coffee Maker"
+      },
+      {
+        "asin": "B07WQ3HJVL",
+        "title": "Cuisinart TOA-60 Convection Toaster Oven"
+      },
+      {
+        "asin": "B07Y3LXNMK",
+        "title": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker 14 Cu"
+      },
+      {
+        "asin": "B07Y8GBL9D",
+        "title": "Ninja BL660 Professional Blender 1100W"
+      },
+      {
+        "asin": "B07Z6CB4X6",
+        "title": "Fellow Stagg EKG Electric Pour-Over Kettle"
+      },
+      {
+        "asin": "B07ZGHFNZN",
+        "title": "Vitamix E310 Explorian Blender Professional"
+      },
+      {
+        "asin": "B084GLBN6B",
+        "title": "Amazon Basics Stainless Steel Electric Kettle 1.7L"
+      },
+      {
+        "asin": "B0858XYHCX",
+        "title": "Ninja BN601 Professional Plus Food Processor"
+      },
+      {
+        "asin": "B08975S94R",
+        "title": "Ninja Air Fryer Pro XL 6.5 Qt"
+      },
+      {
+        "asin": "B08B3XNRM3",
+        "title": "Oster Pro 1200 Blender with Glass Jar"
+      },
+      {
+        "asin": "B08J5DFHGQ",
+        "title": "Breville BOV900BSS Smart Oven Air Fryer Pro"
+      },
+      {
+        "asin": "B08JBDS3WV",
+        "title": "Ninja BN701 Professional Plus Blender 1400W"
+      },
+      {
+        "asin": "B0936M0F1Z",
+        "title": "COSORI Air Fryer Toaster Oven 12-in-1"
+      },
+      {
+        "asin": "B0953DKJDY",
+        "title": "Instant Vortex Plus 6-in-1 Air Fryer 6Qt"
+      },
+      {
+        "asin": "B09BDKRV4V",
+        "title": "Philips 2000 Series Air Fryer 4.1L"
+      },
+      {
+        "asin": "B09LTDHM17",
+        "title": "COSORI TurboBlaze Air Fryer 6 Quart"
+      },
+      {
+        "asin": "B0CNNR8YKS",
+        "title": "Ninja Foodi DZ550 Dual Zone Air Fryer 10Qt"
+      }
+    ],
+    "errors": 0
+  },
+  {
+    "ran_at": "2026-06-14T12:22:23.187879+00:00",
+    "source": "fallback",
+    "products": 52,
+    "refreshed": 52,
+    "price_changes": [],
+    "dead_images": [
+      {
+        "asin": "B00005UP2P",
+        "title": "KitchenAid KSM150PSER Artisan Series 5-Qt Stand Mi"
+      },
+      {
+        "asin": "B000Y0V8I8",
+        "title": "Hamilton Beach 63325 6-Speed Stand Mixer"
+      },
+      {
+        "asin": "B0036FD4FY",
+        "title": "Cuisinart DLC-2ABC Mini-Prep Plus Processor"
+      },
+      {
+        "asin": "B003KGENCA",
+        "title": "Magic Bullet Blender 11-Piece Set"
+      },
+      {
+        "asin": "B003KYSLMC",
+        "title": "Keurig K-Classic Coffee Maker Single Serve"
+      },
+      {
+        "asin": "B003TOAOY8",
+        "title": "Hamilton Beach Glass Electric Kettle 1.7L"
+      },
+      {
+        "asin": "B004HPMQ12",
+        "title": "Cuisinart CPK-17 PerfecTemp Electric Kettle"
+      },
+      {
+        "asin": "B0058VCRP6",
+        "title": "Hamilton Beach Electric Stand Mixer 4-Qt"
+      },
+      {
+        "asin": "B007XP3MTO",
+        "title": "Hamilton Beach 70740 Food Processor 10 Cup"
+      },
+      {
+        "asin": "B009G0LXTU",
+        "title": "BLACK+DECKER TO3250XSB 8-Slice Toaster Oven"
+      },
+      {
+        "asin": "B00BVPNKBE",
+        "title": "Breville BFP800XL Sous Chef Food Processor"
+      },
+      {
+        "asin": "B00IRH09GU",
+        "title": "KitchenAid Professional 5 Plus 5-Qt Stand Mixer"
+      },
+      {
+        "asin": "B00LBZOYAK",
+        "title": "Hamilton Beach Stack & Snap 12-Cup Processor"
+      },
+      {
+        "asin": "B00MVWNICK",
+        "title": "Technivorm Moccamaster KBGV Select 10-Cup"
+      },
+      {
+        "asin": "B00PUZT9OG",
+        "title": "Cuisinart DFP-14BCWB 14-Cup Food Processor"
+      },
+      {
+        "asin": "B00XBR5BR2",
+        "title": "Hamilton Beach Easy Reach Toaster Oven"
+      },
+      {
+        "asin": "B01AXM4WV2",
+        "title": "KitchenAid KFP0718 7-Cup Food Processor"
+      },
+      {
+        "asin": "B01D9WUNFW",
+        "title": "Breville BOV450XL Mini Smart Toaster Oven"
+      },
+      {
+        "asin": "B01N3LJ5JO",
+        "title": "Breville BES870XL Barista Express Espresso Machine"
+      },
+      {
+        "asin": "B01N5YUQCA",
+        "title": "OXO Brew Adjustable Temperature Pour-Over Kettle"
+      },
+      {
+        "asin": "B073H2LHFJ",
+        "title": "Hamilton Beach 40880 Stainless Steel Electric Kett"
+      },
+      {
+        "asin": "B0758JHZM6",
+        "title": "Vitamix A3500 Ascent Series Smart Blender"
+      },
+      {
+        "asin": "B078RQZM3D",
+        "title": "Ninja CE251 Programmable Brewer 12 Cup"
+      },
+      {
+        "asin": "B07CTTXKXF",
+        "title": "Mr. Coffee 12-Cup Coffee Maker with Strong Brew"
+      },
+      {
+        "asin": "B07CVDLQLZ",
+        "title": "COSORI Electric Kettle 1.7L Stainless Steel"
+      },
+      {
+        "asin": "B07D4WKRK5",
+        "title": "Cuisinart SM-50BK 5.5-Quart Stand Mixer"
+      },
+      {
+        "asin": "B07FDJMC9Q",
+        "title": "Ninja AF101 Air Fryer 4 Qt"
+      },
+      {
+        "asin": "B07GJBBGHG",
+        "title": "COSORI Pro II Air Fryer 5.8 Qt"
+      },
+      {
+        "asin": "B07GSTBC68",
+        "title": "Cuisinart Precision Master 5.5-Qt Stand Mixer"
+      },
+      {
+        "asin": "B07GWGY5G2",
+        "title": "BLACK+DECKER 12-Cup Programmable Coffee Maker"
+      },
+      {
+        "asin": "B07PGBKXPP",
+        "title": "Ninja DT201 Foodi 10-in-1 XL Pro Air Fry"
+      },
+      {
+        "asin": "B07PNG3ZGN",
+        "title": "Chefman TurboFry Touch Air Fryer 8 Qt"
+      },
+      {
+        "asin": "B07QK2WL4Q",
+        "title": "Aucma Stand Mixer 6.5-Qt 660W"
+      },
+      {
+        "asin": "B07QY639QY",
+        "title": "NutriBullet Pro 900W Personal Blender"
+      },
+      {
+        "asin": "B07T9BXGK7",
+        "title": "KitchenAid K400 Variable Speed Blender"
+      },
+      {
+        "asin": "B07VBM3HBR",
+        "title": "Hamilton Beach FlexBrew Trio 2-Way Coffee Maker"
+      },
+      {
+        "asin": "B07WQ3HJVL",
+        "title": "Cuisinart TOA-60 Convection Toaster Oven"
+      },
+      {
+        "asin": "B07Y3LXNMK",
+        "title": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker 14 Cu"
+      },
+      {
+        "asin": "B07Y8GBL9D",
+        "title": "Ninja BL660 Professional Blender 1100W"
+      },
+      {
+        "asin": "B07Z6CB4X6",
+        "title": "Fellow Stagg EKG Electric Pour-Over Kettle"
+      },
+      {
+        "asin": "B07ZGHFNZN",
+        "title": "Vitamix E310 Explorian Blender Professional"
+      },
+      {
+        "asin": "B084GLBN6B",
+        "title": "Amazon Basics Stainless Steel Electric Kettle 1.7L"
+      },
+      {
+        "asin": "B0858XYHCX",
+        "title": "Ninja BN601 Professional Plus Food Processor"
+      },
+      {
+        "asin": "B08975S94R",
+        "title": "Ninja Air Fryer Pro XL 6.5 Qt"
+      },
+      {
+        "asin": "B08B3XNRM3",
+        "title": "Oster Pro 1200 Blender with Glass Jar"
+      },
+      {
+        "asin": "B08J5DFHGQ",
+        "title": "Breville BOV900BSS Smart Oven Air Fryer Pro"
+      },
+      {
+        "asin": "B08JBDS3WV",
+        "title": "Ninja BN701 Professional Plus Blender 1400W"
+      },
+      {
+        "asin": "B0936M0F1Z",
+        "title": "COSORI Air Fryer Toaster Oven 12-in-1"
+      },
+      {
+        "asin": "B0953DKJDY",
+        "title": "Instant Vortex Plus 6-in-1 Air Fryer 6Qt"
+      },
+      {
+        "asin": "B09BDKRV4V",
+        "title": "Philips 2000 Series Air Fryer 4.1L"
+      },
+      {
+        "asin": "B09LTDHM17",
+        "title": "COSORI TurboBlaze Air Fryer 6 Quart"
+      },
+      {
+        "asin": "B0CNNR8YKS",
+        "title": "Ninja Foodi DZ550 Dual Zone Air Fryer 10Qt"
+      }
+    ],
+    "errors": 0
+  }
+]

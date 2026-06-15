@@ -25,6 +25,9 @@ load_dotenv()
 
 client   = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 WP_SITE  = os.getenv("WP_SITE", "mavrino.com")
+# Public-facing domain for canonical/schema URLs. WP_SITE may be a numeric blog ID
+# (used only for API addressing), so never build human/SEO URLs from it.
+SITE_URL = os.getenv("SITE_DOMAIN", "https://mavrino.com").rstrip("/")
 API_BASE = "https://public-api.wordpress.com/rest/v1.1"
 
 TAXONOMY_FILE  = Path("config/taxonomy.json")
@@ -128,8 +131,13 @@ def _get_token() -> str | None:
     from wp_publisher import get_access_token
     return get_access_token()
 
+def _site(token: str = None) -> str:
+    """Resolve WP_SITE to a numeric blog ID (the domain can 403 the API)."""
+    from wp_publisher import resolve_site
+    return resolve_site(token)
+
 def _wp_post(endpoint: str, data: dict, token: str) -> dict | None:
-    url     = f"{API_BASE}/sites/{WP_SITE}/{endpoint}"
+    url     = f"{API_BASE}/sites/{_site(token)}/{endpoint}"
     headers = {"Authorization": f"Bearer {token}"}
     try:
         r = requests.post(url, json=data, headers=headers, timeout=30)
@@ -140,7 +148,7 @@ def _wp_post(endpoint: str, data: dict, token: str) -> dict | None:
         return None
 
 def _wp_get(endpoint: str, token: str, params: dict = None) -> dict | None:
-    url     = f"{API_BASE}/sites/{WP_SITE}/{endpoint}"
+    url     = f"{API_BASE}/sites/{_site(token)}/{endpoint}"
     headers = {"Authorization": f"Bearer {token}"}
     try:
         r = requests.get(url, params=params or {}, headers=headers, timeout=15)
@@ -194,6 +202,12 @@ def get_or_create_category(name: str, parent_name: str, token: str, tax: dict) -
         for cat in result.get("categories", []):
             if cat["name"].lower() == name.lower():
                 cat_id = cat["ID"]
+                # Self-heal: if the category exists but sits under the wrong parent
+                # (e.g. created top-level by an earlier version), re-parent it now so
+                # the hierarchy stays consistent as content grows.
+                if parent_id and cat_id != parent_id and cat.get("parent", 0) != parent_id:
+                    if _wp_post(f"categories/slug:{cat.get('slug','')}", {"parent": parent_id}, token):
+                        print(f"  [taxonomy] Normalised '{name}' under '{parent_name}'")
                 tax["wp_category_ids"][cache_key] = cat_id
                 save_taxonomy(tax)
                 return cat_id
@@ -429,7 +443,7 @@ def generate_schema(content: dict, products: list[dict], classification: dict, p
         "headline":      title,
         "description":   description,
         "author":        {"@type": "Person", "name": author},
-        "publisher":     {"@type": "Organization", "name": "Mavrino", "url": f"https://{WP_SITE}"},
+        "publisher":     {"@type": "Organization", "name": "Mavrino", "url": SITE_URL},
         "datePublished": date,
         "dateModified":  date,
         "url":           post_url,
@@ -628,7 +642,7 @@ def process_post(
         print(f"  [taxonomy] Added {len(links)} internal links")
 
     # 5. Generate schema markup
-    post_url = f"https://{WP_SITE}/?p=new"  # placeholder, updated after publish
+    post_url = f"{SITE_URL}/?p=new"  # placeholder, updated after publish
     schema   = generate_schema(content, products, classification, post_url)
 
     # Inject schema into content
@@ -685,6 +699,44 @@ def record_published_post(post_log_entry: dict, classification: dict):
 # NIGHTLY HEALTH MONITOR
 # ══════════════════════════════════════════════════════════════════════════════
 
+def normalise_category_parents(token: str = None, tax: dict = None) -> int:
+    """Ensure every child category sits under its correct parent (self-healing).
+
+    Walks CATEGORY_HIERARCHY and re-parents any existing WordPress category that
+    drifted (e.g. created top-level by an older code path). Only touches children
+    whose parent category already exists — it won't pre-create empty parents.
+    Returns the number of categories re-parented. Safe to run repeatedly.
+    """
+    token = token or _get_token()
+    if not token:
+        return 0
+    if tax is None:
+        tax = load_taxonomy()
+
+    res  = _wp_get("categories", token, {"number": 100})
+    cats = res.get("categories", []) if res else []
+    by_name = {c["name"].lower(): c for c in cats}
+
+    fixed = 0
+    for parent_name, children in CATEGORY_HIERARCHY.items():
+        parent = by_name.get(parent_name.lower())
+        if not parent:
+            continue  # parent doesn't exist yet — nothing to nest under
+        parent_id = parent["ID"]
+        for child_name in children:
+            child = by_name.get(child_name.lower())
+            if not child or child["ID"] == parent_id:
+                continue
+            if child.get("parent", 0) != parent_id:
+                if _wp_post(f"categories/slug:{child['slug']}", {"parent": parent_id}, token):
+                    tax["wp_category_ids"][f"{parent_name}/{child_name}"] = child["ID"]
+                    print(f"  [taxonomy] Normalised '{child_name}' under '{parent_name}'")
+                    fixed += 1
+    if fixed:
+        save_taxonomy(tax)
+    return fixed
+
+
 def run_health_monitor():
     """
     Nightly job — checks taxonomy health and fixes issues automatically.
@@ -728,7 +780,11 @@ def run_health_monitor():
         _reclassify_post(post, token, tax)
         fixes += 1
 
-    # ── 4. Update last health check timestamp ──────────────────────────────
+    # ── 4. Normalise category hierarchy (re-parent any drifted children) ────
+    print("[health] Normalising category hierarchy...")
+    fixes += normalise_category_parents(token, tax)
+
+    # ── 5. Update last health check timestamp ──────────────────────────────
     tax["last_health_check"] = datetime.utcnow().isoformat()
     save_taxonomy(tax)
 

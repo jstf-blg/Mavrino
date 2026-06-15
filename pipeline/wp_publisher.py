@@ -30,6 +30,38 @@ WP_LOG_FILE.parent.mkdir(exist_ok=True)
 API_BASE        = "https://public-api.wordpress.com/rest/v1.1"
 OAUTH_TOKEN_URL = "https://public-api.wordpress.com/oauth2/token"
 
+_RESOLVED_SITE: str | None = None
+
+
+def resolve_site(token: str = None) -> str:
+    """Return a numeric blog ID for WP_SITE.
+
+    The WP.com API rejects calls addressed by a mapped primary domain on some
+    sites (HTTP 403 'API calls to this blog have been disabled'), but the numeric
+    blog ID always works. So if WP_SITE is a domain, resolve it to its ID via
+    /me/sites once and cache it — this keeps the pipeline working no matter
+    whether the WP_SITE secret/env is set to the domain or the numeric ID.
+    """
+    global _RESOLVED_SITE
+    if _RESOLVED_SITE:
+        return _RESOLVED_SITE
+    if str(WP_SITE).isdigit():
+        _RESOLVED_SITE = str(WP_SITE)
+        return _RESOLVED_SITE
+    try:
+        tok    = token or get_access_token()
+        r      = requests.get(f"{API_BASE}/me/sites",
+                              headers={"Authorization": f"Bearer {tok}"}, timeout=15)
+        needle = str(WP_SITE).strip("/").lower().replace("https://", "").replace("http://", "")
+        for s in r.json().get("sites", []):
+            if needle and needle in s.get("URL", "").lower():
+                _RESOLVED_SITE = str(s.get("ID"))
+                return _RESOLVED_SITE
+    except Exception as e:
+        print(f"  [wp] Could not resolve site ID for '{WP_SITE}': {e}")
+    _RESOLVED_SITE = str(WP_SITE)
+    return _RESOLVED_SITE
+
 
 def get_access_token() -> str | None:
     if TOKEN_FILE.exists():
@@ -67,7 +99,7 @@ def get_access_token() -> str | None:
 
 
 def wp_request(method: str, endpoint: str, token: str, data: dict = None) -> dict | None:
-    url     = f"{API_BASE}/sites/{WP_SITE}/{endpoint}"
+    url     = f"{API_BASE}/sites/{resolve_site(token)}/{endpoint}"
     headers = {"Authorization": f"Bearer {token}"}
     try:
         if method == "POST":
@@ -97,6 +129,57 @@ def amazon_search_url(product_title: str) -> str:
     return f"https://www.amazon.com/s?k={query}"
 
 
+_MEDIA_CACHE: dict = {}
+
+def _slug(text: str, maxlen: int = 40) -> str:
+    """Filesystem/URL-safe slug for media filenames."""
+    import re
+    s = re.sub(r"[^a-z0-9]+", "-", (text or "image").lower()).strip("-")
+    return (s[:maxlen] or "image")
+
+
+def upload_media_from_url(image_url: str, token: str, filename: str = "image") -> dict | None:
+    """Download an external image and sideload it into the WordPress media library.
+
+    Returns {"ID": int, "URL": str} for the WP-hosted copy, or None on failure.
+
+    WordPress.com strips hot-linked external <img> tags (and invalidates the blocks
+    that contain them) when rendering a post, so every image that needs to appear
+    on the live site must first be uploaded here and referenced by its WP URL/ID.
+    Results are cached per-process so each distinct source URL uploads at most once.
+    """
+    if not image_url:
+        return None
+    if image_url in _MEDIA_CACHE:
+        return _MEDIA_CACHE[image_url]
+
+    result = None
+    try:
+        resp = requests.get(image_url, timeout=30)
+        resp.raise_for_status()
+        ctype = resp.headers.get("Content-Type", "image/jpeg").split(";")[0].strip()
+        if "image" not in ctype:
+            _MEDIA_CACHE[image_url] = None
+            return None
+        ext = ".png" if "png" in ctype else ".webp" if "webp" in ctype else ".jpg"
+        fname = _slug(filename) + ext
+        r = requests.post(
+            f"{API_BASE}/sites/{resolve_site(token)}/media/new",
+            headers={"Authorization": f"Bearer {token}"},
+            files={"media[]": (fname, resp.content, ctype)},
+            timeout=90,
+        )
+        r.raise_for_status()
+        media = r.json().get("media", [])
+        if media:
+            result = {"ID": media[0].get("ID"), "URL": media[0].get("URL")}
+    except Exception as e:
+        print(f"  [wp] Media upload failed ({filename}): {e}")
+
+    _MEDIA_CACHE[image_url] = result
+    return result
+
+
 _IMG_OK_CACHE: dict = {}
 
 def _image_ok(url: str) -> bool:
@@ -120,10 +203,18 @@ def _image_ok(url: str) -> bool:
     return ok
 
 
-def build_wp_content(content: dict, products: list[dict], hero_image: dict = None) -> str:
-    """Build Gutenberg block HTML from generated content."""
+def build_wp_content(content: dict, products: list[dict], hero_image: dict = None,
+                     hero_media: dict = None, image_map: dict = None) -> str:
+    """Build Gutenberg block HTML from generated content.
+
+    hero_media / image_map carry WordPress-hosted media ({"ID","URL"}) produced by
+    upload_media_from_url. We reference those (never the raw external URLs) and tag
+    each <img> with its wp-image-<id> class so the core/image blocks validate and
+    survive WordPress.com's render-time sanitisation.
+    """
     parts        = []
     products_by_asin = {p.get("asin"): p for p in products}
+    image_map    = image_map or {}
 
     # ── Affiliate disclosure ───────────────────────────────────────────────
     parts.append(
@@ -134,21 +225,24 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         '<!-- /wp:paragraph -->'
     )
 
-    # ── Hero image from Unsplash ───────────────────────────────────────────
-    if hero_image and hero_image.get("url"):
-        photographer     = hero_image.get("photographer", "")
-        photographer_url = hero_image.get("photographer_url", "")
-        unsplash_url     = hero_image.get("unsplash_url", "")
-        alt              = hero_image.get("alt", "Product review image")
-
-        parts.append(
-            f'<!-- wp:image {{"sizeSlug":"large","align":"wide"}} -->\n'
-            f'<figure class="wp-block-image size-large alignwide">'
-            f'<img src="{hero_image["url"]}" alt="{alt}" />'
+    # ── Hero image (WordPress-hosted) ──────────────────────────────────────
+    if hero_media and hero_media.get("URL"):
+        photographer     = (hero_image or {}).get("photographer", "")
+        photographer_url = (hero_image or {}).get("photographer_url", "")
+        unsplash_url     = (hero_image or {}).get("unsplash_url", "")
+        alt              = (hero_image or {}).get("alt", "Product review image")
+        hid              = hero_media.get("ID")
+        caption          = (
             f'<figcaption class="wp-element-caption">'
             f'Photo by <a href="{photographer_url}?utm_source=mavrino&utm_medium=referral" rel="nofollow">{photographer}</a> '
             f'on <a href="{unsplash_url}?utm_source=mavrino&utm_medium=referral" rel="nofollow">Unsplash</a>'
-            f'</figcaption></figure>\n'
+            f'</figcaption>' if photographer else ''
+        )
+        parts.append(
+            f'<!-- wp:image {{"id":{hid},"sizeSlug":"large","align":"wide"}} -->\n'
+            f'<figure class="wp-block-image alignwide size-large">'
+            f'<img src="{hero_media["URL"]}" alt="{alt}" class="wp-image-{hid}"/>'
+            f'{caption}</figure>\n'
             f'<!-- /wp:image -->'
         )
 
@@ -214,33 +308,24 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         price   = product.get("price", 0)
         rating  = product.get("rating", 0)
         reviews = product.get("review_count", 0)
-        img_url = product.get("image_url", "")
+        media   = image_map.get(asin) or {}
+        img_url = media.get("URL", "")
+        img_id  = media.get("ID")
         aff_url = amazon_search_url(title)
         stars   = "★" * int(rating) + ("½" if rating % 1 >= 0.5 else "")
-
-        # Seed/Amazon image URLs are often stale or hotlink-blocked — drop any
-        # that don't actually load, then fall back to an Unsplash category image
-        if img_url and not _image_ok(img_url):
-            img_url = ""
-        if not img_url:
-            try:
-                import image_fetcher as imf
-                img_url = imf.get_product_image(title)
-            except Exception:
-                pass
 
         card = (
             f'<!-- wp:group {{"className":"product-card","style":{{"border":{{"width":"1px","color":"#e4e0d8","radius":"8px"}},"spacing":{{"padding":{{"all":"20px"}}}}}}}} -->\n'
             f'<div class="wp-block-group product-card" style="border:1px solid #e4e0d8;border-radius:8px;padding:20px">\n'
         )
 
-        # Product image
+        # Product image (WordPress-hosted)
         if img_url:
             card += (
-                f'<!-- wp:image {{"sizeSlug":"medium","align":"right"}} -->\n'
-                f'<figure class="wp-block-image size-medium alignright">'
+                f'<!-- wp:image {{"id":{img_id},"sizeSlug":"medium","align":"right"}} -->\n'
+                f'<figure class="wp-block-image alignright size-medium">'
                 f'<a href="{aff_url}" rel="nofollow sponsored" target="_blank">'
-                f'<img src="{img_url}" alt="{title}" /></a></figure>\n'
+                f'<img src="{img_url}" alt="{title}" class="wp-image-{img_id}"/></a></figure>\n'
                 f'<!-- /wp:image -->\n'
             )
 
@@ -349,6 +434,250 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
     return "\n\n".join(parts)
 
 
+# ── Shared block helpers (used by the comparison + review renderers) ───────────
+
+def _disclosure_block() -> str:
+    return (
+        '<!-- wp:paragraph {"className":"affiliate-disclosure","style":{"spacing":{"padding":{"all":"12px"}},"color":{"background":"#fff8e6"}}} -->\n'
+        '<p class="affiliate-disclosure" style="background-color:#fff8e6;padding:12px">'
+        '<strong>Disclosure:</strong> Mavrino earns commissions from qualifying purchases '
+        'made through links on this page. This does not affect our recommendations.</p>\n'
+        '<!-- /wp:paragraph -->'
+    )
+
+
+def _hero_block(hero_image: dict, hero_media: dict) -> str:
+    if not (hero_media and hero_media.get("URL")):
+        return ""
+    hi  = hero_image or {}
+    hid = hero_media.get("ID")
+    caption = (
+        f'<figcaption class="wp-element-caption">Photo by '
+        f'<a href="{hi.get("photographer_url","")}?utm_source=mavrino&utm_medium=referral" rel="nofollow">{hi.get("photographer","")}</a> '
+        f'on <a href="{hi.get("unsplash_url","")}?utm_source=mavrino&utm_medium=referral" rel="nofollow">Unsplash</a></figcaption>'
+        if hi.get("photographer") else ''
+    )
+    return (
+        f'<!-- wp:image {{"id":{hid},"sizeSlug":"large","align":"wide"}} -->\n'
+        f'<figure class="wp-block-image alignwide size-large">'
+        f'<img src="{hero_media["URL"]}" alt="{hi.get("alt","Product comparison image")}" class="wp-image-{hid}"/>'
+        f'{caption}</figure>\n<!-- /wp:image -->'
+    )
+
+
+def _author_block() -> str:
+    author_bio = os.getenv("AUTHOR_BIO", "Mavrino tests home, kitchen, travel and lifestyle products to help US shoppers buy with confidence.")
+    return (
+        '<!-- wp:group {"className":"author-box","style":{"border":{"width":"1px","color":"#e4e0d8","radius":"8px"},"spacing":{"padding":{"all":"16px"}},"color":{"background":"#f5f2ec"}}} -->\n'
+        '<div class="wp-block-group author-box" style="border:1px solid #e4e0d8;border-radius:8px;padding:16px;background-color:#f5f2ec">\n'
+        '<!-- wp:paragraph -->\n'
+        f'<p><strong>Mavrino Editorial</strong> — {author_bio}</p>\n'
+        '<!-- /wp:paragraph -->\n'
+        '</div>\n<!-- /wp:group -->'
+    )
+
+
+def _faq_blocks(faq: list[dict]) -> list[str]:
+    out = []
+    if faq:
+        out.append('<!-- wp:heading {"level":2} -->\n<h2>Frequently Asked Questions</h2>\n<!-- /wp:heading -->')
+        for item in faq:
+            if item.get("q"):
+                out.append(f'<!-- wp:heading {{"level":3}} -->\n<h3>{item["q"]}</h3>\n<!-- /wp:heading -->')
+            if item.get("a"):
+                out.append(f'<!-- wp:paragraph -->\n<p>{item["a"]}</p>\n<!-- /wp:paragraph -->')
+    return out
+
+
+def _intro_blocks(intro: str) -> list[str]:
+    return [f'<!-- wp:paragraph -->\n<p>{p.strip()}</p>\n<!-- /wp:paragraph -->'
+            for p in (intro or "").split('\n\n') if p.strip()]
+
+
+def _cta_button(label: str, url: str, bg: str = "#1c1814") -> str:
+    return (
+        f'<!-- wp:buttons -->\n<div class="wp-block-buttons">\n'
+        f'<!-- wp:button {{"style":{{"color":{{"background":"{bg}","text":"#ffffff"}},"border":{{"radius":"6px"}}}}}} -->\n'
+        f'<div class="wp-block-button"><a class="wp-block-button__link" href="{url}" rel="nofollow sponsored" target="_blank">{label}</a></div>\n'
+        f'<!-- /wp:button -->\n</div>\n<!-- /wp:buttons -->'
+    )
+
+
+def _product_image_block(media: dict, title: str, aff_url: str) -> str:
+    if not (media and media.get("URL")):
+        return ""
+    mid = media.get("ID")
+    return (
+        f'<!-- wp:image {{"id":{mid},"sizeSlug":"medium","align":"right"}} -->\n'
+        f'<figure class="wp-block-image alignright size-medium">'
+        f'<a href="{aff_url}" rel="nofollow sponsored" target="_blank">'
+        f'<img src="{media["URL"]}" alt="{title}" class="wp-image-{mid}"/></a></figure>\n'
+        f'<!-- /wp:image -->'
+    )
+
+
+def build_comparison_content(content: dict, products: list[dict], hero_image: dict = None,
+                             hero_media: dict = None, image_map: dict = None) -> str:
+    """Render a head-to-head comparison post (X vs Y) as Gutenberg blocks."""
+    image_map = image_map or {}
+    by_asin   = {p.get("asin"): p for p in products}
+    pa = products[0] if len(products) > 0 else {}
+    pb = products[1] if len(products) > 1 else {}
+    parts = [_disclosure_block()]
+    hero = _hero_block(hero_image, hero_media)
+    if hero:
+        parts.append(hero)
+    parts += _intro_blocks(content.get("intro", ""))
+
+    # Recommended pick callout
+    winner_asin = content.get("winner", "")
+    winner      = by_asin.get(winner_asin, {})
+    if winner and content.get("winner_reason"):
+        aff = amazon_search_url(winner.get("title", ""))
+        parts.append(
+            '<!-- wp:group {"className":"top-pick-box","style":{"border":{"width":"2px","color":"#b8431a","radius":"8px"},"spacing":{"padding":{"all":"20px"}},"color":{"background":"#fff8f5"}}} -->\n'
+            '<div class="wp-block-group top-pick-box" style="border:2px solid #b8431a;border-radius:8px;padding:20px;background-color:#fff8f5">\n'
+            '<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->\n'
+            '<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8431a">⭐ Our Recommendation</p>\n'
+            '<!-- /wp:paragraph -->\n'
+            f'<!-- wp:heading {{"level":3,"style":{{"typography":{{"fontSize":"18px"}}}}}} -->\n<h3 style="font-size:18px">{winner.get("title","")}</h3>\n<!-- /wp:heading -->\n'
+            f'<!-- wp:paragraph -->\n<p>{content.get("winner_reason","")}</p>\n<!-- /wp:paragraph -->\n'
+            + _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + '\n'
+            '</div>\n<!-- /wp:group -->'
+        )
+
+    # Head-to-head table
+    rows = content.get("head_to_head", [])
+    if rows and pa and pb:
+        a_name = pa.get("title", "Product A")[:40]
+        b_name = pb.get("title", "Product B")[:40]
+        thead  = f'<thead><tr><th>Category</th><th>{a_name}</th><th>{b_name}</th></tr></thead>'
+        body_rows = "".join(
+            f'<tr><td><strong>{r.get("category","")}</strong></td>'
+            f'<td>{r.get("product_a","")}</td><td>{r.get("product_b","")}</td></tr>'
+            for r in rows
+        )
+        parts.append('<!-- wp:heading {"level":2} -->\n<h2>Head-to-Head</h2>\n<!-- /wp:heading -->')
+        parts.append(
+            '<!-- wp:table {"className":"is-style-stripes"} -->\n'
+            f'<figure class="wp-block-table is-style-stripes"><table>{thead}<tbody>{body_rows}</tbody></table></figure>\n'
+            '<!-- /wp:table -->'
+        )
+
+    # Individual mini-reviews
+    for key, prod in [("product_a_review", pa), ("product_b_review", pb)]:
+        rev = content.get(key, {})
+        if not (rev and prod):
+            continue
+        asin   = prod.get("asin", "")
+        title  = prod.get("title", "")
+        aff    = amazon_search_url(title)
+        card   = (
+            '<!-- wp:group {"className":"product-card","style":{"border":{"width":"1px","color":"#e4e0d8","radius":"8px"},"spacing":{"padding":{"all":"20px"}}}} -->\n'
+            '<div class="wp-block-group product-card" style="border:1px solid #e4e0d8;border-radius:8px;padding:20px">\n'
+        )
+        card += _product_image_block(image_map.get(asin), title, aff) + "\n"
+        card += f'<!-- wp:heading {{"level":3}} -->\n<h3>{title}</h3>\n<!-- /wp:heading -->\n'
+        if prod.get("price") or prod.get("rating"):
+            price_str = f"<strong>${prod.get('price',0):.2f}</strong>" if prod.get("price") else ""
+            rate_str  = f"★ {prod.get('rating','')}/5" if prod.get("rating") else ""
+            card += f'<!-- wp:paragraph -->\n<p>{price_str}&nbsp;&nbsp;{rate_str}</p>\n<!-- /wp:paragraph -->\n'
+        if rev.get("summary"):
+            card += f'<!-- wp:paragraph -->\n<p>{rev["summary"]}</p>\n<!-- /wp:paragraph -->\n'
+        if rev.get("best_for"):
+            card += f'<!-- wp:paragraph -->\n<p>👤 <strong>Best for:</strong> {rev["best_for"]}</p>\n<!-- /wp:paragraph -->\n'
+        if rev.get("real_quote"):
+            card += f'<!-- wp:quote -->\n<blockquote class="wp-block-quote"><p>{rev["real_quote"]}</p><cite>Verified Amazon buyer</cite></blockquote>\n<!-- /wp:quote -->\n'
+        card += _cta_button("Check Price on Amazon →", aff) + "\n"
+        card += '</div>\n<!-- /wp:group -->'
+        parts.append(card)
+
+    # Verdict
+    if content.get("verdict"):
+        parts.append('<!-- wp:heading {"level":2} -->\n<h2>The Verdict</h2>\n<!-- /wp:heading -->')
+        parts += _intro_blocks(content["verdict"])
+
+    parts += _faq_blocks(content.get("faq", []))
+    parts.append(_author_block())
+    return "\n\n".join(parts)
+
+
+def build_review_content(content: dict, products: list[dict], hero_image: dict = None,
+                         hero_media: dict = None, image_map: dict = None) -> str:
+    """Render a single-product deep review as Gutenberg blocks."""
+    image_map = image_map or {}
+    prod  = products[0] if products else {}
+    asin  = prod.get("asin", "")
+    title = prod.get("title", content.get("title", ""))
+    aff   = amazon_search_url(title)
+    parts = [_disclosure_block()]
+    hero = _hero_block(hero_image, hero_media)
+    if hero:
+        parts.append(hero)
+    parts += _intro_blocks(content.get("intro", ""))
+
+    # Quick verdict box
+    if content.get("quick_verdict"):
+        score = content.get("score", {})
+        overall = score.get("overall", "")
+        parts.append(
+            '<!-- wp:group {"className":"top-pick-box","style":{"border":{"width":"2px","color":"#b8431a","radius":"8px"},"spacing":{"padding":{"all":"20px"}},"color":{"background":"#fff8f5"}}} -->\n'
+            '<div class="wp-block-group top-pick-box" style="border:2px solid #b8431a;border-radius:8px;padding:20px;background-color:#fff8f5">\n'
+            '<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->\n'
+            f'<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8431a">⭐ Verdict{f" — {overall}/10" if overall else ""}</p>\n'
+            '<!-- /wp:paragraph -->\n'
+            f'<!-- wp:paragraph -->\n<p>{content["quick_verdict"]}</p>\n<!-- /wp:paragraph -->\n'
+            + _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + '\n'
+            '</div>\n<!-- /wp:group -->'
+        )
+
+    # Like / don't-like columns
+    likes  = content.get("what_we_like", [])
+    nots   = content.get("what_we_dont", [])
+    if likes or nots:
+        like_html = "".join(f'<!-- wp:list-item --><li>{x}</li><!-- /wp:list-item -->' for x in likes)
+        not_html  = "".join(f'<!-- wp:list-item --><li>{x}</li><!-- /wp:list-item -->' for x in nots)
+        parts.append(
+            '<!-- wp:columns -->\n<div class="wp-block-columns">\n'
+            '<!-- wp:column -->\n<div class="wp-block-column">\n'
+            '<!-- wp:heading {"level":3} -->\n<h3>✅ What we like</h3>\n<!-- /wp:heading -->\n'
+            f'<!-- wp:list -->\n<ul class="wp-block-list">{like_html}</ul>\n<!-- /wp:list -->\n'
+            '</div>\n<!-- /wp:column -->\n'
+            '<!-- wp:column -->\n<div class="wp-block-column">\n'
+            '<!-- wp:heading {"level":3} -->\n<h3>⚠️ What to consider</h3>\n<!-- /wp:heading -->\n'
+            f'<!-- wp:list -->\n<ul class="wp-block-list">{not_html}</ul>\n<!-- /wp:list -->\n'
+            '</div>\n<!-- /wp:column -->\n</div>\n<!-- /wp:columns -->'
+        )
+
+    # Sections
+    for sec in content.get("sections", []):
+        if sec.get("heading"):
+            parts.append(f'<!-- wp:heading {{"level":2}} -->\n<h2>{sec["heading"]}</h2>\n<!-- /wp:heading -->')
+        if sec.get("content"):
+            parts += _intro_blocks(sec["content"])
+
+    # Real owner quotes
+    for q in content.get("real_owner_say", []):
+        if q.get("quote"):
+            stars = "★" * int(q.get("stars", 0))
+            parts.append(f'<!-- wp:quote -->\n<blockquote class="wp-block-quote"><p>{q["quote"]}</p><cite>{stars} Verified Amazon buyer</cite></blockquote>\n<!-- /wp:quote -->')
+
+    # Who should / shouldn't buy
+    if content.get("who_should_buy"):
+        parts.append(f'<!-- wp:paragraph -->\n<p>✅ <strong>Buy it if:</strong> {content["who_should_buy"]}</p>\n<!-- /wp:paragraph -->')
+    if content.get("who_should_skip"):
+        parts.append(f'<!-- wp:paragraph -->\n<p>⚠️ <strong>Skip it if:</strong> {content["who_should_skip"]}</p>\n<!-- /wp:paragraph -->')
+
+    if content.get("verdict"):
+        parts.append('<!-- wp:heading {"level":2} -->\n<h2>Bottom Line</h2>\n<!-- /wp:heading -->')
+        parts += _intro_blocks(content["verdict"])
+        parts.append(_cta_button("Check Price on Amazon →", aff, bg="#b8431a"))
+
+    parts += _faq_blocks(content.get("faq", []))
+    parts.append(_author_block())
+    return "\n\n".join(parts)
+
+
 def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict) -> dict | None:
     """Publish a post to WordPress with taxonomy, SEO, images."""
     token = get_access_token()
@@ -358,18 +687,48 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
     keyword = content.get("keyword", "")
     title   = content.get("title", keyword)
 
-    # Fetch hero image from Unsplash
-    hero_image = None
     try:
         import image_fetcher as imf
-        hero_image = imf.get_hero_image(keyword)
-        if hero_image:
-            print(f"  [images] Got hero image: {hero_image.get('alt','')[:40]}")
-    except Exception as e:
-        print(f"  [images] Could not fetch image: {e}")
+    except Exception:
+        imf = None
 
-    # Build content
-    wp_content = build_wp_content(content, products, hero_image)
+    # ── Hero image: fetch from Unsplash, then sideload into WP media library ──
+    hero_image = hero_media = None
+    if imf:
+        try:
+            hero_image = imf.get_hero_image(keyword)
+            if hero_image and hero_image.get("url"):
+                hero_media = upload_media_from_url(hero_image["url"], token, f"{keyword}-hero")
+                if hero_media:
+                    print(f"  [images] Hero uploaded → media #{hero_media['ID']}")
+        except Exception as e:
+            print(f"  [images] Could not fetch/upload hero: {e}")
+
+    # ── Product images: ONLY use a real product image (Amazon). We deliberately
+    #    do NOT fall back to a generic Unsplash stock photo per product — stock
+    #    images misrepresent specific models (e.g. a deep fryer for an air fryer).
+    #    Today the seed image_urls are dead, so cards show no photo; once the
+    #    PA-API supplies real images per ASIN, they appear automatically here.
+    image_map: dict = {}
+    for p in products:
+        asin = p.get("asin")
+        src  = p.get("image_url", "")
+        if src:
+            media = upload_media_from_url(src, token, f"{asin or _slug(p.get('title',''))}")
+            if media:
+                image_map[asin] = media
+    if image_map:
+        print(f"  [images] {len(image_map)} real product image(s) uploaded")
+
+    # Build content — dispatch on post format (comparison/review have their own
+    # JSON shapes; everything else uses the roundup/listicle renderer).
+    post_type = content.get("post_type", keyword_data.get("post_type", "roundup"))
+    if post_type == "comparison" and content.get("head_to_head"):
+        wp_content = build_comparison_content(content, products, hero_image, hero_media, image_map)
+    elif post_type == "review" and content.get("sections"):
+        wp_content = build_review_content(content, products, hero_image, hero_media, image_map)
+    else:
+        wp_content = build_wp_content(content, products, hero_image, hero_media, image_map)
 
     # Process through taxonomy manager
     try:
@@ -402,10 +761,11 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
         "metadata":   seo_metadata,
     }
 
-    # Set the Unsplash hero as the post's Featured Image so it shows in Kadence's
-    # blog/archive/related thumbnails. WordPress.com v1.1 sideloads a URL passed here.
-    if hero_image and hero_image.get("url"):
-        post_data["featured_image"] = hero_image["url"]
+    # Set the post's Featured Image (shows in Kadence's blog/archive/related
+    # thumbnails) by the uploaded media's attachment ID. Passing a raw external
+    # URL here is silently ignored by WordPress.com — it requires a media ID.
+    if hero_media and hero_media.get("ID"):
+        post_data["featured_image"] = hero_media["ID"]
 
     print(f"  [wp] Publishing '{title[:55]}...'")
     result = wp_request("POST", "posts/new", token, post_data)
@@ -414,6 +774,10 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
         post_id  = result["ID"]
         post_url = result.get("URL", "")
         print(f"  [wp] Published: {post_url} (ID: {post_id})")
+
+        # Guarantee pingbacks are closed — the create-time flag is unreliable, so
+        # confirm via the nested-discussion form (prevents self-pingback comments).
+        wp_request("POST", f"posts/{post_id}", token, {"discussion": {"pings_open": False}})
 
         log_entry = {
             "date":       datetime.utcnow().strftime("%Y-%m-%d"),

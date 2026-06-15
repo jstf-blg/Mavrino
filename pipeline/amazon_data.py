@@ -324,13 +324,21 @@ def _extract_themes(snippets: list[str]) -> list[str]:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def get_product_data(asin: str, force_refresh: bool = False) -> dict | None:
-    """Get product data with 24-hour cache."""
+    """Get product data, preferring cache; falls back to stale cache if no live source."""
     cache_file = CACHE_DIR / f"{asin}.json"
 
-    if not force_refresh and cache_file.exists():
+    cached = None
+    if cache_file.exists():
+        try:
+            cached = json.loads(cache_file.read_text())
+        except Exception:
+            cached = None
+
+    # Fresh cache (< 24h) is used as-is
+    if cached and not force_refresh:
         age = time.time() - cache_file.stat().st_mtime
         if age < 86400:  # 24 hours
-            return json.loads(cache_file.read_text())
+            return cached
 
     print(f"  [data] Fetching ASIN {asin}...")
     product = None
@@ -345,6 +353,11 @@ def get_product_data(asin: str, force_refresh: bool = False) -> dict | None:
         product = fetch_via_apify(asin)
 
     if not product:
+        # No live source available — use the cached copy even if older than 24h
+        # (seed/fallback data doesn't expire the way live prices do). This keeps
+        # comparison/review posts working without the PA-API/Apify keys.
+        if cached:
+            return cached
         print(f"  [data] Could not fetch {asin}")
         return None
 
