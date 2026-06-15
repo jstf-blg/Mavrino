@@ -107,6 +107,14 @@ def run():
 
     cb.build_all_caches()
 
+    # Turn zero-result visitor searches into queued guides (no-op until the plugin
+    # is installed). Demand-driven content feeds the same quality-gated pipeline.
+    try:
+        import search_requests
+        search_requests.ingest()
+    except Exception as e:
+        print(f"  [search] ingest skipped: {e}")
+
     state = load_state()
     day   = state.setdefault(today, {})
     counts = day.setdefault("counts", {v: 0 for v in MAIN_CATEGORIES})

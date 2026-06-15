@@ -177,7 +177,13 @@
     "best-value": 789922965,
     "6.5-quart-capacity": 789922966,
     "4.1-liter-capacity": 789922967,
-    "high-customer-satisfaction": 789922968
+    "high-customer-satisfaction": 789922968,
+    "for-baking": 789922970,
+    "for-home-business": 789922971,
+    "high-capacity": 789922972,
+    "6-speed-settings": 789922973,
+    "dough-mixing": 789922974,
+    "whipped-cream": 789922975
   },
   "post_index": [
     {
@@ -503,6 +509,33 @@
         "high-customer-satisfaction"
       ],
       "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Best Stand Mixers in 2026: Budget Winners and Workhorses",
+      "wp_post_id": 440,
+      "wp_url": "https://mavrino.com/2026/06/15/best-stand-mixers-in-2026-budget-winners-and-workhorses/",
+      "parent_category": "Kitchen",
+      "child_category": "Stand Mixers",
+      "tags": [
+        "kitchenaid",
+        "cuisinart",
+        "hamilton beach",
+        "under-$100",
+        "under-$300",
+        "$300-$500",
+        "for-baking",
+        "for-home-business",
+        "budget-friendly",
+        "quiet-operation",
+        "high-capacity",
+        "5-quart-capacity",
+        "6-speed-settings",
+        "5.5-quart-capacity",
+        "dough-mixing",
+        "whipped-cream"
+      ],
+      "published_at": "2026-06-15"
     }
   ],
   "category_counts": {
@@ -514,7 +547,7 @@
     "Robot Vacuums": 1,
     "Luggage": 1,
     "Standing Desks": 1,
-    "Stand Mixers": 1
+    "Stand Mixers": 2
   },
   "pending_splits": [],
   "last_health_check": null
