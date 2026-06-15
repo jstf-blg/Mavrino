@@ -204,233 +204,141 @@ def _image_ok(url: str) -> bool:
 
 
 def build_wp_content(content: dict, products: list[dict], hero_image: dict = None,
-                     hero_media: dict = None, image_map: dict = None) -> str:
+                     hero_media: dict = None, image_map: dict = None,
+                     accent: str = None, layout: dict = None) -> str:
     """Build Gutenberg block HTML from generated content.
 
-    hero_media / image_map carry WordPress-hosted media ({"ID","URL"}) produced by
-    upload_media_from_url. We reference those (never the raw external URLs) and tag
-    each <img> with its wp-image-<id> class so the core/image blocks validate and
-    survive WordPress.com's render-time sanitisation.
+    Variation engine: `accent` (per-vertical colour) and `layout` (a recipe that
+    reorders/selects the middle sections) make posts look and read differently at
+    scale. Falls back to a slug-seeded layout + default accent when not supplied.
     """
-    parts        = []
     products_by_asin = {p.get("asin"): p for p in products}
-    image_map    = image_map or {}
+    image_map = image_map or {}
+    try:
+        import variations as _var
+    except Exception:
+        _var = None
+    accent = accent or (_var.DEFAULT_ACCENT if _var else "#b8431a")
+    if layout is None:
+        layout = (_var.layout_for(content.get("keyword", "")) if _var
+                  else {"sections": ["intro", "top_pick", "cards", "buying_guide", "faq"]})
+    winner_asin = content.get("winner_asin", "")
 
-    # ── Affiliate disclosure ───────────────────────────────────────────────
-    parts.append(
-        '<!-- wp:paragraph {"className":"affiliate-disclosure","style":{"spacing":{"padding":{"all":"12px"}},"color":{"background":"#fff8e6"}}} -->\n'
-        '<p class="affiliate-disclosure" style="background-color:#fff8e6;padding:12px">'
-        '<strong>Disclosure:</strong> Mavrino earns commissions from qualifying purchases '
-        'made through links on this page. This does not affect our recommendations.</p>\n'
-        '<!-- /wp:paragraph -->'
-    )
+    # ── Section builders (assembled later per the layout recipe) ───────────
+    def sec_intro():
+        return [f'<!-- wp:paragraph -->\n<p>{p.strip()}</p>\n<!-- /wp:paragraph -->'
+                for p in content.get("intro", "").split('\n\n') if p.strip()]
 
-    # ── Hero image (WordPress-hosted) ──────────────────────────────────────
-    if hero_media and hero_media.get("URL"):
-        photographer     = (hero_image or {}).get("photographer", "")
-        photographer_url = (hero_image or {}).get("photographer_url", "")
-        unsplash_url     = (hero_image or {}).get("unsplash_url", "")
-        alt              = (hero_image or {}).get("alt", "Product review image")
-        hid              = hero_media.get("ID")
-        caption          = (
-            f'<figcaption class="wp-element-caption">'
-            f'Photo by <a href="{photographer_url}?utm_source=mavrino&utm_medium=referral" rel="nofollow">{photographer}</a> '
-            f'on <a href="{unsplash_url}?utm_source=mavrino&utm_medium=referral" rel="nofollow">Unsplash</a>'
-            f'</figcaption>' if photographer else ''
+    def sec_top_pick():
+        wv = content.get("winner_verdict", "")
+        if not wv:
+            return []
+        wprod = products_by_asin.get(winner_asin, {})
+        title = wprod.get("title", ""); price = wprod.get("price", 0); rating = wprod.get("rating", 0)
+        url   = amazon_search_url(title) if title else ""; stars = "★" * int(rating)
+        out = (
+            f'<!-- wp:group {{"className":"top-pick-box","style":{{"border":{{"width":"2px","color":"{accent}","radius":"8px"}},"spacing":{{"padding":{{"all":"20px"}}}},"color":{{"background":"#fff8f5"}}}}}} -->\n'
+            f'<div class="wp-block-group top-pick-box" style="border:2px solid {accent};border-radius:8px;padding:20px;background-color:#fff8f5">\n'
+            f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"12px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"}},"color":{{"text":"{accent}"}}}}}} -->\n'
+            f'<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:{accent}">⭐ Our Top Pick</p>\n<!-- /wp:paragraph -->\n'
+            f'<!-- wp:heading {{"level":3,"style":{{"typography":{{"fontSize":"18px"}}}}}} -->\n<h3 style="font-size:18px">{title}</h3>\n<!-- /wp:heading -->\n'
+            f'<!-- wp:paragraph -->\n<p>{wv}</p>\n<!-- /wp:paragraph -->\n'
         )
-        parts.append(
-            f'<!-- wp:image {{"id":{hid},"sizeSlug":"large","align":"wide"}} -->\n'
-            f'<figure class="wp-block-image alignwide size-large">'
-            f'<img src="{hero_media["URL"]}" alt="{alt}" class="wp-image-{hid}"/>'
-            f'{caption}</figure>\n'
-            f'<!-- /wp:image -->'
-        )
+        if price:
+            out += (f'<!-- wp:paragraph -->\n<p><strong>${price:.2f}</strong>'
+                    f'{" &nbsp; " + stars if stars else ""}{" " + str(rating) + "/5" if rating else ""}</p>\n<!-- /wp:paragraph -->\n')
+        if url:
+            out += _cta_button("Search on Amazon →", url, bg=accent) + "\n"
+        out += '</div>\n<!-- /wp:group -->'
+        return [out]
 
-    # ── Intro paragraphs ──────────────────────────────────────────────────
-    for para in content.get("intro", "").split('\n\n'):
-        if para.strip():
-            parts.append(
-                f'<!-- wp:paragraph -->\n<p>{para.strip()}</p>\n<!-- /wp:paragraph -->'
-            )
+    def sec_cards():
+        cards = []
+        for item in content.get("products", []):
+            asin = item.get("asin", "")
+            if asin and asin == winner_asin:
+                continue
+            product = products_by_asin.get(asin, {})
+            title   = product.get("title", asin)
+            price   = product.get("price", 0); rating = product.get("rating", 0)
+            reviews = product.get("review_count", 0)
+            media   = image_map.get(asin) or {}
+            img_url = media.get("URL", "")
+            aff_url = amazon_search_url(title)
+            stars   = "★" * int(rating) + ("½" if rating % 1 >= 0.5 else "")
+            card = ('<!-- wp:group {"className":"product-card","style":{"border":{"width":"1px","color":"#e4e0d8","radius":"8px"},"spacing":{"padding":{"all":"20px"}}}} -->\n'
+                    '<div class="wp-block-group product-card" style="border:1px solid #e4e0d8;border-radius:8px;padding:20px">\n')
+            card += _product_image_block(media, title, aff_url) + ("\n" if img_url else "")
+            if item.get("heading"):
+                card += (f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"11px","fontWeight":"700","letterSpacing":"2px","textTransform":"uppercase"}},"color":{{"text":"{accent}"}}}}}} -->\n'
+                         f'<p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:{accent}">{item["heading"]}</p>\n<!-- /wp:paragraph -->\n')
+            card += f'<!-- wp:heading {{"level":3}} -->\n<h3>{title}</h3>\n<!-- /wp:heading -->\n'
+            if price or rating:
+                price_str  = f"<strong>${price:.2f}</strong>" if price else ""
+                rating_str = f"{stars} {rating}/5 ({reviews:,} reviews)" if rating else ""
+                card += f'<!-- wp:paragraph -->\n<p>{price_str}{"&nbsp;&nbsp;" if price_str and rating_str else ""}{rating_str}</p>\n<!-- /wp:paragraph -->\n'
+            if item.get("verdict"):
+                card += f'<!-- wp:paragraph -->\n<p>{item["verdict"]}</p>\n<!-- /wp:paragraph -->\n'
+            if item.get("who_its_for"):
+                card += f'<!-- wp:paragraph -->\n<p>\U0001f464 <strong>Best for:</strong> {item["who_its_for"]}</p>\n<!-- /wp:paragraph -->\n'
+            if item.get("main_pro") or item.get("main_con"):
+                card += ('<!-- wp:columns -->\n<div class="wp-block-columns">\n'
+                         '<!-- wp:column -->\n<div class="wp-block-column">\n'
+                         f'<!-- wp:paragraph -->\n<p>✅ <strong>Pro:</strong> {item.get("main_pro","")}</p>\n<!-- /wp:paragraph -->\n'
+                         '</div>\n<!-- /wp:column -->\n<!-- wp:column -->\n<div class="wp-block-column">\n'
+                         f'<!-- wp:paragraph -->\n<p>⚠️ <strong>Consider:</strong> {item.get("main_con","")}</p>\n<!-- /wp:paragraph -->\n'
+                         '</div>\n<!-- /wp:column -->\n</div>\n<!-- /wp:columns -->\n')
+            if item.get("quote"):
+                card += f'<!-- wp:quote -->\n<blockquote class="wp-block-quote"><p>{item["quote"]}</p><cite>Verified Amazon buyer</cite></blockquote>\n<!-- /wp:quote -->\n'
+            card += _cta_button("Search on Amazon →", aff_url) + "\n"
+            card += '</div>\n<!-- /wp:group -->'
+            cards.append(card)
+        return cards
 
-    # ── Top pick callout (clean design, not black banner) ─────────────────
-    winner_asin    = content.get("winner_asin", "")
-    winner_verdict = content.get("winner_verdict", "")
-    if winner_verdict:
-        winner_product = products_by_asin.get(winner_asin, {})
-        winner_title   = winner_product.get("title", "")
-        winner_price   = winner_product.get("price", 0)
-        winner_rating  = winner_product.get("rating", 0)
-        winner_url     = amazon_search_url(winner_title) if winner_title else ""
-        stars          = "★" * int(winner_rating)
+    def sec_buying_guide():
+        if not content.get("buying_guide"):
+            return []
+        out = ['<!-- wp:heading {"level":2} -->\n<h2>How to Choose</h2>\n<!-- /wp:heading -->']
+        out += [f'<!-- wp:paragraph -->\n<p>{p.strip()}</p>\n<!-- /wp:paragraph -->'
+                for p in content["buying_guide"].split('\n\n') if p.strip()]
+        return out
 
-        parts.append(
-            '<!-- wp:group {"className":"top-pick-box","style":{"border":{"width":"2px","color":"#b8431a","radius":"8px"},"spacing":{"padding":{"all":"20px"}},"color":{"background":"#fff8f5"}}} -->\n'
-            '<div class="wp-block-group top-pick-box" style="border:2px solid #b8431a;border-radius:8px;padding:20px;background-color:#fff8f5">\n'
-            '<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontStyle":"normal","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->\n'
-            '<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8431a">⭐ Our Top Pick</p>\n'
-            '<!-- /wp:paragraph -->\n'
-            f'<!-- wp:heading {{"level":3,"style":{{"typography":{{"fontSize":"18px"}}}}}} -->\n'
-            f'<h3 style="font-size:18px">{winner_title}</h3>\n'
-            f'<!-- /wp:heading -->\n'
-            f'<!-- wp:paragraph -->\n<p>{winner_verdict}</p>\n<!-- /wp:paragraph -->\n'
-        )
+    def sec_faq():
+        return _faq_blocks(content.get("faq", []))
 
-        if winner_price:
-            parts.append(
-                f'<!-- wp:paragraph -->\n'
-                f'<p><strong>${winner_price:.2f}</strong>'
-                f'{" &nbsp; " + stars if stars else ""}'
-                f'{" " + str(winner_rating) + "/5" if winner_rating else ""}</p>\n'
-                f'<!-- /wp:paragraph -->\n'
-            )
+    def sec_comparison_table():
+        items = content.get("products", [])
+        if len(items) < 2:
+            return []
+        rows = ""
+        for it in items:
+            p = products_by_asin.get(it.get("asin"), {})
+            if not p:
+                continue
+            best = (it.get("heading") or it.get("who_its_for", "") or "")[:40]
+            rows += (f'<tr><td><strong>{p.get("title","")[:42]}</strong></td>'
+                     f'<td>${p.get("price",0):.0f}</td><td>{p.get("rating","")}/5</td><td>{best}</td></tr>')
+        if not rows:
+            return []
+        return ['<!-- wp:heading {"level":2} -->\n<h2>At a Glance</h2>\n<!-- /wp:heading -->',
+                '<!-- wp:table {"className":"is-style-stripes"} -->\n'
+                '<figure class="wp-block-table is-style-stripes"><table>'
+                '<thead><tr><th>Product</th><th>Price</th><th>Rating</th><th>Best for</th></tr></thead>'
+                f'<tbody>{rows}</tbody></table></figure>\n<!-- /wp:table -->']
 
-        if winner_url:
-            parts.append(
-                f'<!-- wp:buttons -->\n<div class="wp-block-buttons">\n'
-                f'<!-- wp:button {{"style":{{"color":{{"background":"#b8431a","text":"#ffffff"}},"border":{{"radius":"6px"}}}}}} -->\n'
-                f'<div class="wp-block-button">'
-                f'<a class="wp-block-button__link" href="{winner_url}" rel="nofollow sponsored" target="_blank">'
-                f'Search on Amazon →</a></div>\n'
-                f'<!-- /wp:button -->\n</div>\n<!-- /wp:buttons -->\n'
-            )
+    builders = {"intro": sec_intro, "top_pick": sec_top_pick, "cards": sec_cards,
+                "buying_guide": sec_buying_guide, "faq": sec_faq, "comparison_table": sec_comparison_table}
 
-        parts.append('</div>\n<!-- /wp:group -->')
-
-    # ── Product cards ──────────────────────────────────────────────────────
-    for item in content.get("products", []):
-        asin    = item.get("asin", "")
-        # Don't list the winner again — it already has the Top Pick callout above
-        if asin and asin == winner_asin:
-            continue
-        product = products_by_asin.get(asin, {})
-        title   = product.get("title", asin)
-        price   = product.get("price", 0)
-        rating  = product.get("rating", 0)
-        reviews = product.get("review_count", 0)
-        media   = image_map.get(asin) or {}
-        img_url = media.get("URL", "")
-        img_id  = media.get("ID")
-        aff_url = amazon_search_url(title)
-        stars   = "★" * int(rating) + ("½" if rating % 1 >= 0.5 else "")
-
-        card = (
-            f'<!-- wp:group {{"className":"product-card","style":{{"border":{{"width":"1px","color":"#e4e0d8","radius":"8px"}},"spacing":{{"padding":{{"all":"20px"}}}}}}}} -->\n'
-            f'<div class="wp-block-group product-card" style="border:1px solid #e4e0d8;border-radius:8px;padding:20px">\n'
-        )
-
-        # Product image (WordPress-hosted)
-        if img_url:
-            card += (
-                f'<!-- wp:image {{"id":{img_id},"sizeSlug":"medium","align":"right"}} -->\n'
-                f'<figure class="wp-block-image alignright size-medium">'
-                f'<a href="{aff_url}" rel="nofollow sponsored" target="_blank">'
-                f'<img src="{img_url}" alt="{title}" class="wp-image-{img_id}"/></a></figure>\n'
-                f'<!-- /wp:image -->\n'
-            )
-
-        # Heading label
-        if item.get("heading"):
-            card += (
-                f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"11px","fontWeight":"700","letterSpacing":"2px","textTransform":"uppercase"}},"color":{{"text":"#8a8480"}}}}}} -->\n'
-                f'<p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8a8480">{item["heading"]}</p>\n'
-                f'<!-- /wp:paragraph -->\n'
-            )
-
-        # Product title
-        card += (
-            f'<!-- wp:heading {{"level":3}} -->\n'
-            f'<h3>{title}</h3>\n'
-            f'<!-- /wp:heading -->\n'
-        )
-
-        # Price and rating
-        if price or rating:
-            price_str  = f"<strong>${price:.2f}</strong>" if price else ""
-            rating_str = f"{stars} {rating}/5 ({reviews:,} reviews)" if rating else ""
-            card += (
-                f'<!-- wp:paragraph -->\n'
-                f'<p>{price_str}{"&nbsp;&nbsp;" if price_str and rating_str else ""}{rating_str}</p>\n'
-                f'<!-- /wp:paragraph -->\n'
-            )
-
-        # Verdict
-        if item.get("verdict"):
-            card += f'<!-- wp:paragraph -->\n<p>{item["verdict"]}</p>\n<!-- /wp:paragraph -->\n'
-
-        # Best for
-        if item.get("who_its_for"):
-            card += (
-                f'<!-- wp:paragraph -->\n'
-                f'<p>👤 <strong>Best for:</strong> {item["who_its_for"]}</p>\n'
-                f'<!-- /wp:paragraph -->\n'
-            )
-
-        # Pros and cons
-        if item.get("main_pro") or item.get("main_con"):
-            card += (
-                f'<!-- wp:columns -->\n<div class="wp-block-columns">\n'
-                f'<!-- wp:column -->\n<div class="wp-block-column">\n'
-                f'<!-- wp:paragraph -->\n<p>✅ <strong>Pro:</strong> {item.get("main_pro","")}</p>\n<!-- /wp:paragraph -->\n'
-                f'</div>\n<!-- /wp:column -->\n'
-                f'<!-- wp:column -->\n<div class="wp-block-column">\n'
-                f'<!-- wp:paragraph -->\n<p>⚠️ <strong>Consider:</strong> {item.get("main_con","")}</p>\n<!-- /wp:paragraph -->\n'
-                f'</div>\n<!-- /wp:column -->\n'
-                f'</div>\n<!-- /wp:columns -->\n'
-            )
-
-        # Review quote
-        if item.get("quote"):
-            card += (
-                f'<!-- wp:quote -->\n'
-                f'<blockquote class="wp-block-quote">'
-                f'<p>{item["quote"]}</p>'
-                f'<cite>Verified Amazon buyer</cite>'
-                f'</blockquote>\n'
-                f'<!-- /wp:quote -->\n'
-            )
-
-        # CTA button
-        card += (
-            f'<!-- wp:buttons -->\n<div class="wp-block-buttons">\n'
-            f'<!-- wp:button {{"style":{{"color":{{"background":"#1c1814","text":"#ffffff"}},"border":{{"radius":"6px"}}}}}} -->\n'
-            f'<div class="wp-block-button">'
-            f'<a class="wp-block-button__link" href="{aff_url}" rel="nofollow sponsored" target="_blank">'
-            f'Search on Amazon →</a></div>\n'
-            f'<!-- /wp:button -->\n</div>\n<!-- /wp:buttons -->\n'
-        )
-
-        card += '</div>\n<!-- /wp:group -->\n'
-        parts.append(card)
-
-    # ── Buying guide ───────────────────────────────────────────────────────
-    if content.get("buying_guide"):
-        parts.append('<!-- wp:heading {"level":2} -->\n<h2>How to Choose</h2>\n<!-- /wp:heading -->')
-        for para in content["buying_guide"].split('\n\n'):
-            if para.strip():
-                parts.append(f'<!-- wp:paragraph -->\n<p>{para.strip()}</p>\n<!-- /wp:paragraph -->')
-
-    # ── FAQ ────────────────────────────────────────────────────────────────
-    faq = content.get("faq", [])
-    if faq:
-        parts.append('<!-- wp:heading {"level":2} -->\n<h2>Frequently Asked Questions</h2>\n<!-- /wp:heading -->')
-        for item in faq:
-            if item.get("q"):
-                parts.append(f'<!-- wp:heading {{"level":3}} -->\n<h3>{item["q"]}</h3>\n<!-- /wp:heading -->')
-            if item.get("a"):
-                parts.append(f'<!-- wp:paragraph -->\n<p>{item["a"]}</p>\n<!-- /wp:paragraph -->')
-
-    # ── Author box — Mavrino brand ─────────────────────────────────────────
-    author_bio = os.getenv("AUTHOR_BIO", "Mavrino tests home, kitchen, travel and lifestyle products to help US shoppers buy with confidence.")
-    parts.append(
-        '<!-- wp:group {"className":"author-box","style":{"border":{"width":"1px","color":"#e4e0d8","radius":"8px"},"spacing":{"padding":{"all":"16px"}},"color":{"background":"#f5f2ec"}}} -->\n'
-        '<div class="wp-block-group author-box" style="border:1px solid #e4e0d8;border-radius:8px;padding:16px;background-color:#f5f2ec">\n'
-        '<!-- wp:paragraph -->\n'
-        f'<p><strong>Mavrino Editorial</strong> — {author_bio}</p>\n'
-        '<!-- /wp:paragraph -->\n'
-        '</div>\n<!-- /wp:group -->'
-    )
-
+    # ── Assemble: disclosure + hero, middle sections per recipe, author box ─
+    parts = [_disclosure_block()]
+    hero = _hero_block(hero_image, hero_media)
+    if hero:
+        parts.append(hero)
+    for key in layout.get("sections", ["intro", "top_pick", "cards", "buying_guide", "faq"]):
+        fn = builders.get(key)
+        if fn:
+            parts.extend(fn())
+    parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 
 
@@ -465,13 +373,16 @@ def _hero_block(hero_image: dict, hero_media: dict) -> str:
     )
 
 
-def _author_block() -> str:
-    author_bio = os.getenv("AUTHOR_BIO", "Mavrino tests home, kitchen, travel and lifestyle products to help US shoppers buy with confidence.")
+def _author_block(persona: dict = None) -> str:
+    persona = persona or {}
+    name = persona.get("name", "Mavrino Editorial")
+    bio  = persona.get("bio") or os.getenv("AUTHOR_BIO", "Mavrino tests home, kitchen, travel and lifestyle products to help US shoppers buy with confidence.")
+    label = f"By {name}" if persona.get("name") else name
     return (
         '<!-- wp:group {"className":"author-box","style":{"border":{"width":"1px","color":"#e4e0d8","radius":"8px"},"spacing":{"padding":{"all":"16px"}},"color":{"background":"#f5f2ec"}}} -->\n'
         '<div class="wp-block-group author-box" style="border:1px solid #e4e0d8;border-radius:8px;padding:16px;background-color:#f5f2ec">\n'
         '<!-- wp:paragraph -->\n'
-        f'<p><strong>Mavrino Editorial</strong> — {author_bio}</p>\n'
+        f'<p><strong>{label}</strong> — {bio}</p>\n'
         '<!-- /wp:paragraph -->\n'
         '</div>\n<!-- /wp:group -->'
     )
@@ -598,7 +509,7 @@ def build_comparison_content(content: dict, products: list[dict], hero_image: di
         parts += _intro_blocks(content["verdict"])
 
     parts += _faq_blocks(content.get("faq", []))
-    parts.append(_author_block())
+    parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 
 
@@ -674,7 +585,7 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
         parts.append(_cta_button("Check Price on Amazon →", aff, bg="#b8431a"))
 
     parts += _faq_blocks(content.get("faq", []))
-    parts.append(_author_block())
+    parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 
 
@@ -742,6 +653,13 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
     if image_map:
         print(f"  [images] {len(image_map)} real product image(s) uploaded")
 
+    # Per-vertical accent colour so each category looks distinct.
+    try:
+        import variations as _var
+        accent = _var.accent_for(_var.vertical_for_keyword(keyword))
+    except Exception:
+        accent = None
+
     # Build content — dispatch on post format (comparison/review have their own
     # JSON shapes; everything else uses the roundup/listicle renderer).
     post_type = content.get("post_type", keyword_data.get("post_type", "roundup"))
@@ -750,7 +668,7 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
     elif post_type == "review" and content.get("sections"):
         wp_content = build_review_content(content, products, hero_image, hero_media, image_map)
     else:
-        wp_content = build_wp_content(content, products, hero_image, hero_media, image_map)
+        wp_content = build_wp_content(content, products, hero_image, hero_media, image_map, accent=accent)
 
     # Process through taxonomy manager
     try:

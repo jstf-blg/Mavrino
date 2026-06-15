@@ -45,6 +45,11 @@ You NEVER invent specifications or experiences.
 You write for real people making purchase decisions, not for search engines.
 Your writing is direct, specific, and opinionated. You give clear verdicts.
 
+SEO (important): The exact target keyword phrase MUST appear naturally in the title AND within the
+first 100 words of the intro — ideally in the opening sentence. Open the intro with a clear value
+proposition: state plainly what the reader gets from this guide and who it's for. Write naturally for
+people first; never keyword-stuff.
+
 FORBIDDEN phrases (never use these): {banned}
 
 Always respond with valid JSON only. No markdown fences, no preamble.""".format(
@@ -384,13 +389,23 @@ def generate_content(
     else:
         prompt = build_roundup_prompt(keyword, products)
 
-    print(f"  [claude] Generating '{keyword}' ({post_type})...")
+    # Rotate the editorial persona (voice + byline) so posts don't all read alike.
+    persona = None
+    system  = SYSTEM_PROMPT
+    try:
+        import variations as var
+        persona = var.persona_for(keyword)
+        system  = SYSTEM_PROMPT + "\n\nEDITORIAL VOICE — " + persona["voice"]
+    except Exception:
+        pass
+
+    print(f"  [claude] Generating '{keyword}' ({post_type}){' as ' + persona['name'] if persona else ''}...")
 
     try:
         message = client.messages.create(
             model="claude-haiku-4-5",
             max_tokens=2500,
-            system=SYSTEM_PROMPT,
+            system=system,
             messages=[{"role": "user", "content": prompt}],
         )
 
@@ -407,6 +422,8 @@ def generate_content(
         content["keyword"]   = keyword
         content["post_type"] = post_type
         content["generated_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ")
+        if persona:
+            content["persona"] = persona
 
         print(f"  [claude] Done — {len(raw)} chars")
         return content

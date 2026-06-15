@@ -169,7 +169,15 @@
     "baking": 789922957,
     "air-fryer-function": 789922958,
     "smart-controls": 789922959,
-    "convection-heating": 789922960
+    "convection-heating": 789922960,
+    "for-meal-prep": 789922961,
+    "6-5-quart-capacity": 789922962,
+    "value-option": 789922963,
+    "philips": 789922964,
+    "best-value": 789922965,
+    "6.5-quart-capacity": 789922966,
+    "4.1-liter-capacity": 789922967,
+    "high-customer-satisfaction": 789922968
   },
   "post_index": [
     {
@@ -450,12 +458,57 @@
         "affordable"
       ],
       "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Ninja Air Fryer Pro XL 6.5 Qt vs COSORI TurboBlaze Air Fryer 6 Quart: Which Should You Buy in 2026?",
+      "wp_post_id": 344,
+      "wp_url": "https://mavrino.com/2026/06/15/ninja-air-fryer-pro-xl-6-5-qt-vs-cosori-turboblaze-air-fryer-6-quart-which-should-you-buy-in-2026-2/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "ninja",
+        "cosori",
+        "under-$100",
+        "under-$150",
+        "for-families",
+        "for-meal-prep",
+        "large-capacity",
+        "budget-friendly",
+        "6-5-quart-capacity",
+        "high-ratings",
+        "value-option"
+      ],
+      "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Ninja Air Fryer Pro XL 6.5 Qt vs Philips 2000 Series Air Fryer 4.1L: Which Should You Buy in 2026?",
+      "wp_post_id": 347,
+      "wp_url": "https://mavrino.com/2026/06/15/ninja-air-fryer-pro-xl-6-5-qt-vs-philips-2000-series-air-fryer-4-1l-which-should-you-buy-in-2026/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "ninja",
+        "philips",
+        "under-$50",
+        "under-$100",
+        "under-$150",
+        "for-families",
+        "large-capacity",
+        "budget-friendly",
+        "best-value",
+        "6.5-quart-capacity",
+        "4.1-liter-capacity",
+        "high-customer-satisfaction"
+      ],
+      "published_at": "2026-06-15"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 8,
     "Electric Kettles": 3,
-    "Air Fryers": 3,
+    "Air Fryers": 5,
     "Blenders": 3,
     "Food Processors": 2,
     "Robot Vacuums": 1,
