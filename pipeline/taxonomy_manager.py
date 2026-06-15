@@ -562,13 +562,24 @@ def find_internal_links(classification: dict, current_slug: str, tax: dict) -> l
         if score > 0:
             scored.append((score, post))
 
-    # Sort by score, take top 4
+    # Sort by score, take top siblings (keyword-rich anchors = the post titles)
     scored.sort(key=lambda x: x[0], reverse=True)
-    for _, post in scored[:4]:
+    for _, post in scored[:5]:
         links.append({
             "title":       post.get("title", ""),
             "url":         post.get("wp_url", ""),
             "anchor_text": post.get("title", "")[:60],
+        })
+
+    # Topical-mesh pillar link: every post links UP to its subcategory archive,
+    # so Google sees a clear pillar → cluster structure per category.
+    import re as _re
+    if child_cat:
+        slug = _re.sub(r"[^a-z0-9]+", "-", child_cat.lower()).strip("-")
+        links.insert(0, {
+            "title":       child_cat,
+            "url":         f"{SITE_URL}/category/{slug}/",
+            "anchor_text": f"all {child_cat.lower()} reviews",
         })
 
     return links

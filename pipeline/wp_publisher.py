@@ -330,19 +330,34 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 "buying_guide": sec_buying_guide, "faq": sec_faq, "comparison_table": sec_comparison_table}
 
     # ── Assemble: disclosure + hero, middle sections per recipe, author box ─
+    # Ad slots (invisible .mavrino-ad containers) are placed after the intro and
+    # mid-content so an ad plugin / AdSense can fill them — see wordpress/mavrino-schema.php.
     parts = [_disclosure_block()]
     hero = _hero_block(hero_image, hero_media)
     if hero:
         parts.append(hero)
-    for key in layout.get("sections", ["intro", "top_pick", "cards", "buying_guide", "faq"]):
+    middle = layout.get("sections", ["intro", "top_pick", "cards", "buying_guide", "faq"])
+    for i, key in enumerate(middle):
         fn = builders.get(key)
         if fn:
             parts.extend(fn())
+        if i == 0:
+            parts.append(_ad_slot("in-content-1"))            # ad after the intro
+        elif i == len(middle) - 2 and len(middle) > 2:
+            parts.append(_ad_slot("in-content-2"))            # ad before the final section
     parts.append(_author_block(content.get("persona")))
     return "\n\n".join(parts)
 
 
 # ── Shared block helpers (used by the comparison + review renderers) ───────────
+
+def _ad_slot(slot: str = "in-content") -> str:
+    """An invisible ad-inventory container. Plain <div> survives WP.com sanitisation
+    (scripts don't), so an ad plugin or AdSense Auto-ads can target/fill .mavrino-ad."""
+    return (f'<!-- wp:html -->\n'
+            f'<div class="mavrino-ad" data-ad-slot="{slot}" style="margin:24px 0;text-align:center"></div>\n'
+            f'<!-- /wp:html -->')
+
 
 def _disclosure_block() -> str:
     return (
