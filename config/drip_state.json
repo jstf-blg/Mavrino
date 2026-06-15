@@ -4,8 +4,8 @@
     "counts": {
       "Kitchen": 1,
       "Home": 1,
-      "Travel": 0,
-      "Home Office": 0,
+      "Travel": 1,
+      "Home Office": 1,
       "Fitness & Wellness": 0,
       "Outdoors": 0
     }

@@ -216,15 +216,6 @@
     "slug": "6d974df4"
   },
   {
-    "keyword": "Samsonite Freeform Hardside Expandable Luggage vs Away The Carry-On Hardside Luggage",
-    "source": "seed_comparison",
-    "asin_a": "B073WJN3JK",
-    "asin_b": "B07BVTV3CQ",
-    "score": 70,
-    "post_type": "comparison",
-    "slug": "ec19940f"
-  },
-  {
     "keyword": "Samsonite Freeform Hardside Expandable Luggage vs Travelpro Maxlite 5 Softside Expandable Spinner",
     "source": "seed_comparison",
     "asin_a": "B073WJN3JK",
@@ -2723,13 +2714,6 @@
     "score": 60,
     "post_type": "guide",
     "slug": "8bbb8f2f"
-  },
-  {
-    "keyword": "top 5 standing desks",
-    "source": "template",
-    "score": 60,
-    "post_type": "roundup",
-    "slug": "4c9525bb"
   },
   {
     "keyword": "top 7 standing desks for 2026",

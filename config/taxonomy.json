@@ -131,7 +131,26 @@
     "shark": 789922890,
     "self-emptying": 789922891,
     "hybrid-mop": 789922892,
-    "smart-home": 789922893
+    "smart-home": 789922893,
+    "samsonite": 789922923,
+    "away": 789922924,
+    "carry-on": 789922925,
+    "value-comparison": 789922926,
+    "for-frequent-travelers": 789922927,
+    "hardside": 789922928,
+    "expandable": 789922929,
+    "4-star-rated": 789922930,
+    "tsa-friendly": 789922931,
+    "uplift": 789922932,
+    "varidesk": 789922933,
+    "vari": 789922934,
+    "flexispot": 789922935,
+    "for-home-office": 789922936,
+    "electric": 789922937,
+    "health-conscious": 789922938,
+    "height-adjustable": 789922939,
+    "bamboo-top": 789922940,
+    "spacious-surface": 789922941
   },
   "post_index": [
     {
@@ -362,6 +381,56 @@
         "smart-home"
       ],
       "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Samsonite Freeform Hardside Expandable Luggage vs Away The Carry-On Hardside Luggage: Which Should You Buy in 2026?",
+      "wp_post_id": 312,
+      "wp_url": "https://mavrino.com/2026/06/15/samsonite-freeform-hardside-expandable-luggage-vs-away-the-carry-on-hardside-luggage-which-should-you-buy-in-2026/",
+      "parent_category": "Travel",
+      "child_category": "Luggage",
+      "tags": [
+        "samsonite",
+        "away",
+        "under-$200",
+        "under-$300",
+        "budget",
+        "carry-on",
+        "value-comparison",
+        "for-frequent-travelers",
+        "hardside",
+        "expandable",
+        "4-star-rated",
+        "TSA-friendly"
+      ],
+      "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Top 5 Standing Desks, Ranked for 2026",
+      "wp_post_id": 315,
+      "wp_url": "https://mavrino.com/2026/06/15/top-5-standing-desks-ranked-for-2026/",
+      "parent_category": "Home Office",
+      "child_category": "Standing Desks",
+      "tags": [
+        "uplift",
+        "varidesk",
+        "vari",
+        "flexispot",
+        "under-$200",
+        "under-$300",
+        "$300-$500",
+        "premium",
+        "for-home-office",
+        "budget-friendly",
+        "electric",
+        "health-conscious",
+        "height-adjustable",
+        "bamboo-top",
+        "spacious-surface",
+        "affordable"
+      ],
+      "published_at": "2026-06-15"
     }
   ],
   "category_counts": {
@@ -370,7 +439,9 @@
     "Air Fryers": 3,
     "Blenders": 2,
     "Food Processors": 2,
-    "Robot Vacuums": 1
+    "Robot Vacuums": 1,
+    "Luggage": 1,
+    "Standing Desks": 1
   },
   "pending_splits": [],
   "last_health_check": null
