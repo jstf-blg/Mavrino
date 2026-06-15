@@ -427,19 +427,29 @@ def get_products_for_keyword(keyword: str, count: int = 3) -> list[dict]:
             offset = sum(ord(c) for c in kw) % len(tail)
             relevant = [head] + tail[offset:] + tail[:offset]
 
+    niche_pool = list(relevant)   # judge the Mavrino Score against the whole category
+
     # Semantic fit: for attribute/use-case angles (quiet, compact, premium, for-X…),
     # let the model pick the products that actually match the title and drop the
     # contradictions (e.g. a loud blender in a "quiet blenders" post).
+    final = relevant[:count]
     try:
         import content_generator as cg
         if cg.keyword_has_angle(keyword) and len(relevant) > count:
             picked = cg.select_products_for_angle(keyword, relevant, count)
             if len(picked) >= 2:
-                return picked[:count]
+                final = picked[:count]
     except Exception:
         pass
 
-    return relevant[:count]
+    # Attach the proprietary Mavrino Score (judged against the category peer pool).
+    try:
+        import scoring
+        scoring.attach_scores(final, niche_pool)
+    except Exception:
+        pass
+
+    return final
 
 
 if __name__ == "__main__":

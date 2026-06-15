@@ -66,6 +66,7 @@ def _format_product_for_prompt(product: dict) -> str:
         f"Brand: {product.get('brand', 'N/A')}",
         f"Price: ${product.get('price', 0):.2f}",
         f"Rating: {product.get('rating', 0)}/5 ({product.get('review_count', 0):,} reviews)",
+        f"Mavrino Score: {product.get('mavrino_score', 'N/A')}/10 (our proprietary score — you may reference it)",
         f"Features: {'; '.join(product.get('features', [])[:4])}",
         f"% Positive reviews: {ra.get('pct_positive', 0)}%",
         f"Common praise: {', '.join(ra.get('common_praise', [])[:3])}",

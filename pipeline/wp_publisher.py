@@ -244,6 +244,9 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
             f'<!-- wp:heading {{"level":3,"style":{{"typography":{{"fontSize":"18px"}}}}}} -->\n<h3 style="font-size:18px">{title}</h3>\n<!-- /wp:heading -->\n'
             f'<!-- wp:paragraph -->\n<p>{wv}</p>\n<!-- /wp:paragraph -->\n'
         )
+        badge = _score_badge(wprod.get("mavrino_score"), accent)
+        if badge:
+            out += badge + "\n"
         if price:
             out += (f'<!-- wp:paragraph -->\n<p><strong>${price:.2f}</strong>'
                     f'{" &nbsp; " + stars if stars else ""}{" " + str(rating) + "/5" if rating else ""}</p>\n<!-- /wp:paragraph -->\n')
@@ -277,6 +280,9 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 price_str  = f"<strong>${price:.2f}</strong>" if price else ""
                 rating_str = f"{stars} {rating}/5 ({reviews:,} reviews)" if rating else ""
                 card += f'<!-- wp:paragraph -->\n<p>{price_str}{"&nbsp;&nbsp;" if price_str and rating_str else ""}{rating_str}</p>\n<!-- /wp:paragraph -->\n'
+            badge = _score_badge(product.get("mavrino_score"), accent)
+            if badge:
+                card += badge + "\n"
             if item.get("verdict"):
                 card += f'<!-- wp:paragraph -->\n<p>{item["verdict"]}</p>\n<!-- /wp:paragraph -->\n'
             if item.get("who_its_for"):
@@ -316,14 +322,16 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
             if not p:
                 continue
             best = (it.get("heading") or it.get("who_its_for", "") or "")[:40]
+            sc   = p.get("mavrino_score", "")
             rows += (f'<tr><td><strong>{p.get("title","")[:42]}</strong></td>'
+                     f'<td><strong>{sc}/10</strong></td>'
                      f'<td>${p.get("price",0):.0f}</td><td>{p.get("rating","")}/5</td><td>{best}</td></tr>')
         if not rows:
             return []
         return ['<!-- wp:heading {"level":2} -->\n<h2>At a Glance</h2>\n<!-- /wp:heading -->',
                 '<!-- wp:table {"className":"is-style-stripes"} -->\n'
                 '<figure class="wp-block-table is-style-stripes"><table>'
-                '<thead><tr><th>Product</th><th>Price</th><th>Rating</th><th>Best for</th></tr></thead>'
+                '<thead><tr><th>Product</th><th>Mavrino Score</th><th>Price</th><th>Rating</th><th>Best for</th></tr></thead>'
                 f'<tbody>{rows}</tbody></table></figure>\n<!-- /wp:table -->']
 
     builders = {"intro": sec_intro, "top_pick": sec_top_pick, "cards": sec_cards,
@@ -336,6 +344,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
     hero = _hero_block(hero_image, hero_media)
     if hero:
         parts.append(hero)
+    parts.append(_updated_line())
     middle = layout.get("sections", ["intro", "top_pick", "cards", "buying_guide", "faq"])
     for i, key in enumerate(middle):
         fn = builders.get(key)
@@ -351,12 +360,34 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
 
 # ── Shared block helpers (used by the comparison + review renderers) ───────────
 
+def _score_badge(score, accent: str = "#b8431a") -> str:
+    """Render the proprietary Mavrino Score as a coloured badge line."""
+    if not score:
+        return ""
+    try:
+        import scoring
+        lab = scoring.score_label(float(score))
+    except Exception:
+        lab = ""
+    return (f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"15px"}}}}}} -->\n'
+            f'<p style="font-size:15px"><strong style="color:{accent}">★ Mavrino Score: {score}/10</strong>'
+            f'{" · " + lab if lab else ""}</p>\n<!-- /wp:paragraph -->')
+
+
 def _ad_slot(slot: str = "in-content") -> str:
     """An invisible ad-inventory container. Plain <div> survives WP.com sanitisation
     (scripts don't), so an ad plugin or AdSense Auto-ads can target/fill .mavrino-ad."""
     return (f'<!-- wp:html -->\n'
             f'<div class="mavrino-ad" data-ad-slot="{slot}" style="margin:24px 0;text-align:center"></div>\n'
             f'<!-- /wp:html -->')
+
+
+def _updated_line() -> str:
+    """Freshness signal — 'Last updated' line. The refresh job revisits prices/ratings,
+    so this is a genuine recency marker (a ranking signal AI sites usually neglect)."""
+    return (f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"13px"}}}}}} -->\n'
+            f'<p style="font-size:13px;color:#8a8480"><em>Last updated {datetime.utcnow():%B %Y} · '
+            f'prices and ratings re-checked regularly.</em></p>\n<!-- /wp:paragraph -->')
 
 
 def _disclosure_block() -> str:

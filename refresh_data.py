@@ -81,6 +81,13 @@ def refresh_all(dry_run: bool = False) -> dict:
         "errors":          0,
     }
 
+    today = _utcnow().strftime("%Y-%m-%d")
+    hist_file = Path("config/price_history.json")
+    try:
+        price_history = json.loads(hist_file.read_text())
+    except Exception:
+        price_history = {}
+
     for f in files:
         try:
             before = json.loads(f.read_text())
@@ -106,6 +113,14 @@ def refresh_all(dry_run: bool = False) -> dict:
                 "old": round(old_price, 2), "new": round(new_price, 2),
             })
 
+        # Price-history snapshot (one per product per day) — the foundation for
+        # "lowest in N days" / price-drop badges once live prices start to vary.
+        if new_price:
+            seq = price_history.setdefault(asin, [])
+            if not seq or seq[-1].get("date") != today:
+                seq.append({"date": today, "price": round(new_price, 2)})
+                price_history[asin] = seq[-180:]   # keep ~6 months of daily points
+
         # Image health — flag products whose stored image won't load (so we know
         # which ones still rely on the Unsplash stand-in until real photos land).
         if not _image_reachable(after.get("image_url", "") or old_img):
@@ -126,6 +141,7 @@ def refresh_all(dry_run: bool = False) -> dict:
     print(f"  Errors:         {summary['errors']}")
 
     if not dry_run:
+        hist_file.write_text(json.dumps(price_history, indent=2))
         history = []
         if LOG_FILE.exists():
             try:
@@ -134,7 +150,7 @@ def refresh_all(dry_run: bool = False) -> dict:
                 history = []
         history.append(summary)
         LOG_FILE.write_text(json.dumps(history[-90:], indent=2))
-        print(f"\n  Logged to {LOG_FILE}")
+        print(f"\n  Logged to {LOG_FILE}; price history → {hist_file}")
     print(f"{'='*56}\n")
     return summary
 
