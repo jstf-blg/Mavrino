@@ -641,12 +641,12 @@ def process_post(
         wp_content = inject_internal_links(wp_content, links)
         print(f"  [taxonomy] Added {len(links)} internal links")
 
-    # 5. Generate schema markup
+    # 5. Generate schema markup — stored in meta, NOT injected into content.
+    # WordPress.com strips <script> tags from post_content, which left the raw
+    # JSON-LD visible as text at the top of the post. Keep the data in postmeta so
+    # it can be rendered into <head> later (theme/plugin) without corrupting the body.
     post_url = f"{SITE_URL}/?p=new"  # placeholder, updated after publish
     schema   = generate_schema(content, products, classification, post_url)
-
-    # Inject schema into content
-    wp_content = schema + "\n\n" + wp_content
 
     # 6. Update taxonomy state
     tax["category_counts"][child] = tax["category_counts"].get(child, 0) + 1
@@ -659,6 +659,7 @@ def process_post(
         {"key": "_mavrino_parent_category",    "value": parent},
         {"key": "_mavrino_child_category",     "value": child},
         {"key": "_mavrino_schema_type",        "value": classification.get("schema_type", "Article")},
+        {"key": "_mavrino_schema_jsonld",      "value": schema},
         {"key": "_mavrino_classified_at",      "value": classification.get("classified_at", "")},
         {"key": "_mavrino_has_affiliate_links","value": "false"},
     ]

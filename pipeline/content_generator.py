@@ -305,6 +305,63 @@ Return JSON with this structure:
 }}"""
 
 
+# ── Semantic product-fit selection ─────────────────────────────────────────────
+# Niche + price are handled deterministically in cache_builder. But ATTRIBUTE and
+# USE-CASE angles (quiet, compact, large-capacity, for-small-kitchens, premium…)
+# need product knowledge: a loud blender must not appear in a "quiet blenders" post.
+
+_ANGLE_WORDS = [
+    "quiet", "silent", "compact", "mini", "portable", "lightweight", "light weight",
+    "large capacity", "large", "heavy duty", "heavy-duty", "durable", "premium",
+    "high-end", "high end", "professional", "luxury", "stylish", "space saving",
+    "space-saving", "easy to clean", "for beginners", "for small", "for large",
+    "for famil", "for apartment", "for travel", "for college", "for the money",
+]
+
+
+def keyword_has_angle(keyword: str) -> bool:
+    kw = (keyword or "").lower()
+    return any(w in kw for w in _ANGLE_WORDS)
+
+
+def select_products_for_angle(keyword: str, products: list[dict], count: int) -> list[dict]:
+    """Return the products that genuinely fit the post's specific angle, ranked
+    best-fit first, excluding contradictions (e.g. a loud blender for a 'quiet'
+    post). Uses the model's knowledge of these specific models. May return fewer
+    than `count` when only some truly fit. Falls back to input order on error.
+    """
+    if not products:
+        return []
+    lines = [f'{p.get("asin")} | {p.get("title","")} | {p.get("brand","")} | '
+             f'${p.get("price",0):.0f} | {p.get("rating",0)}*' for p in products]
+    prompt = (
+        f'A reader is looking for: "{keyword}".\n\n'
+        'From these candidate products, return the ASINs that GENUINELY fit that specific '
+        'angle, ranked best-fit first. EXCLUDE any product that contradicts the angle — e.g. '
+        'a loud blender for a "quiet" post, a bulky model for a "compact" post, a basic/cheap '
+        'unit for a "premium" post, a small one for a "large capacity" post. Use your knowledge '
+        f'of these specific models.\n\nPick up to {count}. If fewer than {count} truly fit, '
+        'return only those that do.\n\nCANDIDATES:\n' + "\n".join(lines) +
+        '\n\nReturn JSON only: {"asins": ["ASIN", ...]}'
+    )
+    try:
+        msg = client.messages.create(
+            model="claude-haiku-4-5", max_tokens=300,
+            system="You select products that fit a specific buying angle. Return valid JSON only.",
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = msg.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0]
+        asins = json.loads(raw).get("asins", [])
+        by_asin = {p.get("asin"): p for p in products}
+        picked = [by_asin[a] for a in asins if a in by_asin]
+        return picked
+    except Exception as e:
+        print(f"  [select] angle selection failed: {e}")
+        return products[:count]
+
+
 # ── Main generation function ───────────────────────────────────────────────────
 
 def generate_content(

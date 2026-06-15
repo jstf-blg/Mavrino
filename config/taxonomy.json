@@ -150,7 +150,26 @@
     "health-conscious": 789922938,
     "height-adjustable": 789922939,
     "bamboo-top": 789922940,
-    "spacious-surface": 789922941
+    "spacious-surface": 789922941,
+    "kitchenaid": 789922942,
+    "noise-sensitive": 789922943,
+    "variable-speed": 789922944,
+    "ice-crushing": 789922945,
+    "mid-market": 789922946,
+    "5-quart-capacity": 789922947,
+    "5.5-quart-capacity": 789922948,
+    "artisan-series": 789922949,
+    "black+decker": 789922950,
+    "intuitive-controls": 789922951,
+    "easy-to-use": 789922952,
+    "reliable-heating": 789922953,
+    "clear-instructions": 789922954,
+    "for-dorms": 789922955,
+    "toasting": 789922956,
+    "baking": 789922957,
+    "air-fryer-function": 789922958,
+    "smart-controls": 789922959,
+    "convection-heating": 789922960
   },
   "post_index": [
     {
@@ -434,14 +453,15 @@
     }
   ],
   "category_counts": {
-    "Toaster Ovens": 5,
+    "Toaster Ovens": 8,
     "Electric Kettles": 3,
     "Air Fryers": 3,
-    "Blenders": 2,
+    "Blenders": 3,
     "Food Processors": 2,
     "Robot Vacuums": 1,
     "Luggage": 1,
-    "Standing Desks": 1
+    "Standing Desks": 1,
+    "Stand Mixers": 1
   },
   "pending_splits": [],
   "last_health_check": null

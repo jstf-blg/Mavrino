@@ -79,7 +79,7 @@ def products_needed(keyword: str, post_type: str) -> int:
     m = re.search(r"\btop\s+(\d+)\b", kw)
     if m:
         return max(3, min(7, int(m.group(1))))
-    return 3
+    return 5   # roundups/guides cover 5 products — more substance, less "thin" feel
 
 
 def run(dry_run: bool = False):

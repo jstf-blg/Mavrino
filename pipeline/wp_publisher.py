@@ -9,7 +9,7 @@ Publishes to WordPress.com with:
 - Full taxonomy + SEO via taxonomy_manager
 """
 
-import os, json, time, requests
+import os, json, time, re, requests
 from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
@@ -678,6 +678,28 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
     return "\n\n".join(parts)
 
 
+def qa_readback(post_id, token: str) -> list[str]:
+    """Read a published post back and flag obvious defects (leaked schema, thin
+    content, no images). Returns a list of issue strings (empty = clean)."""
+    issues = []
+    data = wp_request("GET", f"posts/{post_id}", token)
+    if not data:
+        return ["could not read post back"]
+    content = data.get("content", "") or ""
+    words = len(re.sub(r"<[^>]+>", " ", content).split())
+    if '"@context"' in content or "ld+json" in content:
+        issues.append("schema/JSON leaked into body")
+    if words < 350:
+        issues.append(f"thin content ({words} words)")
+    if "wp-content/uploads" not in content and "<img" not in content:
+        issues.append("no images")
+    if issues:
+        print(f"  [qa] WARNING post {post_id}: {'; '.join(issues)}")
+    else:
+        print(f"  [qa] ok ({words} words)")
+    return issues
+
+
 def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict) -> dict | None:
     """Publish a post to WordPress with taxonomy, SEO, images."""
     token = get_access_token()
@@ -778,6 +800,9 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
         # Guarantee pingbacks are closed — the create-time flag is unreliable, so
         # confirm via the nested-discussion form (prevents self-pingback comments).
         wp_request("POST", f"posts/{post_id}", token, {"discussion": {"pings_open": False}})
+
+        # QA: read the post back and flag obvious defects (leaked schema, thin, etc.)
+        qa_readback(post_id, token)
 
         log_entry = {
             "date":       datetime.utcnow().strftime("%Y-%m-%d"),
