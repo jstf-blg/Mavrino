@@ -692,8 +692,13 @@ def qa_readback(post_id, token: str) -> list[str]:
     return issues
 
 
-def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict) -> dict | None:
-    """Publish a post to WordPress with taxonomy, SEO, images."""
+def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict,
+                         update_post_id: int = None) -> dict | None:
+    """Publish a post to WordPress with taxonomy, SEO, images.
+
+    If update_post_id is given, the existing post is updated in place (same URL)
+    instead of creating a new one — used to regenerate a post without changing it.
+    """
     token = get_access_token()
     if not token:
         return None
@@ -788,8 +793,9 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
     if hero_media and hero_media.get("ID"):
         post_data["featured_image"] = hero_media["ID"]
 
-    print(f"  [wp] Publishing '{title[:55]}...'")
-    result = wp_request("POST", "posts/new", token, post_data)
+    endpoint = f"posts/{update_post_id}" if update_post_id else "posts/new"
+    print(f"  [wp] {'Updating' if update_post_id else 'Publishing'} '{title[:55]}...'")
+    result = wp_request("POST", endpoint, token, post_data)
 
     if result and result.get("ID"):
         post_id  = result["ID"]

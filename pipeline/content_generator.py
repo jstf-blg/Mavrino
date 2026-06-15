@@ -405,7 +405,7 @@ def generate_content(
     try:
         message = client.messages.create(
             model="claude-haiku-4-5",
-            max_tokens=2500,
+            max_tokens=4000,   # 2500 truncated longer roundups mid-JSON → parse failures
             system=system,
             messages=[{"role": "user", "content": prompt}],
         )

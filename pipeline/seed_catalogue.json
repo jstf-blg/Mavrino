@@ -599,6 +599,56 @@
       "review_count": 5800
     }
   ],
+  "curved monitors": [
+    {
+      "asin": "B0BWMW9D9B",
+      "title": "Samsung Odyssey G9 49-Inch DQHD Curved Gaming Monitor (G95C) 240Hz 1000R",
+      "brand": "Samsung",
+      "price": 999.99,
+      "rating": 4.6,
+      "review_count": 4800
+    },
+    {
+      "asin": "B0CRSPG2PV",
+      "title": "Samsung Odyssey G7 32-Inch 1000R Curved Gaming Monitor 165Hz QHD (G70B)",
+      "brand": "Samsung",
+      "price": 549.99,
+      "rating": 4.6,
+      "review_count": 5600
+    },
+    {
+      "asin": "B09KMW3RWZ",
+      "title": "LG 34GP63A-B 34-Inch UltraGear Curved QHD Ultrawide Gaming Monitor 160Hz",
+      "brand": "LG",
+      "price": 399.99,
+      "rating": 4.7,
+      "review_count": 8200
+    },
+    {
+      "asin": "B09HBN5VKK",
+      "title": "Dell S3422DWG 34-Inch WQHD Curved Ultrawide Gaming Monitor 144Hz",
+      "brand": "Dell",
+      "price": 379.99,
+      "rating": 4.6,
+      "review_count": 9100
+    },
+    {
+      "asin": "B08VFQRSF5",
+      "title": "Gigabyte G34WQC 34-Inch 144Hz Curved Ultrawide Gaming Monitor WQHD VA 1500R",
+      "brand": "Gigabyte",
+      "price": 329.99,
+      "rating": 4.5,
+      "review_count": 6300
+    },
+    {
+      "asin": "B0BR8K9G3F",
+      "title": "Samsung ViewFinity S65TC 34-Inch Curved Ultrawide WQHD USB-C Monitor for Work",
+      "brand": "Samsung",
+      "price": 449.99,
+      "rating": 4.6,
+      "review_count": 2400
+    }
+  ],
   "monitors": [
     {
       "asin": "B08LL9WTKM",
