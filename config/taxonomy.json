@@ -309,7 +309,19 @@
     "160hz": 789923099,
     "for-multitasking": 789923100,
     "curved-screen": 789923101,
-    "1000r-curve": 789923102
+    "1000r-curve": 789923102,
+    "hyperice": 789923103,
+    "theragun": 789923104,
+    "renpho": 789923105,
+    "for-recovery": 789923106,
+    "for-deep-tissue": 789923107,
+    "bluetooth": 789923108,
+    "percussion-therapy": 789923109,
+    "deep-tissue": 789923110,
+    "cordless": 789923111,
+    "leak-proof": 789923112,
+    "ice-keeping": 789923113,
+    "leak-resistant": 789923114
   },
   "post_index": [
     {
@@ -1118,6 +1130,56 @@
         "high-refresh-rate"
       ],
       "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Top 5 Massage Guns, Ranked for 2026",
+      "wp_post_id": 798,
+      "wp_url": "https://mavrino.com/2026/06/16/top-5-massage-guns-ranked-for-2026/",
+      "parent_category": "Fitness & Wellness",
+      "child_category": "Massage Guns",
+      "tags": [
+        "hyperice",
+        "theragun",
+        "renpho",
+        "under-$100",
+        "under-$200",
+        "$300-$500",
+        "for-recovery",
+        "for-deep-tissue",
+        "budget-friendly",
+        "professional-grade",
+        "bluetooth",
+        "percussion-therapy",
+        "deep-tissue",
+        "cordless"
+      ],
+      "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Top 5 Coolers, Ranked for 2026",
+      "wp_post_id": 801,
+      "wp_url": "https://mavrino.com/2026/06/16/top-5-coolers-ranked-for-2026/",
+      "parent_category": "Outdoors",
+      "child_category": "Coolers",
+      "tags": [
+        "yeti",
+        "coleman",
+        "under-$50",
+        "under-$100",
+        "under-$300",
+        "$300-$500",
+        "budget-friendly",
+        "premium",
+        "ice-retention",
+        "leak-proof",
+        "insulated",
+        "portable",
+        "ice-keeping",
+        "leak-resistant"
+      ],
+      "published_at": "2026-06-15"
     }
   ],
   "category_counts": {
@@ -1133,10 +1195,11 @@
     "Monitors": 4,
     "Camping Chairs": 2,
     "Tents": 2,
-    "Coolers": 2,
+    "Coolers": 3,
     "Yoga Mats": 2,
     "Travel Backpacks": 3,
-    "Packing Cubes": 2
+    "Packing Cubes": 2,
+    "Massage Guns": 1
   },
   "pending_splits": [],
   "last_health_check": null
