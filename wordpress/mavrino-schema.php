@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) { exit; }
 
 // ── Set this to your Google AdSense publisher ID (without the "ca-" prefix) ──
 if (!defined('MAVRINO_ADSENSE_PUB_ID')) {
-    define('MAVRINO_ADSENSE_PUB_ID', 'pub-XXXXXXXXXXXXXXXX');   // <-- replace
+    define('MAVRINO_ADSENSE_PUB_ID', 'pub-2702323126353107');
 }
 
 // ── JSON-LD schema into <head> ───────────────────────────────────────────────
