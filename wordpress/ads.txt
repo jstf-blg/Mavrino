@@ -1,0 +1,10 @@
+# Mavrino ads.txt — authorises Google AdSense to sell ad inventory on mavrino.com
+# Replace pub-XXXXXXXXXXXXXXXX with your real AdSense publisher ID (Account → Settings → Account information).
+# Served at https://mavrino.com/ads.txt
+#
+# How to publish on WordPress.com:
+#   - Easiest: set MAVRINO_ADSENSE_PUB_ID in the Mavrino SEO & Ads plugin (serves this automatically), OR
+#   - Upload this file (with your real ID) to the site root via SFTP (Business/Commerce plan), OR
+#   - If you enable WordAds, WordPress.com manages ads.txt for you automatically.
+
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

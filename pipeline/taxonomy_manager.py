@@ -670,7 +670,7 @@ def process_post(
         {"key": "_mavrino_parent_category",    "value": parent},
         {"key": "_mavrino_child_category",     "value": child},
         {"key": "_mavrino_schema_type",        "value": classification.get("schema_type", "Article")},
-        {"key": "_mavrino_schema_jsonld",      "value": schema},
+        {"key": "mavrino_schema_jsonld",       "value": schema},   # non-underscore: WP.com API blocks protected meta
         {"key": "_mavrino_classified_at",      "value": classification.get("classified_at", "")},
         {"key": "_mavrino_has_affiliate_links","value": "false"},
     ]
