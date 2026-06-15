@@ -15,6 +15,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 from url_safety import is_safe_public_url
+from safe_io import write_json, load_json
 
 load_dotenv()
 
@@ -140,6 +141,18 @@ def _slug(text: str, maxlen: int = 40) -> str:
     return (s[:maxlen] or "image")
 
 
+def _num(x, default: float = 0.0) -> float:
+    """Coerce external product fields (rating/price) to a number.
+
+    Scraped data sometimes delivers ratings/prices as strings ("4.5") or junk;
+    int("4.5") / "4.5" % 1 would crash a whole post build. Always go through here.
+    """
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return default
+
+
 def upload_media_from_url(image_url: str, token: str, filename: str = "image") -> dict | None:
     """Download an external image and sideload it into the WordPress media library.
 
@@ -243,7 +256,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         if not wv:
             return []
         wprod = products_by_asin.get(winner_asin, {})
-        title = wprod.get("title", ""); price = wprod.get("price", 0); rating = wprod.get("rating", 0)
+        title = wprod.get("title", ""); price = _num(wprod.get("price", 0)); rating = _num(wprod.get("rating", 0))
         url   = amazon_search_url(title) if title else ""; stars = "★" * int(rating)
         out = (
             f'<!-- wp:group {{"className":"top-pick-box","style":{{"border":{{"width":"2px","color":"{accent}","radius":"8px"}},"spacing":{{"padding":{{"all":"20px"}}}},"color":{{"background":"#fff8f5"}}}}}} -->\n'
@@ -272,7 +285,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 continue
             product = products_by_asin.get(asin, {})
             title   = product.get("title", asin)
-            price   = product.get("price", 0); rating = product.get("rating", 0)
+            price   = _num(product.get("price", 0)); rating = _num(product.get("rating", 0))
             reviews = product.get("review_count", 0)
             media   = image_map.get(asin) or {}
             img_url = media.get("URL", "")
@@ -637,7 +650,7 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
     # Real owner quotes
     for q in content.get("real_owner_say", []):
         if q.get("quote"):
-            stars = "★" * int(q.get("stars", 0))
+            stars = "★" * int(_num(q.get("stars", 0)))
             parts.append(f'<!-- wp:quote -->\n<blockquote class="wp-block-quote"><p>{q["quote"]}</p><cite>{stars} Verified Amazon buyer</cite></blockquote>\n<!-- /wp:quote -->')
 
     # Who should / shouldn't buy
@@ -814,14 +827,9 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
 
 
 def _append_wp_log(entry: dict):
-    log = []
-    if WP_LOG_FILE.exists():
-        try:
-            log = json.loads(WP_LOG_FILE.read_text())
-        except Exception:
-            log = []
+    log = load_json(WP_LOG_FILE, []) or []
     log.append(entry)
-    WP_LOG_FILE.write_text(json.dumps(log[-1000:], indent=2))
+    write_json(WP_LOG_FILE, log[-1000:])
 
 
 def get_wp_stats() -> dict:

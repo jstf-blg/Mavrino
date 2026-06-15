@@ -26,6 +26,7 @@ import amazon_data       as ad
 import content_generator as cg
 import wp_publisher      as wp
 import cache_builder     as cb
+from safe_io import write_json, load_json
 
 QUEUE_FILE    = Path("config/keyword_queue.json")
 DONE_FILE     = Path("config/keywords_done.json")
@@ -34,28 +35,22 @@ POSTS_PER_DAY = int(os.getenv("POSTS_PER_DAY", "5"))
 
 
 def load_queue() -> list:
-    if QUEUE_FILE.exists():
-        return json.loads(QUEUE_FILE.read_text())
-    return []
+    return load_json(QUEUE_FILE, []) or []
 
 def save_queue(queue: list):
-    QUEUE_FILE.write_text(json.dumps(queue, indent=2))
+    write_json(QUEUE_FILE, queue)
 
 def load_done() -> set:
-    if DONE_FILE.exists():
-        return set(json.loads(DONE_FILE.read_text()))
-    return set()
+    return set(load_json(DONE_FILE, []) or [])
 
 def save_done(done: set):
-    DONE_FILE.write_text(json.dumps(list(done), indent=2))
+    write_json(DONE_FILE, list(done))
 
 def load_posts_log() -> list:
-    if POSTS_LOG.exists():
-        return json.loads(POSTS_LOG.read_text())
-    return []
+    return load_json(POSTS_LOG, []) or []
 
 def save_posts_log(log: list):
-    POSTS_LOG.write_text(json.dumps(log[-1000:], indent=2))
+    write_json(POSTS_LOG, log[-1000:])
 
 def get_asins_for_keyword(keyword_data: dict) -> list:
     asins = []

@@ -34,6 +34,7 @@ import wp_publisher as wp
 import taxonomy_manager as tm
 import amazon_data as ad
 import keyword_discovery as kd
+from safe_io import write_json, load_json
 
 MAIN_CATEGORIES = ["Kitchen", "Home", "Travel", "Home Office", "Fitness & Wellness", "Outdoors"]
 STATE_FILE = Path("config/drip_state.json")
@@ -58,14 +59,11 @@ def _utcnow():
 
 
 def load_state() -> dict:
-    try:
-        return json.loads(STATE_FILE.read_text())
-    except Exception:
-        return {}
+    return load_json(STATE_FILE, {}) or {}
 
 
 def save_state(s: dict):
-    STATE_FILE.write_text(json.dumps(s, indent=2))
+    write_json(STATE_FILE, s)
 
 
 def target_for_today(today: str) -> int:

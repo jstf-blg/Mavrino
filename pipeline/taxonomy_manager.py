@@ -18,6 +18,7 @@ All WordPress operations use the wp_publisher token.
 import os, json, time, requests
 from pathlib import Path
 from datetime import datetime
+from safe_io import write_json
 from dotenv import load_dotenv
 import anthropic
 
@@ -120,7 +121,7 @@ def load_taxonomy() -> dict:
     return data
 
 def save_taxonomy(data: dict):
-    TAXONOMY_FILE.write_text(json.dumps(data, indent=2))
+    write_json(TAXONOMY_FILE, data)
 
 
 # ══════════════════════════════════════════════════════════════════════════════

@@ -25,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).parent / "pipeline"))
 
 import cache_builder as cb
 import anthropic
+from safe_io import write_json, load_json
 
 SITE   = os.getenv("SITE_DOMAIN", "https://mavrino.com").rstrip("/")
 # No hardcoded fallback — the secret must come from the environment (a GitHub
@@ -127,21 +128,21 @@ def gate(query: str) -> dict:
 
 
 def add_to_queue(keyword: str, niche: str) -> bool:
-    queue = json.loads(QUEUE.read_text()) if QUEUE.exists() else []
-    done  = set(json.loads(DONE.read_text())) if DONE.exists() else set()
+    queue = load_json(QUEUE, []) or []
+    done  = set(load_json(DONE, []) or [])
     slug  = hashlib.md5(keyword.lower().strip().encode()).hexdigest()[:8]
     if slug in done or any(k.get("slug") == slug for k in queue):
         return False
     queue.insert(0, {"keyword": keyword, "post_type": "roundup", "slug": slug,
                      "score": 950, "source": "search_demand", "niche": niche})
-    QUEUE.write_text(json.dumps(queue, indent=2))
+    write_json(QUEUE, queue)
     return True
 
 
 def record_demand(query: str):
-    data = json.loads(DEMAND.read_text()) if DEMAND.exists() else {}
+    data = load_json(DEMAND, {}) or {}
     data[query.lower()] = int(data.get(query.lower(), 0)) + 1
-    DEMAND.write_text(json.dumps(data, indent=2))
+    write_json(DEMAND, data)
 
 
 def ingest() -> dict:
