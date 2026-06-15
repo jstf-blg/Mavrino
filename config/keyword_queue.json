@@ -1,10 +1,4618 @@
 [
   {
-    "keyword": "best electric kettles under $200",
+    "keyword": "Ninja Air Fryer Pro XL 6.5 Qt vs COSORI TurboBlaze Air Fryer 6 Quart",
+    "source": "seed_comparison",
+    "asin_a": "B08975S94R",
+    "asin_b": "B09LTDHM17",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "7eb7391b"
+  },
+  {
+    "keyword": "Ninja Air Fryer Pro XL 6.5 Qt vs Philips 2000 Series Air Fryer 4.1L",
+    "source": "seed_comparison",
+    "asin_a": "B08975S94R",
+    "asin_b": "B09BDKRV4V",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "d2b62283"
+  },
+  {
+    "keyword": "COSORI TurboBlaze Air Fryer 6 Quart vs Philips 2000 Series Air Fryer 4.1L",
+    "source": "seed_comparison",
+    "asin_a": "B09LTDHM17",
+    "asin_b": "B09BDKRV4V",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "492f8f48"
+  },
+  {
+    "keyword": "Ninja BN701 Professional Plus Blender 1400W vs Vitamix E310 Explorian Blender Professional",
+    "source": "seed_comparison",
+    "asin_a": "B08JBDS3WV",
+    "asin_b": "B07ZGHFNZN",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "a22a7611"
+  },
+  {
+    "keyword": "Ninja BN701 Professional Plus Blender 1400W vs NutriBullet Pro 900W Personal Blender",
+    "source": "seed_comparison",
+    "asin_a": "B08JBDS3WV",
+    "asin_b": "B07QY639QY",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "2a03389e"
+  },
+  {
+    "keyword": "Vitamix E310 Explorian Blender Professional vs NutriBullet Pro 900W Personal Blender",
+    "source": "seed_comparison",
+    "asin_a": "B07ZGHFNZN",
+    "asin_b": "B07QY639QY",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "bc1eb620"
+  },
+  {
+    "keyword": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker 14 Cup vs Keurig K-Classic Coffee Maker Single Serve",
+    "source": "seed_comparison",
+    "asin_a": "B07Y3LXNMK",
+    "asin_b": "B003KYSLMC",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "d586776c"
+  },
+  {
+    "keyword": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker 14 Cup vs Ninja CE251 Programmable Brewer 12 Cup",
+    "source": "seed_comparison",
+    "asin_a": "B07Y3LXNMK",
+    "asin_b": "B078RQZM3D",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "0aa32d04"
+  },
+  {
+    "keyword": "Keurig K-Classic Coffee Maker Single Serve vs Ninja CE251 Programmable Brewer 12 Cup",
+    "source": "seed_comparison",
+    "asin_a": "B003KYSLMC",
+    "asin_b": "B078RQZM3D",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "0e42cab0"
+  },
+  {
+    "keyword": "Cuisinart DFP-14BCWB 14-Cup Food Processor vs Hamilton Beach 70740 Food Processor 10 Cup",
+    "source": "seed_comparison",
+    "asin_a": "B00PUZT9OG",
+    "asin_b": "B007XP3MTO",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "7470e894"
+  },
+  {
+    "keyword": "Cuisinart DFP-14BCWB 14-Cup Food Processor vs Breville BFP800XL Sous Chef Food Processor",
+    "source": "seed_comparison",
+    "asin_a": "B00PUZT9OG",
+    "asin_b": "B00BVPNKBE",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "78abc137"
+  },
+  {
+    "keyword": "Hamilton Beach 70740 Food Processor 10 Cup vs Breville BFP800XL Sous Chef Food Processor",
+    "source": "seed_comparison",
+    "asin_a": "B007XP3MTO",
+    "asin_b": "B00BVPNKBE",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "09b83db4"
+  },
+  {
+    "keyword": "KitchenAid KSM150PSER Artisan Series 5-Qt Stand Mixer vs Hamilton Beach 63325 6-Speed Stand Mixer",
+    "source": "seed_comparison",
+    "asin_a": "B00005UP2P",
+    "asin_b": "B000Y0V8I8",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "0b0c9e2c"
+  },
+  {
+    "keyword": "KitchenAid KSM150PSER Artisan Series 5-Qt Stand Mixer vs Cuisinart SM-50BK 5.5-Quart Stand Mixer",
+    "source": "seed_comparison",
+    "asin_a": "B00005UP2P",
+    "asin_b": "B07D4WKRK5",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "b1cc9fe2"
+  },
+  {
+    "keyword": "Hamilton Beach 63325 6-Speed Stand Mixer vs Cuisinart SM-50BK 5.5-Quart Stand Mixer",
+    "source": "seed_comparison",
+    "asin_a": "B000Y0V8I8",
+    "asin_b": "B07D4WKRK5",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "8f088da4"
+  },
+  {
+    "keyword": "Breville BOV900BSS Smart Oven Air Fryer Pro vs Cuisinart TOA-60 Convection Toaster Oven",
+    "source": "seed_comparison",
+    "asin_a": "B08J5DFHGQ",
+    "asin_b": "B07WQ3HJVL",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "2c5c5301"
+  },
+  {
+    "keyword": "Breville BOV900BSS Smart Oven Air Fryer Pro vs Ninja DT201 Foodi 10-in-1 XL Pro Air Fry",
+    "source": "seed_comparison",
+    "asin_a": "B08J5DFHGQ",
+    "asin_b": "B07PGBKXPP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "263aa954"
+  },
+  {
+    "keyword": "Cuisinart TOA-60 Convection Toaster Oven vs Ninja DT201 Foodi 10-in-1 XL Pro Air Fry",
+    "source": "seed_comparison",
+    "asin_a": "B07WQ3HJVL",
+    "asin_b": "B07PGBKXPP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "339f670e"
+  },
+  {
+    "keyword": "Hamilton Beach 40880 Stainless Steel Electric Kettle vs Cuisinart CPK-17 PerfecTemp Electric Kettle",
+    "source": "seed_comparison",
+    "asin_a": "B073H2LHFJ",
+    "asin_b": "B004HPMQ12",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "be0254f8"
+  },
+  {
+    "keyword": "Hamilton Beach 40880 Stainless Steel Electric Kettle vs OXO Brew Adjustable Temperature Pour-Over Kettle",
+    "source": "seed_comparison",
+    "asin_a": "B073H2LHFJ",
+    "asin_b": "B01N5YUQCA",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "ed0c2b35"
+  },
+  {
+    "keyword": "Cuisinart CPK-17 PerfecTemp Electric Kettle vs OXO Brew Adjustable Temperature Pour-Over Kettle",
+    "source": "seed_comparison",
+    "asin_a": "B004HPMQ12",
+    "asin_b": "B01N5YUQCA",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "6c0858dc"
+  },
+  {
+    "keyword": "iRobot Roomba j7+ Self-Emptying Robot Vacuum vs Shark AV2001WD IQ Robot Self-Empty XL Vacuum",
+    "source": "seed_comparison",
+    "asin_a": "B09PKFPZGB",
+    "asin_b": "B0BM7PRGB2",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "c79978d5"
+  },
+  {
+    "keyword": "iRobot Roomba j7+ Self-Emptying Robot Vacuum vs Eufy RoboVac G40 Hybrid Robot Vacuum & Mop",
+    "source": "seed_comparison",
+    "asin_a": "B09PKFPZGB",
+    "asin_b": "B08Y8GKXZP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "fc780b08"
+  },
+  {
+    "keyword": "Shark AV2001WD IQ Robot Self-Empty XL Vacuum vs Eufy RoboVac G40 Hybrid Robot Vacuum & Mop",
+    "source": "seed_comparison",
+    "asin_a": "B0BM7PRGB2",
+    "asin_b": "B08Y8GKXZP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "6d974df4"
+  },
+  {
+    "keyword": "Samsonite Freeform Hardside Expandable Luggage vs Away The Carry-On Hardside Luggage",
+    "source": "seed_comparison",
+    "asin_a": "B073WJN3JK",
+    "asin_b": "B07BVTV3CQ",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "ec19940f"
+  },
+  {
+    "keyword": "Samsonite Freeform Hardside Expandable Luggage vs Travelpro Maxlite 5 Softside Expandable Spinner",
+    "source": "seed_comparison",
+    "asin_a": "B073WJN3JK",
+    "asin_b": "B07D7MVVBA",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "22422cad"
+  },
+  {
+    "keyword": "Away The Carry-On Hardside Luggage vs Travelpro Maxlite 5 Softside Expandable Spinner",
+    "source": "seed_comparison",
+    "asin_a": "B07BVTV3CQ",
+    "asin_b": "B07D7MVVBA",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "c5f75f75"
+  },
+  {
+    "keyword": "Levoit Core 300 Air Purifier True HEPA Filter vs Dyson Purifier Cool Formaldehyde TP09",
+    "source": "seed_comparison",
+    "asin_a": "B08DF5YV7G",
+    "asin_b": "B0CH8T6CGC",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "a120ed4f"
+  },
+  {
+    "keyword": "Levoit Core 300 Air Purifier True HEPA Filter vs Coway AP-1512HH Mighty Air Purifier True HEPA",
+    "source": "seed_comparison",
+    "asin_a": "B08DF5YV7G",
+    "asin_b": "B0B7PGMC2J",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "8dc51d89"
+  },
+  {
+    "keyword": "Dyson Purifier Cool Formaldehyde TP09 vs Coway AP-1512HH Mighty Air Purifier True HEPA",
+    "source": "seed_comparison",
+    "asin_a": "B0CH8T6CGC",
+    "asin_b": "B0B7PGMC2J",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "fc9b57a2"
+  },
+  {
+    "keyword": "Tineco Pure One S11 Smart Cordless Stick Vacuum Cleaner vs Shark IZ540H Vertex Pro Cordless Stick Vacuum with PowerFins",
+    "source": "seed_comparison",
+    "asin_a": "B08RDL6H79",
+    "asin_b": "B09JZ5G2KT",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "f7295ca1"
+  },
+  {
+    "keyword": "Tineco Pure One S11 Smart Cordless Stick Vacuum Cleaner vs Tineco Pure One A50S Cordless Smart Stick Vacuum Cleaner",
+    "source": "seed_comparison",
+    "asin_a": "B08RDL6H79",
+    "asin_b": "B0CPH8YV4M",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "95719ee5"
+  },
+  {
+    "keyword": "Shark IZ540H Vertex Pro Cordless Stick Vacuum with PowerFins vs Tineco Pure One A50S Cordless Smart Stick Vacuum Cleaner",
+    "source": "seed_comparison",
+    "asin_a": "B09JZ5G2KT",
+    "asin_b": "B0CPH8YV4M",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "223acb6b"
+  },
+  {
+    "keyword": "Pure Enrichment MistAire Ultrasonic Cool Mist Humidifier vs LEVOIT Dual 150 Ultrasonic Cool Mist Humidifier for Bedroom",
+    "source": "seed_comparison",
+    "asin_a": "B073WJZL1N",
+    "asin_b": "B07YGV3PND",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "f878b817"
+  },
+  {
+    "keyword": "Pure Enrichment MistAire Ultrasonic Cool Mist Humidifier vs Dreo HM311S Smart Cool Mist Humidifier for Bedroom",
+    "source": "seed_comparison",
+    "asin_a": "B073WJZL1N",
+    "asin_b": "B0CB7M8R4F",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "d5d39ef0"
+  },
+  {
+    "keyword": "LEVOIT Dual 150 Ultrasonic Cool Mist Humidifier for Bedroom vs Dreo HM311S Smart Cool Mist Humidifier for Bedroom",
+    "source": "seed_comparison",
+    "asin_a": "B07YGV3PND",
+    "asin_b": "B0CB7M8R4F",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "e20f9251"
+  },
+  {
+    "keyword": "Lasko 754200 Ceramic Portable Space Heater with Adjustable T vs Vornado VH200 Whole Room Vortex Heater with Automatic Climat",
+    "source": "seed_comparison",
+    "asin_a": "B0032L5N6A",
+    "asin_b": "B0768TJD3R",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "5a3f8e6e"
+  },
+  {
+    "keyword": "Lasko 754200 Ceramic Portable Space Heater with Adjustable T vs Dreo Solaris 718 Space Heater with Oscillation and Remote",
+    "source": "seed_comparison",
+    "asin_a": "B0032L5N6A",
+    "asin_b": "B0BR8XL9HM",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "4cf5be81"
+  },
+  {
+    "keyword": "Vornado VH200 Whole Room Vortex Heater with Automatic Climat vs Dreo Solaris 718 Space Heater with Oscillation and Remote",
+    "source": "seed_comparison",
+    "asin_a": "B0768TJD3R",
+    "asin_b": "B0BR8XL9HM",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "115450cf"
+  },
+  {
+    "keyword": "Amazon Basics 21\" Hardside Carry-On Spinner Luggage with Whe vs Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with T",
+    "source": "seed_comparison",
+    "asin_a": "B071VG5N9D",
+    "asin_b": "B07GD6K82L",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "b3b5c55c"
+  },
+  {
+    "keyword": "Amazon Basics 21\" Hardside Carry-On Spinner Luggage with Whe vs Travelpro Maxlite 5 Softside Expandable Carry-On Spinner",
+    "source": "seed_comparison",
+    "asin_a": "B071VG5N9D",
+    "asin_b": "B07BL7JXHV",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "3a05b4b2"
+  },
+  {
+    "keyword": "Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with T vs Travelpro Maxlite 5 Softside Expandable Carry-On Spinner",
+    "source": "seed_comparison",
+    "asin_a": "B07GD6K82L",
+    "asin_b": "B07BL7JXHV",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "29eddca2"
+  },
+  {
+    "keyword": "MATEIN Travel Backpack vs Maelstrom 40L Travel Backpack",
+    "source": "seed_comparison",
+    "asin_a": "B07RK2D5T1",
+    "asin_b": "B08N5X4P9C",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "3699bd94"
+  },
+  {
+    "keyword": "MATEIN Travel Backpack vs Osprey Farpoint 40 Travel Backpack",
+    "source": "seed_comparison",
+    "asin_a": "B07RK2D5T1",
+    "asin_b": "B07F2H8K3M",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "666398e8"
+  },
+  {
+    "keyword": "Maelstrom 40L Travel Backpack vs Osprey Farpoint 40 Travel Backpack",
+    "source": "seed_comparison",
+    "asin_a": "B08N5X4P9C",
+    "asin_b": "B07F2H8K3M",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "bfe0e3ca"
+  },
+  {
+    "keyword": "Veken 6 Set Packing Cubes for Travel with Laundry Bag vs BAGAIL 6 Set Packing Cubes",
+    "source": "seed_comparison",
+    "asin_a": "B07DBLLG9Q",
+    "asin_b": "B01G6MEZK0",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "1bbc1ddc"
+  },
+  {
+    "keyword": "Veken 6 Set Packing Cubes for Travel with Laundry Bag vs Gonex Compression Packing Cubes Set",
+    "source": "seed_comparison",
+    "asin_a": "B07DBLLG9Q",
+    "asin_b": "B086L5K9YZ",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "e834c473"
+  },
+  {
+    "keyword": "BAGAIL 6 Set Packing Cubes vs Gonex Compression Packing Cubes Set",
+    "source": "seed_comparison",
+    "asin_a": "B01G6MEZK0",
+    "asin_b": "B086L5K9YZ",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "b4d36cc1"
+  },
+  {
+    "keyword": "INIU Portable Charger vs Anker PowerCore 10K Power Bank",
+    "source": "seed_comparison",
+    "asin_a": "B07YQ8R3K2",
+    "asin_b": "B0CQ3R7M8N",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "5662f287"
+  },
+  {
+    "keyword": "INIU Portable Charger vs INIU 22.5W 20000mAh Portable Charger",
+    "source": "seed_comparison",
+    "asin_a": "B07YQ8R3K2",
+    "asin_b": "B07PXGQC1Q",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "9da9c4be"
+  },
+  {
+    "keyword": "Anker PowerCore 10K Power Bank vs INIU 22.5W 20000mAh Portable Charger",
+    "source": "seed_comparison",
+    "asin_a": "B0CQ3R7M8N",
+    "asin_b": "B07PXGQC1Q",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "7135c8bd"
+  },
+  {
+    "keyword": "MLVOC Travel Pillow 100% Pure Memory Foam Neck Pillow with E vs napfun Neck Pillow for Traveling",
+    "source": "seed_comparison",
+    "asin_a": "B07J5LZQ8F",
+    "asin_b": "B07SRRQS5B",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "43d4ee58"
+  },
+  {
+    "keyword": "MLVOC Travel Pillow 100% Pure Memory Foam Neck Pillow with E vs BCOZZY Travel Neck Pillow for Airplane",
+    "source": "seed_comparison",
+    "asin_a": "B07J5LZQ8F",
+    "asin_b": "B01DODMU9I",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "0c665506"
+  },
+  {
+    "keyword": "napfun Neck Pillow for Traveling vs BCOZZY Travel Neck Pillow for Airplane",
+    "source": "seed_comparison",
+    "asin_a": "B07SRRQS5B",
+    "asin_b": "B01DODMU9I",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "435be81d"
+  },
+  {
+    "keyword": "FEZIBO Electric Standing Desk vs FLEXISPOT EN1 Electric Height Adjustable Standing Desk 48 x",
+    "source": "seed_comparison",
+    "asin_a": "B08F7QG4Q4",
+    "asin_b": "B0BL1B6Y8C",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "a4a2c0b9"
+  },
+  {
+    "keyword": "FEZIBO Electric Standing Desk vs FLEXISPOT E7 Pro Plus Standing Desk Dual Motor 55 x 28 Inch",
+    "source": "seed_comparison",
+    "asin_a": "B08F7QG4Q4",
+    "asin_b": "B08PF31TG3",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "cf1ba8c6"
+  },
+  {
+    "keyword": "FLEXISPOT EN1 Electric Height Adjustable Standing Desk 48 x vs FLEXISPOT E7 Pro Plus Standing Desk Dual Motor 55 x 28 Inch",
+    "source": "seed_comparison",
+    "asin_a": "B0BL1B6Y8C",
+    "asin_b": "B08PF31TG3",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "609620b3"
+  },
+  {
+    "keyword": "SIHOO M57 Ergonomic Office Chair with Adjustable Lumbar Supp vs SIHOO M18 Ergonomic Office Chair with Tilt Function and Brea",
+    "source": "seed_comparison",
+    "asin_a": "B09T5J9P4S",
+    "asin_b": "B0BR8H5K7Q",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "bf896685"
+  },
+  {
+    "keyword": "SIHOO M57 Ergonomic Office Chair with Adjustable Lumbar Supp vs Branch Ergonomic Chair with Adjustable Lumbar Support and Se",
+    "source": "seed_comparison",
+    "asin_a": "B09T5J9P4S",
+    "asin_b": "B07YML5K3T",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "9e5d62db"
+  },
+  {
+    "keyword": "SIHOO M18 Ergonomic Office Chair with Tilt Function and Brea vs Branch Ergonomic Chair with Adjustable Lumbar Support and Se",
+    "source": "seed_comparison",
+    "asin_a": "B0BR8H5K7Q",
+    "asin_b": "B07YML5K3T",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "24e6d70a"
+  },
+  {
+    "keyword": "LG 27-Inch UltraGear 27GL850 QHD IPS Gaming Monitor 144Hz vs Dell S2722QC 27-Inch 4K UHD USB-C Monitor with Built-in Spea",
+    "source": "seed_comparison",
+    "asin_a": "B08LL9WTKM",
+    "asin_b": "B08GSY3VLP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "1b57806c"
+  },
+  {
+    "keyword": "LG 27-Inch UltraGear 27GL850 QHD IPS Gaming Monitor 144Hz vs Samsung ViewFinity S7 27-Inch 4K UHD High Resolution Monitor",
+    "source": "seed_comparison",
+    "asin_a": "B08LL9WTKM",
+    "asin_b": "B0BS47Q3KD",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "1daa10a1"
+  },
+  {
+    "keyword": "Dell S2722QC 27-Inch 4K UHD USB-C Monitor with Built-in Spea vs Samsung ViewFinity S7 27-Inch 4K UHD High Resolution Monitor",
+    "source": "seed_comparison",
+    "asin_a": "B08GSY3VLP",
+    "asin_b": "B0BS47Q3KD",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "9a6d4057"
+  },
+  {
+    "keyword": "Redragon K556 RGB LED Backlit Wired Mechanical Keyboard with vs Royal Kludge RK84 Wireless 75% Hot-Swappable Mechanical Keyb",
+    "source": "seed_comparison",
+    "asin_a": "B08LVTGF2L",
+    "asin_b": "B07YML7DLP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "ba021477"
+  },
+  {
+    "keyword": "Redragon K556 RGB LED Backlit Wired Mechanical Keyboard with vs Keychron V3 Max QMK/VIA Wireless Custom Mechanical Keyboard",
+    "source": "seed_comparison",
+    "asin_a": "B08LVTGF2L",
+    "asin_b": "B0CG7N5K9W",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "3e513f01"
+  },
+  {
+    "keyword": "Royal Kludge RK84 Wireless 75% Hot-Swappable Mechanical Keyb vs Keychron V3 Max QMK/VIA Wireless Custom Mechanical Keyboard",
+    "source": "seed_comparison",
+    "asin_a": "B07YML7DLP",
+    "asin_b": "B0CG7N5K9W",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "6d6e6c8c"
+  },
+  {
+    "keyword": "Anker PowerConf C200 2K Webcam with Stereo Microphones and P vs OBSBOT Meet SE AI-Powered 1080p Webcam with Auto Framing and",
+    "source": "seed_comparison",
+    "asin_a": "B07P3F5JNR",
+    "asin_b": "B086MGFR8X",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "43bf6f8f"
+  },
+  {
+    "keyword": "Anker PowerConf C200 2K Webcam with Stereo Microphones and P vs Logitech C920x HD Pro Webcam Full HD 1080p/30fps with Privac",
+    "source": "seed_comparison",
+    "asin_a": "B07P3F5JNR",
+    "asin_b": "B085TFF7M1",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "68a67a36"
+  },
+  {
+    "keyword": "OBSBOT Meet SE AI-Powered 1080p Webcam with Auto Framing and vs Logitech C920x HD Pro Webcam Full HD 1080p/30fps with Privac",
+    "source": "seed_comparison",
+    "asin_a": "B086MGFR8X",
+    "asin_b": "B085TFF7M1",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "ac548bc1"
+  },
+  {
+    "keyword": "Sportneer Mini Massage Gun Deep Tissue Percussion Muscle Mas vs TOLOCO Massage Gun Deep Tissue Percussion Muscle Massager fo",
+    "source": "seed_comparison",
+    "asin_a": "B0BPMCN1ND",
+    "asin_b": "B08LN56HMV",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "e222e89d"
+  },
+  {
+    "keyword": "Sportneer Mini Massage Gun Deep Tissue Percussion Muscle Mas vs RENPHO Active Massage Gun Deep Tissue Muscle Percussion Mass",
+    "source": "seed_comparison",
+    "asin_a": "B0BPMCN1ND",
+    "asin_b": "B09P5BJC8H",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "32444ab2"
+  },
+  {
+    "keyword": "TOLOCO Massage Gun Deep Tissue Percussion Muscle Massager fo vs RENPHO Active Massage Gun Deep Tissue Muscle Percussion Mass",
+    "source": "seed_comparison",
+    "asin_a": "B08LN56HMV",
+    "asin_b": "B09P5BJC8H",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "e913b397"
+  },
+  {
+    "keyword": "Amazfit Band 7 Fitness Tracker with Alexa vs Fitbit Charge 6 Fitness Tracker with Google Apps and Heart R",
+    "source": "seed_comparison",
+    "asin_a": "B0F1FXST87",
+    "asin_b": "B0C6N6HGNZ",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "d10f1488"
+  },
+  {
+    "keyword": "Amazfit Band 7 Fitness Tracker with Alexa vs Fitbit Inspire 3 Health & Fitness Tracker with Stress Manage",
+    "source": "seed_comparison",
+    "asin_a": "B0F1FXST87",
+    "asin_b": "B0F18R8YQ6",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "ba42d84f"
+  },
+  {
+    "keyword": "Fitbit Charge 6 Fitness Tracker with Google Apps and Heart R vs Fitbit Inspire 3 Health & Fitness Tracker with Stress Manage",
+    "source": "seed_comparison",
+    "asin_a": "B0C6N6HGNZ",
+    "asin_b": "B0F18R8YQ6",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "6441c03b"
+  },
+  {
+    "keyword": "Eufy by Anker Smart Scale C1 with Bluetooth Body Fat 12 Meas vs RENPHO Smart Scale for Body Weight",
+    "source": "seed_comparison",
+    "asin_a": "B07P5GDPM7",
+    "asin_b": "B07L6THFH8",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "05b4da29"
+  },
+  {
+    "keyword": "Eufy by Anker Smart Scale C1 with Bluetooth Body Fat 12 Meas vs Wyze Scale X Smart Body Fat Scale with Heart Rate and 12 Met",
+    "source": "seed_comparison",
+    "asin_a": "B07P5GDPM7",
+    "asin_b": "B0BHS3T8DV",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "cc0e3ae9"
+  },
+  {
+    "keyword": "RENPHO Smart Scale for Body Weight vs Wyze Scale X Smart Body Fat Scale with Heart Rate and 12 Met",
+    "source": "seed_comparison",
+    "asin_a": "B07L6THFH8",
+    "asin_b": "B0BHS3T8DV",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "de25158c"
+  },
+  {
+    "keyword": "BalanceFrom GoYoga All-Purpose 1/2-Inch Extra Thick Yoga Mat vs Gaiam Essentials Thick Yoga Mat with Carrying Strap",
+    "source": "seed_comparison",
+    "asin_a": "B07H9CK8VK",
+    "asin_b": "B00FO9U46W",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "ede8dfc9"
+  },
+  {
+    "keyword": "BalanceFrom GoYoga All-Purpose 1/2-Inch Extra Thick Yoga Mat vs Gaiam Premium Print Reversible Yoga Mat",
+    "source": "seed_comparison",
+    "asin_a": "B07H9CK8VK",
+    "asin_b": "B01LP0VI3G",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "b5ca5c5e"
+  },
+  {
+    "keyword": "Gaiam Essentials Thick Yoga Mat with Carrying Strap vs Gaiam Premium Print Reversible Yoga Mat",
+    "source": "seed_comparison",
+    "asin_a": "B00FO9U46W",
+    "asin_b": "B01LP0VI3G",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "3741fd28"
+  },
+  {
+    "keyword": "FLYBIRD Adjustable Dumbbell vs NICE C Adjustable Dumbbell Set",
+    "source": "seed_comparison",
+    "asin_a": "B08DCNFKKM",
+    "asin_b": "B08T68F7CP",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "e2583a4f"
+  },
+  {
+    "keyword": "FLYBIRD Adjustable Dumbbell vs Core Home Fitness Adjustable Dumbbell Set",
+    "source": "seed_comparison",
+    "asin_a": "B08DCNFKKM",
+    "asin_b": "B0CG2LHGFR",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "4ac8d71c"
+  },
+  {
+    "keyword": "NICE C Adjustable Dumbbell Set vs Core Home Fitness Adjustable Dumbbell Set",
+    "source": "seed_comparison",
+    "asin_a": "B08T68F7CP",
+    "asin_b": "B0CG2LHGFR",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "d6704a86"
+  },
+  {
+    "keyword": "YETI Roadie 24 Hard Cooler vs YETI Tundra 65 Cooler",
+    "source": "seed_comparison",
+    "asin_a": "B0842CF8YD",
+    "asin_b": "B07WXL5K3X",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "583c8c1a"
+  },
+  {
+    "keyword": "YETI Roadie 24 Hard Cooler vs RTIC 45 QT Ultra-Tough Hard Cooler Ice Chest",
+    "source": "seed_comparison",
+    "asin_a": "B0842CF8YD",
+    "asin_b": "B07GBN8RVN",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "61d93606"
+  },
+  {
+    "keyword": "YETI Tundra 65 Cooler vs RTIC 45 QT Ultra-Tough Hard Cooler Ice Chest",
+    "source": "seed_comparison",
+    "asin_a": "B07WXL5K3X",
+    "asin_b": "B07GBN8RVN",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "07454971"
+  },
+  {
+    "keyword": "Coleman Sundome Tent vs Coleman Cabin Tent with Instant Setup",
+    "source": "seed_comparison",
+    "asin_a": "B004J2KDH0",
+    "asin_b": "B00H2QQNVA",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "7f246e6f"
+  },
+  {
+    "keyword": "Coleman Sundome Tent vs CORE 9-Person Instant Cabin Tent with Screen Room",
+    "source": "seed_comparison",
+    "asin_a": "B004J2KDH0",
+    "asin_b": "B07YTC6Q2M",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "528708c3"
+  },
+  {
+    "keyword": "Coleman Cabin Tent with Instant Setup vs CORE 9-Person Instant Cabin Tent with Screen Room",
+    "source": "seed_comparison",
+    "asin_a": "B00H2QQNVA",
+    "asin_b": "B07YTC6Q2M",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "55467f6b"
+  },
+  {
+    "keyword": "Coleman Camping Chair with Built-in 4-Can Cooler vs GCI Outdoor Kickback Rocker Portable Rocking Camp Chair",
+    "source": "seed_comparison",
+    "asin_a": "B0EDE7DCFD",
+    "asin_b": "B07GDD2X9F",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "12ee792a"
+  },
+  {
+    "keyword": "Coleman Camping Chair with Built-in 4-Can Cooler vs Kijaro Dual Lock Portable Folding Camping Chair",
+    "source": "seed_comparison",
+    "asin_a": "B0EDE7DCFD",
+    "asin_b": "B00363V668",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "43475272"
+  },
+  {
+    "keyword": "GCI Outdoor Kickback Rocker Portable Rocking Camp Chair vs Kijaro Dual Lock Portable Folding Camping Chair",
+    "source": "seed_comparison",
+    "asin_a": "B07GDD2X9F",
+    "asin_b": "B00363V668",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "666e5ea2"
+  },
+  {
+    "keyword": "Weber Q1200 Liquid Propane Portable Gas Grill vs Cuisinart CGG-180 Petit Gourmet Portable Tabletop Gas Grill",
+    "source": "seed_comparison",
+    "asin_a": "B00FGEHG6Q",
+    "asin_b": "B01MDP0HCH",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "f5d8cf74"
+  },
+  {
+    "keyword": "Weber Q1200 Liquid Propane Portable Gas Grill vs Coleman RoadTrip 285 Portable Stand-Up Propane Grill",
+    "source": "seed_comparison",
+    "asin_a": "B00FGEHG6Q",
+    "asin_b": "B07Q9V4XW1",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "8a3f4639"
+  },
+  {
+    "keyword": "Cuisinart CGG-180 Petit Gourmet Portable Tabletop Gas Grill vs Coleman RoadTrip 285 Portable Stand-Up Propane Grill",
+    "source": "seed_comparison",
+    "asin_a": "B01MDP0HCH",
+    "asin_b": "B07Q9V4XW1",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "e84a39a8"
+  },
+  {
+    "keyword": "Coleman Brazos Cold-Weather Sleeping Bag vs TETON Sports Celsius XXL 0F Sleeping Bag",
+    "source": "seed_comparison",
+    "asin_a": "B00363RBNS",
+    "asin_b": "B0009PUR4O",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "fd28543f"
+  },
+  {
+    "keyword": "Coleman Brazos Cold-Weather Sleeping Bag vs TETON Sports Polara 3-in-1 Sleeping Bag",
+    "source": "seed_comparison",
+    "asin_a": "B00363RBNS",
+    "asin_b": "B004QM8R9I",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "d9a9058f"
+  },
+  {
+    "keyword": "TETON Sports Celsius XXL 0F Sleeping Bag vs TETON Sports Polara 3-in-1 Sleeping Bag",
+    "source": "seed_comparison",
+    "asin_a": "B0009PUR4O",
+    "asin_b": "B004QM8R9I",
+    "score": 70,
+    "post_type": "comparison",
+    "slug": "b57b8b66"
+  },
+  {
+    "keyword": "top 5 air fryers",
     "source": "template",
     "score": 60,
     "post_type": "roundup",
-    "slug": "68078c0a"
+    "slug": "fb3c619c"
+  },
+  {
+    "keyword": "top 7 air fryers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a617e353"
+  },
+  {
+    "keyword": "top 5 air fryers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "908a7611"
+  },
+  {
+    "keyword": "best air fryers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b1e989d0"
+  },
+  {
+    "keyword": "best air fryers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bfa2bbdb"
+  },
+  {
+    "keyword": "best air fryers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e695c670"
+  },
+  {
+    "keyword": "best budget air fryers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "774ee4d0"
+  },
+  {
+    "keyword": "cheapest air fryers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "64c5e9f3"
+  },
+  {
+    "keyword": "best air fryers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "97719fb4"
+  },
+  {
+    "keyword": "best air fryers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e7bb1653"
+  },
+  {
+    "keyword": "best air fryers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "610b0531"
+  },
+  {
+    "keyword": "best air fryers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "98bdf73e"
+  },
+  {
+    "keyword": "best compact air fryers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e8c82de9"
+  },
+  {
+    "keyword": "best quiet air fryers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8ccee4df"
+  },
+  {
+    "keyword": "best air fryers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1d85e6fc"
+  },
+  {
+    "keyword": "best air fryers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dead8a1a"
+  },
+  {
+    "keyword": "best air fryers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d268e472"
+  },
+  {
+    "keyword": "air fryers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "77201b59"
+  },
+  {
+    "keyword": "top 5 coffee makers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "401202e5"
+  },
+  {
+    "keyword": "top 7 coffee makers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a452a0e1"
+  },
+  {
+    "keyword": "top 5 coffee makers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "689d1ff8"
+  },
+  {
+    "keyword": "best coffee makers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9fd41c40"
+  },
+  {
+    "keyword": "best coffee makers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2a3b0418"
+  },
+  {
+    "keyword": "best coffee makers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ae2cbe24"
+  },
+  {
+    "keyword": "best budget coffee makers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "49b13013"
+  },
+  {
+    "keyword": "best coffee makers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "63c0a59c"
+  },
+  {
+    "keyword": "best coffee makers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "15aad700"
+  },
+  {
+    "keyword": "best coffee makers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ce7cd85e"
+  },
+  {
+    "keyword": "best coffee makers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dddf64d3"
+  },
+  {
+    "keyword": "top 5 blenders",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "63fc6d48"
+  },
+  {
+    "keyword": "top 7 blenders for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "18a7fc5b"
+  },
+  {
+    "keyword": "top 5 blenders for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6026ab8b"
+  },
+  {
+    "keyword": "best blenders under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bfd34f28"
+  },
+  {
+    "keyword": "best budget blenders",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f02a596e"
+  },
+  {
+    "keyword": "cheapest blenders that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6fea2446"
+  },
+  {
+    "keyword": "best blenders for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "eaef1e90"
+  },
+  {
+    "keyword": "best compact blenders",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "83d727d4"
+  },
+  {
+    "keyword": "best blenders for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "def9190d"
+  },
+  {
+    "keyword": "best blenders 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5523c9cb"
+  },
+  {
+    "keyword": "blenders buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "a268bc65"
+  },
+  {
+    "keyword": "top 5 food processors",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e597a858"
+  },
+  {
+    "keyword": "top 7 food processors for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "06ec1510"
+  },
+  {
+    "keyword": "top 5 food processors for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "628c1397"
+  },
+  {
+    "keyword": "best food processors under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3824cb0d"
+  },
+  {
+    "keyword": "best budget food processors",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "23fd134f"
+  },
+  {
+    "keyword": "cheapest food processors that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9b42d048"
+  },
+  {
+    "keyword": "best food processors for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c758d72e"
+  },
+  {
+    "keyword": "best food processors for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9adc3aca"
+  },
+  {
+    "keyword": "best food processors for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "41e9935a"
+  },
+  {
+    "keyword": "best food processors reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "780a2e6b"
+  },
+  {
+    "keyword": "top 5 stand mixers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "07cc237b"
+  },
+  {
+    "keyword": "top 7 stand mixers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1a79e668"
+  },
+  {
+    "keyword": "top 5 stand mixers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "75c66af6"
+  },
+  {
+    "keyword": "best stand mixers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e711802d"
+  },
+  {
+    "keyword": "best budget stand mixers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "db1b6c7e"
+  },
+  {
+    "keyword": "cheapest stand mixers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ad00a08e"
+  },
+  {
+    "keyword": "best stand mixers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "92bc8b41"
+  },
+  {
+    "keyword": "best stand mixers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "79a24f1b"
+  },
+  {
+    "keyword": "best stand mixers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "829b90e0"
+  },
+  {
+    "keyword": "best stand mixers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "52725a13"
+  },
+  {
+    "keyword": "best compact stand mixers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "214f2868"
+  },
+  {
+    "keyword": "best stand mixers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bfd920dd"
+  },
+  {
+    "keyword": "best stand mixers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e6bb206b"
+  },
+  {
+    "keyword": "best stand mixers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d7e5ff1b"
+  },
+  {
+    "keyword": "stand mixers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "ca0149ba"
+  },
+  {
+    "keyword": "top 5 toaster ovens",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b97b74cd"
+  },
+  {
+    "keyword": "top 7 toaster ovens for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "795cadb3"
+  },
+  {
+    "keyword": "top 5 toaster ovens for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "301038e1"
+  },
+  {
+    "keyword": "best toaster ovens under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "745147e2"
+  },
+  {
+    "keyword": "best toaster ovens under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dda9bf93"
+  },
+  {
+    "keyword": "best budget toaster ovens",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8e7e590c"
+  },
+  {
+    "keyword": "cheapest toaster ovens that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bed2293f"
+  },
+  {
+    "keyword": "best toaster ovens for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c8034436"
+  },
+  {
+    "keyword": "best toaster ovens for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2d7c40c4"
+  },
+  {
+    "keyword": "best toaster ovens for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6c8522f3"
+  },
+  {
+    "keyword": "best toaster ovens for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "db0bcfe3"
+  },
+  {
+    "keyword": "toaster ovens buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "d22e7cd2"
+  },
+  {
+    "keyword": "top 5 electric kettles",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f00b1125"
+  },
+  {
+    "keyword": "top 7 electric kettles for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bbe8174c"
+  },
+  {
+    "keyword": "top 5 electric kettles for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2f938e22"
+  },
+  {
+    "keyword": "best budget electric kettles",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0edb89db"
+  },
+  {
+    "keyword": "best electric kettles for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "033c3955"
+  },
+  {
+    "keyword": "best electric kettles for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bfaf57ef"
+  },
+  {
+    "keyword": "top 7 robot vacuums for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "513e3a7d"
+  },
+  {
+    "keyword": "top 5 robot vacuums for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d37ee816"
+  },
+  {
+    "keyword": "best robot vacuums under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9bf19834"
+  },
+  {
+    "keyword": "best robot vacuums under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "edaaf1f2"
+  },
+  {
+    "keyword": "best robot vacuums under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3d657af4"
+  },
+  {
+    "keyword": "best budget robot vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "95f323af"
+  },
+  {
+    "keyword": "cheapest robot vacuums that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5b9969b9"
+  },
+  {
+    "keyword": "best robot vacuums for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c3e959a5"
+  },
+  {
+    "keyword": "best robot vacuums for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3e252186"
+  },
+  {
+    "keyword": "best robot vacuums for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d5c369b4"
+  },
+  {
+    "keyword": "best robot vacuums for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "db49a3f0"
+  },
+  {
+    "keyword": "best compact robot vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b6c311e3"
+  },
+  {
+    "keyword": "best quiet robot vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ca79bae4"
+  },
+  {
+    "keyword": "best robot vacuums for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "efdbe2f9"
+  },
+  {
+    "keyword": "best robot vacuums 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e2134e43"
+  },
+  {
+    "keyword": "best robot vacuums reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7ee213d4"
+  },
+  {
+    "keyword": "robot vacuums buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "a9b46268"
+  },
+  {
+    "keyword": "top 5 air purifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1c796a50"
+  },
+  {
+    "keyword": "top 7 air purifiers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "72d7ea91"
+  },
+  {
+    "keyword": "top 5 air purifiers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1f716af3"
+  },
+  {
+    "keyword": "best air purifiers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a403f97e"
+  },
+  {
+    "keyword": "best air purifiers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a10a23c3"
+  },
+  {
+    "keyword": "best air purifiers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a8ee955c"
+  },
+  {
+    "keyword": "best budget air purifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d915d210"
+  },
+  {
+    "keyword": "cheapest air purifiers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1c976ab3"
+  },
+  {
+    "keyword": "best air purifiers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "80866e1b"
+  },
+  {
+    "keyword": "best air purifiers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6bf873df"
+  },
+  {
+    "keyword": "best air purifiers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1c877474"
+  },
+  {
+    "keyword": "best air purifiers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3865b140"
+  },
+  {
+    "keyword": "best compact air purifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2d5fd1db"
+  },
+  {
+    "keyword": "best quiet air purifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ad1b9130"
+  },
+  {
+    "keyword": "best air purifiers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4b8d9112"
+  },
+  {
+    "keyword": "best air purifiers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c9047fcb"
+  },
+  {
+    "keyword": "best air purifiers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dbd3fc61"
+  },
+  {
+    "keyword": "air purifiers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "0cddc8a3"
+  },
+  {
+    "keyword": "top 5 stick vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "844b961a"
+  },
+  {
+    "keyword": "top 7 stick vacuums for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b3d97c14"
+  },
+  {
+    "keyword": "top 5 stick vacuums for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d519a34b"
+  },
+  {
+    "keyword": "best stick vacuums under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3554f545"
+  },
+  {
+    "keyword": "best stick vacuums under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c8374812"
+  },
+  {
+    "keyword": "best stick vacuums under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "685cfec0"
+  },
+  {
+    "keyword": "best budget stick vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "468e6531"
+  },
+  {
+    "keyword": "cheapest stick vacuums that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e83a09b3"
+  },
+  {
+    "keyword": "best stick vacuums for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1afcc225"
+  },
+  {
+    "keyword": "best stick vacuums for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "587d40d4"
+  },
+  {
+    "keyword": "best stick vacuums for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6a9f6073"
+  },
+  {
+    "keyword": "best stick vacuums for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ba8c3f91"
+  },
+  {
+    "keyword": "best compact stick vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c0b7cd77"
+  },
+  {
+    "keyword": "best quiet stick vacuums",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c22177d1"
+  },
+  {
+    "keyword": "best stick vacuums for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "61506c06"
+  },
+  {
+    "keyword": "best stick vacuums 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bea59606"
+  },
+  {
+    "keyword": "best stick vacuums reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2cf5e538"
+  },
+  {
+    "keyword": "stick vacuums buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "f5aed4d7"
+  },
+  {
+    "keyword": "top 5 humidifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1d2a7acf"
+  },
+  {
+    "keyword": "top 7 humidifiers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "536eac44"
+  },
+  {
+    "keyword": "top 5 humidifiers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c8f6b509"
+  },
+  {
+    "keyword": "best humidifiers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "346dcf15"
+  },
+  {
+    "keyword": "best humidifiers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "de42c568"
+  },
+  {
+    "keyword": "best humidifiers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cc69a543"
+  },
+  {
+    "keyword": "best budget humidifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dd0272b7"
+  },
+  {
+    "keyword": "cheapest humidifiers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2ad248f2"
+  },
+  {
+    "keyword": "best humidifiers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "71787691"
+  },
+  {
+    "keyword": "best humidifiers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "54cbf792"
+  },
+  {
+    "keyword": "best humidifiers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2dbf97c7"
+  },
+  {
+    "keyword": "best humidifiers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "94b3aeb3"
+  },
+  {
+    "keyword": "best compact humidifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6f091e98"
+  },
+  {
+    "keyword": "best quiet humidifiers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ca41bfae"
+  },
+  {
+    "keyword": "best humidifiers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "13351d24"
+  },
+  {
+    "keyword": "best humidifiers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bd98bdd5"
+  },
+  {
+    "keyword": "best humidifiers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "fb1b00e6"
+  },
+  {
+    "keyword": "humidifiers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "418cb223"
+  },
+  {
+    "keyword": "top 5 space heaters",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7c309beb"
+  },
+  {
+    "keyword": "top 7 space heaters for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f968e4c0"
+  },
+  {
+    "keyword": "top 5 space heaters for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "db1b4bfc"
+  },
+  {
+    "keyword": "best space heaters under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "72fbca42"
+  },
+  {
+    "keyword": "best space heaters under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d1d3199d"
+  },
+  {
+    "keyword": "best space heaters under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "182703b4"
+  },
+  {
+    "keyword": "best budget space heaters",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1a13ef12"
+  },
+  {
+    "keyword": "cheapest space heaters that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e6e22a4e"
+  },
+  {
+    "keyword": "best space heaters for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "00b80279"
+  },
+  {
+    "keyword": "best space heaters for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "948d108d"
+  },
+  {
+    "keyword": "best space heaters for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "443bacd5"
+  },
+  {
+    "keyword": "best space heaters for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cbe4edde"
+  },
+  {
+    "keyword": "best compact space heaters",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "64237aef"
+  },
+  {
+    "keyword": "best quiet space heaters",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5f487693"
+  },
+  {
+    "keyword": "best space heaters for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d82a7825"
+  },
+  {
+    "keyword": "best space heaters 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "460bb699"
+  },
+  {
+    "keyword": "best space heaters reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b60ef638"
+  },
+  {
+    "keyword": "space heaters buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "efeb9d70"
+  },
+  {
+    "keyword": "top 5 luggage",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "00d5fe1f"
+  },
+  {
+    "keyword": "top 7 luggage for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "88a80dfe"
+  },
+  {
+    "keyword": "top 5 luggage for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cc58fd5f"
+  },
+  {
+    "keyword": "best luggage under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bde470b9"
+  },
+  {
+    "keyword": "best luggage under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "45c3b1a7"
+  },
+  {
+    "keyword": "best luggage under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a5732409"
+  },
+  {
+    "keyword": "best budget luggage",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "35e5a9dc"
+  },
+  {
+    "keyword": "cheapest luggage that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b145094e"
+  },
+  {
+    "keyword": "best luggage for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "fa3ff1cd"
+  },
+  {
+    "keyword": "best luggage for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "768b78ff"
+  },
+  {
+    "keyword": "best luggage for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "157ed209"
+  },
+  {
+    "keyword": "best luggage for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "86043f01"
+  },
+  {
+    "keyword": "best compact luggage",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7d6bb6dc"
+  },
+  {
+    "keyword": "best quiet luggage",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5b65557a"
+  },
+  {
+    "keyword": "best luggage for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4832696c"
+  },
+  {
+    "keyword": "best luggage 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a7b03002"
+  },
+  {
+    "keyword": "best luggage reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "33687d89"
+  },
+  {
+    "keyword": "luggage buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "c4913f90"
+  },
+  {
+    "keyword": "top 5 travel backpacks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b5759d83"
+  },
+  {
+    "keyword": "top 7 travel backpacks for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cdfa9d51"
+  },
+  {
+    "keyword": "top 5 travel backpacks for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e439577f"
+  },
+  {
+    "keyword": "best travel backpacks under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c7391072"
+  },
+  {
+    "keyword": "best travel backpacks under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "405460e3"
+  },
+  {
+    "keyword": "best travel backpacks under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "35ec17de"
+  },
+  {
+    "keyword": "best budget travel backpacks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "aa867bb3"
+  },
+  {
+    "keyword": "cheapest travel backpacks that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2548fe23"
+  },
+  {
+    "keyword": "best travel backpacks for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d099b8d9"
+  },
+  {
+    "keyword": "best travel backpacks for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a64ad816"
+  },
+  {
+    "keyword": "best travel backpacks for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a314654d"
+  },
+  {
+    "keyword": "best travel backpacks for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5df56e36"
+  },
+  {
+    "keyword": "best compact travel backpacks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b5742dc9"
+  },
+  {
+    "keyword": "best quiet travel backpacks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9e41a84d"
+  },
+  {
+    "keyword": "best travel backpacks for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b6565b84"
+  },
+  {
+    "keyword": "best travel backpacks 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6a97b7d2"
+  },
+  {
+    "keyword": "best travel backpacks reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a3260b74"
+  },
+  {
+    "keyword": "travel backpacks buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "8046df39"
+  },
+  {
+    "keyword": "top 5 packing cubes",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "843e0fd7"
+  },
+  {
+    "keyword": "top 7 packing cubes for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "687752d0"
+  },
+  {
+    "keyword": "top 5 packing cubes for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "35ccf3f1"
+  },
+  {
+    "keyword": "best packing cubes under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "eb0f4103"
+  },
+  {
+    "keyword": "best packing cubes under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c57b1512"
+  },
+  {
+    "keyword": "best packing cubes under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ffaa2ab8"
+  },
+  {
+    "keyword": "best budget packing cubes",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "90241026"
+  },
+  {
+    "keyword": "cheapest packing cubes that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f07a305f"
+  },
+  {
+    "keyword": "best packing cubes for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "aeee0bf3"
+  },
+  {
+    "keyword": "best packing cubes for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "fdcb2a60"
+  },
+  {
+    "keyword": "best packing cubes for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "36f49e3b"
+  },
+  {
+    "keyword": "best packing cubes for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1fd2799c"
+  },
+  {
+    "keyword": "best compact packing cubes",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d6ce4485"
+  },
+  {
+    "keyword": "best quiet packing cubes",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a3f2d834"
+  },
+  {
+    "keyword": "best packing cubes for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ac92616d"
+  },
+  {
+    "keyword": "best packing cubes 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "de0548ba"
+  },
+  {
+    "keyword": "best packing cubes reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "91a26140"
+  },
+  {
+    "keyword": "packing cubes buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "d12eb347"
+  },
+  {
+    "keyword": "top 5 portable chargers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f90952c7"
+  },
+  {
+    "keyword": "top 7 portable chargers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "40f9a300"
+  },
+  {
+    "keyword": "top 5 portable chargers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0de260d8"
+  },
+  {
+    "keyword": "best portable chargers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ba5c78fc"
+  },
+  {
+    "keyword": "best portable chargers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "14391289"
+  },
+  {
+    "keyword": "best portable chargers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "97e2ce8d"
+  },
+  {
+    "keyword": "best budget portable chargers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "560ae92f"
+  },
+  {
+    "keyword": "cheapest portable chargers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7f933961"
+  },
+  {
+    "keyword": "best portable chargers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9575cad9"
+  },
+  {
+    "keyword": "best portable chargers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "83d6311a"
+  },
+  {
+    "keyword": "best portable chargers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d2813e30"
+  },
+  {
+    "keyword": "best portable chargers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bbef4301"
+  },
+  {
+    "keyword": "best compact portable chargers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "50dda9ac"
+  },
+  {
+    "keyword": "best quiet portable chargers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5a49f29f"
+  },
+  {
+    "keyword": "best portable chargers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4562bc20"
+  },
+  {
+    "keyword": "best portable chargers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "491cfe6a"
+  },
+  {
+    "keyword": "best portable chargers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d708227a"
+  },
+  {
+    "keyword": "portable chargers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "9b12420e"
+  },
+  {
+    "keyword": "top 5 travel pillows",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3e84d426"
+  },
+  {
+    "keyword": "top 7 travel pillows for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "89dd9fa4"
+  },
+  {
+    "keyword": "top 5 travel pillows for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ba107156"
+  },
+  {
+    "keyword": "best travel pillows under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9ef30f0a"
+  },
+  {
+    "keyword": "best travel pillows under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6eb49bfa"
+  },
+  {
+    "keyword": "best travel pillows under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "35b27f63"
+  },
+  {
+    "keyword": "best budget travel pillows",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a1313b77"
+  },
+  {
+    "keyword": "cheapest travel pillows that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "128223d5"
+  },
+  {
+    "keyword": "best travel pillows for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2909b11f"
+  },
+  {
+    "keyword": "best travel pillows for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b83fb75b"
+  },
+  {
+    "keyword": "best travel pillows for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c9275580"
+  },
+  {
+    "keyword": "best travel pillows for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "58073216"
+  },
+  {
+    "keyword": "best compact travel pillows",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e3098ebc"
+  },
+  {
+    "keyword": "best quiet travel pillows",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "431f625f"
+  },
+  {
+    "keyword": "best travel pillows for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e8e2cf75"
+  },
+  {
+    "keyword": "best travel pillows 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "161d692e"
+  },
+  {
+    "keyword": "best travel pillows reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "029d5164"
+  },
+  {
+    "keyword": "travel pillows buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "8bbb8f2f"
+  },
+  {
+    "keyword": "top 5 standing desks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4c9525bb"
+  },
+  {
+    "keyword": "top 7 standing desks for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5e09bf42"
+  },
+  {
+    "keyword": "top 5 standing desks for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ae5aa200"
+  },
+  {
+    "keyword": "best standing desks under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0f3bc2e9"
+  },
+  {
+    "keyword": "best standing desks under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "909613ae"
+  },
+  {
+    "keyword": "best standing desks under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f9de7029"
+  },
+  {
+    "keyword": "best budget standing desks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1f4858b7"
+  },
+  {
+    "keyword": "cheapest standing desks that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d0ceab9e"
+  },
+  {
+    "keyword": "best standing desks for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e8067593"
+  },
+  {
+    "keyword": "best standing desks for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d5a70f97"
+  },
+  {
+    "keyword": "best standing desks for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b207c08c"
+  },
+  {
+    "keyword": "best standing desks for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dd10801e"
+  },
+  {
+    "keyword": "best compact standing desks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c8031112"
+  },
+  {
+    "keyword": "best quiet standing desks",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0793f154"
+  },
+  {
+    "keyword": "best standing desks for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bfceabce"
+  },
+  {
+    "keyword": "best standing desks 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7f51b4fe"
+  },
+  {
+    "keyword": "best standing desks reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "92db5365"
+  },
+  {
+    "keyword": "standing desks buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "82a0dab9"
+  },
+  {
+    "keyword": "top 5 office chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "394aacb2"
+  },
+  {
+    "keyword": "top 7 office chairs for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f6ada3dd"
+  },
+  {
+    "keyword": "top 5 office chairs for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "588eb43b"
+  },
+  {
+    "keyword": "best office chairs under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3209a7c9"
+  },
+  {
+    "keyword": "best office chairs under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4650a28f"
+  },
+  {
+    "keyword": "best office chairs under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c111754a"
+  },
+  {
+    "keyword": "best budget office chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "03b30f5f"
+  },
+  {
+    "keyword": "cheapest office chairs that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9402b657"
+  },
+  {
+    "keyword": "best office chairs for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f296df06"
+  },
+  {
+    "keyword": "best office chairs for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "41dc4439"
+  },
+  {
+    "keyword": "best office chairs for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "91170251"
+  },
+  {
+    "keyword": "best office chairs for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7c44b48e"
+  },
+  {
+    "keyword": "best compact office chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "921cc49e"
+  },
+  {
+    "keyword": "best quiet office chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f21487d6"
+  },
+  {
+    "keyword": "best office chairs for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ba415c24"
+  },
+  {
+    "keyword": "best office chairs 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c4c4bac3"
+  },
+  {
+    "keyword": "best office chairs reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7b06e6a5"
+  },
+  {
+    "keyword": "office chairs buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "97d869a7"
+  },
+  {
+    "keyword": "top 5 monitors",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d9f34a76"
+  },
+  {
+    "keyword": "top 7 monitors for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ae80a089"
+  },
+  {
+    "keyword": "top 5 monitors for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "39cc9af6"
+  },
+  {
+    "keyword": "best monitors under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5793667c"
+  },
+  {
+    "keyword": "best monitors under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b4927e68"
+  },
+  {
+    "keyword": "best monitors under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "18c391f3"
+  },
+  {
+    "keyword": "best budget monitors",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4ab83b4d"
+  },
+  {
+    "keyword": "cheapest monitors that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d2574e1f"
+  },
+  {
+    "keyword": "best monitors for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6abd419d"
+  },
+  {
+    "keyword": "best monitors for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1eb052d2"
+  },
+  {
+    "keyword": "best monitors for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a0feb528"
+  },
+  {
+    "keyword": "best monitors for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0f290b28"
+  },
+  {
+    "keyword": "best compact monitors",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "12005ff0"
+  },
+  {
+    "keyword": "best quiet monitors",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7abf19b9"
+  },
+  {
+    "keyword": "best monitors for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "90c040c9"
+  },
+  {
+    "keyword": "best monitors 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "74949389"
+  },
+  {
+    "keyword": "best monitors reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5c9303c1"
+  },
+  {
+    "keyword": "monitors buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "c23a5efe"
+  },
+  {
+    "keyword": "top 5 mechanical keyboards",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1b9228ac"
+  },
+  {
+    "keyword": "top 7 mechanical keyboards for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "94f6f569"
+  },
+  {
+    "keyword": "top 5 mechanical keyboards for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8f68bef5"
+  },
+  {
+    "keyword": "best mechanical keyboards under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9ad0ba16"
+  },
+  {
+    "keyword": "best mechanical keyboards under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "40f52113"
+  },
+  {
+    "keyword": "best mechanical keyboards under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c0f2e956"
+  },
+  {
+    "keyword": "best budget mechanical keyboards",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "22c844da"
+  },
+  {
+    "keyword": "cheapest mechanical keyboards that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a33d5b56"
+  },
+  {
+    "keyword": "best mechanical keyboards for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5c8c98d5"
+  },
+  {
+    "keyword": "best mechanical keyboards for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0423dcd3"
+  },
+  {
+    "keyword": "best mechanical keyboards for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d9914580"
+  },
+  {
+    "keyword": "best mechanical keyboards for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "333185aa"
+  },
+  {
+    "keyword": "best compact mechanical keyboards",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dc95f056"
+  },
+  {
+    "keyword": "best quiet mechanical keyboards",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f22d559f"
+  },
+  {
+    "keyword": "best mechanical keyboards for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "76661e65"
+  },
+  {
+    "keyword": "best mechanical keyboards 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0f0880b6"
+  },
+  {
+    "keyword": "best mechanical keyboards reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "62c27f72"
+  },
+  {
+    "keyword": "mechanical keyboards buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "1d9c685a"
+  },
+  {
+    "keyword": "top 5 webcams",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4571e1d4"
+  },
+  {
+    "keyword": "top 7 webcams for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "013e01a2"
+  },
+  {
+    "keyword": "top 5 webcams for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5f7a3a10"
+  },
+  {
+    "keyword": "best webcams under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5f1568ba"
+  },
+  {
+    "keyword": "best webcams under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c91aa9a7"
+  },
+  {
+    "keyword": "best webcams under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5d7c67bb"
+  },
+  {
+    "keyword": "best budget webcams",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8a1c3ac0"
+  },
+  {
+    "keyword": "cheapest webcams that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0aa708f1"
+  },
+  {
+    "keyword": "best webcams for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "573743af"
+  },
+  {
+    "keyword": "best webcams for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ca7455aa"
+  },
+  {
+    "keyword": "best webcams for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "59069069"
+  },
+  {
+    "keyword": "best webcams for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b46356f5"
+  },
+  {
+    "keyword": "best compact webcams",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3bdc4eb9"
+  },
+  {
+    "keyword": "best quiet webcams",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "658c46ab"
+  },
+  {
+    "keyword": "best webcams for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "77bae70b"
+  },
+  {
+    "keyword": "best webcams 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4926e7b3"
+  },
+  {
+    "keyword": "best webcams reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8b60b86f"
+  },
+  {
+    "keyword": "webcams buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "240a0fb9"
+  },
+  {
+    "keyword": "top 5 massage guns",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d96e7de4"
+  },
+  {
+    "keyword": "top 7 massage guns for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "174d2394"
+  },
+  {
+    "keyword": "top 5 massage guns for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "beba7f58"
+  },
+  {
+    "keyword": "best massage guns under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bd6d997a"
+  },
+  {
+    "keyword": "best massage guns under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0615585d"
+  },
+  {
+    "keyword": "best massage guns under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "172be0e7"
+  },
+  {
+    "keyword": "best budget massage guns",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "eed26288"
+  },
+  {
+    "keyword": "cheapest massage guns that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7cb9b7a6"
+  },
+  {
+    "keyword": "best massage guns for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "16d4f4de"
+  },
+  {
+    "keyword": "best massage guns for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e2c74ce6"
+  },
+  {
+    "keyword": "best massage guns for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "72491026"
+  },
+  {
+    "keyword": "best massage guns for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bfa3b11b"
+  },
+  {
+    "keyword": "best compact massage guns",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b491ea5a"
+  },
+  {
+    "keyword": "best quiet massage guns",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "78d02bdc"
+  },
+  {
+    "keyword": "best massage guns for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cbf6b5e8"
+  },
+  {
+    "keyword": "best massage guns 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2d957d19"
+  },
+  {
+    "keyword": "best massage guns reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "58a4e8fd"
+  },
+  {
+    "keyword": "massage guns buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "8c445d2b"
+  },
+  {
+    "keyword": "top 5 fitness trackers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6249f213"
+  },
+  {
+    "keyword": "top 7 fitness trackers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bf62429e"
+  },
+  {
+    "keyword": "top 5 fitness trackers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "903e094f"
+  },
+  {
+    "keyword": "best fitness trackers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "fbcc8367"
+  },
+  {
+    "keyword": "best fitness trackers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "96679aad"
+  },
+  {
+    "keyword": "best fitness trackers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bbfa5477"
+  },
+  {
+    "keyword": "best budget fitness trackers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f5de8755"
+  },
+  {
+    "keyword": "cheapest fitness trackers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b735e4f0"
+  },
+  {
+    "keyword": "best fitness trackers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "762b4c85"
+  },
+  {
+    "keyword": "best fitness trackers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b6d9f1fc"
+  },
+  {
+    "keyword": "best fitness trackers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e4d09bea"
+  },
+  {
+    "keyword": "best fitness trackers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "791e19a2"
+  },
+  {
+    "keyword": "best compact fitness trackers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "83d7ff76"
+  },
+  {
+    "keyword": "best quiet fitness trackers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6ef26be6"
+  },
+  {
+    "keyword": "best fitness trackers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "039898ee"
+  },
+  {
+    "keyword": "best fitness trackers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "501ecde7"
+  },
+  {
+    "keyword": "best fitness trackers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0d27f004"
+  },
+  {
+    "keyword": "fitness trackers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "ab6d50e7"
+  },
+  {
+    "keyword": "top 5 smart scales",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e8649b51"
+  },
+  {
+    "keyword": "top 7 smart scales for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6002bd05"
+  },
+  {
+    "keyword": "top 5 smart scales for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "484da05c"
+  },
+  {
+    "keyword": "best smart scales under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "45d945e5"
+  },
+  {
+    "keyword": "best smart scales under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c13a71d6"
+  },
+  {
+    "keyword": "best smart scales under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c5843068"
+  },
+  {
+    "keyword": "best budget smart scales",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "79da80a7"
+  },
+  {
+    "keyword": "cheapest smart scales that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8ce929af"
+  },
+  {
+    "keyword": "best smart scales for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "48693f6c"
+  },
+  {
+    "keyword": "best smart scales for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b511308c"
+  },
+  {
+    "keyword": "best smart scales for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2e6d48aa"
+  },
+  {
+    "keyword": "best smart scales for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9779ad78"
+  },
+  {
+    "keyword": "best compact smart scales",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c258bfe4"
+  },
+  {
+    "keyword": "best quiet smart scales",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8856fc48"
+  },
+  {
+    "keyword": "best smart scales for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8adeb6b0"
+  },
+  {
+    "keyword": "best smart scales 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0a64401b"
+  },
+  {
+    "keyword": "best smart scales reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0d0db60b"
+  },
+  {
+    "keyword": "smart scales buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "d2cbc393"
+  },
+  {
+    "keyword": "top 5 yoga mats",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d9109cd0"
+  },
+  {
+    "keyword": "top 7 yoga mats for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a0b3683b"
+  },
+  {
+    "keyword": "top 5 yoga mats for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b459dd29"
+  },
+  {
+    "keyword": "best yoga mats under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4372e973"
+  },
+  {
+    "keyword": "best yoga mats under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8c39a142"
+  },
+  {
+    "keyword": "best yoga mats under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "545a00cb"
+  },
+  {
+    "keyword": "best budget yoga mats",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7041cca6"
+  },
+  {
+    "keyword": "cheapest yoga mats that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "135be4a9"
+  },
+  {
+    "keyword": "best yoga mats for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a9c424dd"
+  },
+  {
+    "keyword": "best yoga mats for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c287fbab"
+  },
+  {
+    "keyword": "best yoga mats for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d3598951"
+  },
+  {
+    "keyword": "best yoga mats for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2f98ce4b"
+  },
+  {
+    "keyword": "best compact yoga mats",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "54d7a766"
+  },
+  {
+    "keyword": "best quiet yoga mats",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "b61783ab"
+  },
+  {
+    "keyword": "best yoga mats for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c0fdd314"
+  },
+  {
+    "keyword": "best yoga mats 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5a22dc92"
+  },
+  {
+    "keyword": "best yoga mats reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4bfa3002"
+  },
+  {
+    "keyword": "yoga mats buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "8862309e"
+  },
+  {
+    "keyword": "top 5 adjustable dumbbells",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "fc9426d0"
+  },
+  {
+    "keyword": "top 7 adjustable dumbbells for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "24d4a0d0"
+  },
+  {
+    "keyword": "top 5 adjustable dumbbells for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cb8b81fb"
+  },
+  {
+    "keyword": "best adjustable dumbbells under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "98b52dca"
+  },
+  {
+    "keyword": "best adjustable dumbbells under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1abab766"
+  },
+  {
+    "keyword": "best adjustable dumbbells under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0ff1349f"
+  },
+  {
+    "keyword": "best budget adjustable dumbbells",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "25f924f3"
+  },
+  {
+    "keyword": "cheapest adjustable dumbbells that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ff2a2de8"
+  },
+  {
+    "keyword": "best adjustable dumbbells for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d7310be3"
+  },
+  {
+    "keyword": "best adjustable dumbbells for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8bbf9622"
+  },
+  {
+    "keyword": "best adjustable dumbbells for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ceb14723"
+  },
+  {
+    "keyword": "best adjustable dumbbells for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f3950d81"
+  },
+  {
+    "keyword": "best compact adjustable dumbbells",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "cf88f3eb"
+  },
+  {
+    "keyword": "best quiet adjustable dumbbells",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5b8679d1"
+  },
+  {
+    "keyword": "best adjustable dumbbells for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e0bba052"
+  },
+  {
+    "keyword": "best adjustable dumbbells 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "dd9e2d39"
+  },
+  {
+    "keyword": "best adjustable dumbbells reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "28340071"
+  },
+  {
+    "keyword": "adjustable dumbbells buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "ce7ac63b"
+  },
+  {
+    "keyword": "top 5 coolers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5aef905a"
+  },
+  {
+    "keyword": "top 7 coolers for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5dbf12ee"
+  },
+  {
+    "keyword": "top 5 coolers for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "027034d9"
+  },
+  {
+    "keyword": "best coolers under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "337c9c36"
+  },
+  {
+    "keyword": "best coolers under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4cbd6a2f"
+  },
+  {
+    "keyword": "best coolers under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a6df66be"
+  },
+  {
+    "keyword": "best budget coolers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2ca71ec9"
+  },
+  {
+    "keyword": "cheapest coolers that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8aecacf2"
+  },
+  {
+    "keyword": "best coolers for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c4c43d46"
+  },
+  {
+    "keyword": "best coolers for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "514f96a8"
+  },
+  {
+    "keyword": "best coolers for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4d51c2f8"
+  },
+  {
+    "keyword": "best coolers for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "536b11c5"
+  },
+  {
+    "keyword": "best compact coolers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a3fe072f"
+  },
+  {
+    "keyword": "best quiet coolers",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0f97dfab"
+  },
+  {
+    "keyword": "best coolers for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "be86c97b"
+  },
+  {
+    "keyword": "best coolers 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "16265e35"
+  },
+  {
+    "keyword": "best coolers reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a9333389"
+  },
+  {
+    "keyword": "coolers buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "2e73dcaf"
+  },
+  {
+    "keyword": "top 5 tents",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "12d77aca"
+  },
+  {
+    "keyword": "top 7 tents for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0e67194f"
+  },
+  {
+    "keyword": "top 5 tents for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "f8ceedbc"
+  },
+  {
+    "keyword": "best tents under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6720076b"
+  },
+  {
+    "keyword": "best tents under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "48502c9e"
+  },
+  {
+    "keyword": "best tents under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ce6bc878"
+  },
+  {
+    "keyword": "best budget tents",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3edce3a0"
+  },
+  {
+    "keyword": "cheapest tents that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2e73fc7d"
+  },
+  {
+    "keyword": "best tents for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "82b52d5d"
+  },
+  {
+    "keyword": "best tents for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "00cb03df"
+  },
+  {
+    "keyword": "best tents for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8129438a"
+  },
+  {
+    "keyword": "best tents for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c2713a33"
+  },
+  {
+    "keyword": "best compact tents",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d9e581ec"
+  },
+  {
+    "keyword": "best quiet tents",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a2e527d0"
+  },
+  {
+    "keyword": "best tents for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5cbab34c"
+  },
+  {
+    "keyword": "best tents 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "87ae94eb"
+  },
+  {
+    "keyword": "best tents reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "167ee6db"
+  },
+  {
+    "keyword": "tents buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "6bd0b085"
+  },
+  {
+    "keyword": "top 5 camping chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "73f4ebbb"
+  },
+  {
+    "keyword": "top 7 camping chairs for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8d9a4061"
+  },
+  {
+    "keyword": "top 5 camping chairs for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "e18dc8f1"
+  },
+  {
+    "keyword": "best camping chairs under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3421c58c"
+  },
+  {
+    "keyword": "best camping chairs under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0ba06d7a"
+  },
+  {
+    "keyword": "best camping chairs under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0f77829c"
+  },
+  {
+    "keyword": "best budget camping chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a33c11fd"
+  },
+  {
+    "keyword": "cheapest camping chairs that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "75da57bc"
+  },
+  {
+    "keyword": "best camping chairs for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0cf8023b"
+  },
+  {
+    "keyword": "best camping chairs for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9bd8e64e"
+  },
+  {
+    "keyword": "best camping chairs for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "05e46f7c"
+  },
+  {
+    "keyword": "best camping chairs for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8489d834"
+  },
+  {
+    "keyword": "best compact camping chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "40ec681f"
+  },
+  {
+    "keyword": "best quiet camping chairs",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c9114d34"
+  },
+  {
+    "keyword": "best camping chairs for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7d8f69fa"
+  },
+  {
+    "keyword": "best camping chairs 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6f4fe929"
+  },
+  {
+    "keyword": "best camping chairs reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "65d7da98"
+  },
+  {
+    "keyword": "camping chairs buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "4d0eb7c6"
+  },
+  {
+    "keyword": "top 5 portable grills",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "87000295"
+  },
+  {
+    "keyword": "top 7 portable grills for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "bc6dc30f"
+  },
+  {
+    "keyword": "top 5 portable grills for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5b107e35"
+  },
+  {
+    "keyword": "best portable grills under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c23975d9"
+  },
+  {
+    "keyword": "best portable grills under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "7a565b0f"
+  },
+  {
+    "keyword": "best portable grills under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "334c3178"
+  },
+  {
+    "keyword": "best budget portable grills",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "9174c9ed"
+  },
+  {
+    "keyword": "cheapest portable grills that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "5834a0cd"
+  },
+  {
+    "keyword": "best portable grills for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c28bffe9"
+  },
+  {
+    "keyword": "best portable grills for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3513b9a5"
+  },
+  {
+    "keyword": "best portable grills for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ba1be985"
+  },
+  {
+    "keyword": "best portable grills for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2eb2981a"
+  },
+  {
+    "keyword": "best compact portable grills",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c28b5935"
+  },
+  {
+    "keyword": "best quiet portable grills",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d4b8b0e3"
+  },
+  {
+    "keyword": "best portable grills for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "a67a0ae3"
+  },
+  {
+    "keyword": "best portable grills 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "845cce67"
+  },
+  {
+    "keyword": "best portable grills reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "d34d35db"
+  },
+  {
+    "keyword": "portable grills buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "eff8f46a"
+  },
+  {
+    "keyword": "top 5 sleeping bags",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "ac69caef"
+  },
+  {
+    "keyword": "top 7 sleeping bags for 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "0d5c0508"
+  },
+  {
+    "keyword": "top 5 sleeping bags for the money",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6ceec4a3"
+  },
+  {
+    "keyword": "best sleeping bags under $100",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "eb1cd36b"
+  },
+  {
+    "keyword": "best sleeping bags under $150",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8d69818b"
+  },
+  {
+    "keyword": "best sleeping bags under $200",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4afc6582"
+  },
+  {
+    "keyword": "best budget sleeping bags",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "da4a5f1c"
+  },
+  {
+    "keyword": "cheapest sleeping bags that actually works",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3e386ffa"
+  },
+  {
+    "keyword": "best sleeping bags for small kitchen",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6092bcda"
+  },
+  {
+    "keyword": "best sleeping bags for large family",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "c8dc254f"
+  },
+  {
+    "keyword": "best sleeping bags for beginners",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "2ba8ad1a"
+  },
+  {
+    "keyword": "best sleeping bags for apartments",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "4525f399"
+  },
+  {
+    "keyword": "best compact sleeping bags",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "8d969374"
+  },
+  {
+    "keyword": "best quiet sleeping bags",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "fa35fcfd"
+  },
+  {
+    "keyword": "best sleeping bags for everyday use",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "6ffe32e6"
+  },
+  {
+    "keyword": "best sleeping bags 2026",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "1473afa5"
+  },
+  {
+    "keyword": "best sleeping bags reviewed",
+    "source": "template",
+    "score": 60,
+    "post_type": "roundup",
+    "slug": "3c4bab81"
+  },
+  {
+    "keyword": "sleeping bags buying guide",
+    "source": "template",
+    "score": 60,
+    "post_type": "guide",
+    "slug": "113ee976"
   },
   {
     "keyword": "best electric kettles for small kitchen",
@@ -154,6 +4762,356 @@
     "slug": "7d86f304"
   },
   {
+    "keyword": "best robot vacuums review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "772a7a8c"
+  },
+  {
+    "keyword": "top robot vacuums 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "65e18286"
+  },
+  {
+    "keyword": "best air purifiers review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "7feedb33"
+  },
+  {
+    "keyword": "top air purifiers 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "083412b6"
+  },
+  {
+    "keyword": "best stick vacuums review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "1fcbde86"
+  },
+  {
+    "keyword": "top stick vacuums 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "9d9b7d0c"
+  },
+  {
+    "keyword": "best humidifiers review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "f33d3ef7"
+  },
+  {
+    "keyword": "top humidifiers 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "15494a76"
+  },
+  {
+    "keyword": "best space heaters review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "34ec257e"
+  },
+  {
+    "keyword": "top space heaters 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "bea90c31"
+  },
+  {
+    "keyword": "best luggage review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "7497ce50"
+  },
+  {
+    "keyword": "top luggage 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "26d87ec4"
+  },
+  {
+    "keyword": "best travel backpacks review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "b2c81f2b"
+  },
+  {
+    "keyword": "top travel backpacks 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "29ced44c"
+  },
+  {
+    "keyword": "best packing cubes review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "526d52a1"
+  },
+  {
+    "keyword": "top packing cubes 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "8b7e174b"
+  },
+  {
+    "keyword": "best portable chargers review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "917fecbd"
+  },
+  {
+    "keyword": "top portable chargers 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "5ec0749d"
+  },
+  {
+    "keyword": "best travel pillows review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "2fa59302"
+  },
+  {
+    "keyword": "top travel pillows 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "f63ac214"
+  },
+  {
+    "keyword": "best standing desks review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "131fd21f"
+  },
+  {
+    "keyword": "top standing desks 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "86b8b0a1"
+  },
+  {
+    "keyword": "best office chairs review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "0793ee3d"
+  },
+  {
+    "keyword": "top office chairs 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "dcc27e9d"
+  },
+  {
+    "keyword": "best monitors review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "ef91cd04"
+  },
+  {
+    "keyword": "top monitors 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "eec06bb0"
+  },
+  {
+    "keyword": "best mechanical keyboards review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "5ae9374c"
+  },
+  {
+    "keyword": "top mechanical keyboards 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "22fafeb9"
+  },
+  {
+    "keyword": "best webcams review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "3b7e18f9"
+  },
+  {
+    "keyword": "top webcams 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "fadbfa8d"
+  },
+  {
+    "keyword": "best massage guns review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "f21b5227"
+  },
+  {
+    "keyword": "top massage guns 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "d6a2e831"
+  },
+  {
+    "keyword": "best fitness trackers review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "ad2c7b29"
+  },
+  {
+    "keyword": "top fitness trackers 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "a66d6ff6"
+  },
+  {
+    "keyword": "best smart scales review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "e8349f81"
+  },
+  {
+    "keyword": "top smart scales 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "82c519e5"
+  },
+  {
+    "keyword": "best yoga mats review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "0c3a531e"
+  },
+  {
+    "keyword": "top yoga mats 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "5a988fe6"
+  },
+  {
+    "keyword": "best adjustable dumbbells review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "4eb2bf24"
+  },
+  {
+    "keyword": "top adjustable dumbbells 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "35c1893c"
+  },
+  {
+    "keyword": "best coolers review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "3fa7a93d"
+  },
+  {
+    "keyword": "top coolers 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "def24597"
+  },
+  {
+    "keyword": "best tents review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "d703f97f"
+  },
+  {
+    "keyword": "top tents 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "7cb3aa3c"
+  },
+  {
+    "keyword": "best camping chairs review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "c0076f62"
+  },
+  {
+    "keyword": "top camping chairs 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "960def4f"
+  },
+  {
+    "keyword": "best portable grills review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "419dbc62"
+  },
+  {
+    "keyword": "top portable grills 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "48d4fd89"
+  },
+  {
+    "keyword": "best sleeping bags review",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "review",
+    "slug": "6ebf3da3"
+  },
+  {
+    "keyword": "top sleeping bags 2026",
+    "source": "fallback",
+    "score": 55,
+    "post_type": "roundup",
+    "slug": "6d82167a"
+  },
+  {
     "keyword": "best air fryers review",
     "source": "fallback",
     "score": 55,
@@ -264,6 +5222,1581 @@
     "score": 55,
     "post_type": "roundup",
     "slug": "04fda46b"
+  },
+  {
+    "keyword": "best robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "dd93c917",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "efe84708",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f0a039de",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "00c7689c",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "bd116db3",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "709dbd0c",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "89ae50b7",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 robot vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "18c72f02",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap robot vacuums under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "9cc4e488"
+  },
+  {
+    "keyword": "best air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b06ef394",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "eb339cc1",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "98f5b3df",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "960d391d",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "90cca10c",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "47de77ef",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "2af2bb62",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 air purifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c3e36e67",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap air purifiers under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "f0528932"
+  },
+  {
+    "keyword": "best stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "01ca6bbc",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c87a3e01",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "442aba50",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f0b95cdc",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b05f67ea",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ec18278f",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "93a7bbdd",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 stick vacuums",
+    "source": "fallback",
+    "score": 50,
+    "slug": "61bfe67b",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap stick vacuums under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "ddc2f20d"
+  },
+  {
+    "keyword": "best humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "4215299b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "be9b8e37",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6c423a6f",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0016ac42",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "46576273",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6e2e14c9",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "987a9543",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 humidifiers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "48ccd264",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap humidifiers under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "5da94bc7"
+  },
+  {
+    "keyword": "best space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d11b8b51",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "bbcac689",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "24b0e6ef",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8d2fd30e",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "9814590e",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "55805d4d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "30fc3426",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 space heaters",
+    "source": "fallback",
+    "score": 50,
+    "slug": "1b105956",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap space heaters under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "3604d50e"
+  },
+  {
+    "keyword": "best luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a8b5a0a9",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ebe90742",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b0a24768",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "9a8a7a0c",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "94d84be6",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "be2cd980",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6bbde669",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 luggage",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d1f4584d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap luggage under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "8738fdb2"
+  },
+  {
+    "keyword": "best travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b1713648",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7f0c494b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b5746c61",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7ede3973",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "de862e14",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "44268389",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "dd12b663",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 travel backpacks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "27a46715",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap travel backpacks under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "74aed490"
+  },
+  {
+    "keyword": "best packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "14649a15",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "260f9b58",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "47174773",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "60aa9704",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "724f2177",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8d06d130",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "98d2855d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 packing cubes",
+    "source": "fallback",
+    "score": 50,
+    "slug": "28995741",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap packing cubes under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "911c224c"
+  },
+  {
+    "keyword": "best portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d93cabd9",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "5d1fc9f7",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "396560d9",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "47fae91b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "01e31e78",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "42fee8ff",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7eefae23",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 portable chargers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "3dc9df08",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap portable chargers under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "ab24c789"
+  },
+  {
+    "keyword": "best travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c6d4e6f3",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "1e8783b9",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "dfffcecc",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ab4c2eb8",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8180c0cc",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "fa7fee4c",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d99d6a1d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 travel pillows",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0faa5cc8",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap travel pillows under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "6f214fbb"
+  },
+  {
+    "keyword": "best standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0fe51a11",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "53eabe95",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "30a7f4f8",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "e2abc95b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a882e609",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8d845325",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "616c5b70",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 standing desks",
+    "source": "fallback",
+    "score": 50,
+    "slug": "e03860f5",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap standing desks under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "8605ac16"
+  },
+  {
+    "keyword": "best office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0f2e4af4",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8be0e15b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "2101cef7",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "20d96157",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "2ad5f121",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "1a893114",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a59d7295",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 office chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6f729027",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap office chairs under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "67c2d218"
+  },
+  {
+    "keyword": "best monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "563f3a82",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "5b0c5fd4",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "3540bfd2",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "fd148813",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b20cf03d",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "bcb70eb4",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ac01f082",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 monitors",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ca28f749",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap monitors under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "77892951"
+  },
+  {
+    "keyword": "best mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f586fd08",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "51936800",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "3c2dc255",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0f1b795c",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "81a9ca90",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d2ca6e88",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "810e217a",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 mechanical keyboards",
+    "source": "fallback",
+    "score": 50,
+    "slug": "46a14f1e",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap mechanical keyboards under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "3670c96d"
+  },
+  {
+    "keyword": "best webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "af3dba04",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c060ccc3",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "53afcd5f",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "eb3d4220",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "24cacc99",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "5417dd40",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c232fc9b",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 webcams",
+    "source": "fallback",
+    "score": 50,
+    "slug": "fabfa972",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap webcams under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "688a65f7"
+  },
+  {
+    "keyword": "best massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7a84ca67",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "df5435ac",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6ca1aeb9",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "3a8dd4a3",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "91ce9fff",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "23531f55",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c577bca1",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 massage guns",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ae737194",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap massage guns under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "46a589a4"
+  },
+  {
+    "keyword": "best fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "3f1a0298",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "61b2f84c",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8368b6f3",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "87c0b760",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f1d676f9",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7255d789",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ef4b5ad0",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 fitness trackers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "926de141",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap fitness trackers under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "e5ea91ab"
+  },
+  {
+    "keyword": "best smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "695d341d",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ec3f46ae",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "4058f6eb",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "38e8ab30",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b4375677",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "564f5b69",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7f2349de",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 smart scales",
+    "source": "fallback",
+    "score": 50,
+    "slug": "56f37045",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap smart scales under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "8ec3617d"
+  },
+  {
+    "keyword": "best yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a3b7c8d5",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "9fd762b2",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8f3ea802",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "83fdbd0a",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "4ccf2c3b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "82c39fbe",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "706c2ecc",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 yoga mats",
+    "source": "fallback",
+    "score": 50,
+    "slug": "75d7bc8b",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap yoga mats under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "cce4d3c4"
+  },
+  {
+    "keyword": "best adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "860fa78b",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "42713395",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "25573e23",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c8bd6ff1",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d8ad26ed",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "01289b73",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "2458d4bb",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 adjustable dumbbells",
+    "source": "fallback",
+    "score": 50,
+    "slug": "60f7cf8d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap adjustable dumbbells under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "06530fb4"
+  },
+  {
+    "keyword": "best coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0bd7f2f9",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "32314a29",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "5cb18aa2",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "1cfbf839",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "5bb9b840",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f108ad4f",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "48e6c3d8",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 coolers",
+    "source": "fallback",
+    "score": 50,
+    "slug": "717e930d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap coolers under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "c6dd9447"
+  },
+  {
+    "keyword": "best tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "7bfd29c7",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f4204f35",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a94817f7",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "9f15a2ac",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "79a8febb",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "e6386e42",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0c4e9cc2",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 tents",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6e435052",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap tents under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "a36f10dc"
+  },
+  {
+    "keyword": "best camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "201eb9ad",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "ba90b01d",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a8e6c871",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "0289acde",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "dc522efa",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "a2b182fa",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "42d52774",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 camping chairs",
+    "source": "fallback",
+    "score": 50,
+    "slug": "16a72da5",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap camping chairs under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "317c8c5b"
+  },
+  {
+    "keyword": "best portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b14862dd",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "dc725607",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b545bdd4",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "dcc9526e",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "c28c35e0",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b4c7c39d",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "d68a9d2b",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 portable grills",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6fd5afba",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap portable grills under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "76750561"
+  },
+  {
+    "keyword": "best sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "b9a14e73",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "vs sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "f2a592c3",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "review sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "8c82bb22",
+    "post_type": "review"
+  },
+  {
+    "keyword": "top sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "6d7a49d9",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "cheap sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "88464c09",
+    "post_type": "roundup"
+  },
+  {
+    "keyword": "under $50 sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "33de8699",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $100 sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "5c9591f9",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "under $150 sleeping bags",
+    "source": "fallback",
+    "score": 50,
+    "slug": "fca9a638",
+    "post_type": "budget_roundup"
+  },
+  {
+    "keyword": "cheap sleeping bags under $100",
+    "source": "fallback",
+    "score": 50,
+    "post_type": "budget_roundup",
+    "slug": "2396653d"
   },
   {
     "keyword": "best air fryers",

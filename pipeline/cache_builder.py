@@ -127,6 +127,17 @@ SEED_PRODUCTS = {
     ],
 }
 
+# Merge the curated multi-vertical catalogue (Home, Travel, Home Office, Fitness &
+# Wellness, Outdoors) from the data file. Kept as data so the trending feature can
+# append new niches without code changes. The curated catalogue is richer than the
+# few legacy non-kitchen stubs, so it takes precedence for any overlapping niche.
+_CATALOGUE_FILE = Path(__file__).parent / "seed_catalogue.json"
+if _CATALOGUE_FILE.exists():
+    try:
+        SEED_PRODUCTS.update(json.loads(_CATALOGUE_FILE.read_text(encoding="utf-8")))
+    except Exception as _e:
+        print(f"[cache] Could not load seed_catalogue.json: {_e}")
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CACHE MANAGEMENT

@@ -286,6 +286,43 @@ def _generate_amazon_fallback(niche: str) -> list[dict]:
     ]
 
 
+TRENDING_FILE = Path("config/trending_pending.json")
+
+
+def discover_trending_niches() -> list[dict]:
+    """Detect trending product niches/categories not yet covered by the site.
+
+    Self-activating: runs for real the moment a live trend source is configured
+    (SerpApi Google Trends or Apify Amazon bestsellers). Until then it is a no-op
+    so the rest of the pipeline is unaffected. Newly-trending niches are recorded
+    to config/trending_pending.json as candidate categories; they become
+    publishable once a product source (PA-API/Apify) can supply their products.
+    """
+    has_source = (SERPAPI_KEY and SERPAPI_KEY != "your_serpapi_key_here") or \
+                 (APIFY_TOKEN and APIFY_TOKEN != "your_apify_token_here")
+    if not has_source:
+        print("  [trending] inactive — add SERPAPI_KEY or APIFY_TOKEN to detect & auto-create trending categories")
+        return []
+
+    known = {n.lower() for n in NICHES}
+    found = {}
+    # Pull broad bestseller/trend seeds and keep product niches we don't cover yet.
+    for seed in ["best selling home gadgets", "trending kitchen products",
+                 "best selling electronics", "trending fitness gear", "popular outdoor gear"]:
+        for item in fetch_google_trends(seed) + fetch_amazon_bestsellers(seed):
+            kw = item.get("keyword", "").lower().strip()
+            # crude niche = trailing noun phrase; skip if already covered
+            niche = kw.replace("best ", "").replace("top ", "").strip()
+            if niche and len(niche) > 4 and not any(k in niche or niche in k for k in known):
+                found[niche] = found.get(niche, 0) + 1
+
+    candidates = [{"niche": n, "signal": c} for n, c in sorted(found.items(), key=lambda x: -x[1])][:20]
+    if candidates:
+        TRENDING_FILE.write_text(json.dumps(candidates, indent=2))
+        print(f"  [trending] {len(candidates)} candidate new categories recorded → {TRENDING_FILE}")
+    return candidates
+
+
 def load_done() -> set:
     if DONE_FILE.exists():
         return set(json.loads(DONE_FILE.read_text()))
@@ -343,6 +380,9 @@ def run():
     pairs = generate_comparison_pairs(products) + generate_seed_comparison_pairs()
     all_kws.extend(pairs)
     print(f"\n[pairs] Generated {len(pairs)} comparison pairs")
+
+    # 5. Trending-category detection (self-activates when a trend source is keyed)
+    discover_trending_niches()
 
     # Dedupe, filter done, score
     queue = dedupe_and_score(all_kws, done)

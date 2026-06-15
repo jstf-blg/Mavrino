@@ -1,25 +1,25 @@
-name: Daily Content Pipeline
+name: Drip Publisher (per-category, evenly spaced)
 
+# Publishes posts spread evenly across the day with a per-main-category daily quota.
+# The drip self-paces (publishes only what's due to stay on an even schedule) and
+# self-limits (stops at each category's daily target), so a skipped/delayed run is
+# harmless — the next run catches up the backlog.
+#
+# Catch-up: 5 posts/category on DRIP_CATCHUP_DATE, then 2/category/day afterwards
+# (the switch is automatic — no edit needed once the catch-up day passes).
 on:
-  # Scheduled publishing is now handled by drip.yml (per-category, evenly spaced).
-  # This bulk pipeline is kept for manual one-off runs only.
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 min; drip decides whether anything is due
   workflow_dispatch:
-    inputs:
-      dry_run:
-        description: 'Dry run (no API calls, no publishing)'
-        required: false
-        default: 'false'
-        type: boolean
-      posts_override:
-        description: 'Override posts per day'
-        required: false
-        type: string
+
+concurrency:
+  group: mavrino-publish
+  cancel-in-progress: false
 
 jobs:
-  run-pipeline:
+  drip:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -55,15 +55,12 @@ jobs:
           SERPAPI_KEY=${{ secrets.SERPAPI_KEY }}
           APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
           OUTPUT_DIR=./output
-          NICHES=air fryers,coffee makers,blenders,food processors,stand mixers,toaster ovens,electric kettles
+          DRIP_CATCHUP_DATE=2026-06-15
+          DRIP_TODAY_TARGET=5
+          DRIP_DAILY_TARGET=2
+          DRIP_PER_RUN_CAP=4
+          NICHES=air fryers,coffee makers,blenders,food processors,stand mixers,toaster ovens,electric kettles,robot vacuums,air purifiers,stick vacuums,humidifiers,space heaters,luggage,travel backpacks,packing cubes,portable chargers,travel pillows,standing desks,office chairs,monitors,mechanical keyboards,webcams,massage guns,fitness trackers,smart scales,yoga mats,adjustable dumbbells,coolers,tents,camping chairs,portable grills,sleeping bags
           EOF
-          if [ -n "${{ github.event.inputs.posts_override }}" ]; then
-            echo "POSTS_PER_DAY=${{ github.event.inputs.posts_override }}" >> .env
-          else
-            # Kept low while content quality is being tuned for AdSense review.
-            # Raise once posts are reliably unique per keyword.
-            echo "POSTS_PER_DAY=2" >> .env
-          fi
 
       - name: Create required directories
         run: |
@@ -78,27 +75,12 @@ jobs:
           git config user.name  "Pipeline Bot"
           git config user.email "pipeline@noreply.github.com"
 
-      - name: Run pipeline
-        run: |
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            python run_pipeline.py --dry-run
-          else
-            python run_pipeline.py
-          fi
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Run drip
+        run: python drip.py
 
-      - name: Commit config state
+      - name: Commit state
         run: |
+          git pull --rebase --autostash || true
           git add config/ || true
-          git diff --cached --quiet || git commit -m "Pipeline state update $(date +%Y-%m-%d)"
+          git diff --cached --quiet || git commit -m "Drip state $(date -u +%Y-%m-%dT%H:%M)"
           git push || true
-
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pipeline-logs-${{ github.run_number }}
-          path: logs/
-          retention-days: 14
-          if-no-files-found: ignore

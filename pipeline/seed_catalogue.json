@@ -1,0 +1,1252 @@
+{
+  "robot vacuums": [
+    {
+      "asin": "B01N4HZ49Z",
+      "title": "eufy RoboVac 11S (Slim) Robot Vacuum Cleaner, Super-Thin, 1300Pa Strong Suction",
+      "brand": "eufy",
+      "price": 159.99,
+      "rating": 4.4,
+      "review_count": 65000
+    },
+    {
+      "asin": "B0CV9QL2W3",
+      "title": "DREAME D10 Plus Gen 2 Robot Vacuum and Mop with Self-Emptying Base",
+      "brand": "Dreame",
+      "price": 299.99,
+      "rating": 4.3,
+      "review_count": 4200
+    },
+    {
+      "asin": "B0DHX8K9QG",
+      "title": "Roborock Q7 M5+ Robot Vacuum and Mop with Self-Emptying Dock",
+      "brand": "Roborock",
+      "price": 359.99,
+      "rating": 4.4,
+      "review_count": 3100
+    },
+    {
+      "asin": "B09NNCBPX9",
+      "title": "Shark AI Ultra Robot Vacuum with Matrix Clean and Self-Empty Base, AV2511AE",
+      "brand": "Shark",
+      "price": 399.99,
+      "rating": 4.4,
+      "review_count": 21000
+    },
+    {
+      "asin": "B08SQNCJVH",
+      "title": "iRobot Roomba i3+ EVO (3550) Self-Emptying Robot Vacuum",
+      "brand": "iRobot",
+      "price": 399.99,
+      "rating": 4.4,
+      "review_count": 33000
+    },
+    {
+      "asin": "B0BVK6T9N9",
+      "title": "Dreame L20 Ultra Robot Vacuum and Mop with Auto Mop Washing and Drying",
+      "brand": "Dreame",
+      "price": 999.99,
+      "rating": 4.3,
+      "review_count": 2500
+    }
+  ],
+  "air purifiers": [
+    {
+      "asin": "B00BTKAPUU",
+      "title": "Coway Airmega AP-1512HH Mighty Air Purifier with True HEPA and Eco Mode",
+      "brand": "Coway",
+      "price": 169.99,
+      "rating": 4.7,
+      "review_count": 56000
+    },
+    {
+      "asin": "B07RSXJYV5",
+      "title": "LEVOIT Core 300S Smart WiFi Air Purifier for Home, True HEPA",
+      "brand": "Levoit",
+      "price": 99.99,
+      "rating": 4.7,
+      "review_count": 94000
+    },
+    {
+      "asin": "B08C9YLN9R",
+      "title": "Winix 5500-2 Air Purifier with True HEPA, PlasmaWave and Odor Reducing Carbon Filter",
+      "brand": "Winix",
+      "price": 159.99,
+      "rating": 4.7,
+      "review_count": 40000
+    },
+    {
+      "asin": "B0BVPHHB9Z",
+      "title": "Winix 5510 4-Stage Air Purifier with WiFi, True HEPA and PlasmaWave",
+      "brand": "Winix",
+      "price": 134.99,
+      "rating": 4.6,
+      "review_count": 5800
+    },
+    {
+      "asin": "B07VWPNFKW",
+      "title": "LEVOIT Core 400S Smart Air Purifier for Home Large Room, True HEPA",
+      "brand": "Levoit",
+      "price": 219.99,
+      "rating": 4.7,
+      "review_count": 28000
+    },
+    {
+      "asin": "B0CFQXJ8N7",
+      "title": "Blueair Blue Pure 311i Max Air Purifier with HEPASilent Technology",
+      "brand": "Blueair",
+      "price": 229.99,
+      "rating": 4.6,
+      "review_count": 3400
+    }
+  ],
+  "stick vacuums": [
+    {
+      "asin": "B08RDL6H79",
+      "title": "Tineco Pure One S11 Smart Cordless Stick Vacuum Cleaner",
+      "brand": "Tineco",
+      "price": 199.99,
+      "rating": 4.4,
+      "review_count": 7200
+    },
+    {
+      "asin": "B09JZ5G2KT",
+      "title": "Shark IZ540H Vertex Pro Cordless Stick Vacuum with PowerFins",
+      "brand": "Shark",
+      "price": 279.99,
+      "rating": 4.5,
+      "review_count": 12000
+    },
+    {
+      "asin": "B0CPH8YV4M",
+      "title": "Tineco Pure One A50S Cordless Smart Stick Vacuum Cleaner",
+      "brand": "Tineco",
+      "price": 399.99,
+      "rating": 4.5,
+      "review_count": 2100
+    },
+    {
+      "asin": "B0C4MV3DKP",
+      "title": "Shark PowerDetect Clean & Empty Cordless Stick Vacuum, IW3511",
+      "brand": "Shark",
+      "price": 499.99,
+      "rating": 4.4,
+      "review_count": 3800
+    },
+    {
+      "asin": "B0BRHNF8MR",
+      "title": "Dyson V15 Detect Cordless Vacuum Cleaner with Laser Dust Detection",
+      "brand": "Dyson",
+      "price": 649.99,
+      "rating": 4.6,
+      "review_count": 18000
+    },
+    {
+      "asin": "B0C6QHV6FN",
+      "title": "Dyson Gen5detect Cordless Vacuum Cleaner",
+      "brand": "Dyson",
+      "price": 799.99,
+      "rating": 4.6,
+      "review_count": 4500
+    }
+  ],
+  "humidifiers": [
+    {
+      "asin": "B073WJZL1N",
+      "title": "Pure Enrichment MistAire Ultrasonic Cool Mist Humidifier",
+      "brand": "Pure Enrichment",
+      "price": 39.99,
+      "rating": 4.6,
+      "review_count": 75000
+    },
+    {
+      "asin": "B07YGV3PND",
+      "title": "LEVOIT Dual 150 Ultrasonic Cool Mist Humidifier for Bedroom",
+      "brand": "Levoit",
+      "price": 39.99,
+      "rating": 4.6,
+      "review_count": 21000
+    },
+    {
+      "asin": "B0CB7M8R4F",
+      "title": "Dreo HM311S Smart Cool Mist Humidifier for Bedroom",
+      "brand": "Dreo",
+      "price": 49.99,
+      "rating": 4.6,
+      "review_count": 6800
+    },
+    {
+      "asin": "B08BR3Z3R8",
+      "title": "LEVOIT Classic 300S Smart Ultrasonic Cool Mist Humidifier for Home",
+      "brand": "Levoit",
+      "price": 59.99,
+      "rating": 4.5,
+      "review_count": 18000
+    },
+    {
+      "asin": "B07GBSH4VC",
+      "title": "Honeywell HUL430 Mistmate Cool Mist Humidifier",
+      "brand": "Honeywell",
+      "price": 34.99,
+      "rating": 4.4,
+      "review_count": 9500
+    },
+    {
+      "asin": "B0BPYG9KFV",
+      "title": "LEVOIT OasisMist 4.5L Smart Warm and Cool Mist Humidifier for Large Room",
+      "brand": "Levoit",
+      "price": 89.99,
+      "rating": 4.5,
+      "review_count": 8200
+    }
+  ],
+  "space heaters": [
+    {
+      "asin": "B0032L5N6A",
+      "title": "Lasko 754200 Ceramic Portable Space Heater with Adjustable Thermostat",
+      "brand": "Lasko",
+      "price": 32.99,
+      "rating": 4.5,
+      "review_count": 52000
+    },
+    {
+      "asin": "B0768TJD3R",
+      "title": "Vornado VH200 Whole Room Vortex Heater with Automatic Climate Control",
+      "brand": "Vornado",
+      "price": 69.99,
+      "rating": 4.6,
+      "review_count": 28000
+    },
+    {
+      "asin": "B0BR8XL9HM",
+      "title": "Dreo Solaris 718 Space Heater with Oscillation and Remote, 1500W",
+      "brand": "Dreo",
+      "price": 79.99,
+      "rating": 4.6,
+      "review_count": 14000
+    },
+    {
+      "asin": "B07GBNK9X6",
+      "title": "Vornado AVH10 Vortex Heater with Auto Climate Control, Black",
+      "brand": "Vornado",
+      "price": 99.99,
+      "rating": 4.6,
+      "review_count": 11000
+    },
+    {
+      "asin": "B00GTGE2HG",
+      "title": "De'Longhi HMP1500 Mica Panel Heater, 1500W",
+      "brand": "De'Longhi",
+      "price": 89.99,
+      "rating": 4.4,
+      "review_count": 6700
+    },
+    {
+      "asin": "B0058WS39M",
+      "title": "De'Longhi TRD40615E Full Room Radiant Oil-Filled Portable Heater",
+      "brand": "De'Longhi",
+      "price": 119.99,
+      "rating": 4.5,
+      "review_count": 9800
+    }
+  ],
+  "luggage": [
+    {
+      "asin": "B071VG5N9D",
+      "title": "Amazon Basics 21\" Hardside Carry-On Spinner Luggage with Wheels, Expandable, Black",
+      "brand": "Amazon Basics",
+      "price": 64.99,
+      "rating": 4.5,
+      "review_count": 48210
+    },
+    {
+      "asin": "B07GD6K82L",
+      "title": "Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with TSA Lock (20/24/28 inch)",
+      "brand": "Coolife",
+      "price": 139.99,
+      "rating": 4.6,
+      "review_count": 24830
+    },
+    {
+      "asin": "B07BL7JXHV",
+      "title": "Travelpro Maxlite 5 Softside Expandable Carry-On Spinner, 21-Inch, Black",
+      "brand": "Travelpro",
+      "price": 159.99,
+      "rating": 4.8,
+      "review_count": 21540
+    },
+    {
+      "asin": "B08T1Y9V8K",
+      "title": "Samsonite Freeform Hardside Expandable Carry-On Spinner, 21-Inch",
+      "brand": "Samsonite",
+      "price": 129.99,
+      "rating": 4.6,
+      "review_count": 18760
+    },
+    {
+      "asin": "B09XQ7Z5RT",
+      "title": "Samsonite Omni 2 Hardside Expandable Luggage Spinner, 24-Inch Checked Medium",
+      "brand": "Samsonite",
+      "price": 189.99,
+      "rating": 4.7,
+      "review_count": 9420
+    },
+    {
+      "asin": "B0BZ4WL7Q9",
+      "title": "Travelpro Platinum Elite Softside Expandable Carry-On Spinner, 21-Inch",
+      "brand": "Travelpro",
+      "price": 379.99,
+      "rating": 4.8,
+      "review_count": 4210
+    }
+  ],
+  "travel backpacks": [
+    {
+      "asin": "B07RK2D5T1",
+      "title": "MATEIN Travel Backpack, 40L Carry-On TSA Flight Approved Laptop Backpack",
+      "brand": "MATEIN",
+      "price": 39.99,
+      "rating": 4.7,
+      "review_count": 9740
+    },
+    {
+      "asin": "B08N5X4P9C",
+      "title": "Maelstrom 40L Travel Backpack, Carry-On Flight Approved Water-Resistant Daypack",
+      "brand": "Maelstrom",
+      "price": 49.99,
+      "rating": 4.7,
+      "review_count": 6310
+    },
+    {
+      "asin": "B07F2H8K3M",
+      "title": "Osprey Farpoint 40 Travel Backpack",
+      "brand": "Osprey",
+      "price": 185.0,
+      "rating": 4.8,
+      "review_count": 5120
+    },
+    {
+      "asin": "B08RDL6Q7N",
+      "title": "Nomatic Travel Pack 20L/24L Expandable Carry-On Backpack",
+      "brand": "Nomatic",
+      "price": 249.99,
+      "rating": 4.5,
+      "review_count": 2180
+    },
+    {
+      "asin": "B07YQ9F4VD",
+      "title": "Peak Design Travel Backpack 45L, Black",
+      "brand": "Peak Design",
+      "price": 299.95,
+      "rating": 4.7,
+      "review_count": 3640
+    },
+    {
+      "asin": "B09KX8M2WL",
+      "title": "Tortuga Travel Backpack 40L, Carry-On One-Bag Travel Pack",
+      "brand": "Tortuga",
+      "price": 349.0,
+      "rating": 4.6,
+      "review_count": 1490
+    }
+  ],
+  "packing cubes": [
+    {
+      "asin": "B07DBLLG9Q",
+      "title": "Veken 6 Set Packing Cubes for Travel with Laundry Bag, Luggage Organizers",
+      "brand": "Veken",
+      "price": 19.99,
+      "rating": 4.7,
+      "review_count": 42130
+    },
+    {
+      "asin": "B01G6MEZK0",
+      "title": "BAGAIL 6 Set Packing Cubes, Lightweight Travel Luggage Organizers",
+      "brand": "BAGAIL",
+      "price": 22.99,
+      "rating": 4.7,
+      "review_count": 21450
+    },
+    {
+      "asin": "B086L5K9YZ",
+      "title": "Gonex Compression Packing Cubes Set, Expandable Travel Organizers",
+      "brand": "Gonex",
+      "price": 27.99,
+      "rating": 4.6,
+      "review_count": 14820
+    },
+    {
+      "asin": "B07VHD9K2P",
+      "title": "Amazon Basics 4-Piece Packing Travel Organizer Cubes Set",
+      "brand": "Amazon Basics",
+      "price": 24.99,
+      "rating": 4.7,
+      "review_count": 38600
+    },
+    {
+      "asin": "B00C1OQDLW",
+      "title": "Eagle Creek Pack-It Original Cube Set, Travel Packing Organizers",
+      "brand": "Eagle Creek",
+      "price": 29.99,
+      "rating": 4.7,
+      "review_count": 12770
+    },
+    {
+      "asin": "B07T1L8K5R",
+      "title": "Eagle Creek Pack-It Specter Compression Cube Set, Ultralight",
+      "brand": "Eagle Creek",
+      "price": 49.95,
+      "rating": 4.7,
+      "review_count": 4360
+    }
+  ],
+  "portable chargers": [
+    {
+      "asin": "B07YQ8R3K2",
+      "title": "INIU Portable Charger, Slimmest 10000mAh 5V/3A USB C Power Bank",
+      "brand": "INIU",
+      "price": 17.99,
+      "rating": 4.6,
+      "review_count": 66721
+    },
+    {
+      "asin": "B0CQ3R7M8N",
+      "title": "Anker PowerCore 10K Power Bank, 10000mAh Compact Travel Battery, PowerIQ",
+      "brand": "Anker",
+      "price": 19.99,
+      "rating": 4.6,
+      "review_count": 52340
+    },
+    {
+      "asin": "B07PXGQC1Q",
+      "title": "INIU 22.5W 20000mAh Portable Charger, USB-C In/Out Fast Charging Power Bank",
+      "brand": "INIU",
+      "price": 29.99,
+      "rating": 4.7,
+      "review_count": 31200
+    },
+    {
+      "asin": "B0D5CLSMFB",
+      "title": "Anker Power Bank (PowerCore 10K), 10000mAh with PowerIQ, Black",
+      "brand": "Anker",
+      "price": 21.99,
+      "rating": 4.6,
+      "review_count": 18940
+    },
+    {
+      "asin": "B0CHX9N7QK",
+      "title": "Anker Nano Power Bank, 10000mAh 45W with Built-In Retractable USB-C Cable",
+      "brand": "Anker",
+      "price": 45.99,
+      "rating": 4.6,
+      "review_count": 8120
+    },
+    {
+      "asin": "B0C9V8L3RT",
+      "title": "Anker Prime Power Bank, 27650mAh 250W with Smart Display",
+      "brand": "Anker",
+      "price": 179.99,
+      "rating": 4.7,
+      "review_count": 3260
+    }
+  ],
+  "travel pillows": [
+    {
+      "asin": "B07J5LZQ8F",
+      "title": "MLVOC Travel Pillow 100% Pure Memory Foam Neck Pillow with Eye Mask & Earplugs",
+      "brand": "MLVOC",
+      "price": 23.99,
+      "rating": 4.5,
+      "review_count": 102400
+    },
+    {
+      "asin": "B07SRRQS5B",
+      "title": "napfun Neck Pillow for Traveling, 100% Pure Memory Foam Travel Pillow for Airplane",
+      "brand": "napfun",
+      "price": 19.99,
+      "rating": 4.3,
+      "review_count": 20100
+    },
+    {
+      "asin": "B01DODMU9I",
+      "title": "BCOZZY Travel Neck Pillow for Airplane, Patented Double Support Chin Support",
+      "brand": "BCOZZY",
+      "price": 29.99,
+      "rating": 4.0,
+      "review_count": 31000
+    },
+    {
+      "asin": "B00JR5XB6E",
+      "title": "trtl Pillow, Scientifically Proven Super Soft Neck Support Travel Pillow",
+      "brand": "trtl",
+      "price": 29.99,
+      "rating": 4.3,
+      "review_count": 24800
+    },
+    {
+      "asin": "B01N0EUQ4Z",
+      "title": "Cabeau Evolution S3 Travel Neck Pillow with Seat Strap & Memory Foam",
+      "brand": "Cabeau",
+      "price": 39.99,
+      "rating": 4.4,
+      "review_count": 15600
+    },
+    {
+      "asin": "B08FBN8GJH",
+      "title": "Ostrichpillow Go Memory Foam Travel Neck Pillow, Premium Ergonomic",
+      "brand": "Ostrichpillow",
+      "price": 75.0,
+      "rating": 4.4,
+      "review_count": 3420
+    }
+  ],
+  "standing desks": [
+    {
+      "asin": "B08F7QG4Q4",
+      "title": "FEZIBO Electric Standing Desk, 48 x 24 Inches Height Adjustable Desk with Splice Board",
+      "brand": "FEZIBO",
+      "price": 149.99,
+      "rating": 4.5,
+      "review_count": 24800
+    },
+    {
+      "asin": "B0BL1B6Y8C",
+      "title": "FLEXISPOT EN1 Electric Height Adjustable Standing Desk 48 x 24 Inches",
+      "brand": "FLEXISPOT",
+      "price": 189.99,
+      "rating": 4.6,
+      "review_count": 15200
+    },
+    {
+      "asin": "B08PF31TG3",
+      "title": "FLEXISPOT E7 Pro Plus Standing Desk Dual Motor 55 x 28 Inch Height Adjustable Desk",
+      "brand": "FLEXISPOT",
+      "price": 399.99,
+      "rating": 4.7,
+      "review_count": 9600
+    },
+    {
+      "asin": "B09B1QY9XR",
+      "title": "VARIDESK ProDesk 60 Electric Standing Desk by Vari, 60 x 30 Inch",
+      "brand": "Vari",
+      "price": 695.0,
+      "rating": 4.6,
+      "review_count": 2100
+    },
+    {
+      "asin": "B07VFSGT9W",
+      "title": "Uplift V2 Standing Desk 60 x 30 Inch with Comfort+ Edge Bamboo Top",
+      "brand": "UPLIFT Desk",
+      "price": 749.0,
+      "rating": 4.8,
+      "review_count": 1850
+    },
+    {
+      "asin": "B09JFNFG2P",
+      "title": "Herman Miller Jarvis Bamboo Adjustable Height Standing Desk 48 x 30 Inch",
+      "brand": "Herman Miller",
+      "price": 1175.0,
+      "rating": 4.7,
+      "review_count": 1320
+    }
+  ],
+  "office chairs": [
+    {
+      "asin": "B09T5J9P4S",
+      "title": "SIHOO M57 Ergonomic Office Chair with Adjustable Lumbar Support and Armrests",
+      "brand": "SIHOO",
+      "price": 109.99,
+      "rating": 4.4,
+      "review_count": 31200
+    },
+    {
+      "asin": "B0BR8H5K7Q",
+      "title": "SIHOO M18 Ergonomic Office Chair with Tilt Function and Breathable Mesh",
+      "brand": "SIHOO",
+      "price": 159.99,
+      "rating": 4.4,
+      "review_count": 18700
+    },
+    {
+      "asin": "B07YML5K3T",
+      "title": "Branch Ergonomic Chair with Adjustable Lumbar Support and Seat Depth",
+      "brand": "Branch",
+      "price": 379.0,
+      "rating": 4.5,
+      "review_count": 4200
+    },
+    {
+      "asin": "B0858XXBH8",
+      "title": "Steelcase Series 1 Office Chair with Adjustable Lumbar and 4D Armrests",
+      "brand": "Steelcase",
+      "price": 519.0,
+      "rating": 4.6,
+      "review_count": 3400
+    },
+    {
+      "asin": "B003M2D1A0",
+      "title": "Steelcase Leap V2 Ergonomic Office Chair with LiveBack Technology",
+      "brand": "Steelcase",
+      "price": 1099.0,
+      "rating": 4.7,
+      "review_count": 2600
+    },
+    {
+      "asin": "B01N5OLDLM",
+      "title": "Herman Miller Aeron Ergonomic Office Chair, Size B, Graphite with PostureFit SL",
+      "brand": "Herman Miller",
+      "price": 1395.0,
+      "rating": 4.8,
+      "review_count": 5800
+    }
+  ],
+  "monitors": [
+    {
+      "asin": "B08LL9WTKM",
+      "title": "LG 27-Inch UltraGear 27GL850 QHD IPS Gaming Monitor 144Hz",
+      "brand": "LG",
+      "price": 179.99,
+      "rating": 4.6,
+      "review_count": 21500
+    },
+    {
+      "asin": "B08GSY3VLP",
+      "title": "Dell S2722QC 27-Inch 4K UHD USB-C Monitor with Built-in Speakers",
+      "brand": "Dell",
+      "price": 279.99,
+      "rating": 4.7,
+      "review_count": 12300
+    },
+    {
+      "asin": "B0BS47Q3KD",
+      "title": "Samsung ViewFinity S7 27-Inch 4K UHD High Resolution Monitor (S70D)",
+      "brand": "Samsung",
+      "price": 299.99,
+      "rating": 4.6,
+      "review_count": 6900
+    },
+    {
+      "asin": "B0C2K7H8YN",
+      "title": "Dell Pro 27 Plus 4K USB-C Monitor S2725QC with 65W Power Delivery",
+      "brand": "Dell",
+      "price": 329.99,
+      "rating": 4.7,
+      "review_count": 4100
+    },
+    {
+      "asin": "B0CRSPG8K9",
+      "title": "LG 27US500-W 27-Inch UHD 4K IPS Monitor with HDR10 and USB-C",
+      "brand": "LG",
+      "price": 279.99,
+      "rating": 4.5,
+      "review_count": 3200
+    },
+    {
+      "asin": "B0CYS8WG2R",
+      "title": "Alienware AW2725Q 27-Inch 4K QD-OLED Gaming Monitor 240Hz",
+      "brand": "Alienware",
+      "price": 899.99,
+      "rating": 4.7,
+      "review_count": 1650
+    }
+  ],
+  "mechanical keyboards": [
+    {
+      "asin": "B08LVTGF2L",
+      "title": "Redragon K556 RGB LED Backlit Wired Mechanical Keyboard with Brown Switches",
+      "brand": "Redragon",
+      "price": 49.99,
+      "rating": 4.6,
+      "review_count": 8058
+    },
+    {
+      "asin": "B07YML7DLP",
+      "title": "Royal Kludge RK84 Wireless 75% Hot-Swappable Mechanical Keyboard",
+      "brand": "Royal Kludge",
+      "price": 69.99,
+      "rating": 4.4,
+      "review_count": 11200
+    },
+    {
+      "asin": "B0CG7N5K9W",
+      "title": "Keychron V3 Max QMK/VIA Wireless Custom Mechanical Keyboard TKL",
+      "brand": "Keychron",
+      "price": 99.99,
+      "rating": 4.7,
+      "review_count": 4300
+    },
+    {
+      "asin": "B0C8M4T9XK",
+      "title": "Razer BlackWidow V4 75% Hot-Swappable Mechanical Gaming Keyboard",
+      "brand": "Razer",
+      "price": 159.99,
+      "rating": 4.6,
+      "review_count": 3800
+    },
+    {
+      "asin": "B0CXH7Q2N5",
+      "title": "Razer Huntsman V3 Pro TKL Analog Optical Esports Gaming Keyboard",
+      "brand": "Razer",
+      "price": 199.99,
+      "rating": 4.6,
+      "review_count": 2900
+    },
+    {
+      "asin": "B0BXYR9MK4",
+      "title": "Keychron Q3 Max QMK/VIA Wireless Custom Mechanical Keyboard Full Aluminum TKL",
+      "brand": "Keychron",
+      "price": 219.99,
+      "rating": 4.8,
+      "review_count": 2100
+    }
+  ],
+  "webcams": [
+    {
+      "asin": "B07P3F5JNR",
+      "title": "Anker PowerConf C200 2K Webcam with Stereo Microphones and Privacy Cover",
+      "brand": "Anker",
+      "price": 49.99,
+      "rating": 4.4,
+      "review_count": 6200
+    },
+    {
+      "asin": "B086MGFR8X",
+      "title": "OBSBOT Meet SE AI-Powered 1080p Webcam with Auto Framing and Auto Focus",
+      "brand": "OBSBOT",
+      "price": 69.0,
+      "rating": 4.5,
+      "review_count": 3400
+    },
+    {
+      "asin": "B085TFF7M1",
+      "title": "Logitech C920x HD Pro Webcam Full HD 1080p/30fps with Privacy Shutter",
+      "brand": "Logitech",
+      "price": 59.99,
+      "rating": 4.7,
+      "review_count": 42800
+    },
+    {
+      "asin": "B0B1LK6S7X",
+      "title": "Logitech Brio 500 Full HD 1080p Webcam with Auto Light Correction and USB-C",
+      "brand": "Logitech",
+      "price": 129.99,
+      "rating": 4.5,
+      "review_count": 8900
+    },
+    {
+      "asin": "B09H6Y5KZP",
+      "title": "Razer Kiyo Pro Ultra 4K UHD Webcam with Largest Sony STARVIS 2 Sensor",
+      "brand": "Razer",
+      "price": 149.99,
+      "rating": 4.3,
+      "review_count": 2700
+    },
+    {
+      "asin": "B0974XL3X8",
+      "title": "Logitech Brio 4K Ultra HD Webcam with HDR and Windows Hello Support",
+      "brand": "Logitech",
+      "price": 199.99,
+      "rating": 4.5,
+      "review_count": 14600
+    }
+  ],
+  "massage guns": [
+    {
+      "asin": "B0BPMCN1ND",
+      "title": "Sportneer Mini Massage Gun Deep Tissue Percussion Muscle Massager",
+      "brand": "Sportneer",
+      "price": 29.99,
+      "rating": 4.5,
+      "review_count": 21500
+    },
+    {
+      "asin": "B08LN56HMV",
+      "title": "TOLOCO Massage Gun Deep Tissue Percussion Muscle Massager for Athletes",
+      "brand": "TOLOCO",
+      "price": 39.99,
+      "rating": 4.5,
+      "review_count": 58000
+    },
+    {
+      "asin": "B09P5BJC8H",
+      "title": "RENPHO Active Massage Gun Deep Tissue Muscle Percussion Massager",
+      "brand": "RENPHO",
+      "price": 69.99,
+      "rating": 4.6,
+      "review_count": 48000
+    },
+    {
+      "asin": "B0BG56P3J9",
+      "title": "Theragun Prime (5th Generation) Percussive Therapy Deep Tissue Massage Gun",
+      "brand": "Therabody",
+      "price": 199.0,
+      "rating": 4.6,
+      "review_count": 4200
+    },
+    {
+      "asin": "B0BVMDV5DM",
+      "title": "Hypervolt 2 Pro Bluetooth Percussion Massage Gun by Hyperice",
+      "brand": "Hyperice",
+      "price": 329.0,
+      "rating": 4.7,
+      "review_count": 1800
+    },
+    {
+      "asin": "B0CH7DXBLP",
+      "title": "Theragun Pro Plus (G6) 6-in-1 Deep Tissue Percussion Massage Gun",
+      "brand": "Therabody",
+      "price": 549.0,
+      "rating": 4.5,
+      "review_count": 950
+    }
+  ],
+  "fitness trackers": [
+    {
+      "asin": "B0F1FXST87",
+      "title": "Amazfit Band 7 Fitness Tracker with Alexa, SpO2 and Heart Rate Monitor",
+      "brand": "Amazfit",
+      "price": 39.99,
+      "rating": 4.4,
+      "review_count": 26000
+    },
+    {
+      "asin": "B0C6N6HGNZ",
+      "title": "Fitbit Charge 6 Fitness Tracker with Google Apps and Heart Rate",
+      "brand": "Fitbit",
+      "price": 99.95,
+      "rating": 4.4,
+      "review_count": 34000
+    },
+    {
+      "asin": "B0F18R8YQ6",
+      "title": "Fitbit Inspire 3 Health & Fitness Tracker with Stress Management",
+      "brand": "Fitbit",
+      "price": 79.95,
+      "rating": 4.4,
+      "review_count": 29000
+    },
+    {
+      "asin": "B0DZGKD9ZF",
+      "title": "Garmin vivoactive 6 GPS Smartwatch with 80 Sports Apps",
+      "brand": "Garmin",
+      "price": 249.99,
+      "rating": 4.5,
+      "review_count": 2100
+    },
+    {
+      "asin": "B0DGHMNQ5Z",
+      "title": "Apple Watch SE 3 (GPS, 40mm) Smartwatch with Fitness Tracking",
+      "brand": "Apple",
+      "price": 219.0,
+      "rating": 4.7,
+      "review_count": 15000
+    },
+    {
+      "asin": "B0CB1L9X1Q",
+      "title": "Garmin Venu 3 GPS Smartwatch with AMOLED Display and Sleep Coach",
+      "brand": "Garmin",
+      "price": 399.99,
+      "rating": 4.6,
+      "review_count": 4800
+    }
+  ],
+  "smart scales": [
+    {
+      "asin": "B07P5GDPM7",
+      "title": "Eufy by Anker Smart Scale C1 with Bluetooth Body Fat 12 Measurements",
+      "brand": "eufy",
+      "price": 26.99,
+      "rating": 4.6,
+      "review_count": 42000
+    },
+    {
+      "asin": "B07L6THFH8",
+      "title": "RENPHO Smart Scale for Body Weight, Bluetooth Body Fat BMI Scale (Elis 1)",
+      "brand": "RENPHO",
+      "price": 29.99,
+      "rating": 4.7,
+      "review_count": 355000
+    },
+    {
+      "asin": "B0BHS3T8DV",
+      "title": "Wyze Scale X Smart Body Fat Scale with Heart Rate and 12 Metrics",
+      "brand": "Wyze",
+      "price": 33.98,
+      "rating": 4.6,
+      "review_count": 18000
+    },
+    {
+      "asin": "B0BR5DCDND",
+      "title": "eufy Smart Scale P2 Pro with Wi-Fi Bluetooth 16 Measurements",
+      "brand": "eufy",
+      "price": 79.99,
+      "rating": 4.5,
+      "review_count": 9500
+    },
+    {
+      "asin": "B0BZX5DN5L",
+      "title": "Withings Body Smart Wi-Fi Bathroom Scale with Body Composition",
+      "brand": "Withings",
+      "price": 99.95,
+      "rating": 4.4,
+      "review_count": 7800
+    },
+    {
+      "asin": "B08PF35QST",
+      "title": "Garmin Index S2 Smart Scale with Wi-Fi Connectivity",
+      "brand": "Garmin",
+      "price": 149.99,
+      "rating": 4.5,
+      "review_count": 6200
+    }
+  ],
+  "yoga mats": [
+    {
+      "asin": "B07H9CK8VK",
+      "title": "BalanceFrom GoYoga All-Purpose 1/2-Inch Extra Thick Yoga Mat with Strap",
+      "brand": "BalanceFrom",
+      "price": 21.99,
+      "rating": 4.6,
+      "review_count": 78000
+    },
+    {
+      "asin": "B00FO9U46W",
+      "title": "Gaiam Essentials Thick Yoga Mat with Carrying Strap (1/2 Inch)",
+      "brand": "Gaiam",
+      "price": 24.98,
+      "rating": 4.6,
+      "review_count": 56000
+    },
+    {
+      "asin": "B01LP0VI3G",
+      "title": "Gaiam Premium Print Reversible Yoga Mat (6mm Thick)",
+      "brand": "Gaiam",
+      "price": 34.98,
+      "rating": 4.7,
+      "review_count": 31000
+    },
+    {
+      "asin": "B07VWTCB2S",
+      "title": "Manduka PROlite Yoga Mat, Lightweight 4.7mm Thick Non-Slip",
+      "brand": "Manduka",
+      "price": 92.0,
+      "rating": 4.7,
+      "review_count": 12000
+    },
+    {
+      "asin": "B0073ADBPQ",
+      "title": "Manduka PRO Yoga Mat, Premium 6mm Thick High-Density Cushion",
+      "brand": "Manduka",
+      "price": 138.0,
+      "rating": 4.7,
+      "review_count": 15000
+    },
+    {
+      "asin": "B07D5GN8X2",
+      "title": "JadeYoga Harmony Natural Rubber Yoga Mat, 3/16-Inch Eco-Friendly",
+      "brand": "JadeYoga",
+      "price": 94.95,
+      "rating": 4.7,
+      "review_count": 8400
+    }
+  ],
+  "adjustable dumbbells": [
+    {
+      "asin": "B08DCNFKKM",
+      "title": "FLYBIRD Adjustable Dumbbell, 25 lbs Single Dumbbell with Anti-Slip Handle",
+      "brand": "FLYBIRD",
+      "price": 89.99,
+      "rating": 4.6,
+      "review_count": 14000
+    },
+    {
+      "asin": "B08T68F7CP",
+      "title": "NICE C Adjustable Dumbbell Set, 5-in-1 Weight Pair (Up to 55 lbs)",
+      "brand": "NICE C",
+      "price": 169.99,
+      "rating": 4.5,
+      "review_count": 9200
+    },
+    {
+      "asin": "B0CG2LHGFR",
+      "title": "Core Home Fitness Adjustable Dumbbell Set (5-50 lbs Pair)",
+      "brand": "Core Home Fitness",
+      "price": 399.0,
+      "rating": 4.6,
+      "review_count": 3100
+    },
+    {
+      "asin": "B001ARYU58",
+      "title": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair, 5-52.5 lbs)",
+      "brand": "Bowflex",
+      "price": 429.0,
+      "rating": 4.8,
+      "review_count": 36000
+    },
+    {
+      "asin": "B07XB7G2WD",
+      "title": "PowerBlock Elite EXP Adjustable Dumbbells, Stage 1 (5-50 lbs Pair)",
+      "brand": "PowerBlock",
+      "price": 369.0,
+      "rating": 4.7,
+      "review_count": 5600
+    },
+    {
+      "asin": "B07RDD8PD7",
+      "title": "NUOBELL 80 lb Adjustable Dumbbells by SMRTFT (Pair, 5-80 lbs)",
+      "brand": "SMRTFT",
+      "price": 745.0,
+      "rating": 4.7,
+      "review_count": 2400
+    }
+  ],
+  "coolers": [
+    {
+      "asin": "B0842CF8YD",
+      "title": "YETI Roadie 24 Hard Cooler",
+      "brand": "YETI",
+      "price": 200.0,
+      "rating": 4.8,
+      "review_count": 9800
+    },
+    {
+      "asin": "B07WXL5K3X",
+      "title": "YETI Tundra 65 Cooler",
+      "brand": "YETI",
+      "price": 375.0,
+      "rating": 4.8,
+      "review_count": 7200
+    },
+    {
+      "asin": "B07GBN8RVN",
+      "title": "RTIC 45 QT Ultra-Tough Hard Cooler Ice Chest",
+      "brand": "RTIC",
+      "price": 230.0,
+      "rating": 4.7,
+      "review_count": 6400
+    },
+    {
+      "asin": "B003VWU2WA",
+      "title": "Coleman 316 Series Insulated Portable Cooler, 70 Quart",
+      "brand": "Coleman",
+      "price": 59.0,
+      "rating": 4.7,
+      "review_count": 31000
+    },
+    {
+      "asin": "B07BPL31TD",
+      "title": "Igloo BMX 52 Quart Cooler with Cool Riser Technology",
+      "brand": "Igloo",
+      "price": 110.0,
+      "rating": 4.7,
+      "review_count": 9100
+    },
+    {
+      "asin": "B08PF1Y6CQ",
+      "title": "Coleman Xtreme 5-Day Heavy-Duty Cooler, 70 Quart",
+      "brand": "Coleman",
+      "price": 75.0,
+      "rating": 4.7,
+      "review_count": 18500
+    }
+  ],
+  "tents": [
+    {
+      "asin": "B004J2KDH0",
+      "title": "Coleman Sundome Tent, 4-Person Dome Tent with Easy Setup",
+      "brand": "Coleman",
+      "price": 75.0,
+      "rating": 4.6,
+      "review_count": 52000
+    },
+    {
+      "asin": "B00H2QQNVA",
+      "title": "Coleman Cabin Tent with Instant Setup, 4-Person",
+      "brand": "Coleman",
+      "price": 140.0,
+      "rating": 4.6,
+      "review_count": 16500
+    },
+    {
+      "asin": "B07YTC6Q2M",
+      "title": "CORE 9-Person Instant Cabin Tent with Screen Room",
+      "brand": "CORE",
+      "price": 260.0,
+      "rating": 4.6,
+      "review_count": 11200
+    },
+    {
+      "asin": "B07PVZN8NS",
+      "title": "Coleman Skydome 6-Person Camping Tent",
+      "brand": "Coleman",
+      "price": 130.0,
+      "rating": 4.7,
+      "review_count": 14800
+    },
+    {
+      "asin": "B07D7C7KQ2",
+      "title": "Kelty Late Start 4-Person Backpacking Tent",
+      "brand": "Kelty",
+      "price": 230.0,
+      "rating": 4.6,
+      "review_count": 1900
+    },
+    {
+      "asin": "B0BXYFS9HV",
+      "title": "MSR Hubba Hubba 2-Person Backpacking Tent",
+      "brand": "MSR",
+      "price": 550.0,
+      "rating": 4.7,
+      "review_count": 850
+    }
+  ],
+  "camping chairs": [
+    {
+      "asin": "B0EDE7DCFD",
+      "title": "Coleman Camping Chair with Built-in 4-Can Cooler",
+      "brand": "Coleman",
+      "price": 40.0,
+      "rating": 4.7,
+      "review_count": 42000
+    },
+    {
+      "asin": "B07GDD2X9F",
+      "title": "GCI Outdoor Kickback Rocker Portable Rocking Camp Chair",
+      "brand": "GCI Outdoor",
+      "price": 60.0,
+      "rating": 4.7,
+      "review_count": 15400
+    },
+    {
+      "asin": "B00363V668",
+      "title": "Kijaro Dual Lock Portable Folding Camping Chair",
+      "brand": "Kijaro",
+      "price": 52.0,
+      "rating": 4.6,
+      "review_count": 12700
+    },
+    {
+      "asin": "B07VJ5L3R8",
+      "title": "ALPS Mountaineering King Kong Folding Camp Chair",
+      "brand": "ALPS Mountaineering",
+      "price": 75.0,
+      "rating": 4.7,
+      "review_count": 6800
+    },
+    {
+      "asin": "B07QXNTQQF",
+      "title": "Helinox Chair One Lightweight Compact Camp Chair",
+      "brand": "Helinox",
+      "price": 110.0,
+      "rating": 4.7,
+      "review_count": 3500
+    },
+    {
+      "asin": "B09NBXKXTG",
+      "title": "GCI Outdoor Freeform Zero Gravity Lounger",
+      "brand": "GCI Outdoor",
+      "price": 120.0,
+      "rating": 4.6,
+      "review_count": 2200
+    }
+  ],
+  "portable grills": [
+    {
+      "asin": "B00FGEHG6Q",
+      "title": "Weber Q1200 Liquid Propane Portable Gas Grill",
+      "brand": "Weber",
+      "price": 259.0,
+      "rating": 4.7,
+      "review_count": 13800
+    },
+    {
+      "asin": "B01MDP0HCH",
+      "title": "Cuisinart CGG-180 Petit Gourmet Portable Tabletop Gas Grill",
+      "brand": "Cuisinart",
+      "price": 120.0,
+      "rating": 4.6,
+      "review_count": 9700
+    },
+    {
+      "asin": "B07Q9V4XW1",
+      "title": "Coleman RoadTrip 285 Portable Stand-Up Propane Grill",
+      "brand": "Coleman",
+      "price": 230.0,
+      "rating": 4.7,
+      "review_count": 7600
+    },
+    {
+      "asin": "B07CKHNQRP",
+      "title": "Blackstone 22 inch Tabletop Griddle with Hood",
+      "brand": "Blackstone",
+      "price": 147.0,
+      "rating": 4.7,
+      "review_count": 11500
+    },
+    {
+      "asin": "B00004RALL",
+      "title": "Weber Smokey Joe 14-Inch Portable Charcoal Grill",
+      "brand": "Weber",
+      "price": 55.0,
+      "rating": 4.8,
+      "review_count": 17200
+    },
+    {
+      "asin": "B07RZF7M3X",
+      "title": "Cuisinart CGG-306 Chef's Style Portable Propane Tabletop Grill",
+      "brand": "Cuisinart",
+      "price": 180.0,
+      "rating": 4.6,
+      "review_count": 4300
+    }
+  ],
+  "sleeping bags": [
+    {
+      "asin": "B00363RBNS",
+      "title": "Coleman Brazos Cold-Weather Sleeping Bag, 20F",
+      "brand": "Coleman",
+      "price": 35.0,
+      "rating": 4.6,
+      "review_count": 24500
+    },
+    {
+      "asin": "B0009PUR4O",
+      "title": "TETON Sports Celsius XXL 0F Sleeping Bag",
+      "brand": "TETON Sports",
+      "price": 75.0,
+      "rating": 4.6,
+      "review_count": 13900
+    },
+    {
+      "asin": "B004QM8R9I",
+      "title": "TETON Sports Polara 3-in-1 Sleeping Bag",
+      "brand": "TETON Sports",
+      "price": 95.0,
+      "rating": 4.6,
+      "review_count": 4100
+    },
+    {
+      "asin": "B07VMNTG1L",
+      "title": "Coleman Sun Ridge 40F Warm-Weather Sleeping Bag",
+      "brand": "Coleman",
+      "price": 25.0,
+      "rating": 4.6,
+      "review_count": 9800
+    },
+    {
+      "asin": "B08T6FL8QJ",
+      "title": "REI Co-op Trailmade 25 Sleeping Bag",
+      "brand": "REI Co-op",
+      "price": 129.0,
+      "rating": 4.5,
+      "review_count": 1200
+    },
+    {
+      "asin": "B0CJ5XW2TP",
+      "title": "Sea to Summit Spark SPII 28F Down Sleeping Bag",
+      "brand": "Sea to Summit",
+      "price": 379.0,
+      "rating": 4.7,
+      "review_count": 620
+    }
+  ]
+}

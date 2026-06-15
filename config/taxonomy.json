@@ -5,7 +5,39 @@
     "Kitchen/Electric Kettles": 789922825,
     "Kitchen/Air Fryers": 789922838,
     "Kitchen/Blenders": 214668,
-    "Kitchen/Food Processors": 756009
+    "Kitchen/Food Processors": 756009,
+    "Home": 789922886,
+    "Home/Robot Vacuums": 789922887,
+    "Kitchen/Coffee Makers": 789922894,
+    "Kitchen/Stand Mixers": 2410785,
+    "Home/Air Purifiers": 789922895,
+    "Home/Stick Vacuums": 789922896,
+    "Home/Humidifiers": 789922897,
+    "Home/Space Heaters": 789922898,
+    "Travel": 789922899,
+    "Travel/Luggage": 789922900,
+    "Travel/Travel Backpacks": 789922901,
+    "Travel/Packing Cubes": 789922902,
+    "Travel/Portable Chargers": 789922903,
+    "Travel/Travel Pillows": 789922904,
+    "Home Office": 789922905,
+    "Home Office/Standing Desks": 789922906,
+    "Home Office/Office Chairs": 789922907,
+    "Home Office/Monitors": 789922908,
+    "Home Office/Mechanical Keyboards": 789922909,
+    "Home Office/Webcams": 789922910,
+    "Fitness & Wellness": 789922911,
+    "Fitness & Wellness/Massage Guns": 789922912,
+    "Fitness & Wellness/Fitness Trackers": 789922913,
+    "Fitness & Wellness/Smart Scales": 789922914,
+    "Fitness & Wellness/Yoga Mats": 789922915,
+    "Fitness & Wellness/Adjustable Dumbbells": 789922916,
+    "Outdoors": 789922917,
+    "Outdoors/Coolers": 789922918,
+    "Outdoors/Tents": 789922919,
+    "Outdoors/Camping Chairs": 789922920,
+    "Outdoors/Portable Grills": 789922921,
+    "Outdoors/Sleeping Bags": 789922922
   },
   "wp_tag_ids": {
     "cuisinart": 284323,
@@ -90,7 +122,16 @@
     "12-cup-capacity": 789922879,
     "mini-prep": 789922880,
     "for-small-kitchens": 789922881,
-    "mini-processor": 789922882
+    "mini-processor": 789922882,
+    "for-tea-drinkers": 789922883,
+    "for-coffee-lovers": 789922884,
+    "fast-boil": 789922885,
+    "eufy": 789922888,
+    "irobot": 789922889,
+    "shark": 789922890,
+    "self-emptying": 789922891,
+    "hybrid-mop": 789922892,
+    "smart-home": 789922893
   },
   "post_index": [
     {
@@ -278,14 +319,58 @@
         "durable-build"
       ],
       "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "3 Best Electric Kettles We'd Actually Buy in 2026",
+      "wp_post_id": 234,
+      "wp_url": "https://mavrino.com/2026/06/15/3-best-electric-kettles-wed-actually-buy-in-2026/",
+      "parent_category": "Kitchen",
+      "child_category": "Electric Kettles",
+      "tags": [
+        "amazon basics",
+        "hamilton beach",
+        "under-$50",
+        "budget",
+        "for-tea-drinkers",
+        "for-coffee-lovers",
+        "stainless-steel",
+        "glass",
+        "1.7l-capacity",
+        "fast-boil"
+      ],
+      "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Robot Vacuums, Ranked for 2026",
+      "wp_post_id": 237,
+      "wp_url": "https://mavrino.com/2026/06/15/top-3-robot-vacuums-ranked-for-2026/",
+      "parent_category": "Home",
+      "child_category": "Robot Vacuums",
+      "tags": [
+        "eufy",
+        "irobot",
+        "shark",
+        "under-$200",
+        "under-$300",
+        "$300-$500",
+        "premium",
+        "budget-friendly",
+        "self-emptying",
+        "hybrid-mop",
+        "smart-home"
+      ],
+      "published_at": "2026-06-15"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 5,
-    "Electric Kettles": 2,
+    "Electric Kettles": 3,
     "Air Fryers": 3,
     "Blenders": 2,
-    "Food Processors": 2
+    "Food Processors": 2,
+    "Robot Vacuums": 1
   },
   "pending_splits": [],
   "last_health_check": null

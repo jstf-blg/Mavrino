@@ -52,24 +52,24 @@ CATEGORY_HIERARCHY = {
         "Mattresses", "Pillows", "Bedding", "Sofas & Couches", "Storage",
     ],
     "Home Office": [
-        "Standing Desks", "Office Chairs", "Monitors", "Keyboards & Mice",
-        "Webcams", "Desk Lamps", "Monitor Arms", "Laptop Stands",
+        "Standing Desks", "Office Chairs", "Monitors", "Mechanical Keyboards",
+        "Webcams", "Keyboards & Mice", "Desk Lamps", "Monitor Arms", "Laptop Stands",
     ],
     "Travel": [
-        "Luggage", "Carry-On Bags", "Backpacks", "Travel Accessories",
-        "Packing Cubes", "Travel Pillows", "Portable Chargers",
+        "Luggage", "Travel Backpacks", "Packing Cubes", "Portable Chargers",
+        "Travel Pillows", "Carry-On Bags", "Backpacks", "Travel Accessories",
     ],
     "Fitness & Wellness": [
-        "Massage Guns", "Fitness Trackers", "Smart Scales", "Treadmills",
-        "Exercise Bikes", "Yoga Mats", "Resistance Bands", "Dumbbells",
+        "Massage Guns", "Fitness Trackers", "Smart Scales", "Yoga Mats",
+        "Adjustable Dumbbells", "Treadmills", "Exercise Bikes", "Resistance Bands",
     ],
     "Furniture": [
         "Sofas", "Beds & Bed Frames", "Dining Tables", "Bookshelves",
         "TV Stands", "Coffee Tables", "Wardrobes",
     ],
     "Outdoors": [
+        "Coolers", "Tents", "Camping Chairs", "Portable Grills", "Sleeping Bags",
         "BBQ & Grills", "Camping Gear", "Garden Tools", "Outdoor Furniture",
-        "Pressure Washers",
     ],
 }
 
