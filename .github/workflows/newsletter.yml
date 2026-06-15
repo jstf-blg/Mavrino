@@ -1,0 +1,47 @@
+name: Weekly Newsletter Digest
+
+# Publishes a "best of the week" digest post. With Jetpack Subscriptions enabled,
+# publishing it emails subscribers (those on the weekly cadence get it as their
+# roundup). MANUAL-ONLY for now — uncomment the schedule to send automatically
+# every Monday once you're ready and Jetpack Subscriptions is enabled.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 14 * * 1'   # Mondays 14:00 UTC — enable when ready to auto-send
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create .env file
+        run: |
+          cat > .env << 'EOF'
+          WP_CLIENT_ID=${{ secrets.WP_CLIENT_ID }}
+          WP_CLIENT_SECRET=${{ secrets.WP_CLIENT_SECRET }}
+          WP_SITE=${{ secrets.WP_SITE }}
+          WP_USERNAME=${{ secrets.WP_USERNAME }}
+          WP_PASSWORD=${{ secrets.WP_PASSWORD }}
+          SITE_DOMAIN=https://mavrino.com
+          EOF
+
+      - name: Create required directories
+        run: mkdir -p config logs
+
+      - name: Publish weekly digest
+        run: python newsletter.py
