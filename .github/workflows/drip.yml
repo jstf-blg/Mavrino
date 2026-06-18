@@ -62,7 +62,7 @@ jobs:
           DRIP_CATCHUP_DATE=2026-06-18,2026-06-19
           DRIP_TODAY_TARGET=2
           DRIP_DAILY_TARGET=1
-          DRIP_PER_RUN_CAP=2
+          DRIP_PER_RUN_CAP=4
           NICHES=air fryers,coffee makers,blenders,food processors,stand mixers,toaster ovens,electric kettles,robot vacuums,air purifiers,stick vacuums,humidifiers,space heaters,luggage,travel backpacks,packing cubes,portable chargers,travel pillows,standing desks,office chairs,monitors,mechanical keyboards,webcams,massage guns,fitness trackers,smart scales,yoga mats,adjustable dumbbells,coolers,tents,camping chairs,portable grills,sleeping bags
           EOF
 
