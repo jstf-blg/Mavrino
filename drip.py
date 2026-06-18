@@ -119,7 +119,12 @@ def run():
     for v in MAIN_CATEGORIES:
         counts.setdefault(v, 0)
     if "window_start" not in day:
-        day["window_start"] = now.isoformat()
+        # Anchor the day's window to 00:00 UTC, NOT to `now`. Anchoring to `now`
+        # makes frac==0 on the run that first creates the day's record, so
+        # expected==0 and nothing ever publishes — and because the nothing-due
+        # path returns without saving, every run re-creates the day at `now`
+        # and the drip dead-locks at zero (see 2026-06-16/17).
+        day["window_start"] = now.replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
 
     # Even-spacing: how many SHOULD be published by now, across the day's window.
     ws  = datetime.fromisoformat(day["window_start"])
@@ -135,6 +140,10 @@ def run():
           f"=> publishing up to {to_publish}")
     if to_publish <= 0:
         print("  nothing due — on schedule.\n" + "=" * 56)
+        # Persist the day record (window_start + counts) so the window anchor
+        # sticks across the next fresh checkout instead of being re-stamped.
+        day["counts"] = counts
+        save_state(state)
         return
 
     queue = rp.load_queue()
