@@ -264,8 +264,17 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
             f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"12px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"}},"color":{{"text":"{accent}"}}}}}} -->\n'
             f'<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:{accent}">⭐ Our Top Pick</p>\n<!-- /wp:paragraph -->\n'
             f'<!-- wp:heading {{"level":3,"style":{{"typography":{{"fontSize":"18px"}}}}}} -->\n<h3 style="font-size:18px">{title}</h3>\n<!-- /wp:heading -->\n'
-            f'<!-- wp:paragraph -->\n<p>{wv}</p>\n<!-- /wp:paragraph -->\n'
         )
+        # COMPETENCE cue: a confident, decisive one-line pitch up top.
+        pitch = (content.get("winner_pitch") or "").strip()
+        if pitch:
+            out += (f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"17px","fontWeight":"600"}}}}}} -->\n'
+                    f'<p style="font-size:17px;font-weight:600">{pitch}</p>\n<!-- /wp:paragraph -->\n')
+        out += f'<!-- wp:paragraph -->\n<p>{wv}</p>\n<!-- /wp:paragraph -->\n'
+        # WARMTH cue: one honest trade-off — this is what makes the confidence believable.
+        caveat = (content.get("winner_caveat") or "").strip()
+        if caveat:
+            out += (f'<!-- wp:paragraph -->\n<p>⚖️ <strong>The honest trade-off:</strong> {caveat}</p>\n<!-- /wp:paragraph -->\n')
         badge = _score_badge(wprod.get("mavrino_score"), accent)
         if badge:
             out += badge + "\n"
@@ -273,7 +282,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
             out += (f'<!-- wp:paragraph -->\n<p><strong>${price:.2f}</strong>'
                     f'{" &nbsp; " + stars if stars else ""}{" " + str(rating) + "/5" if rating else ""}</p>\n<!-- /wp:paragraph -->\n')
         if url:
-            out += _cta_button("Search on Amazon →", url, bg=accent) + "\n"
+            out += _cta_button("Check today’s price on Amazon →", url, bg=accent) + "\n"
         out += '</div>\n<!-- /wp:group -->'
         return [out]
 
@@ -309,6 +318,8 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 card += f'<!-- wp:paragraph -->\n<p>{item["verdict"]}</p>\n<!-- /wp:paragraph -->\n'
             if item.get("who_its_for"):
                 card += f'<!-- wp:paragraph -->\n<p>\U0001f464 <strong>Best for:</strong> {item["who_its_for"]}</p>\n<!-- /wp:paragraph -->\n'
+            if item.get("not_for"):
+                card += f'<!-- wp:paragraph -->\n<p>\U0001f6ab <strong>Skip it if:</strong> {item["not_for"]}</p>\n<!-- /wp:paragraph -->\n'
             if item.get("main_pro") or item.get("main_con"):
                 card += ('<!-- wp:columns -->\n<div class="wp-block-columns">\n'
                          '<!-- wp:column -->\n<div class="wp-block-column">\n'
@@ -318,7 +329,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                          '</div>\n<!-- /wp:column -->\n</div>\n<!-- /wp:columns -->\n')
             if item.get("quote"):
                 card += f'<!-- wp:quote -->\n<blockquote class="wp-block-quote"><p>{item["quote"]}</p><cite>Verified Amazon buyer</cite></blockquote>\n<!-- /wp:quote -->\n'
-            card += _cta_button("Search on Amazon →", aff_url) + "\n"
+            card += _cta_button("Check price on Amazon →", aff_url) + "\n"
             card += '</div>\n<!-- /wp:group -->'
             cards.append(card)
         return cards
