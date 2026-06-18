@@ -14,9 +14,9 @@
     "counts": {
       "Kitchen": 1,
       "Home": 1,
-      "Travel": 0,
-      "Home Office": 0,
-      "Fitness & Wellness": 0,
+      "Travel": 1,
+      "Home Office": 1,
+      "Fitness & Wellness": 1,
       "Outdoors": 0
     },
     "window_start": "2026-06-18T00:00:00+00:00"

@@ -329,7 +329,25 @@
     "strong-suction": 789923119,
     "auto-washing": 789923120,
     "matrix-clean": 789923121,
-    "slim-design": 789923122
+    "slim-design": 789923122,
+    "travelpro": 789923123,
+    "for-business-travel": 789923124,
+    "hardside-construction": 789923125,
+    "spinner-wheels": 789923126,
+    "carry-on-size": 789923127,
+    "21-inch": 789923128,
+    "ergear": 789923129,
+    "claiks": 789923130,
+    "home-office": 789923131,
+    "electric-height-adjustable": 789923132,
+    "preset-positions": 789923133,
+    "bob and brad": 789923134,
+    "opove": 789923135,
+    "toloco": 789923136,
+    "quiet": 18454,
+    "percussion-massage": 789923137,
+    "multiple-heads": 789923138,
+    "verified-reviews": 789923139
   },
   "post_index": [
     {
@@ -1236,6 +1254,75 @@
         "slim-design"
       ],
       "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Travelpro Platinum Elite Hardside Expandable Carry-On vs Samsonite Freeform Hardside Expandable Carry-On: Which Should You Buy in 2026?",
+      "wp_post_id": 811,
+      "wp_url": "https://mavrino.com/2026/06/18/travelpro-platinum-elite-hardside-expandable-carry-on-vs-samsonite-freeform-hardside-expandable-carry-on-which-should-you-buy-in-2026/",
+      "parent_category": "Travel",
+      "child_category": "Luggage",
+      "tags": [
+        "travelpro",
+        "samsonite",
+        "under-$300",
+        "under-$200",
+        "for-business-travel",
+        "for-frequent-travelers",
+        "durable",
+        "expandable",
+        "hardside-construction",
+        "spinner-wheels",
+        "carry-on-size",
+        "21-inch"
+      ],
+      "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Standing Desks for 2026, Ranked by Real User Data",
+      "wp_post_id": 816,
+      "wp_url": "https://mavrino.com/2026/06/18/top-3-standing-desks-for-2026-ranked-by-real-user-data/",
+      "parent_category": "Home Office",
+      "child_category": "Standing Desks",
+      "tags": [
+        "flexispot",
+        "ergear",
+        "claiks",
+        "under-$150",
+        "under-$200",
+        "budget-friendly",
+        "quiet-operation",
+        "home-office",
+        "electric-height-adjustable",
+        "preset-positions",
+        "quiet-motor"
+      ],
+      "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Massage Guns for 2026, Ranked by Real User Data",
+      "wp_post_id": 819,
+      "wp_url": "https://mavrino.com/2026/06/18/top-3-massage-guns-for-2026-ranked-by-real-user-data/",
+      "parent_category": "Fitness & Wellness",
+      "child_category": "Massage Guns",
+      "tags": [
+        "bob and brad",
+        "opove",
+        "toloco",
+        "under-$100",
+        "under-$150",
+        "budget",
+        "quiet",
+        "for-recovery",
+        "deep-tissue",
+        "percussion-massage",
+        "multiple-heads",
+        "high-ratings",
+        "verified-reviews"
+      ],
+      "published_at": "2026-06-18"
     }
   ],
   "category_counts": {
@@ -1245,8 +1332,8 @@
     "Blenders": 3,
     "Food Processors": 2,
     "Robot Vacuums": 2,
-    "Luggage": 1,
-    "Standing Desks": 1,
+    "Luggage": 2,
+    "Standing Desks": 2,
     "Stand Mixers": 2,
     "Monitors": 4,
     "Camping Chairs": 2,
@@ -1255,7 +1342,7 @@
     "Yoga Mats": 2,
     "Travel Backpacks": 3,
     "Packing Cubes": 2,
-    "Massage Guns": 1
+    "Massage Guns": 2
   },
   "pending_splits": [],
   "last_health_check": null
