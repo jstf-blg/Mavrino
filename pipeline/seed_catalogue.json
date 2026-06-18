@@ -1,52 +1,28 @@
 {
   "robot vacuums": [
     {
-      "asin": "B01N4HZ49Z",
-      "title": "eufy RoboVac 11S (Slim) Robot Vacuum Cleaner, Super-Thin, 1300Pa Strong Suction",
+      "asin": "B07R295MLS",
+      "title": "eufy RoboVac 11S MAX Robot Vacuum, Super-Thin, Strong Suction",
       "brand": "eufy",
-      "price": 159.99,
+      "price": 199.99,
       "rating": 4.4,
-      "review_count": 65000
+      "review_count": 45000
     },
     {
-      "asin": "B0CV9QL2W3",
-      "title": "DREAME D10 Plus Gen 2 Robot Vacuum and Mop with Self-Emptying Base",
-      "brand": "Dreame",
-      "price": 299.99,
-      "rating": 4.3,
-      "review_count": 4200
-    },
-    {
-      "asin": "B0DHX8K9QG",
-      "title": "Roborock Q7 M5+ Robot Vacuum and Mop with Self-Emptying Dock",
-      "brand": "Roborock",
-      "price": 359.99,
-      "rating": 4.4,
-      "review_count": 3100
-    },
-    {
-      "asin": "B09NNCBPX9",
-      "title": "Shark AI Ultra Robot Vacuum with Matrix Clean and Self-Empty Base, AV2511AE",
-      "brand": "Shark",
-      "price": 399.99,
-      "rating": 4.4,
-      "review_count": 21000
-    },
-    {
-      "asin": "B08SQNCJVH",
-      "title": "iRobot Roomba i3+ EVO (3550) Self-Emptying Robot Vacuum",
+      "asin": "B0C415NHBM",
+      "title": "iRobot Roomba j9+ Self-Emptying Robot Vacuum",
       "brand": "iRobot",
-      "price": 399.99,
-      "rating": 4.4,
-      "review_count": 33000
+      "price": 599.99,
+      "rating": 4.2,
+      "review_count": 3500
     },
     {
-      "asin": "B0BVK6T9N9",
-      "title": "Dreame L20 Ultra Robot Vacuum and Mop with Auto Mop Washing and Drying",
-      "brand": "Dreame",
-      "price": 999.99,
+      "asin": "B0FWK41WF2",
+      "title": "eufy C28 Robot Vacuum and Mop Combo, Self-Emptying",
+      "brand": "eufy",
+      "price": 399.99,
       "rating": 4.3,
-      "review_count": 2500
+      "review_count": 1200
     }
   ],
   "air purifiers": [
@@ -501,102 +477,54 @@
   ],
   "standing desks": [
     {
-      "asin": "B08F7QG4Q4",
-      "title": "FEZIBO Electric Standing Desk, 48 x 24 Inches Height Adjustable Desk with Splice Board",
-      "brand": "FEZIBO",
-      "price": 149.99,
+      "asin": "B0B41YH9B6",
+      "title": "ErGear Height Adjustable Electric Standing Desk, 48x24in",
+      "brand": "ErGear",
+      "price": 159.99,
+      "rating": 4.6,
+      "review_count": 16000
+    },
+    {
+      "asin": "B08BHPMYGK",
+      "title": "FLEXISPOT EN1 Electric Standing Desk, 48x24in, 4 Presets",
+      "brand": "FLEXISPOT",
+      "price": 199.99,
+      "rating": 4.6,
+      "review_count": 9000
+    },
+    {
+      "asin": "B0BZ7GXM4M",
+      "title": "Claiks Electric Standing Desk, Adjustable Height, 24x48in",
+      "brand": "Claiks",
+      "price": 139.99,
       "rating": 4.5,
-      "review_count": 24800
-    },
-    {
-      "asin": "B0BL1B6Y8C",
-      "title": "FLEXISPOT EN1 Electric Height Adjustable Standing Desk 48 x 24 Inches",
-      "brand": "FLEXISPOT",
-      "price": 189.99,
-      "rating": 4.6,
-      "review_count": 15200
-    },
-    {
-      "asin": "B08PF31TG3",
-      "title": "FLEXISPOT E7 Pro Plus Standing Desk Dual Motor 55 x 28 Inch Height Adjustable Desk",
-      "brand": "FLEXISPOT",
-      "price": 399.99,
-      "rating": 4.7,
-      "review_count": 9600
-    },
-    {
-      "asin": "B09B1QY9XR",
-      "title": "VARIDESK ProDesk 60 Electric Standing Desk by Vari, 60 x 30 Inch",
-      "brand": "Vari",
-      "price": 695.0,
-      "rating": 4.6,
-      "review_count": 2100
-    },
-    {
-      "asin": "B07VFSGT9W",
-      "title": "Uplift V2 Standing Desk 60 x 30 Inch with Comfort+ Edge Bamboo Top",
-      "brand": "UPLIFT Desk",
-      "price": 749.0,
-      "rating": 4.8,
-      "review_count": 1850
-    },
-    {
-      "asin": "B09JFNFG2P",
-      "title": "Herman Miller Jarvis Bamboo Adjustable Height Standing Desk 48 x 30 Inch",
-      "brand": "Herman Miller",
-      "price": 1175.0,
-      "rating": 4.7,
-      "review_count": 1320
+      "review_count": 7000
     }
   ],
   "office chairs": [
     {
-      "asin": "B09T5J9P4S",
-      "title": "SIHOO M57 Ergonomic Office Chair with Adjustable Lumbar Support and Armrests",
-      "brand": "SIHOO",
-      "price": 109.99,
-      "rating": 4.4,
-      "review_count": 31200
-    },
-    {
-      "asin": "B0BR8H5K7Q",
-      "title": "SIHOO M18 Ergonomic Office Chair with Tilt Function and Breathable Mesh",
-      "brand": "SIHOO",
-      "price": 159.99,
-      "rating": 4.4,
-      "review_count": 18700
-    },
-    {
-      "asin": "B07YML5K3T",
-      "title": "Branch Ergonomic Chair with Adjustable Lumbar Support and Seat Depth",
-      "brand": "Branch",
-      "price": 379.0,
+      "asin": "B0DS5WR4L1",
+      "title": "Newtral Ergonomic Office Chair with Adaptive Lumbar Support",
+      "brand": "Newtral",
+      "price": 339.99,
       "rating": 4.5,
-      "review_count": 4200
+      "review_count": 3500
     },
     {
-      "asin": "B0858XXBH8",
-      "title": "Steelcase Series 1 Office Chair with Adjustable Lumbar and 4D Armrests",
-      "brand": "Steelcase",
-      "price": 519.0,
-      "rating": 4.6,
-      "review_count": 3400
+      "asin": "B0147WIC7E",
+      "title": "BestOffice Ergonomic Mesh Office Chair with Lumbar Support",
+      "brand": "BestOffice",
+      "price": 59.99,
+      "rating": 4.3,
+      "review_count": 28000
     },
     {
-      "asin": "B003M2D1A0",
-      "title": "Steelcase Leap V2 Ergonomic Office Chair with LiveBack Technology",
-      "brand": "Steelcase",
-      "price": 1099.0,
-      "rating": 4.7,
-      "review_count": 2600
-    },
-    {
-      "asin": "B01N5OLDLM",
-      "title": "Herman Miller Aeron Ergonomic Office Chair, Size B, Graphite with PostureFit SL",
-      "brand": "Herman Miller",
-      "price": 1395.0,
-      "rating": 4.8,
-      "review_count": 5800
+      "asin": "B00FS3VJAO",
+      "title": "BestOffice Mid-Back Mesh Swivel Desk Chair",
+      "brand": "BestOffice",
+      "price": 49.99,
+      "rating": 4.3,
+      "review_count": 35000
     }
   ],
   "curved monitors": [
@@ -651,52 +579,28 @@
   ],
   "monitors": [
     {
-      "asin": "B08LL9WTKM",
-      "title": "LG 27-Inch UltraGear 27GL850 QHD IPS Gaming Monitor 144Hz",
-      "brand": "LG",
-      "price": 179.99,
-      "rating": 4.6,
-      "review_count": 21500
-    },
-    {
-      "asin": "B08GSY3VLP",
-      "title": "Dell S2722QC 27-Inch 4K UHD USB-C Monitor with Built-in Speakers",
-      "brand": "Dell",
-      "price": 279.99,
-      "rating": 4.7,
-      "review_count": 12300
-    },
-    {
-      "asin": "B0BS47Q3KD",
-      "title": "Samsung ViewFinity S7 27-Inch 4K UHD High Resolution Monitor (S70D)",
-      "brand": "Samsung",
-      "price": 299.99,
-      "rating": 4.6,
-      "review_count": 6900
-    },
-    {
-      "asin": "B0C2K7H8YN",
-      "title": "Dell Pro 27 Plus 4K USB-C Monitor S2725QC with 65W Power Delivery",
-      "brand": "Dell",
-      "price": 329.99,
-      "rating": 4.7,
-      "review_count": 4100
-    },
-    {
-      "asin": "B0CRSPG8K9",
-      "title": "LG 27US500-W 27-Inch UHD 4K IPS Monitor with HDR10 and USB-C",
-      "brand": "LG",
-      "price": 279.99,
+      "asin": "B0BVBSYWDV",
+      "title": "HP 27-inch FHD 1080P Computer Monitor, 75Hz IPS, FreeSync",
+      "brand": "HP",
+      "price": 129.99,
       "rating": 4.5,
-      "review_count": 3200
+      "review_count": 14000
     },
     {
-      "asin": "B0CYS8WG2R",
-      "title": "Alienware AW2725Q 27-Inch 4K QD-OLED Gaming Monitor 240Hz",
-      "brand": "Alienware",
-      "price": 899.99,
-      "rating": 4.7,
-      "review_count": 1650
+      "asin": "B09BB5T7FV",
+      "title": "KYY 15.6'' 1080P FHD Portable Monitor, USB-C/HDMI",
+      "brand": "KYY",
+      "price": 89.99,
+      "rating": 4.5,
+      "review_count": 12000
+    },
+    {
+      "asin": "B0G488WKFY",
+      "title": "Great voell 27-inch Curved Computer Monitor, 120Hz FHD",
+      "brand": "Great voell",
+      "price": 109.99,
+      "rating": 4.3,
+      "review_count": 2500
     }
   ],
   "mechanical keyboards": [
@@ -1297,6 +1201,84 @@
       "price": 379.0,
       "rating": 4.7,
       "review_count": 620
+    }
+  ],
+  "blenders": [
+    {
+      "asin": "B00939FV8K",
+      "title": "Ninja BL660 Professional Compact Blender, 1100W",
+      "brand": "Ninja",
+      "price": 99.99,
+      "rating": 4.7,
+      "review_count": 52000
+    },
+    {
+      "asin": "B08QXJ31WR",
+      "title": "Ninja BN401 Nutri-Blender Pro with Auto-iQ, 1100W",
+      "brand": "Ninja",
+      "price": 89.99,
+      "rating": 4.7,
+      "review_count": 38000
+    },
+    {
+      "asin": "B08QZWDLP4",
+      "title": "Ninja BN301 Nutri-Plus Personal Blender, 900W",
+      "brand": "Ninja",
+      "price": 79.99,
+      "rating": 4.6,
+      "review_count": 41000
+    }
+  ],
+  "electric kettles": [
+    {
+      "asin": "B0C5Z8VCHX",
+      "title": "Chefman Electric Kettle, 1.8L 1500W, Borosilicate Glass",
+      "brand": "Chefman",
+      "price": 39.99,
+      "rating": 4.6,
+      "review_count": 15000
+    },
+    {
+      "asin": "B07JZQ1MXT",
+      "title": "Amazon Basics Electric Kettle with Glass Carafe, 1.7L",
+      "brand": "Amazon Basics",
+      "price": 29.99,
+      "rating": 4.5,
+      "review_count": 22000
+    },
+    {
+      "asin": "B072DWYBL7",
+      "title": "Amazon Basics Stainless Steel Electric Kettle, 1L 1500W",
+      "brand": "Amazon Basics",
+      "price": 24.99,
+      "rating": 4.5,
+      "review_count": 18000
+    }
+  ],
+  "toaster ovens": [
+    {
+      "asin": "B09B7SB46R",
+      "title": "Emeril Lagasse French Door Air Fryer Toaster Oven, 26QT",
+      "brand": "Emeril Lagasse",
+      "price": 199.99,
+      "rating": 4.4,
+      "review_count": 12000
+    },
+    {
+      "asin": "B00IXBMS6M",
+      "title": "Nuwave Bravo Air Fryer Toaster Smart Oven, 30QT",
+      "brand": "Nuwave",
+      "price": 179.99,
+      "rating": 4.3,
+      "review_count": 8000
+    },
+    {
+      "asin": "B09HSWBTN4",
+      "title": "Cuisinart TOA-70 Air Fryer Toaster Oven, 1800W",
+      "brand": "Cuisinart",
+      "price": 199.95,
+      "rating": 4.6,
+      "review_count": 9500
     }
   ]
 }
