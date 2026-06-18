@@ -67,8 +67,13 @@ def save_state(s: dict):
 
 
 def target_for_today(today: str) -> int:
-    catchup = os.getenv("DRIP_CATCHUP_DATE", "")
-    if catchup and today == catchup:
+    # DRIP_CATCHUP_DATE accepts one OR several comma-separated dates. Each listed
+    # day publishes the elevated DRIP_TODAY_TARGET; this lets a backlog be spread
+    # (back-filled) evenly across multiple catch-up days instead of one burst.
+    # Any day not listed uses the normal DRIP_DAILY_TARGET, so the elevation
+    # auto-reverts once the listed dates pass — no edit needed.
+    catchup_dates = {d.strip() for d in os.getenv("DRIP_CATCHUP_DATE", "").split(",") if d.strip()}
+    if today in catchup_dates:
         return int(os.getenv("DRIP_TODAY_TARGET", "5"))
     return int(os.getenv("DRIP_DAILY_TARGET", "2"))
 

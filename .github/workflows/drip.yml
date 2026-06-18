@@ -5,8 +5,11 @@ name: Drip Publisher (per-category, evenly spaced)
 # self-limits (stops at each category's daily target), so a skipped/delayed run is
 # harmless — the next run catches up the backlog.
 #
-# Catch-up: 5 posts/category on DRIP_CATCHUP_DATE, then 2/category/day afterwards
-# (the switch is automatic — no edit needed once the catch-up day passes).
+# Catch-up: on each date in DRIP_CATCHUP_DATE (comma-separated) the per-category
+# target is DRIP_TODAY_TARGET; every other day it is DRIP_DAILY_TARGET. The switch
+# is automatic — no edit needed once the listed catch-up dates pass.
+# 2026-06-18/19 back-fill the 12 posts missed on 06-16/17 (the drip dead-locked
+# at zero until the window-anchor fix): 2/cat/day x 2 days = 12 surplus over normal.
 on:
   schedule:
     - cron: '*/30 * * * *'   # every 30 min; drip decides whether anything is due
@@ -56,7 +59,7 @@ jobs:
           APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
           MAVRINO_SEARCH_SECRET=${{ secrets.MAVRINO_SEARCH_SECRET }}
           OUTPUT_DIR=./output
-          DRIP_CATCHUP_DATE=2026-06-15
+          DRIP_CATCHUP_DATE=2026-06-18,2026-06-19
           DRIP_TODAY_TARGET=2
           DRIP_DAILY_TARGET=1
           DRIP_PER_RUN_CAP=2
