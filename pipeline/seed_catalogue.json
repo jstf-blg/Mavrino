@@ -77,102 +77,54 @@
   ],
   "stick vacuums": [
     {
-      "asin": "B08RDL6H79",
-      "title": "Tineco Pure One S11 Smart Cordless Stick Vacuum Cleaner",
-      "brand": "Tineco",
-      "price": 199.99,
-      "rating": 4.4,
-      "review_count": 7200
-    },
-    {
-      "asin": "B09JZ5G2KT",
-      "title": "Shark IZ540H Vertex Pro Cordless Stick Vacuum with PowerFins",
-      "brand": "Shark",
-      "price": 279.99,
-      "rating": 4.5,
+      "asin": "B09YS9N7H2",
+      "title": "Dyson V8 Cordless Stick Vacuum, 115AW, Up to 40 Minutes",
+      "brand": "Dyson",
+      "price": 469.99,
+      "rating": 4.7,
       "review_count": 12000
     },
     {
-      "asin": "B0CPH8YV4M",
-      "title": "Tineco Pure One A50S Cordless Smart Stick Vacuum Cleaner",
-      "brand": "Tineco",
-      "price": 399.99,
-      "rating": 4.5,
-      "review_count": 2100
+      "asin": "B0C2J7R8PY",
+      "title": "Dyson V11 Cordless Stick Vacuum, 185AW, Up to 60 Minutes",
+      "brand": "Dyson",
+      "price": 599.99,
+      "rating": 4.7,
+      "review_count": 8000
     },
     {
-      "asin": "B0C4MV3DKP",
-      "title": "Shark PowerDetect Clean & Empty Cordless Stick Vacuum, IW3511",
-      "brand": "Shark",
-      "price": 499.99,
+      "asin": "B0CB6B2JWG",
+      "title": "LEVOIT LVAC-200 Cordless Stick Vacuum, Tangle-Resistant",
+      "brand": "LEVOIT",
+      "price": 159.99,
       "rating": 4.4,
-      "review_count": 3800
-    },
-    {
-      "asin": "B0BRHNF8MR",
-      "title": "Dyson V15 Detect Cordless Vacuum Cleaner with Laser Dust Detection",
-      "brand": "Dyson",
-      "price": 649.99,
-      "rating": 4.6,
-      "review_count": 18000
-    },
-    {
-      "asin": "B0C6QHV6FN",
-      "title": "Dyson Gen5detect Cordless Vacuum Cleaner",
-      "brand": "Dyson",
-      "price": 799.99,
-      "rating": 4.6,
-      "review_count": 4500
+      "review_count": 9000
     }
   ],
   "humidifiers": [
     {
-      "asin": "B073WJZL1N",
-      "title": "Pure Enrichment MistAire Ultrasonic Cool Mist Humidifier",
-      "brand": "Pure Enrichment",
-      "price": 39.99,
-      "rating": 4.6,
-      "review_count": 75000
-    },
-    {
-      "asin": "B07YGV3PND",
-      "title": "LEVOIT Dual 150 Ultrasonic Cool Mist Humidifier for Bedroom",
-      "brand": "Levoit",
-      "price": 39.99,
-      "rating": 4.6,
-      "review_count": 21000
-    },
-    {
-      "asin": "B0CB7M8R4F",
-      "title": "Dreo HM311S Smart Cool Mist Humidifier for Bedroom",
-      "brand": "Dreo",
-      "price": 49.99,
-      "rating": 4.6,
-      "review_count": 6800
-    },
-    {
-      "asin": "B08BR3Z3R8",
-      "title": "LEVOIT Classic 300S Smart Ultrasonic Cool Mist Humidifier for Home",
-      "brand": "Levoit",
+      "asin": "B01MYGNGKK",
+      "title": "LEVOIT 6L Warm and Cool Mist Ultrasonic Humidifier",
+      "brand": "LEVOIT",
       "price": 59.99,
       "rating": 4.5,
+      "review_count": 32000
+    },
+    {
+      "asin": "B075M5BDCF",
+      "title": "Pure Enrichment HumeXL Ultrasonic Cool Mist Humidifier, 5L",
+      "brand": "Pure Enrichment",
+      "price": 49.99,
+      "rating": 4.6,
       "review_count": 18000
     },
     {
-      "asin": "B07GBSH4VC",
-      "title": "Honeywell HUL430 Mistmate Cool Mist Humidifier",
+      "asin": "B00NWA7GWA",
+      "title": "Honeywell HUL520W MistMate Ultrasonic Cool Mist Humidifier",
       "brand": "Honeywell",
       "price": 34.99,
       "rating": 4.4,
-      "review_count": 9500
-    },
-    {
-      "asin": "B0BPYG9KFV",
-      "title": "LEVOIT OasisMist 4.5L Smart Warm and Cool Mist Humidifier for Large Room",
-      "brand": "Levoit",
-      "price": 89.99,
-      "rating": 4.5,
-      "review_count": 8200
+      "review_count": 26000
     }
   ],
   "space heaters": [
@@ -277,102 +229,54 @@
   ],
   "travel backpacks": [
     {
-      "asin": "B07RK2D5T1",
-      "title": "MATEIN Travel Backpack, 40L Carry-On TSA Flight Approved Laptop Backpack",
+      "asin": "B07QN9NPKN",
+      "title": "MATEIN 17-Inch TSA-Approved Travel Laptop Backpack",
       "brand": "MATEIN",
       "price": 39.99,
-      "rating": 4.7,
-      "review_count": 9740
-    },
-    {
-      "asin": "B08N5X4P9C",
-      "title": "Maelstrom 40L Travel Backpack, Carry-On Flight Approved Water-Resistant Daypack",
-      "brand": "Maelstrom",
-      "price": 49.99,
-      "rating": 4.7,
-      "review_count": 6310
-    },
-    {
-      "asin": "B07F2H8K3M",
-      "title": "Osprey Farpoint 40 Travel Backpack",
-      "brand": "Osprey",
-      "price": 185.0,
-      "rating": 4.8,
-      "review_count": 5120
-    },
-    {
-      "asin": "B08RDL6Q7N",
-      "title": "Nomatic Travel Pack 20L/24L Expandable Carry-On Backpack",
-      "brand": "Nomatic",
-      "price": 249.99,
-      "rating": 4.5,
-      "review_count": 2180
-    },
-    {
-      "asin": "B07YQ9F4VD",
-      "title": "Peak Design Travel Backpack 45L, Black",
-      "brand": "Peak Design",
-      "price": 299.95,
-      "rating": 4.7,
-      "review_count": 3640
-    },
-    {
-      "asin": "B09KX8M2WL",
-      "title": "Tortuga Travel Backpack 40L, Carry-On One-Bag Travel Pack",
-      "brand": "Tortuga",
-      "price": 349.0,
       "rating": 4.6,
-      "review_count": 1490
+      "review_count": 38000
+    },
+    {
+      "asin": "B07NV3VZ76",
+      "title": "MATEIN 40L Flight-Approved Carry-On Travel Backpack",
+      "brand": "MATEIN",
+      "price": 45.99,
+      "rating": 4.6,
+      "review_count": 15000
+    },
+    {
+      "asin": "B06XZTZ7GB",
+      "title": "MATEIN Travel Laptop Backpack, Anti-Theft, 15.6-Inch",
+      "brand": "MATEIN",
+      "price": 36.99,
+      "rating": 4.6,
+      "review_count": 42000
     }
   ],
   "packing cubes": [
     {
-      "asin": "B07DBLLG9Q",
-      "title": "Veken 6 Set Packing Cubes for Travel with Laundry Bag, Luggage Organizers",
-      "brand": "Veken",
-      "price": 19.99,
-      "rating": 4.7,
-      "review_count": 42130
-    },
-    {
-      "asin": "B01G6MEZK0",
-      "title": "BAGAIL 6 Set Packing Cubes, Lightweight Travel Luggage Organizers",
+      "asin": "B08S35399Y",
+      "title": "BAGAIL 8 Set Packing Cubes Travel Luggage Organizers",
       "brand": "BAGAIL",
-      "price": 22.99,
+      "price": 25.99,
       "rating": 4.7,
-      "review_count": 21450
+      "review_count": 45000
     },
     {
-      "asin": "B086L5K9YZ",
-      "title": "Gonex Compression Packing Cubes Set, Expandable Travel Organizers",
-      "brand": "Gonex",
+      "asin": "B0DCVSM7CQ",
+      "title": "BAGAIL Compression Packing Cubes, Expandable Set",
+      "brand": "BAGAIL",
       "price": 27.99,
       "rating": 4.6,
-      "review_count": 14820
+      "review_count": 12000
     },
     {
-      "asin": "B07VHD9K2P",
-      "title": "Amazon Basics 4-Piece Packing Travel Organizer Cubes Set",
-      "brand": "Amazon Basics",
-      "price": 24.99,
-      "rating": 4.7,
-      "review_count": 38600
-    },
-    {
-      "asin": "B00C1OQDLW",
-      "title": "Eagle Creek Pack-It Original Cube Set, Travel Packing Organizers",
-      "brand": "Eagle Creek",
-      "price": 29.99,
-      "rating": 4.7,
-      "review_count": 12770
-    },
-    {
-      "asin": "B07T1L8K5R",
-      "title": "Eagle Creek Pack-It Specter Compression Cube Set, Ultralight",
-      "brand": "Eagle Creek",
-      "price": 49.95,
-      "rating": 4.7,
-      "review_count": 4360
+      "asin": "B0B7BFMHNF",
+      "title": "Veken 8 Set Packing Cubes for Travel, Suitcase Organizer",
+      "brand": "Veken",
+      "price": 23.99,
+      "rating": 4.6,
+      "review_count": 30000
     }
   ],
   "portable chargers": [
@@ -529,52 +433,28 @@
   ],
   "curved monitors": [
     {
-      "asin": "B0BWMW9D9B",
-      "title": "Samsung Odyssey G9 49-Inch DQHD Curved Gaming Monitor (G95C) 240Hz 1000R",
-      "brand": "Samsung",
-      "price": 999.99,
-      "rating": 4.6,
-      "review_count": 4800
-    },
-    {
-      "asin": "B0CRSPG2PV",
-      "title": "Samsung Odyssey G7 32-Inch 1000R Curved Gaming Monitor 165Hz QHD (G70B)",
-      "brand": "Samsung",
-      "price": 549.99,
-      "rating": 4.6,
-      "review_count": 5600
-    },
-    {
-      "asin": "B09KMW3RWZ",
-      "title": "LG 34GP63A-B 34-Inch UltraGear Curved QHD Ultrawide Gaming Monitor 160Hz",
-      "brand": "LG",
-      "price": 399.99,
-      "rating": 4.7,
-      "review_count": 8200
-    },
-    {
-      "asin": "B09HBN5VKK",
-      "title": "Dell S3422DWG 34-Inch WQHD Curved Ultrawide Gaming Monitor 144Hz",
-      "brand": "Dell",
-      "price": 379.99,
-      "rating": 4.6,
-      "review_count": 9100
-    },
-    {
-      "asin": "B08VFQRSF5",
-      "title": "Gigabyte G34WQC 34-Inch 144Hz Curved Ultrawide Gaming Monitor WQHD VA 1500R",
-      "brand": "Gigabyte",
-      "price": 329.99,
+      "asin": "B07MTRQ6B3",
+      "title": "Sceptre 27-inch Curved Monitor, 100Hz FHD 1080p, C275W-1920RN",
+      "brand": "Sceptre",
+      "price": 129.99,
       "rating": 4.5,
-      "review_count": 6300
+      "review_count": 28000
     },
     {
-      "asin": "B0BR8K9G3F",
-      "title": "Samsung ViewFinity S65TC 34-Inch Curved Ultrawide WQHD USB-C Monitor for Work",
-      "brand": "Samsung",
-      "price": 449.99,
-      "rating": 4.6,
-      "review_count": 2400
+      "asin": "B0D2JM3NQG",
+      "title": "Sceptre 27-inch Curved Gaming Monitor, 100Hz, C275W-FW100T",
+      "brand": "Sceptre",
+      "price": 139.99,
+      "rating": 4.5,
+      "review_count": 6000
+    },
+    {
+      "asin": "B08Z38L765",
+      "title": "Sceptre 27-inch Curved 2K QHD Gaming Monitor, 165Hz, C275B-QWD168",
+      "brand": "Sceptre",
+      "price": 189.99,
+      "rating": 4.5,
+      "review_count": 9000
     }
   ],
   "monitors": [
@@ -605,52 +485,28 @@
   ],
   "mechanical keyboards": [
     {
-      "asin": "B08LVTGF2L",
-      "title": "Redragon K556 RGB LED Backlit Wired Mechanical Keyboard with Brown Switches",
-      "brand": "Redragon",
-      "price": 49.99,
-      "rating": 4.6,
-      "review_count": 8058
-    },
-    {
-      "asin": "B07YML7DLP",
-      "title": "Royal Kludge RK84 Wireless 75% Hot-Swappable Mechanical Keyboard",
-      "brand": "Royal Kludge",
-      "price": 69.99,
-      "rating": 4.4,
-      "review_count": 11200
-    },
-    {
-      "asin": "B0CG7N5K9W",
-      "title": "Keychron V3 Max QMK/VIA Wireless Custom Mechanical Keyboard TKL",
+      "asin": "B0DCVPGB9N",
+      "title": "Keychron K2 HE Rapid Trigger Wireless Mechanical Keyboard",
       "brand": "Keychron",
-      "price": 99.99,
-      "rating": 4.7,
-      "review_count": 4300
+      "price": 109.99,
+      "rating": 4.5,
+      "review_count": 2500
     },
     {
-      "asin": "B0C8M4T9XK",
-      "title": "Razer BlackWidow V4 75% Hot-Swappable Mechanical Gaming Keyboard",
-      "brand": "Razer",
-      "price": 159.99,
-      "rating": 4.6,
-      "review_count": 3800
+      "asin": "B0DGZLHN8G",
+      "title": "SteelSeries Apex Pro TKL Gen 3 Mechanical Gaming Keyboard",
+      "brand": "SteelSeries",
+      "price": 249.99,
+      "rating": 4.5,
+      "review_count": 3500
     },
     {
-      "asin": "B0CXH7Q2N5",
-      "title": "Razer Huntsman V3 Pro TKL Analog Optical Esports Gaming Keyboard",
-      "brand": "Razer",
+      "asin": "B07NY9ZT92",
+      "title": "Logitech G915 Lightspeed Wireless RGB Mechanical Keyboard",
+      "brand": "Logitech",
       "price": 199.99,
-      "rating": 4.6,
-      "review_count": 2900
-    },
-    {
-      "asin": "B0BXYR9MK4",
-      "title": "Keychron Q3 Max QMK/VIA Wireless Custom Mechanical Keyboard Full Aluminum TKL",
-      "brand": "Keychron",
-      "price": 219.99,
-      "rating": 4.8,
-      "review_count": 2100
+      "rating": 4.7,
+      "review_count": 14000
     }
   ],
   "webcams": [
@@ -705,52 +561,28 @@
   ],
   "massage guns": [
     {
-      "asin": "B0BPMCN1ND",
-      "title": "Sportneer Mini Massage Gun Deep Tissue Percussion Muscle Massager",
-      "brand": "Sportneer",
-      "price": 29.99,
-      "rating": 4.5,
-      "review_count": 21500
-    },
-    {
-      "asin": "B08LN56HMV",
-      "title": "TOLOCO Massage Gun Deep Tissue Percussion Muscle Massager for Athletes",
+      "asin": "B083L8RNJR",
+      "title": "TOLOCO Massage Gun, Deep Tissue Percussion Massager, 10 Heads",
       "brand": "TOLOCO",
-      "price": 39.99,
+      "price": 89.99,
       "rating": 4.5,
-      "review_count": 58000
+      "review_count": 80000
     },
     {
-      "asin": "B09P5BJC8H",
-      "title": "RENPHO Active Massage Gun Deep Tissue Muscle Percussion Massager",
-      "brand": "RENPHO",
-      "price": 69.99,
+      "asin": "B08CKWVYMF",
+      "title": "BOB AND BRAD C2 Deep Tissue Percussion Massage Gun",
+      "brand": "BOB AND BRAD",
+      "price": 99.99,
       "rating": 4.6,
-      "review_count": 48000
+      "review_count": 22000
     },
     {
-      "asin": "B0BG56P3J9",
-      "title": "Theragun Prime (5th Generation) Percussive Therapy Deep Tissue Massage Gun",
-      "brand": "Therabody",
-      "price": 199.0,
+      "asin": "B07TVCF86M",
+      "title": "Opove M3 Pro 2 Deep Tissue Percussion Massage Gun",
+      "brand": "Opove",
+      "price": 129.99,
       "rating": 4.6,
-      "review_count": 4200
-    },
-    {
-      "asin": "B0BVMDV5DM",
-      "title": "Hypervolt 2 Pro Bluetooth Percussion Massage Gun by Hyperice",
-      "brand": "Hyperice",
-      "price": 329.0,
-      "rating": 4.7,
-      "review_count": 1800
-    },
-    {
-      "asin": "B0CH7DXBLP",
-      "title": "Theragun Pro Plus (G6) 6-in-1 Deep Tissue Percussion Massage Gun",
-      "brand": "Therabody",
-      "price": 549.0,
-      "rating": 4.5,
-      "review_count": 950
+      "review_count": 9000
     }
   ],
   "fitness trackers": [
@@ -805,52 +637,28 @@
   ],
   "smart scales": [
     {
-      "asin": "B07P5GDPM7",
-      "title": "Eufy by Anker Smart Scale C1 with Bluetooth Body Fat 12 Measurements",
-      "brand": "eufy",
-      "price": 26.99,
-      "rating": 4.6,
-      "review_count": 42000
-    },
-    {
-      "asin": "B07L6THFH8",
-      "title": "RENPHO Smart Scale for Body Weight, Bluetooth Body Fat BMI Scale (Elis 1)",
+      "asin": "B01N1UX8RW",
+      "title": "RENPHO Elis 1 Smart Body Fat Scale, Bluetooth BMI",
       "brand": "RENPHO",
-      "price": 29.99,
-      "rating": 4.7,
-      "review_count": 355000
-    },
-    {
-      "asin": "B0BHS3T8DV",
-      "title": "Wyze Scale X Smart Body Fat Scale with Heart Rate and 12 Metrics",
-      "brand": "Wyze",
-      "price": 33.98,
+      "price": 25.99,
       "rating": 4.6,
-      "review_count": 18000
+      "review_count": 180000
     },
     {
-      "asin": "B0BR5DCDND",
-      "title": "eufy Smart Scale P2 Pro with Wi-Fi Bluetooth 16 Measurements",
-      "brand": "eufy",
-      "price": 79.99,
-      "rating": 4.5,
-      "review_count": 9500
+      "asin": "B078HW8BPY",
+      "title": "FITINDEX Smart Scale, Bluetooth Body Composition Analyzer",
+      "brand": "FITINDEX",
+      "price": 19.99,
+      "rating": 4.6,
+      "review_count": 90000
     },
     {
-      "asin": "B0BZX5DN5L",
-      "title": "Withings Body Smart Wi-Fi Bathroom Scale with Body Composition",
+      "asin": "B0C3JNJPZ7",
+      "title": "Withings Body Smart Accurate Wi-Fi Body Composition Scale",
       "brand": "Withings",
       "price": 99.95,
       "rating": 4.4,
-      "review_count": 7800
-    },
-    {
-      "asin": "B08PF35QST",
-      "title": "Garmin Index S2 Smart Scale with Wi-Fi Connectivity",
-      "brand": "Garmin",
-      "price": 149.99,
-      "rating": 4.5,
-      "review_count": 6200
+      "review_count": 6000
     }
   ],
   "yoga mats": [
@@ -905,52 +713,28 @@
   ],
   "adjustable dumbbells": [
     {
-      "asin": "B08DCNFKKM",
-      "title": "FLYBIRD Adjustable Dumbbell, 25 lbs Single Dumbbell with Anti-Slip Handle",
-      "brand": "FLYBIRD",
-      "price": 89.99,
-      "rating": 4.6,
-      "review_count": 14000
-    },
-    {
-      "asin": "B08T68F7CP",
-      "title": "NICE C Adjustable Dumbbell Set, 5-in-1 Weight Pair (Up to 55 lbs)",
-      "brand": "NICE C",
-      "price": 169.99,
-      "rating": 4.5,
-      "review_count": 9200
-    },
-    {
-      "asin": "B0CG2LHGFR",
-      "title": "Core Home Fitness Adjustable Dumbbell Set (5-50 lbs Pair)",
-      "brand": "Core Home Fitness",
-      "price": 399.0,
-      "rating": 4.6,
-      "review_count": 3100
-    },
-    {
-      "asin": "B001ARYU58",
-      "title": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair, 5-52.5 lbs)",
+      "asin": "B07YVYZ93C",
+      "title": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair)",
       "brand": "Bowflex",
       "price": 429.0,
       "rating": 4.8,
-      "review_count": 36000
+      "review_count": 35000
     },
     {
-      "asin": "B07XB7G2WD",
-      "title": "PowerBlock Elite EXP Adjustable Dumbbells, Stage 1 (5-50 lbs Pair)",
-      "brand": "PowerBlock",
-      "price": 369.0,
-      "rating": 4.7,
-      "review_count": 5600
+      "asin": "B0914FQ8WQ",
+      "title": "Bowflex SelectTech Adjustable Weights and Dumbbells",
+      "brand": "Bowflex",
+      "price": 429.0,
+      "rating": 4.8,
+      "review_count": 20000
     },
     {
-      "asin": "B07RDD8PD7",
-      "title": "NUOBELL 80 lb Adjustable Dumbbells by SMRTFT (Pair, 5-80 lbs)",
-      "brand": "SMRTFT",
-      "price": 745.0,
+      "asin": "B0G6Z84TQM",
+      "title": "BowFlex Results Series 552 SelectTech Dumbbells (Pair)",
+      "brand": "Bowflex",
+      "price": 399.0,
       "rating": 4.7,
-      "review_count": 2400
+      "review_count": 1500
     }
   ],
   "coolers": [
@@ -1055,52 +839,28 @@
   ],
   "camping chairs": [
     {
-      "asin": "B0EDE7DCFD",
-      "title": "Coleman Camping Chair with Built-in 4-Can Cooler",
+      "asin": "B004E4GBEM",
+      "title": "Coleman Aluminum Deck Chair with Swivel Table",
       "brand": "Coleman",
-      "price": 40.0,
-      "rating": 4.7,
-      "review_count": 42000
+      "price": 59.99,
+      "rating": 4.6,
+      "review_count": 15000
     },
     {
-      "asin": "B07GDD2X9F",
-      "title": "GCI Outdoor Kickback Rocker Portable Rocking Camp Chair",
-      "brand": "GCI Outdoor",
-      "price": 60.0,
-      "rating": 4.7,
-      "review_count": 15400
-    },
-    {
-      "asin": "B00363V668",
+      "asin": "B004C0QECC",
       "title": "Kijaro Dual Lock Portable Folding Camping Chair",
       "brand": "Kijaro",
-      "price": 52.0,
-      "rating": 4.6,
-      "review_count": 12700
-    },
-    {
-      "asin": "B07VJ5L3R8",
-      "title": "ALPS Mountaineering King Kong Folding Camp Chair",
-      "brand": "ALPS Mountaineering",
-      "price": 75.0,
+      "price": 54.99,
       "rating": 4.7,
-      "review_count": 6800
+      "review_count": 12000
     },
     {
-      "asin": "B07QXNTQQF",
-      "title": "Helinox Chair One Lightweight Compact Camp Chair",
-      "brand": "Helinox",
-      "price": 110.0,
-      "rating": 4.7,
-      "review_count": 3500
-    },
-    {
-      "asin": "B09NBXKXTG",
-      "title": "GCI Outdoor Freeform Zero Gravity Lounger",
-      "brand": "GCI Outdoor",
-      "price": 120.0,
+      "asin": "B01FKZOGFY",
+      "title": "Kijaro Dual Lock Hard Arm Portable Camping Chair",
+      "brand": "Kijaro",
+      "price": 64.99,
       "rating": 4.6,
-      "review_count": 2200
+      "review_count": 8000
     }
   ],
   "portable grills": [
@@ -1155,52 +915,28 @@
   ],
   "sleeping bags": [
     {
-      "asin": "B00363RBNS",
-      "title": "Coleman Brazos Cold-Weather Sleeping Bag, 20F",
-      "brand": "Coleman",
-      "price": 35.0,
-      "rating": 4.6,
-      "review_count": 24500
-    },
-    {
-      "asin": "B0009PUR4O",
-      "title": "TETON Sports Celsius XXL 0F Sleeping Bag",
+      "asin": "B07G84NHG1",
+      "title": "TETON Sports Cobalt Mummy Sleeping Bag, Warm Weather",
       "brand": "TETON Sports",
-      "price": 75.0,
+      "price": 49.99,
       "rating": 4.6,
-      "review_count": 13900
+      "review_count": 11000
     },
     {
-      "asin": "B004QM8R9I",
-      "title": "TETON Sports Polara 3-in-1 Sleeping Bag",
+      "asin": "B006IYCSES",
+      "title": "TETON Sports Celsius Regular Sleeping Bag, 3-Season",
       "brand": "TETON Sports",
-      "price": 95.0,
-      "rating": 4.6,
-      "review_count": 4100
-    },
-    {
-      "asin": "B07VMNTG1L",
-      "title": "Coleman Sun Ridge 40F Warm-Weather Sleeping Bag",
-      "brand": "Coleman",
-      "price": 25.0,
-      "rating": 4.6,
-      "review_count": 9800
-    },
-    {
-      "asin": "B08T6FL8QJ",
-      "title": "REI Co-op Trailmade 25 Sleeping Bag",
-      "brand": "REI Co-op",
-      "price": 129.0,
-      "rating": 4.5,
-      "review_count": 1200
-    },
-    {
-      "asin": "B0CJ5XW2TP",
-      "title": "Sea to Summit Spark SPII 28F Down Sleeping Bag",
-      "brand": "Sea to Summit",
-      "price": 379.0,
+      "price": 59.99,
       "rating": 4.7,
-      "review_count": 620
+      "review_count": 18000
+    },
+    {
+      "asin": "B00GV3YSOO",
+      "title": "TETON Sports Polara 3-in-1 Versatile Sleeping Bag",
+      "brand": "TETON Sports",
+      "price": 99.99,
+      "rating": 4.6,
+      "review_count": 6000
     }
   ],
   "blenders": [
@@ -1279,6 +1015,32 @@
       "price": 199.95,
       "rating": 4.6,
       "review_count": 9500
+    }
+  ],
+  "travel luggage": [
+    {
+      "asin": "B0937KJXFJ",
+      "title": "Travelpro Platinum Elite Hardside Expandable Carry-On, 21in",
+      "brand": "Travelpro",
+      "price": 279.99,
+      "rating": 4.7,
+      "review_count": 9000
+    },
+    {
+      "asin": "B01M0A3BKH",
+      "title": "Samsonite Freeform Hardside Expandable Carry-On Spinner",
+      "brand": "Samsonite",
+      "price": 159.99,
+      "rating": 4.6,
+      "review_count": 14000
+    },
+    {
+      "asin": "B0DY986LZK",
+      "title": "Samsonite Octiv Lightweight Hardshell 21-Inch Pro Carry-On",
+      "brand": "Samsonite",
+      "price": 139.99,
+      "rating": 4.5,
+      "review_count": 3000
     }
   ]
 }
