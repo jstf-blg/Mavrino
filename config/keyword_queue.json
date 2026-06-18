@@ -306,15 +306,6 @@
     "slug": "115450cf"
   },
   {
-    "keyword": "Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with T vs Travelpro Maxlite 5 Softside Expandable Carry-On Spinner",
-    "source": "seed_comparison",
-    "asin_a": "B07GD6K82L",
-    "asin_b": "B07BL7JXHV",
-    "score": 70,
-    "post_type": "comparison",
-    "slug": "29eddca2"
-  },
-  {
     "keyword": "MATEIN Travel Backpack vs Maelstrom 40L Travel Backpack",
     "source": "seed_comparison",
     "asin_a": "B07RK2D5T1",
@@ -1393,13 +1384,6 @@
     "score": 60,
     "post_type": "roundup",
     "slug": "bfaf57ef"
-  },
-  {
-    "keyword": "top 5 robot vacuums for the money",
-    "source": "template",
-    "score": 60,
-    "post_type": "roundup",
-    "slug": "d37ee816"
   },
   {
     "keyword": "best robot vacuums under $100",
@@ -2641,13 +2625,6 @@
     "slug": "8bbb8f2f"
   },
   {
-    "keyword": "top 5 standing desks for the money",
-    "source": "template",
-    "score": 60,
-    "post_type": "roundup",
-    "slug": "ae5aa200"
-  },
-  {
     "keyword": "best standing desks under $100",
     "source": "template",
     "score": 60,
@@ -3255,13 +3232,6 @@
     "score": 60,
     "post_type": "guide",
     "slug": "240a0fb9"
-  },
-  {
-    "keyword": "top 5 massage guns for the money",
-    "source": "template",
-    "score": 60,
-    "post_type": "roundup",
-    "slug": "beba7f58"
   },
   {
     "keyword": "best massage guns under $100",

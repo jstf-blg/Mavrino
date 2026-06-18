@@ -356,7 +356,17 @@
     "instant": 789923145,
     "4-in-1": 789923146,
     "6-in-1": 789923147,
-    "5-qt-capacity": 789923148
+    "5-qt-capacity": 789923148,
+    "thin-design": 789923150,
+    "mop-combo": 789923151,
+    "coolife": 789923152,
+    "expandable-capacity": 789923153,
+    "hardside-shell": 789923154,
+    "electric-adjustment": 789923155,
+    "preset-heights": 789923156,
+    "48x24-inch-surface": 789923157,
+    "smooth-adjustment": 789923158,
+    "value-for-money": 789923159
   },
   "post_index": [
     {
@@ -1381,6 +1391,100 @@
         "high-rating"
       ],
       "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Robot Vacuums for the Money, Ranked for 2026",
+      "wp_post_id": 976,
+      "wp_url": "https://mavrino.com/2026/06/19/top-3-robot-vacuums-for-the-money-ranked-for-2026/",
+      "parent_category": "Home",
+      "child_category": "Robot Vacuums",
+      "tags": [
+        "eufy",
+        "irobot",
+        "under-$200",
+        "under-$300",
+        "$300-$500",
+        "premium",
+        "budget-friendly",
+        "best-value",
+        "self-emptying",
+        "strong-suction",
+        "thin-design",
+        "mop-combo"
+      ],
+      "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Travelpro Platinum Elite vs Samsonite Freeform: Which Hardside Carry-On Wins in 2026?",
+      "wp_post_id": 980,
+      "wp_url": "https://mavrino.com/2026/06/19/travelpro-platinum-elite-vs-samsonite-freeform-which-hardside-carry-on-wins-in-2026/",
+      "parent_category": "Travel",
+      "child_category": "Luggage",
+      "tags": [
+        "travelpro",
+        "samsonite",
+        "coolife",
+        "under-$200",
+        "under-$300",
+        "for-frequent-travelers",
+        "expandable-capacity",
+        "budget-friendly",
+        "durable",
+        "hardside-shell",
+        "expandable",
+        "spinner-wheels",
+        "carry-on-approved"
+      ],
+      "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Standing Desks for the Money, Ranked for 2026",
+      "wp_post_id": 985,
+      "wp_url": "https://mavrino.com/2026/06/19/top-3-standing-desks-for-the-money-ranked-for-2026/",
+      "parent_category": "Home Office",
+      "child_category": "Standing Desks",
+      "tags": [
+        "flexispot",
+        "ergear",
+        "claiks",
+        "under-$150",
+        "under-$200",
+        "budget",
+        "for-home-office",
+        "best-value",
+        "electric-adjustment",
+        "preset-heights",
+        "48x24-inch-surface",
+        "smooth-adjustment"
+      ],
+      "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Massage Guns for the Money, Ranked for 2026",
+      "wp_post_id": 988,
+      "wp_url": "https://mavrino.com/2026/06/19/top-3-massage-guns-for-the-money-ranked-for-2026/",
+      "parent_category": "Fitness & Wellness",
+      "child_category": "Massage Guns",
+      "tags": [
+        "bob and brad",
+        "opove",
+        "toloco",
+        "under-$100",
+        "under-$150",
+        "budget",
+        "value-for-money",
+        "deep-tissue",
+        "for-recovery",
+        "percussion-therapy",
+        "multiple-heads",
+        "quiet-operation",
+        "portable"
+      ],
+      "published_at": "2026-06-18"
     }
   ],
   "category_counts": {
@@ -1389,9 +1493,9 @@
     "Air Fryers": 7,
     "Blenders": 3,
     "Food Processors": 2,
-    "Robot Vacuums": 2,
-    "Luggage": 2,
-    "Standing Desks": 2,
+    "Robot Vacuums": 3,
+    "Luggage": 3,
+    "Standing Desks": 3,
     "Stand Mixers": 2,
     "Monitors": 4,
     "Camping Chairs": 2,
@@ -1400,7 +1504,7 @@
     "Yoga Mats": 2,
     "Travel Backpacks": 3,
     "Packing Cubes": 2,
-    "Massage Guns": 2
+    "Massage Guns": 3
   },
   "pending_splits": [],
   "last_health_check": null
