@@ -352,7 +352,11 @@
     "long-lasting": 789923141,
     "5-day-ice-retention": 789923142,
     "wheeled": 789923143,
-    "hard-cooler": 789923144
+    "hard-cooler": 789923144,
+    "instant": 789923145,
+    "4-in-1": 789923146,
+    "6-in-1": 789923147,
+    "5-qt-capacity": 789923148
   },
   "post_index": [
     {
@@ -1354,12 +1358,35 @@
         "high-capacity"
       ],
       "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 4 Air Fryers for 2026, Ranked by Real Data",
+      "wp_post_id": 971,
+      "wp_url": "https://mavrino.com/2026/06/18/top-4-air-fryers-for-2026-ranked-by-real-data/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "cosori",
+        "instant",
+        "ninja",
+        "under-$100",
+        "under-$150",
+        "budget-friendly",
+        "compact",
+        "for-families",
+        "4-in-1",
+        "6-in-1",
+        "5-qt-capacity",
+        "high-rating"
+      ],
+      "published_at": "2026-06-18"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 8,
     "Electric Kettles": 3,
-    "Air Fryers": 6,
+    "Air Fryers": 7,
     "Blenders": 3,
     "Food Processors": 2,
     "Robot Vacuums": 2,
