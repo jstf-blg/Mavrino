@@ -347,7 +347,12 @@
     "quiet": 18454,
     "percussion-massage": 789923137,
     "multiple-heads": 789923138,
-    "verified-reviews": 789923139
+    "verified-reviews": 789923139,
+    "for-outdoor-activities": 789923140,
+    "long-lasting": 789923141,
+    "5-day-ice-retention": 789923142,
+    "wheeled": 789923143,
+    "hard-cooler": 789923144
   },
   "post_index": [
     {
@@ -1323,6 +1328,32 @@
         "verified-reviews"
       ],
       "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 3 Coolers for 2026, Ranked by Real Data",
+      "wp_post_id": 822,
+      "wp_url": "https://mavrino.com/2026/06/18/top-3-coolers-for-2026-ranked-by-real-data/",
+      "parent_category": "Outdoors",
+      "child_category": "Coolers",
+      "tags": [
+        "rtic",
+        "coleman",
+        "under-$50",
+        "under-$100",
+        "for-camping",
+        "for-outdoor-activities",
+        "budget-friendly",
+        "durable",
+        "long-lasting",
+        "for-families",
+        "5-day-ice-retention",
+        "wheeled",
+        "heavy-duty",
+        "hard-cooler",
+        "high-capacity"
+      ],
+      "published_at": "2026-06-18"
     }
   ],
   "category_counts": {
@@ -1338,7 +1369,7 @@
     "Monitors": 4,
     "Camping Chairs": 2,
     "Tents": 2,
-    "Coolers": 3,
+    "Coolers": 4,
     "Yoga Mats": 2,
     "Travel Backpacks": 3,
     "Packing Cubes": 2,
