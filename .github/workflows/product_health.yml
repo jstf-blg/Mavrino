@@ -46,15 +46,9 @@ jobs:
 
       - name: Run product image health check
         run: |
-          if [ "${{ github.event.inputs.force }}" = "true" ]; then
-            python - <<'PY'
-import sys; sys.path.insert(0, 'pipeline')
-import product_images as pi
-pi.run_health_check(force=True)
-PY
-          else
-            python pipeline/product_images.py --health
-          fi
+          FORCE=""
+          [ "${{ github.event.inputs.force }}" = "true" ] && FORCE="--force"
+          python pipeline/product_images.py --health $FORCE
 
       - name: Commit refreshed image data
         run: |

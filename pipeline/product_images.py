@@ -337,9 +337,10 @@ def run_health_check(limit: int | None = None, force: bool = False) -> dict:
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:]]
     if "--health" in args:
-        rest = [a for a in args if a != "--health"]
+        force = "--force" in args
+        rest = [a for a in args if a not in ("--health", "--force")]
         lim = int(rest[0]) if rest and rest[0].isdigit() else None
-        run_health_check(limit=lim)
+        run_health_check(limit=lim, force=force)
     elif args:
         c = _load()
         for a in args:
