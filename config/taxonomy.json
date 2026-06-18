@@ -321,7 +321,15 @@
     "cordless": 789923111,
     "leak-proof": 789923112,
     "ice-keeping": 789923113,
-    "leak-resistant": 789923114
+    "leak-resistant": 789923114,
+    "frozen-foods": 789923115,
+    "quick-cooking": 789923116,
+    "for-homeowners": 789923117,
+    "mopping-capability": 789923118,
+    "strong-suction": 789923119,
+    "auto-washing": 789923120,
+    "matrix-clean": 789923121,
+    "slim-design": 789923122
   },
   "post_index": [
     {
@@ -1180,15 +1188,63 @@
         "leak-resistant"
       ],
       "published_at": "2026-06-15"
+    },
+    {
+      "slug": "",
+      "title": "Top 5 Air Fryers, Ranked for 2026",
+      "wp_post_id": 804,
+      "wp_url": "https://mavrino.com/2026/06/18/top-5-air-fryers-ranked-for-2026-2/",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "ninja",
+        "cosori",
+        "under-$100",
+        "under-$150",
+        "for-families",
+        "budget-friendly",
+        "weeknight-cooking",
+        "frozen-foods",
+        "large-capacity",
+        "high-ratings",
+        "quick-cooking",
+        "compact"
+      ],
+      "published_at": "2026-06-18"
+    },
+    {
+      "slug": "",
+      "title": "Top 6 Robot Vacuums for 2026, Ranked by Real Data",
+      "wp_post_id": 807,
+      "wp_url": "https://mavrino.com/2026/06/18/top-6-robot-vacuums-for-2026-ranked-by-real-data/",
+      "parent_category": "Home",
+      "child_category": "Robot Vacuums",
+      "tags": [
+        "irobot",
+        "eufy",
+        "shark",
+        "under-$200",
+        "$300-$500",
+        "premium",
+        "budget",
+        "for-homeowners",
+        "self-emptying",
+        "mopping-capability",
+        "strong-suction",
+        "auto-washing",
+        "matrix-clean",
+        "slim-design"
+      ],
+      "published_at": "2026-06-18"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 8,
     "Electric Kettles": 3,
-    "Air Fryers": 5,
+    "Air Fryers": 6,
     "Blenders": 3,
     "Food Processors": 2,
-    "Robot Vacuums": 1,
+    "Robot Vacuums": 2,
     "Luggage": 1,
     "Standing Desks": 1,
     "Stand Mixers": 2,
