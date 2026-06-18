@@ -82,9 +82,12 @@ def publish_one(keyword_data: dict):
     keyword   = keyword_data["keyword"]
     post_type = keyword_data.get("post_type", "roundup")
     asins = rp.get_asins_for_keyword(keyword_data)
-    if asins:
-        products = ad.get_multiple_products(asins)
-    else:
+    products = ad.get_multiple_products(asins) if asins else []
+    if not products:
+        # The explicit-ASIN path (Amazon PA-API) is unavailable, and many queued
+        # comparison/review keywords reference now-delisted ASINs — so this path
+        # returns nothing and the post used to silently fail. Fall back to the
+        # re-curated niche cache so the post still publishes with live products.
         products = cb.get_products_for_keyword(keyword, count=rp.products_needed(keyword, post_type))
     if not products:
         return None
