@@ -281,6 +281,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         if price:
             out += (f'<!-- wp:paragraph -->\n<p><strong>${price:.2f}</strong>'
                     f'{" &nbsp; " + stars if stars else ""}{" " + str(rating) + "/5" if rating else ""}</p>\n<!-- /wp:paragraph -->\n')
+        out += _trust_block(wprod, peer_count=len(products)) + "\n"
         if url:
             out += _cta_button("Check today’s price on Amazon →", url, bg=accent) + "\n"
         out += '</div>\n<!-- /wp:group -->'
@@ -504,6 +505,32 @@ def _cta_button(label: str, url: str, bg: str = "#1c1814") -> str:
     )
 
 
+def _trust_block(product: dict, peer_count: int = 0) -> str:
+    """'Why you can trust this pick' cue stack next to the CTA — rigour
+    (competence) plus candour (warmth) to de-risk the click. Lines are only
+    shown when the underlying data exists, so it never fabricates signals."""
+    signals = []
+    if peer_count and peer_count >= 2:
+        signals.append(f"Ranked against {peer_count} models on price, rating &amp; real reviews")
+    bits = []
+    score = product.get("mavrino_score")
+    if score:
+        bits.append(f"Mavrino Score {score}/10")
+    rc = int(product.get("review_count", 0) or 0)
+    if rc:
+        bits.append(f"{rc:,} verified reviews analyzed")
+    if bits:
+        signals.append(" · ".join(bits))
+    signals.append("Independent — we may earn a commission, but it never sways the ranking")
+    items = "".join(f"<li>✓ {s}</li>" for s in signals)
+    return (
+        '<!-- wp:list {"className":"trust-signals"} -->\n'
+        f'<ul class="wp-block-list trust-signals" style="list-style:none;margin:10px 0;padding:0;'
+        f'font-size:14px;line-height:1.7;color:#4a4a4a">{items}</ul>\n'
+        '<!-- /wp:list -->'
+    )
+
+
 def _product_image_block(media: dict, title: str, aff_url: str) -> str:
     if not (media and media.get("URL")):
         return ""
@@ -535,17 +562,26 @@ def build_comparison_content(content: dict, products: list[dict], hero_image: di
     winner      = by_asin.get(winner_asin, {})
     if winner and content.get("winner_reason"):
         aff = amazon_search_url(winner.get("title", ""))
-        parts.append(
+        box = (
             '<!-- wp:group {"className":"top-pick-box","style":{"border":{"width":"2px","color":"#b8431a","radius":"8px"},"spacing":{"padding":{"all":"20px"}},"color":{"background":"#fff8f5"}}} -->\n'
             '<div class="wp-block-group top-pick-box" style="border:2px solid #b8431a;border-radius:8px;padding:20px;background-color:#fff8f5">\n'
             '<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->\n'
             '<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8431a">⭐ Our Recommendation</p>\n'
             '<!-- /wp:paragraph -->\n'
             f'<!-- wp:heading {{"level":3,"style":{{"typography":{{"fontSize":"18px"}}}}}} -->\n<h3 style="font-size:18px">{winner.get("title","")}</h3>\n<!-- /wp:heading -->\n'
-            f'<!-- wp:paragraph -->\n<p>{content.get("winner_reason","")}</p>\n<!-- /wp:paragraph -->\n'
-            + _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + '\n'
-            '</div>\n<!-- /wp:group -->'
         )
+        pitch = (content.get("winner_pitch") or "").strip()
+        if pitch:
+            box += (f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"17px","fontWeight":"600"}}}}}} -->\n'
+                    f'<p style="font-size:17px;font-weight:600">{pitch}</p>\n<!-- /wp:paragraph -->\n')
+        box += f'<!-- wp:paragraph -->\n<p>{content.get("winner_reason","")}</p>\n<!-- /wp:paragraph -->\n'
+        caveat = (content.get("winner_caveat") or "").strip()
+        if caveat:
+            box += f'<!-- wp:paragraph -->\n<p>⚖️ <strong>Pick the other one if:</strong> {caveat}</p>\n<!-- /wp:paragraph -->\n'
+        box += _trust_block(winner, peer_count=2) + "\n"
+        box += _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + "\n"
+        box += '</div>\n<!-- /wp:group -->'
+        parts.append(box)
 
     # Head-to-head table
     rows = content.get("head_to_head", [])
@@ -622,16 +658,21 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
     if content.get("quick_verdict"):
         score = content.get("score", {})
         overall = score.get("overall", "")
-        parts.append(
+        box = (
             '<!-- wp:group {"className":"top-pick-box","style":{"border":{"width":"2px","color":"#b8431a","radius":"8px"},"spacing":{"padding":{"all":"20px"}},"color":{"background":"#fff8f5"}}} -->\n'
             '<div class="wp-block-group top-pick-box" style="border:2px solid #b8431a;border-radius:8px;padding:20px;background-color:#fff8f5">\n'
             '<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","fontWeight":"600","letterSpacing":"2px","textTransform":"uppercase"},"color":{"text":"#b8431a"}}} -->\n'
             f'<p style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#b8431a">⭐ Verdict{f" — {overall}/10" if overall else ""}</p>\n'
             '<!-- /wp:paragraph -->\n'
             f'<!-- wp:paragraph -->\n<p>{content["quick_verdict"]}</p>\n<!-- /wp:paragraph -->\n'
-            + _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + '\n'
-            '</div>\n<!-- /wp:group -->'
         )
+        vcaveat = (content.get("verdict_caveat") or "").strip()
+        if vcaveat:
+            box += f'<!-- wp:paragraph -->\n<p>⚖️ <strong>The honest trade-off:</strong> {vcaveat}</p>\n<!-- /wp:paragraph -->\n'
+        box += _trust_block(prod, peer_count=0) + "\n"
+        box += _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + "\n"
+        box += '</div>\n<!-- /wp:group -->'
+        parts.append(box)
 
     # Like / don't-like columns
     likes  = content.get("what_we_like", [])

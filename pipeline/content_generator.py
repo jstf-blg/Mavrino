@@ -188,7 +188,9 @@ Return JSON with this exact structure:
   "meta_description": "120 chars max",
   "intro": "2 paragraphs. State the core difference upfront. Who should buy which.",
   "winner": "ASIN of recommended product for most people",
+  "winner_pitch": "ONE confident sentence (max 15 words): which one to buy and why. No hedging.",
   "winner_reason": "2 sentences. Be specific about why.",
+  "winner_caveat": "ONE honest sentence: when the OTHER product is actually the better choice.",
   "head_to_head": [
     {{"category": "Price", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
     {{"category": "Cooking performance", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}},
@@ -242,6 +244,7 @@ Return JSON with this exact structure:
   "meta_description": "120 chars max",
   "intro": "2 paragraphs. Lead with who should read this and the key question the review answers.",
   "quick_verdict": "2 sentences. Bottom line upfront.",
+  "verdict_caveat": "ONE honest sentence: the main drawback to accept, or the buyer who should skip it.",
   "score": {{
     "overall": 8.2,
     "performance": 8.5,
