@@ -1,0 +1,66 @@
+name: Product Image Health
+
+# Self-healing product images + dead-ASIN detection.
+# Resolves the real current Amazon image for each known ASIN (og:image on the
+# public product page), patches it into the product cache, and flags ASINs that
+# 404 (delisted) so they are excluded from posts. Cache-with-TTL means the daily
+# run settles into near-zero traffic once images are validated.
+# No API secrets needed — the resolution is a keyless public-page fetch.
+on:
+  schedule:
+    - cron: '0 5 * * *'   # 05:00 UTC, after taxonomy health (04:00) and the drip
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-check every ASIN ignoring the TTL cache'
+        required: false
+        default: 'false'
+        type: boolean
+
+concurrency:
+  group: mavrino-product-health
+  cancel-in-progress: false
+
+jobs:
+  product-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create required directories
+        run: mkdir -p config config/product_cache
+
+      - name: Run product image health check
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            python - <<'PY'
+import sys; sys.path.insert(0, 'pipeline')
+import product_images as pi
+pi.run_health_check(force=True)
+PY
+          else
+            python pipeline/product_images.py --health
+          fi
+
+      - name: Commit refreshed image data
+        run: |
+          git config user.name  "Product Health Bot"
+          git config user.email "product-health@noreply.github.com"
+          git pull --rebase --autostash || true
+          git add config/product_images.json || true   # product_cache/ is gitignored (rebuilt from seed each run)
+          git diff --cached --quiet || git commit -m "Product image health $(date -u +%Y-%m-%dT%H:%M)"
+          git push || true

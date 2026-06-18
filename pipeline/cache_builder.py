@@ -37,6 +37,15 @@ CACHE_DIR        = Path("config/product_cache")
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_MAX_AGE    = 7  # days before refreshing a product
 
+# Live product-image resolver + dead-ASIN filter. These are cache-read only here
+# (no network on the publishing hot path); the cache is refreshed automatically
+# by the daily product_health workflow. Degrade to no-ops if the module is absent.
+try:
+    from product_images import get_image_url, is_dead_asin
+except Exception:
+    def get_image_url(asin, *a, **k): return ""
+    def is_dead_asin(asin, *a, **k): return False
+
 # ══════════════════════════════════════════════════════════════════════════════
 # CURATED SEED DATA
 # Real Amazon products per niche — used as fallback when no API keys
@@ -281,9 +290,13 @@ def build_cache_for_niche(niche: str) -> int:
         for product in products:
             asin = product.get("asin")
             if asin and not is_cache_fresh(asin):
-                # Build full product dict from seed
+                # Build full product dict from seed. Prefer a live-resolved image
+                # over the (often stale) hardcoded seed image_url. We keep seeding
+                # delisted ASINs here (don't skip) so the cache stays full; dead
+                # ASINs are de-preferred non-destructively at selection time.
                 full_product = {
                     **product,
+                    "image_url":    get_image_url(asin) or product.get("image_url", ""),
                     "currency":     "USD",
                     "orig_price":   product.get("price", 0),
                     "niche":        seed_key,
@@ -406,6 +419,14 @@ def get_products_for_keyword(keyword: str, count: int = 3) -> list[dict]:
     lead_niche = (max(relevant, key=match_score).get("niche") or "").lower()
     if lead_niche:
         relevant = [p for p in relevant if (p.get("niche") or "").lower() == lead_niche]
+
+    # Prefer products with a live Amazon page over confirmed-delisted ones (a dead
+    # ASIN links to a 404). NON-STARVING: only drop the delisted ones when enough
+    # live products remain to fill the post — otherwise keep them so the post still
+    # publishes. The daily product-health job flags dead ASINs for catalogue repair.
+    live = [p for p in relevant if not is_dead_asin(p.get("asin", ""))]
+    if len(live) >= count:
+        relevant = live
 
     q = _keyword_qualifiers(kw)
 
