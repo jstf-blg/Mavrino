@@ -368,8 +368,32 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 '<thead><tr><th>Product</th><th>Mavrino Score</th><th>Price</th><th>Rating</th><th>Best for</th></tr></thead>'
                 f'<tbody>{rows}</tbody></table></figure>\n<!-- /wp:table -->']
 
+    def sec_key_takeaways():
+        kt = [t for t in (content.get("key_takeaways") or []) if str(t).strip()]
+        if not kt:
+            return []
+        items = "".join(f"<li>{t}</li>" for t in kt)
+        return [
+            f'<!-- wp:group {{"className":"key-takeaways","style":{{"spacing":{{"padding":{{"all":"18px"}}}},"border":{{"left":{{"width":"4px","color":"{accent}"}}}},"color":{{"background":"#faf7f3"}}}}}} -->\n'
+            f'<div class="wp-block-group key-takeaways" style="padding:18px;border-left:4px solid {accent};background-color:#faf7f3">\n'
+            f'<!-- wp:paragraph {{"style":{{"typography":{{"fontSize":"12px","fontWeight":"700","letterSpacing":"2px","textTransform":"uppercase"}},"color":{{"text":"{accent}"}}}}}} -->\n'
+            f'<p style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:{accent}">Key Takeaways</p>\n<!-- /wp:paragraph -->\n'
+            f'<!-- wp:list -->\n<ul class="wp-block-list">{items}</ul>\n<!-- /wp:list -->\n'
+            f'</div>\n<!-- /wp:group -->'
+        ]
+
+    def sec_bottom_line():
+        bl = (content.get("bottom_line") or "").strip()
+        if not bl:
+            return []
+        out = ['<!-- wp:heading {"level":2} -->\n<h2>The Bottom Line</h2>\n<!-- /wp:heading -->']
+        out += [f'<!-- wp:paragraph -->\n<p>{p.strip()}</p>\n<!-- /wp:paragraph -->'
+                for p in bl.split('\n\n') if p.strip()]
+        return out
+
     builders = {"intro": sec_intro, "top_pick": sec_top_pick, "cards": sec_cards,
-                "buying_guide": sec_buying_guide, "faq": sec_faq, "comparison_table": sec_comparison_table}
+                "buying_guide": sec_buying_guide, "faq": sec_faq, "comparison_table": sec_comparison_table,
+                "key_takeaways": sec_key_takeaways, "bottom_line": sec_bottom_line}
 
     # ── Assemble: disclosure + hero, middle sections per recipe, author box ─
     # Ad slots (invisible .mavrino-ad containers) are placed after the intro and
@@ -379,7 +403,12 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
     if hero:
         parts.append(hero)
     parts.append(_updated_line())
-    middle = layout.get("sections", ["intro", "top_pick", "cards", "buying_guide", "faq"])
+    middle = list(layout.get("sections", ["intro", "key_takeaways", "top_pick", "cards", "buying_guide", "bottom_line", "faq"]))
+    # Ensure the deep-content sections render even when a variation supplies its own recipe.
+    if "key_takeaways" not in middle:
+        middle.insert(middle.index("intro") + 1 if "intro" in middle else 0, "key_takeaways")
+    if "bottom_line" not in middle:
+        middle.insert(middle.index("faq") if "faq" in middle else len(middle), "bottom_line")
     for i, key in enumerate(middle):
         fn = builders.get(key)
         if fn:

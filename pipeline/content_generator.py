@@ -61,6 +61,18 @@ first 100 words of the intro — ideally in the opening sentence. Open the intro
 proposition: state plainly what the reader gets from this guide and who it's for. Write naturally for
 people first; never keyword-stuff.
 
+DEPTH & AUTHORITY (2026 rankings reward depth + first-hand experience): go deep, never thin. Each product
+write-up must read like a genuine hands-on mini-review — real-world performance, the standout strength,
+who it suits, the honest limitation — citing concrete numbers (rating, review count, price, Mavrino Score).
+Be comprehensive enough that the reader needs no other page, and show experience by referencing what real
+owners report and how the picks compare with each other.
+
+SEO MECHANICS:
+- Lead with a direct, quotable answer to the query in the first 1-2 sentences (wins featured snippets and
+  AI Overview citations).
+- Cover the topic semantically — related subtopics, specs, use-cases, and natural keyword variations (no stuffing).
+- Skimmable AND deep: clear takeaways up top, real substance below; cut filler (it erodes E-E-A-T).
+
 FORBIDDEN phrases (never use these): {banned}
 
 Always respond with valid JSON only. No markdown fences, no preamble.""".format(
@@ -142,7 +154,8 @@ Return JSON with this exact structure:
 {{
   "title": "<headline following the TITLE guidance above>",
   "meta_description": "120 chars max, includes keyword naturally",
-  "intro": "2 paragraphs. First: who this is for + key buying factor. Second: how we evaluated. Specific, no fluff.",
+  "intro": "3 substantial paragraphs. (1) A direct hook that answers the query in the first sentence (include the keyword naturally) and names who this guide is for. (2) How we evaluated — the Mavrino Score, real customer-review data, and the buying factors that mattered most (establish credibility and first-hand authority). (3) A quick preview of the shortlist and what sets the top pick apart.",
+  "key_takeaways": ["3-5 punchy one-line takeaways — the TL;DR a skimmer needs: the top pick, the best-value pick, the single most important buying factor, and one surprising finding. Each under 15 words. Snippet/AI-Overview friendly."],
   "winner_asin": "ASIN of best overall pick",
   "winner_pitch": "ONE punchy, confident sentence (max 15 words) on why this is THE pick for most people. No hedging.",
   "winner_verdict": "2-3 sentences explaining WHY this product wins. Reference actual rating/review data.",
@@ -151,7 +164,7 @@ Return JSON with this exact structure:
     {{
       "asin": "...",
       "heading": {heading_hint},
-      "verdict": "2 sentences. Specific reasons. Reference real review themes.",
+      "verdict": "A substantial 4-6 sentence hands-on-style mini-review: real-world performance, the standout strength owners praise, how it compares with the others here, who it is ideal for, and the honest limitation. Cite specific numbers (rating, review count, price, Mavrino Score). Read like genuine experience, not a spec list.",
       "who_its_for": "1 sentence describing the ideal buyer",
       "not_for": "1 short sentence: who should skip this one. Honest, specific.",
       "main_pro": "Top praised feature from reviews",
@@ -159,8 +172,10 @@ Return JSON with this exact structure:
       "quote": "One real review quote from the data (verbatim, under 100 words)"
     }}
   ],
-  "buying_guide": "3 short paragraphs on what to look for. Practical, specific.",
+  "buying_guide": "4-5 substantial paragraphs covering the key buying factors in depth — what actually matters and why, the common mistakes buyers make, and how to match a pick to your needs and budget. Practical, specific, and genuinely useful.",
+  "bottom_line": "A confident 3-4 sentence closing: restate the top pick and the single reason it wins, name the best-value alternative and who should choose it instead, and end on a clear, decisive recommendation. Warm and authoritative.",
   "faq": [
+    {{"q": "question", "a": "answer, 2-3 sentences"}},
     {{"q": "question", "a": "answer, 2-3 sentences"}},
     {{"q": "question", "a": "answer, 2-3 sentences"}},
     {{"q": "question", "a": "answer, 2-3 sentences"}}
@@ -200,12 +215,12 @@ Return JSON with this exact structure:
     {{"category": "Value for money", "product_a": "...", "product_b": "...", "winner": "asin or tie", "note": "1 sentence"}}
   ],
   "product_a_review": {{
-    "summary": "2 sentences from review data",
+    "summary": "A 4-5 sentence hands-on-style mini-review: real-world performance, the standout strength owners praise, who it suits, and the honest limitation. Cite specific numbers (rating, review count, price, Mavrino Score).",
     "best_for": "Who this is ideal for",
     "real_quote": "One genuine review quote"
   }},
   "product_b_review": {{
-    "summary": "2 sentences from review data",
+    "summary": "A 4-5 sentence hands-on-style mini-review: real-world performance, the standout strength owners praise, who it suits, and the honest limitation. Cite specific numbers (rating, review count, price, Mavrino Score).",
     "best_for": "Who this is ideal for",
     "real_quote": "One genuine review quote"
   }},
@@ -421,8 +436,10 @@ def generate_content(
 
     try:
         message = client.messages.create(
-            model="claude-haiku-4-5",
-            max_tokens=4000,   # 2500 truncated longer roundups mid-JSON → parse failures
+            # Sonnet for depth/quality on the longer reviews (was claude-haiku-4-5 — revert
+            # here if cost matters). max_tokens raised for the deeper intro/reviews/closing.
+            model="claude-sonnet-4-6",
+            max_tokens=8000,
             system=system,
             messages=[{"role": "user", "content": prompt}],
         )
