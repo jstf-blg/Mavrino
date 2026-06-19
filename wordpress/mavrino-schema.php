@@ -66,8 +66,19 @@ add_action('wp_head', function () {
        . '.mavrino-ad::before{content:"Advertisement";position:absolute;top:2px;left:0;right:0;font-size:10px;'
        . 'letter-spacing:1px;text-transform:uppercase;color:#b6b1a9;}'
        . '.trust-signals{list-style:none;padding-left:0;}'
+       // left/right skyscraper ad rails — only on screens wide enough that they don't crowd content
+       . '.mav-ad-rail{position:fixed;top:130px;width:160px;min-height:600px;z-index:5;}'
+       . '.mav-ad-rail-left{left:20px;}.mav-ad-rail-right{right:20px;}'
+       . '@media(max-width:1560px){.mav-ad-rail{display:none;}}'
        . '</style>' . "\n";
 }, 30);
+
+// ── 1c. Left/right skyscraper ad rails (fill via AdSense / an ad plugin) ──────
+add_action('wp_footer', function () {
+    if (is_admin()) { return; }
+    echo '<div class="mav-ad-rail mav-ad-rail-left"><div class="mavrino-ad" data-ad-slot="rail-left" style="min-height:600px"></div></div>'
+       . '<div class="mav-ad-rail mav-ad-rail-right"><div class="mavrino-ad" data-ad-slot="rail-right" style="min-height:600px"></div></div>' . "\n";
+});
 
 // ── 2. Serve /ads.txt ────────────────────────────────────────────────────────
 add_action('init', function () {
