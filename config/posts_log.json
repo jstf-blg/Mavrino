@@ -67,46 +67,6 @@
   },
   {
     "date": "2026-06-09",
-    "keyword": "best blenders under $200",
-    "post_type": "roundup",
-    "slug": "31dded55",
-    "title": "Best best blenders under $200 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 1
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best blenders for small kitchen",
-    "post_type": "roundup",
-    "slug": "a6443606",
-    "title": "Best best blenders for small kitchen 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 1
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best blenders for large family",
-    "post_type": "roundup",
-    "slug": "9d50eba9",
-    "title": "Best best blenders for large family 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 1
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best blenders for beginners",
-    "post_type": "roundup",
-    "slug": "f46f481f",
-    "title": "Best best blenders for beginners 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 1
-  },
-  {
-    "date": "2026-06-09",
     "keyword": "best quiet blenders",
     "post_type": "roundup",
     "slug": "fa1fa00b",
@@ -144,56 +104,6 @@
     "wp_post_id": 12,
     "wp_url": "http://mavrino.com/2026/06/09/the-best-food-processors-under-200-in-2026-real-performance-real-prices/",
     "products": 1
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best food processors for large family",
-    "post_type": "roundup",
-    "slug": "2d8d0e89",
-    "title": "Best best food processors for large family 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 3
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best food processors for beginners",
-    "post_type": "roundup",
-    "slug": "7095281b",
-    "title": "Best best food processors for beginners 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 3
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best compact food processors",
-    "post_type": "roundup",
-    "slug": "bc644b50",
-    "title": "Best best compact food processors 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 3
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best quiet food processors",
-    "post_type": "roundup",
-    "slug": "af1a1115",
-    "title": "Best best quiet food processors 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 3
-  },
-  {
-    "date": "2026-06-09",
-    "keyword": "best food processors 2026",
-    "post_type": "roundup",
-    "slug": "9576a07c",
-    "title": "Best best food processors 2026 2026 [DRY RUN]",
-    "wp_post_id": 0,
-    "wp_url": "dry-run",
-    "products": 3
   },
   {
     "date": "2026-06-09",
@@ -527,5 +437,95 @@
     "slug": "beba7f58",
     "title": "Top 3 Massage Guns for the Money, Ranked for 2026",
     "wp_url": "https://mavrino.com/2026/06/19/top-3-massage-guns-for-the-money-ranked-for-2026/"
+  },
+  {
+    "date": "2026-06-18",
+    "keyword": "top 7 air fryers for 2026",
+    "vertical": "Kitchen",
+    "post_type": "roundup",
+    "slug": "a617e353",
+    "title": "Top 4 Air Fryers for 2026, Ranked by Real Data",
+    "wp_url": "https://mavrino.com/2026/06/19/top-4-air-fryers-for-2026-ranked-by-real-data-2/"
+  },
+  {
+    "date": "2026-06-18",
+    "keyword": "top 5 robot vacuums for the money",
+    "vertical": "Home",
+    "post_type": "roundup",
+    "slug": "d37ee816",
+    "title": "Top 3 Robot Vacuums for the Money, Ranked for 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/top-3-robot-vacuums-for-the-money-ranked-for-2026-2/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with T vs Travelpro Maxlite 5 Softside Expandable Carry-On Spinner",
+    "vertical": "Travel",
+    "post_type": "comparison",
+    "slug": "29eddca2",
+    "title": "Travelpro Platinum Elite vs Samsonite Freeform Hardside Carry-On: Which Should You Buy in 2026?",
+    "wp_url": "https://mavrino.com/2026/06/19/travelpro-platinum-elite-vs-samsonite-freeform-hardside-carry-on-which-should-you-buy-in-2026/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "top 5 standing desks for the money",
+    "vertical": "Home Office",
+    "post_type": "roundup",
+    "slug": "ae5aa200",
+    "title": "Top 3 Standing Desks for the Money, Ranked for 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/top-3-standing-desks-for-the-money-ranked-for-2026-2/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "top 5 massage guns for the money",
+    "vertical": "Fitness & Wellness",
+    "post_type": "roundup",
+    "slug": "beba7f58",
+    "title": "Top 3 Massage Guns for the Money, Ranked for 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/top-3-massage-guns-for-the-money-ranked-for-2026-2/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "top 5 coolers for the money",
+    "vertical": "Outdoors",
+    "post_type": "roundup",
+    "slug": "027034d9",
+    "title": "Top 3 Coolers for the Money, Ranked for 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/top-3-coolers-for-the-money-ranked-for-2026/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "Veken 6 Set Packing Cubes for Travel with Laundry Bag vs BAGAIL 6 Set Packing Cubes",
+    "vertical": "Travel",
+    "post_type": "comparison",
+    "slug": "1bbc1ddc",
+    "title": "Veken 6 Set Packing Cubes for Travel with Laundry Bag vs BAGAIL 6 Set Packing Cubes: Which Should You Buy in 2026?",
+    "wp_url": "https://mavrino.com/2026/06/19/veken-6-set-packing-cubes-for-travel-with-laundry-bag-vs-bagail-6-set-packing-cubes-which-should-you-buy-in-2026/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "top 5 office chairs",
+    "vertical": "Home Office",
+    "post_type": "roundup",
+    "slug": "394aacb2",
+    "title": "Top 3 Office Chairs Worth Buying in 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/top-3-office-chairs-worth-buying-in-2026/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "best blenders 2026",
+    "vertical": "Kitchen",
+    "post_type": "roundup",
+    "slug": "pace-blenders-2026",
+    "title": "We Compared the Top Blenders — Here Are the Best in 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/we-compared-the-top-blenders-here-are-the-best-in-2026/"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "best air purifiers 2026",
+    "vertical": "Home",
+    "post_type": "roundup",
+    "slug": "pace-air-purifiers-2026",
+    "title": "3 Best Air Purifiers We'd Actually Buy in 2026",
+    "wp_url": "https://mavrino.com/2026/06/19/3-best-air-purifiers-wed-actually-buy-in-2026/"
   }
 ]

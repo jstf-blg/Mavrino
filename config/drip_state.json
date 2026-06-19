@@ -20,5 +20,16 @@
       "Outdoors": 1
     },
     "window_start": "2026-06-18T00:00:00+00:00"
+  },
+  "2026-06-19": {
+    "counts": {
+      "Kitchen": 2,
+      "Home": 2,
+      "Travel": 2,
+      "Home Office": 2,
+      "Fitness & Wellness": 1,
+      "Outdoors": 1
+    },
+    "window_start": "2026-06-19T00:00:00+00:00"
   }
 }
