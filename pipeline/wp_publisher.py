@@ -777,11 +777,13 @@ def qa_readback(post_id, token: str) -> list[str]:
 
 
 def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict,
-                         update_post_id: int = None) -> dict | None:
+                         update_post_id: int = None, schedule_date: str = None) -> dict | None:
     """Publish a post to WordPress with taxonomy, SEO, images.
 
     If update_post_id is given, the existing post is updated in place (same URL)
     instead of creating a new one — used to regenerate a post without changing it.
+    If schedule_date (ISO 8601) is given, the post is created as status=future and
+    WordPress auto-publishes it at that time — used by the hourly batch scheduler.
     """
     token = get_access_token()
     if not token:
@@ -864,7 +866,7 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
         "title":      title,
         "content":    wp_content,
         "excerpt":    excerpt,
-        "status":     "publish",
+        "status":     "future" if schedule_date else "publish",
         "categories": category_ids,
         "tags":       tag_ids,
         "format":     "standard",
@@ -876,6 +878,8 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
     # URL here is silently ignored by WordPress.com — it requires a media ID.
     if hero_media and hero_media.get("ID"):
         post_data["featured_image"] = hero_media["ID"]
+    if schedule_date:
+        post_data["date"] = schedule_date   # ISO 8601 → WP auto-publishes at this time
 
     endpoint = f"posts/{update_post_id}" if update_post_id else "posts/new"
     print(f"  [wp] {'Updating' if update_post_id else 'Publishing'} '{title[:55]}...'")

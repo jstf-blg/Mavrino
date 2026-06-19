@@ -1,29 +1,27 @@
-name: Drip Publisher (per-category, evenly spaced)
+name: Hourly Post Scheduler
 
-# Publishes posts spread evenly across the day with a per-main-category daily quota.
-# The drip self-paces (publishes only what's due to stay on an even schedule) and
-# self-limits (stops at each category's daily target), so a skipped/delayed run is
-# harmless — the next run catches up the backlog.
-#
-# Catch-up: on each date in DRIP_CATCHUP_DATE (comma-separated) the per-category
-# target is DRIP_TODAY_TARGET; every other day it is DRIP_DAILY_TARGET. The switch
-# is automatic — no edit needed once the listed catch-up dates pass.
-# 2026-06-18/19 back-fill the 12 posts missed on 06-16/17 (the drip dead-locked
-# at zero until the window-anchor fix): 2/cat/day x 2 days = 12 surplus over normal.
+# Keeps a unique, deep post scheduled for every upcoming hour via WordPress
+# future-dating (status=future → WP auto-publishes on time, no runner needed at
+# publish time). Runs every 6h and tops up the buffer; idempotent + resumable, so
+# it only fills empty hourly slots and survives timeouts. Replaces the old drip.
 on:
-  # Scheduled publishing moved to schedule_posts.yml (hourly WP future-dating, deep
-  # content, thin-category priority, no duplicates). The drip is kept for manual
-  # one-off runs only — its 30-min cron is disabled so the two don't double-publish.
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours; tops up ~24h of hourly slots
   workflow_dispatch:
+    inputs:
+      cap:
+        description: 'Max posts to generate this run'
+        required: false
+        default: '8'
 
 concurrency:
   group: mavrino-publish
   cancel-in-progress: false
 
 jobs:
-  drip:
+  schedule:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -60,10 +58,8 @@ jobs:
           APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
           MAVRINO_SEARCH_SECRET=${{ secrets.MAVRINO_SEARCH_SECRET }}
           OUTPUT_DIR=./output
-          DRIP_CATCHUP_DATE=2026-06-18,2026-06-19
-          DRIP_TODAY_TARGET=2
-          DRIP_DAILY_TARGET=1
-          DRIP_PER_RUN_CAP=4
+          SCHEDULE_HORIZON_HOURS=30
+          SCHEDULE_PER_RUN_CAP=${{ github.event.inputs.cap || '8' }}
           NICHES=air fryers,coffee makers,blenders,food processors,stand mixers,toaster ovens,electric kettles,robot vacuums,air purifiers,stick vacuums,humidifiers,space heaters,luggage,travel backpacks,packing cubes,portable chargers,travel pillows,standing desks,office chairs,monitors,mechanical keyboards,webcams,massage guns,fitness trackers,smart scales,yoga mats,adjustable dumbbells,coolers,tents,camping chairs,portable grills,sleeping bags
           EOF
 
@@ -73,19 +69,18 @@ jobs:
           [ -f config/keyword_queue.json ] || echo "[]" > config/keyword_queue.json
           [ -f config/keywords_done.json ] || echo "[]" > config/keywords_done.json
           [ -f config/posts_log.json ]     || echo "[]" > config/posts_log.json
-          [ -f config/taxonomy.json ]      || echo '{"wp_category_ids":{},"wp_tag_ids":{},"post_index":[],"category_counts":{},"pending_splits":[],"last_health_check":null}' > config/taxonomy.json
 
       - name: Configure git
         run: |
-          git config user.name  "Pipeline Bot"
-          git config user.email "pipeline@noreply.github.com"
+          git config user.name  "Scheduler Bot"
+          git config user.email "scheduler@noreply.github.com"
 
-      - name: Run drip
-        run: python drip.py
+      - name: Schedule posts
+        run: python schedule_batch.py
 
       - name: Commit state
         run: |
           git pull --rebase --autostash || true
           git add config/ || true
-          git diff --cached --quiet || git commit -m "Drip state $(date -u +%Y-%m-%dT%H:%M)"
+          git diff --cached --quiet || git commit -m "Schedule batch $(date -u +%Y-%m-%dT%H:%M)"
           git push || true
