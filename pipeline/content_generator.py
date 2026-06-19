@@ -400,6 +400,54 @@ def select_products_for_angle(keyword: str, products: list[dict], count: int) ->
         return products[:count]
 
 
+# ── Template angles ────────────────────────────────────────────────────────────
+# Each template reuses a base renderer shape (roundup/comparison/review) but appends a
+# dedicated ANGLE directive that overrides the generic framing/title so the post reads
+# as a true "cheapest" / "splurge" / "every budget" / "worth it" / "most reviewed" piece.
+
+_ANGLE_CHEAPEST = """TEMPLATE — "CHEAPEST THAT ACTUALLY WORK". This OVERRIDES the title/framing above:
+- TITLE must lead with "Cheapest", e.g. "The Cheapest [Category] That Actually Work in 2026".
+- Frame everything around budget value: for each pick, stress what it does well DESPITE the low price, exactly what (if anything) you give up, and reassure readers they are not buying junk.
+- Product headings signal price/value: "#1 Cheapest Overall", "Best Under $[X]", "Cheapest That Lasts".
+- The bottom line names the single best cheap buy and the one to avoid."""
+
+_ANGLE_SPLURGE = """TEMPLATE — "MOST EXPENSIVE / WORTH THE SPLURGE?". This OVERRIDES the title/framing above:
+- TITLE leads with the premium angle, e.g. "The Most Expensive [Category] on Amazon — Worth the Splurge?".
+- For each premium pick, judge honestly whether the high price is justified: what the money actually buys, who should splurge, who should save.
+- Headings signal the premium: "The Flagship", "Most Premium Build", "Best High-End Value".
+- The bottom line says who the splurge is and isn't for."""
+
+_ANGLE_EVERY_BUDGET = """TEMPLATE — "FOR EVERY BUDGET" (price-TIERED, NOT a generic ranking). This OVERRIDES the framing above:
+- TITLE: "The Best [Category] for Every Budget in 2026".
+- Organise picks as ASCENDING PRICE TIERS — one best pick per tier. Product headings MUST be budget tiers: "Best Budget (Under $[X])", "Best Mid-Range", "Best Premium", "Best Splurge".
+- Each write-up explains who that tier suits and what stepping up gets you.
+- Key Takeaways and the Bottom Line map a recommendation to each budget level."""
+
+_ANGLE_WORTH_IT = """TEMPLATE — "IS THE EXPENSIVE ONE WORTH IT?". This OVERRIDES the framing above:
+- Product A is the EXPENSIVE pick; Product B is the much cheaper VALUE pick.
+- The whole post answers ONE question: is paying more actually worth it?
+- The head-to-head table and verdict must state clearly WHEN the premium is justified and when the cheaper pick is the smarter buy, with the price gap front and centre."""
+
+_ANGLE_CVE = """TEMPLATE — "CHEAPEST vs MOST EXPENSIVE". This OVERRIDES the framing above:
+- Product A is the CHEAPEST pick; Product B is the MOST EXPENSIVE pick.
+- Break down exactly what the extra money buys, where the price jump is and isn't worth it, and the value sweet spot.
+- Lead with the dollar gap; the verdict names who should buy the cheap one and who should buy the expensive one."""
+
+_ANGLE_MOST_REVIEWED = """TEMPLATE — "THE MOST-REVIEWED PICK" (the crowd favourite). This OVERRIDES the framing above:
+- This product has the most reviews in its category. OPEN with that huge review count as the hook (e.g. "With over [N] reviews…").
+- Judge honestly whether popularity equals quality: what thousands of owners consistently praise and complain about, and whether the crowd favourite is genuinely the best buy or just the best-known.
+- TITLE: "The Most-Reviewed [Category] on Amazon — Worth the Hype? ([Product] Review)"."""
+
+TEMPLATE_DISPATCH = {
+    "cheapest":              ("roundup",    _ANGLE_CHEAPEST),
+    "splurge":               ("roundup",    _ANGLE_SPLURGE),
+    "every_budget":          ("roundup",    _ANGLE_EVERY_BUDGET),
+    "worth_it":              ("comparison", _ANGLE_WORTH_IT),
+    "cheapest_vs_expensive": ("comparison", _ANGLE_CVE),
+    "most_reviewed":         ("review",     _ANGLE_MOST_REVIEWED),
+}
+
+
 # ── Main generation function ───────────────────────────────────────────────────
 
 def generate_content(
@@ -412,15 +460,20 @@ def generate_content(
     Returns structured dict or None on failure.
     """
 
-    # Build prompt based on post type
-    if post_type == "comparison" and len(products) >= 2:
+    # Template post types map to a base renderer shape + a sharpening ANGLE directive.
+    base_type, angle = TEMPLATE_DISPATCH.get(post_type, (post_type, ""))
+
+    # Build prompt based on the base post type
+    if base_type == "comparison" and len(products) >= 2:
         prompt = build_comparison_prompt(keyword, products[0], products[1])
-    elif post_type == "review" and products:
+    elif base_type == "review" and products:
         prompt = build_review_prompt(keyword, products[0])
-    elif post_type == "budget_roundup" and products:
+    elif base_type == "budget_roundup" and products:
         prompt = build_budget_roundup_prompt(keyword, products)
     else:
         prompt = build_roundup_prompt(keyword, products)
+    if angle:
+        prompt += "\n\n" + angle
 
     # Rotate the editorial persona (voice + byline) so posts don't all read alike.
     persona = None
@@ -455,7 +508,7 @@ def generate_content(
 
         content = json.loads(raw)
         content["keyword"]   = keyword
-        content["post_type"] = post_type
+        content["post_type"] = base_type   # base shape (roundup/comparison/review) so the renderer dispatches right
         content["generated_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ")
         if persona:
             content["persona"] = persona
