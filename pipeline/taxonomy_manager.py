@@ -72,6 +72,9 @@ CATEGORY_HIERARCHY = {
         "Coolers", "Tents", "Camping Chairs", "Portable Grills", "Sleeping Bags",
         "BBQ & Grills", "Camping Gear", "Garden Tools", "Outdoor Furniture",
     ],
+    "EV & Mobility": [
+        "EV Chargers", "Electric Scooters", "Electric Bikes", "Portable Power Stations",
+    ],
 }
 
 # Price tier tag thresholds in USD

@@ -67,6 +67,7 @@ ACCENTS = {
     "Home Office":        "#5a4fcf",   # indigo
     "Fitness & Wellness": "#2a9d8f",   # teal
     "Outdoors":           "#7a8b2e",   # olive / moss
+    "EV & Mobility":      "#2563eb",   # electric blue
 }
 DEFAULT_ACCENT = "#b8431a"
 

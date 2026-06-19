@@ -656,5 +656,104 @@
     "wp_url": "https://mavrino.com/?p=1100",
     "scheduled_for": "2026-06-20T10:20:00+10:00",
     "template": "cve"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "cheapest sleeping bags that actually work in 2026",
+    "post_type": "roundup",
+    "slug": "tpl-cheapest-sleeping-bags",
+    "wp_post_id": 1104,
+    "title": "3 Best Cheapest Sleeping Bags That Actually Work in 2026",
+    "wp_url": "https://mavrino.com/?p=1104",
+    "scheduled_for": "2026-06-19T09:00:00+00:00",
+    "template": "cheapest"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "most expensive sleeping bags on amazon worth the splurge in 2026",
+    "post_type": "roundup",
+    "slug": "tpl-splurge-sleeping-bags",
+    "wp_post_id": 1107,
+    "title": "3 Most Expensive Sleeping Bags on Amazon Worth the Splurge in 2026",
+    "wp_url": "https://mavrino.com/?p=1107",
+    "scheduled_for": "2026-06-19T10:00:00+00:00",
+    "template": "splurge"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "the most reviewed sleeping bag on amazon — worth the hype in 2026",
+    "post_type": "review",
+    "slug": "tpl-most_reviewed-sleeping-bags",
+    "wp_post_id": 1110,
+    "title": "TETON Sports Celsius Regular Sleeping Bag Review (2026): Is It Worth $59.99?",
+    "wp_url": "https://mavrino.com/?p=1110",
+    "scheduled_for": "2026-06-19T11:00:00+00:00",
+    "template": "most_reviewed"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "best camping chairs for every budget in 2026",
+    "post_type": "roundup",
+    "slug": "tpl-every_budget-camping-chairs",
+    "wp_post_id": 1114,
+    "title": "3 Best Camping Chairs for Every Budget We'd Actually Buy in 2026",
+    "wp_url": "https://mavrino.com/?p=1114",
+    "scheduled_for": "2026-06-19T12:00:00+00:00",
+    "template": "every_budget"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "is an expensive camping chair worth it in 2026",
+    "post_type": "comparison",
+    "slug": "tpl-worth_it-camping-chairs",
+    "wp_post_id": 1117,
+    "title": "Kijaro Dual Lock Hard Arm vs Folding Camping Chair: Which Should You Buy in 2026?",
+    "wp_url": "https://mavrino.com/?p=1117",
+    "scheduled_for": "2026-06-19T13:00:00+00:00",
+    "template": "worth_it"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "the most reviewed camping chair on amazon — worth the hype in 2026",
+    "post_type": "review",
+    "slug": "tpl-most_reviewed-camping-chairs",
+    "wp_post_id": 1120,
+    "title": "Coleman Aluminum Deck Chair with Swivel Table Review (2026): Is It Worth $59.99?",
+    "wp_url": "https://mavrino.com/?p=1120",
+    "scheduled_for": "2026-06-19T14:00:00+00:00",
+    "template": "most_reviewed"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "cheapest vs most expensive tent in 2026",
+    "post_type": "comparison",
+    "slug": "tpl-cheapest_vs_expensive-tents",
+    "wp_post_id": 1123,
+    "title": "Coleman Sundome vs Coleman Sundome Dark Room: Which Should You Buy in 2026?",
+    "wp_url": "https://mavrino.com/?p=1123",
+    "scheduled_for": "2026-06-19T15:00:00+00:00",
+    "template": "cheapest_vs_expensive"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "cheapest tents that actually work in 2026",
+    "post_type": "roundup",
+    "slug": "tpl-cheapest-tents",
+    "wp_post_id": 1127,
+    "title": "We Compared the Top Budget Camping Tents — Here Are the Cheapest Tents That Actually Work in 2026",
+    "wp_url": "https://mavrino.com/?p=1127",
+    "scheduled_for": "2026-06-19T16:00:00+00:00",
+    "template": "cheapest"
+  },
+  {
+    "date": "2026-06-19",
+    "keyword": "best tents for every budget in 2026",
+    "post_type": "roundup",
+    "slug": "tpl-every_budget-tents",
+    "wp_post_id": 1130,
+    "title": "Best Tents for Every Budget in 2026: From First Campers to Families Who Sleep In",
+    "wp_url": "https://mavrino.com/?p=1130",
+    "scheduled_for": "2026-06-19T17:00:00+00:00",
+    "template": "every_budget"
   }
 ]

@@ -914,5 +914,109 @@
       "rating": 4.7,
       "review_count": 6000
     }
+  ],
+  "ev chargers": [
+    {
+      "asin": "B0CT59X11M",
+      "title": "Ecogenix Level 2 EV Charger, 32A/7.68KW, 25ft, J1772",
+      "brand": "Ecogenix",
+      "price": 209.99,
+      "rating": 4.5,
+      "review_count": 1200
+    },
+    {
+      "asin": "B0F18Y9GS6",
+      "title": "EVDANCE Level 2 EV Charger for Tesla, 40A/9.6kW, NEMA 14-50",
+      "brand": "EVDANCE",
+      "price": 329.99,
+      "rating": 4.6,
+      "review_count": 800
+    },
+    {
+      "asin": "B07WXZDHGV",
+      "title": "ChargePoint Home Flex Level 2 EV Charger, NEMA 14-50, Smart App",
+      "brand": "ChargePoint",
+      "price": 449.0,
+      "rating": 4.6,
+      "review_count": 9500
+    }
+  ],
+  "electric scooters": [
+    {
+      "asin": "B0BH2WGL6M",
+      "title": "Segway Ninebot E2 Plus Electric KickScooter, 15.5 MPH, Commuter",
+      "brand": "Segway",
+      "price": 399.99,
+      "rating": 4.4,
+      "review_count": 6500
+    },
+    {
+      "asin": "B0FT257GJZ",
+      "title": "Heavy Duty Electric Scooter with Seat for Adults, 500 lbs, 20MPH",
+      "brand": "Hiboy",
+      "price": 599.99,
+      "rating": 4.3,
+      "review_count": 1500
+    }
+  ],
+  "electric bikes": [
+    {
+      "asin": "B0H1WJ1ZRQ",
+      "title": "ENGWE L20 3.0 Folding Electric Bike, 1500W Peak, 28 MPH, Fat Tire",
+      "brand": "ENGWE",
+      "price": 899.0,
+      "rating": 4.5,
+      "review_count": 1200
+    },
+    {
+      "asin": "B0GC574FZD",
+      "title": "Eahora Romeo Pro 2 Electric Bike, 4000W Dual Motor, Long Range",
+      "brand": "Eahora",
+      "price": 1499.0,
+      "rating": 4.4,
+      "review_count": 600
+    },
+    {
+      "asin": "B0GS6XMNXW",
+      "title": "FREESKY Alaska Pro Electric Bike, Dual Battery, 40 MPH, Fat Tire",
+      "brand": "FREESKY",
+      "price": 1299.0,
+      "rating": 4.5,
+      "review_count": 400
+    }
+  ],
+  "portable power stations": [
+    {
+      "asin": "B0D7PPG25F",
+      "title": "Jackery Explorer 1000 v2 Portable Power Station, 1070Wh LiFePO4",
+      "brand": "Jackery",
+      "price": 999.0,
+      "rating": 4.7,
+      "review_count": 3500
+    },
+    {
+      "asin": "B09WW3CTF4",
+      "title": "BLUETTI EB3A Portable Power Station, 268Wh, 600W (1200W Surge)",
+      "brand": "BLUETTI",
+      "price": 259.0,
+      "rating": 4.6,
+      "review_count": 8000
+    },
+    {
+      "asin": "B0DB1S36YP",
+      "title": "EcoFlow RIVER 3 Portable Power Station, 245Wh, 1Hr Fast Charge",
+      "brand": "EcoFlow",
+      "price": 219.0,
+      "rating": 4.6,
+      "review_count": 2000
+    },
+    {
+      "asin": "B09FF46FQ9",
+      "title": "Anker 521 PowerHouse Portable Power Station, 256Wh LiFePO4",
+      "brand": "Anker",
+      "price": 199.99,
+      "rating": 4.6,
+      "review_count": 5000
+    }
   ]
 }
