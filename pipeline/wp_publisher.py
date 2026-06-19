@@ -439,10 +439,13 @@ def _score_badge(score, accent: str = "#b8431a") -> str:
 
 
 def _ad_slot(slot: str = "in-content") -> str:
-    """An invisible ad-inventory container. Plain <div> survives WP.com sanitisation
-    (scripts don't), so an ad plugin or AdSense Auto-ads can target/fill .mavrino-ad."""
+    """A reserved ad-inventory container. The min-height reserves layout space so a
+    late-loading ad can't shift the page (a 2025 ad-quality + Core Web Vitals
+    requirement — unreserved slots suffer ~50% lower viewability + ranking penalties).
+    Plain <div> survives WP.com sanitisation, so an ad plugin / AdSense Auto-ads fills it."""
     return (f'<!-- wp:html -->\n'
-            f'<div class="mavrino-ad" data-ad-slot="{slot}" style="margin:24px 0;text-align:center"></div>\n'
+            f'<div class="mavrino-ad" data-ad-slot="{slot}" '
+            f'style="margin:24px auto;min-height:250px;text-align:center"></div>\n'
             f'<!-- /wp:html -->')
 
 

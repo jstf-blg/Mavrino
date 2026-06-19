@@ -3,9 +3,9 @@
  * Plugin Name: Mavrino SEO, Ads & Search
  * Description: (1) Outputs per-post JSON-LD schema into <head>. (2) Serves /ads.txt
  *              for Google AdSense. (3) Captures zero-result site searches and exposes
- *              them via a secured REST endpoint so the content pipeline can turn real
- *              visitor demand into new guides.
- * Version:     1.2
+ *              them via a secured REST endpoint. (4) Injects the Mavrino visual system
+ *              (trust-tone base + warm high-contrast CTA + reserved ad space).
+ * Version:     1.3
  * Author:      Mavrino
  *
  * INSTALL (one-time):
@@ -43,6 +43,31 @@ add_action('wp_head', function () {
     $json = str_replace('</', '<\/', $json);
     echo "\n" . '<script type="application/ld+json">' . $json . '</script>' . "\n";
 }, 20);
+
+// ── 1b. Visual system: trust-tone base + warm CTA + reserved ad space ────────
+// Colour psychology research: a calm blue/green base reads as trustworthy/credible
+// (ideal for a real-data review brand), while ONE warm, high-contrast accent reserved
+// for the affiliate CTA makes it the single clearest action on the page. Injected here
+// (not the theme) so it ships with the pipeline and overrides theme defaults.
+add_action('wp_head', function () {
+    if (is_admin()) { return; }
+    echo '<style id="mavrino-visual">'
+       . ':root{--mav-trust:#0e7490;--mav-cta:#d4521e;--mav-cta-hover:#b8431a;--mav-ink:#1e293b;}'
+       // trust-tone: in-content links + headings
+       . '.entry-content a:not(.wp-block-button__link){color:var(--mav-trust);}'
+       . '.entry-content h2,.entry-content h3{color:var(--mav-ink);}'
+       // the affiliate CTA = the single highest-contrast action (warm, bold, lifts on hover)
+       . 'a.wp-block-button__link[rel*="sponsored"]{background:var(--mav-cta)!important;color:#fff!important;'
+       . 'font-weight:700;padding:14px 24px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.18);'
+       . 'transition:transform .08s ease,background .15s ease;}'
+       . 'a.wp-block-button__link[rel*="sponsored"]:hover{background:var(--mav-cta-hover)!important;transform:translateY(-1px);}'
+       // reserved ad space + transparency label (CWV + Better Ads)
+       . '.mavrino-ad{min-height:250px;display:flex;align-items:center;justify-content:center;margin:24px auto;position:relative;}'
+       . '.mavrino-ad::before{content:"Advertisement";position:absolute;top:2px;left:0;right:0;font-size:10px;'
+       . 'letter-spacing:1px;text-transform:uppercase;color:#b6b1a9;}'
+       . '.trust-signals{list-style:none;padding-left:0;}'
+       . '</style>' . "\n";
+}, 30);
 
 // ── 2. Serve /ads.txt ────────────────────────────────────────────────────────
 add_action('init', function () {
