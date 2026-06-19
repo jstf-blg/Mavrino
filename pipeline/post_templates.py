@@ -87,4 +87,6 @@ def build(template: str, niche: str, products: list):
     need = 2 if tpl["post_type"] == "comparison" else 1
     if len(sel) < need:
         return None
-    return tpl["keyword"](niche), tpl["post_type"], sel
+    # Return the TEMPLATE NAME (not the base post_type) so generate_content applies the
+    # dedicated ANGLE directive; it resolves the base renderer shape internally.
+    return tpl["keyword"](niche), template, sel
