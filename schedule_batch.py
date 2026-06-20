@@ -97,6 +97,12 @@ def run():
         if slug in done:
             continue
         products = cb.get_products_for_keyword(f"best {niche}", count=8)
+        # Quality gate: a roundup needs a real shortlist. Niches with a thin/empty
+        # catalogue (e.g. "desk lamps") otherwise ship hollow "1 Cheapest X" posts —
+        # skip them entirely until their catalogue is curated.
+        if len(products) < 3:
+            print(f"  skip [{tmpl}] {niche}: only {len(products)} product(s) in catalogue")
+            continue
         built = ptpl.build(tmpl, niche, products)
         if not built:
             continue
