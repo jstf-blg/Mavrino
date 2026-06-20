@@ -6,13 +6,16 @@ name: Hourly Post Scheduler
 # it only fills empty hourly slots and survives timeouts. Replaces the old drip.
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours; tops up ~24h of hourly slots
+    # Hourly ATTEMPTS — GitHub silently drops scheduled crons under load, so we retry
+    # every hour. Combined with the deep 3-day buffer below, a string of dropped crons
+    # can't drain the queue (idempotent: each run only fills still-empty future slots).
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       cap:
         description: 'Max posts to generate this run'
         required: false
-        default: '8'
+        default: '12'
 
 concurrency:
   group: mavrino-publish
@@ -58,8 +61,8 @@ jobs:
           APIFY_TOKEN=${{ secrets.APIFY_TOKEN }}
           MAVRINO_SEARCH_SECRET=${{ secrets.MAVRINO_SEARCH_SECRET }}
           OUTPUT_DIR=./output
-          SCHEDULE_HORIZON_HOURS=30
-          SCHEDULE_PER_RUN_CAP=${{ github.event.inputs.cap || '8' }}
+          SCHEDULE_HORIZON_HOURS=72
+          SCHEDULE_PER_RUN_CAP=${{ github.event.inputs.cap || '12' }}
           NICHES=air fryers,coffee makers,blenders,food processors,stand mixers,toaster ovens,electric kettles,robot vacuums,air purifiers,stick vacuums,humidifiers,space heaters,luggage,travel backpacks,packing cubes,portable chargers,travel pillows,standing desks,office chairs,monitors,mechanical keyboards,webcams,massage guns,fitness trackers,smart scales,yoga mats,adjustable dumbbells,coolers,tents,camping chairs,portable grills,sleeping bags,ev chargers,electric scooters,electric bikes,portable power stations
           EOF
 
