@@ -40,7 +40,11 @@
     "Outdoors/Sleeping Bags": 789922922,
     "Kitchen/Bread Makers": 789923226,
     "Travel/Carry-On Bags": 789923231,
-    "Home/Dehumidifiers": 789923234
+    "Home/Dehumidifiers": 789923234,
+    "Home Office/Desk Lamps": 789923244,
+    "EV & Mobility/Electric Bikes": 789923249,
+    "EV & Mobility/Electric Scooters": 789923260,
+    "EV & Mobility/EV Chargers": 789923206
   },
   "wp_tag_ids": {
     "cuisinart": 284323,
@@ -445,7 +449,37 @@
     "ultrasonic": 789923240,
     "cool-mist": 789923241,
     "warm-and-cool-mist": 789923242,
-    "moisture-removal": 789923243
+    "moisture-removal": 789923243,
+    "bestoffice": 789923245,
+    "for-dorm-rooms": 789923246,
+    "even-light": 789923247,
+    "no-flicker": 789923248,
+    "engwe": 789923250,
+    "freesky": 789923251,
+    "eahora": 789923252,
+    "long-range": 789923253,
+    "off-road": 789923254,
+    "fat-tire": 789923255,
+    "folding": 789923256,
+    "dual-motor": 789923257,
+    "dual-battery": 789923258,
+    "high-speed": 789923259,
+    "segway": 789923261,
+    "ninebot": 789923262,
+    "for-college-students": 789923263,
+    "for-adults": 789923264,
+    "15.5-mph": 789923265,
+    "20-mph": 789923266,
+    "with-seat": 789923267,
+    "500-lbs-capacity": 789923268,
+    "ecogenix": 789923269,
+    "evdance": 789923270,
+    "chargepoint": 789923271,
+    "level-2-charging": 789923272,
+    "j1772": 789923273,
+    "nema-14-50": 789923274,
+    "smart-app": 789923275,
+    "32a-40a": 789923276
   },
   "post_index": [
     {
@@ -2040,6 +2074,115 @@
         "moisture-removal"
       ],
       "published_at": "2026-06-19"
+    },
+    {
+      "slug": "",
+      "title": "1 Cheapest Desk Lamp That Actually Works in 2026",
+      "wp_post_id": 1207,
+      "wp_url": "https://mavrino.com/?p=1207",
+      "parent_category": "Home Office",
+      "child_category": "Desk Lamps",
+      "tags": [
+        "bestoffice",
+        "under-$50",
+        "under-$100",
+        "for-home-office",
+        "for-dorm-rooms",
+        "budget",
+        "affordable",
+        "reliable",
+        "even-light",
+        "no-flicker",
+        "durable"
+      ],
+      "published_at": "2026-06-20"
+    },
+    {
+      "slug": "",
+      "title": "The Cheapest Electric Bikes That Actually Work in 2026",
+      "wp_post_id": 1211,
+      "wp_url": "https://mavrino.com/?p=1211",
+      "parent_category": "EV & Mobility",
+      "child_category": "Electric Bikes",
+      "tags": [
+        "engwe",
+        "freesky",
+        "eahora",
+        "budget",
+        "for-beginners",
+        "long-range",
+        "off-road",
+        "fat-tire",
+        "folding",
+        "dual-motor",
+        "dual-battery",
+        "high-speed"
+      ],
+      "published_at": "2026-06-20"
+    },
+    {
+      "slug": "",
+      "title": "The Cheapest Electric Scooters That Actually Work in 2026",
+      "wp_post_id": 1214,
+      "wp_url": "https://mavrino.com/?p=1214",
+      "parent_category": "EV & Mobility",
+      "child_category": "Electric Scooters",
+      "tags": [
+        "segway",
+        "ninebot",
+        "$300-$500",
+        "premium",
+        "for-commuters",
+        "for-college-students",
+        "budget",
+        "for-adults",
+        "15.5-mph",
+        "20-mph",
+        "with-seat",
+        "heavy-duty",
+        "500-lbs-capacity"
+      ],
+      "published_at": "2026-06-20"
+    },
+    {
+      "slug": "",
+      "title": "The Cheapest EV Chargers That Actually Work in 2026",
+      "wp_post_id": 1217,
+      "wp_url": "https://mavrino.com/?p=1217",
+      "parent_category": "EV & Mobility",
+      "child_category": "EV Chargers",
+      "tags": [
+        "ecogenix",
+        "evdance",
+        "chargepoint",
+        "under-$300",
+        "$300-$500",
+        "budget",
+        "for-homeowners",
+        "reliable",
+        "level-2-charging",
+        "j1772",
+        "nema-14-50",
+        "smart-app",
+        "32a-40a"
+      ],
+      "published_at": "2026-06-20"
+    },
+    {
+      "slug": "",
+      "title": "The Cheapest Exercise Bikes That Actually Work in 2026",
+      "wp_post_id": 1220,
+      "wp_url": "https://mavrino.com/?p=1220",
+      "parent_category": "EV & Mobility",
+      "child_category": "Electric Bikes",
+      "tags": [
+        "freesky",
+        "engwe",
+        "premium",
+        "eahora",
+        "budget"
+      ],
+      "published_at": "2026-06-20"
     }
   ],
   "category_counts": {
@@ -2067,7 +2210,11 @@
     "Bread Makers": 1,
     "Carry-On Bags": 1,
     "Coffee Makers": 1,
-    "Dehumidifiers": 1
+    "Dehumidifiers": 1,
+    "Desk Lamps": 1,
+    "Electric Bikes": 2,
+    "Electric Scooters": 1,
+    "EV Chargers": 1
   },
   "pending_splits": [],
   "last_health_check": null
