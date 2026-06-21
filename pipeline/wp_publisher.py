@@ -399,7 +399,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
     # Ad slots (invisible .mavrino-ad containers) are placed after the intro and
     # mid-content so an ad plugin / AdSense can fill them — see wordpress/mavrino-schema.php.
     parts = [_disclosure_block()]
-    hero = _hero_block(hero_image, hero_media)
+    hero = _hero_block(hero_image, hero_media, content.get("title", ""))
     if hero:
         parts.append(hero)
     parts.append(_updated_line())
@@ -477,11 +477,15 @@ def _disclosure_block() -> str:
     )
 
 
-def _hero_block(hero_image: dict, hero_media: dict) -> str:
+def _hero_block(hero_image: dict, hero_media: dict, post_title: str = "") -> str:
     if not (hero_media and hero_media.get("URL")):
         return ""
     hi  = hero_image or {}
     hid = hero_media.get("ID")
+    # Hero alt = the post title (describes the whole article) instead of the generic
+    # stock-photo description. Product-image alts stay as descriptive product names.
+    alt = (post_title or hi.get("alt", "Product comparison image"))
+    alt = alt.replace("&", "&amp;").replace('"', "&quot;")
     caption = (
         f'<figcaption class="wp-element-caption">Photo by '
         f'<a href="{hi.get("photographer_url","")}?utm_source=mavrino&utm_medium=referral" rel="nofollow">{hi.get("photographer","")}</a> '
@@ -491,7 +495,7 @@ def _hero_block(hero_image: dict, hero_media: dict) -> str:
     return (
         f'<!-- wp:image {{"id":{hid},"sizeSlug":"large","align":"wide"}} -->\n'
         f'<figure class="wp-block-image alignwide size-large">'
-        f'<img src="{hero_media["URL"]}" alt="{hi.get("alt","Product comparison image")}" class="wp-image-{hid}"/>'
+        f'<img src="{hero_media["URL"]}" alt="{alt}" class="wp-image-{hid}"/>'
         f'{caption}</figure>\n<!-- /wp:image -->'
     )
 
@@ -584,7 +588,7 @@ def build_comparison_content(content: dict, products: list[dict], hero_image: di
     pa = products[0] if len(products) > 0 else {}
     pb = products[1] if len(products) > 1 else {}
     parts = [_disclosure_block()]
-    hero = _hero_block(hero_image, hero_media)
+    hero = _hero_block(hero_image, hero_media, content.get("title", ""))
     if hero:
         parts.append(hero)
     parts += _intro_blocks(content.get("intro", ""))
@@ -681,7 +685,7 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
     title = prod.get("title", content.get("title", ""))
     aff   = amazon_search_url(title)
     parts = [_disclosure_block()]
-    hero = _hero_block(hero_image, hero_media)
+    hero = _hero_block(hero_image, hero_media, content.get("title", ""))
     if hero:
         parts.append(hero)
     parts += _intro_blocks(content.get("intro", ""))
