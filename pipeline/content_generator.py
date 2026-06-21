@@ -524,6 +524,13 @@ def generate_content(
         time.sleep(60)
         return None
     except Exception as e:
+        msg = str(e)
+        # Account-level billing failure is unrecoverable and affects EVERY post — don't
+        # swallow it (that makes the run look green while producing nothing). Re-raise so
+        # callers can abort the run visibly and the user gets a failure notification.
+        if "credit balance is too low" in msg or "billing" in msg.lower():
+            raise RuntimeError("ANTHROPIC_BILLING: credit balance too low — add credits at "
+                               "console.anthropic.com → Plans & Billing")
         print(f"  [claude] Error: {e}")
         return None
 

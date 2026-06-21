@@ -107,7 +107,15 @@ def run():
         if not built:
             continue
         kw, pt, sel = built
-        content = cg.generate_content(kw, pt, sel)
+        try:
+            content = cg.generate_content(kw, pt, sel)
+        except RuntimeError as e:
+            if "ANTHROPIC_BILLING" in str(e):
+                rp.save_done(done); rp.save_posts_log(plog)
+                print(f"\n  FATAL: {e}")
+                print("  Aborting with non-zero exit so this run fails visibly (GitHub will notify).")
+                sys.exit(1)
+            raise
         if not content:
             continue
         slot = slots[si]; si += 1
