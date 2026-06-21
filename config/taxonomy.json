@@ -45,12 +45,16 @@
     "EV & Mobility/Electric Bikes": 789923249,
     "EV & Mobility/Electric Scooters": 789923260,
     "EV & Mobility/EV Chargers": 789923206,
+<<<<<<< HEAD
     "Kitchen/Ice Makers": 789923282,
     "Home Office/Keyboards & Mice": 789923285,
     "Home Office/Laptop Stands": 789923295,
     "EV & Mobility/Portable Power Stations": 789923207,
     "Furniture": 789923208,
     "Furniture/TV Stands": 789923358
+=======
+    "Travel/Backpacks": 789923438
+>>>>>>> 0788782 (Backfill categories on 49 uncategorized posts (title-based classification); all posts now categorized)
   },
   "wp_tag_ids": {
     "cuisinart": 284323,
