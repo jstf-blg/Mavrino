@@ -256,7 +256,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         if not wv:
             return []
         wprod = products_by_asin.get(winner_asin, {})
-        title = wprod.get("title", ""); price = _num(wprod.get("price", 0)); rating = _num(wprod.get("rating", 0))
+        title = wprod.get("title", ""); price = _num(wprod.get("price", 0)); rating = _disp_rating(wprod)
         url   = amazon_search_url(title) if title else ""; stars = "★" * int(rating)
         out = (
             f'<!-- wp:group {{"className":"top-pick-box","style":{{"border":{{"width":"2px","color":"{accent}","radius":"8px"}},"spacing":{{"padding":{{"all":"20px"}}}},"color":{{"background":"#fff8f5"}}}}}} -->\n'
@@ -281,6 +281,9 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
         if price:
             out += (f'<!-- wp:paragraph -->\n<p><strong>${price:.2f}</strong>'
                     f'{" &nbsp; " + stars if stars else ""}{" " + str(rating) + "/5" if rating else ""}</p>\n<!-- /wp:paragraph -->\n')
+        cbadge = _confidence_badge(wprod)
+        if cbadge:
+            out += cbadge + "\n"
         out += _trust_block(wprod, peer_count=len(products)) + "\n"
         if url:
             out += _cta_button("Check today’s price on Amazon →", url, bg=accent) + "\n"
@@ -295,7 +298,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 continue
             product = products_by_asin.get(asin, {})
             title   = product.get("title", asin)
-            price   = _num(product.get("price", 0)); rating = _num(product.get("rating", 0))
+            price   = _num(product.get("price", 0)); rating = _disp_rating(product)
             reviews = product.get("review_count", 0)
             media   = image_map.get(asin) or {}
             img_url = media.get("URL", "")
@@ -312,11 +315,17 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
                 price_str  = f"<strong>${price:.2f}</strong>" if price else ""
                 rating_str = f"{stars} {rating}/5 ({reviews:,} reviews)" if rating else ""
                 card += f'<!-- wp:paragraph -->\n<p>{price_str}{"&nbsp;&nbsp;" if price_str and rating_str else ""}{rating_str}</p>\n<!-- /wp:paragraph -->\n'
+            cbadge = _confidence_badge(product)
+            if cbadge:
+                card += cbadge + "\n"
             badge = _score_badge(product.get("mavrino_score"), accent)
             if badge:
                 card += badge + "\n"
             if item.get("verdict"):
                 card += f'<!-- wp:paragraph -->\n<p>{item["verdict"]}</p>\n<!-- /wp:paragraph -->\n'
+            dwarn = _data_warning_block(item)
+            if dwarn:
+                card += dwarn + "\n"
             if item.get("who_its_for"):
                 card += f'<!-- wp:paragraph -->\n<p>\U0001f464 <strong>Best for:</strong> {item["who_its_for"]}</p>\n<!-- /wp:paragraph -->\n'
             if item.get("not_for"):
@@ -359,7 +368,7 @@ def build_wp_content(content: dict, products: list[dict], hero_image: dict = Non
             sc   = p.get("mavrino_score", "")
             rows += (f'<tr><td><strong>{p.get("title","")[:42]}</strong></td>'
                      f'<td><strong>{sc}/10</strong></td>'
-                     f'<td>${p.get("price",0):.0f}</td><td>{p.get("rating","")}/5</td><td>{best}</td></tr>')
+                     f'<td>${p.get("price",0):.0f}</td><td>{p.get("adjusted_rating", p.get("rating",""))}/5</td><td>{best}</td></tr>')
         if not rows:
             return []
         return ['<!-- wp:heading {"level":2} -->\n<h2>At a Glance</h2>\n<!-- /wp:heading -->',
@@ -475,6 +484,40 @@ def _disclosure_block() -> str:
         'made through links on this page. This does not affect our recommendations.</p>\n'
         '<!-- /wp:paragraph -->'
     )
+
+
+def _disp_rating(product: dict):
+    """Bias-corrected rating for display; falls back to the raw rating if absent."""
+    return _num(product.get("adjusted_rating", product.get("rating", 0)))
+
+
+def _confidence_badge(product: dict) -> str:
+    """Small inline badge rendered directly below the star-rating line.
+    High confidence shows nothing; medium = grey 'Moderate data'; low = amber warning."""
+    label = (product.get("confidence_label") or "").lower()
+    if label == "medium":
+        return ('<!-- wp:html -->\n'
+                '<p style="margin:4px 0 0"><span style="display:inline-block;font-size:12px;font-weight:600;'
+                'background:#eceff1;color:#455a64;padding:2px 9px;border-radius:4px">'
+                'ⓘ Moderate data</span></p>\n<!-- /wp:html -->')
+    if label == "low":
+        return ('<!-- wp:html -->\n'
+                '<p style="margin:4px 0 0"><span style="display:inline-block;font-size:12px;font-weight:600;'
+                'background:#fff3cd;color:#8a6d3b;padding:2px 9px;border-radius:4px;border:1px solid #ffe69c">'
+                '⚠ Limited review data — verify before buying</span></p>\n<!-- /wp:html -->')
+    return ""
+
+
+def _data_warning_block(item: dict) -> str:
+    """Amber-left-border note below a product's verdict when the writer flagged
+    thin/limited data for that product (the 'data_warning' field)."""
+    dw = (item.get("data_warning") or "").strip()
+    if not dw:
+        return ""
+    dw = dw.replace("&", "&amp;").replace("<", "&lt;")
+    return ('<!-- wp:html -->\n'
+            '<p style="border-left:4px solid #f0ad4e;background:#fffaf0;padding:8px 12px;margin:8px 0;'
+            'font-size:14px;color:#6b5900"><strong>Data note:</strong> ' + dw + '</p>\n<!-- /wp:html -->')
 
 
 def _hero_block(hero_image: dict, hero_media: dict, post_title: str = "") -> str:
@@ -653,8 +696,11 @@ def build_comparison_content(content: dict, products: list[dict], hero_image: di
         card += f'<!-- wp:heading {{"level":3}} -->\n<h3>{title}</h3>\n<!-- /wp:heading -->\n'
         if prod.get("price") or prod.get("rating"):
             price_str = f"<strong>${prod.get('price',0):.2f}</strong>" if prod.get("price") else ""
-            rate_str  = f"★ {prod.get('rating','')}/5" if prod.get("rating") else ""
+            rate_str  = f"★ {_disp_rating(prod)}/5" if prod.get("rating") else ""
             card += f'<!-- wp:paragraph -->\n<p>{price_str}&nbsp;&nbsp;{rate_str}</p>\n<!-- /wp:paragraph -->\n'
+        cbadge = _confidence_badge(prod)
+        if cbadge:
+            card += cbadge + "\n"
         if rev.get("summary"):
             card += f'<!-- wp:paragraph -->\n<p>{rev["summary"]}</p>\n<!-- /wp:paragraph -->\n'
         if rev.get("best_for"):
@@ -705,6 +751,9 @@ def build_review_content(content: dict, products: list[dict], hero_image: dict =
         vcaveat = (content.get("verdict_caveat") or "").strip()
         if vcaveat:
             box += f'<!-- wp:paragraph -->\n<p>⚖️ <strong>The honest trade-off:</strong> {vcaveat}</p>\n<!-- /wp:paragraph -->\n'
+        cbadge = _confidence_badge(prod)
+        if cbadge:
+            box += cbadge + "\n"
         box += _trust_block(prod, peer_count=0) + "\n"
         box += _cta_button("Check Price on Amazon →", aff, bg="#b8431a") + "\n"
         box += '</div>\n<!-- /wp:group -->'

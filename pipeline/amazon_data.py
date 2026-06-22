@@ -323,6 +323,114 @@ def _extract_themes(snippets: list[str]) -> list[str]:
 # Cache layer — avoid re-fetching same product
 # ══════════════════════════════════════════════════════════════════════════════
 
+# ── Review-bias correction & confidence scoring ───────────────────────────────
+# Amazon ratings are noisy: only 1-3% of buyers review, extremes are over-represented,
+# and fake reviews exist. We (a) shrink ratings toward a prior so a 5.0-from-6-reviews
+# can't outrank a 4.6-from-9000, and (b) score how much to trust each product's signal
+# so the writer can calibrate verdict strength and we can warn readers when data is thin.
+
+def bayesian_adjusted_rating(raw_rating, review_count) -> float:
+    """Shrink a raw star rating toward a 3.5-star prior worth 50 pseudo-reviews."""
+    try:
+        raw_rating   = float(raw_rating or 0)
+        review_count = int(review_count or 0)
+    except (TypeError, ValueError):
+        return 0.0
+    if review_count <= 0 and raw_rating <= 0:
+        return 0.0
+    adjusted = (review_count * raw_rating + 50 * 3.5) / (review_count + 50)
+    return round(adjusted, 1)
+
+
+def _product_age_days(product: dict):
+    """Best-effort listing age in days from any available date field; None if unknown."""
+    for key in ("date_first_available", "first_available", "listed_at", "date_added"):
+        val = product.get(key)
+        if not val:
+            continue
+        try:
+            d = datetime.datetime.fromisoformat(str(val).replace("Z", "+00:00"))
+            now = datetime.datetime.now(d.tzinfo) if d.tzinfo else datetime.datetime.now()
+            return (now - d).days
+        except Exception:
+            continue
+    return None
+
+
+def calculate_review_confidence(product: dict) -> dict:
+    """Return {confidence_score 0-100, confidence_label, confidence_reasons[]}."""
+    reasons, score = [], 0
+
+    try:
+        rc = int(product.get("review_count") or 0)
+    except (TypeError, ValueError):
+        rc = 0
+    try:
+        rating = float(product.get("rating") or 0)
+    except (TypeError, ValueError):
+        rating = 0.0
+
+    # 1. Sample size
+    if rc > 1000:
+        score += 40; reasons.append(f"{rc:,} reviews (large sample)")
+    elif rc >= 500:
+        score += 25; reasons.append(f"{rc:,} reviews (solid sample)")
+    elif rc >= 100:
+        score += 15; reasons.append(f"{rc:,} reviews (moderate sample)")
+    else:
+        score += 5;  reasons.append(f"only {rc:,} reviews (small sample)")
+
+    # 2. Verified-purchase ratio (frequently unavailable in our data — stay honest)
+    vpr = product.get("verified_purchase_ratio")
+    if vpr is None:
+        score += 10; reasons.append("verified-purchase ratio unavailable")
+    else:
+        try:
+            vpr = float(vpr)
+        except (TypeError, ValueError):
+            vpr = 0.0
+        if vpr > 0.80:
+            score += 30; reasons.append(f"{vpr*100:.0f}% verified purchases")
+        elif vpr >= 0.65:
+            score += 20; reasons.append(f"{vpr*100:.0f}% verified purchases")
+        else:
+            score += 10; reasons.append(f"only {vpr*100:.0f}% verified purchases")
+
+    # 3. Rating plausibility (the 4.0-4.8 band is the credible sweet spot)
+    if 4.0 <= rating <= 4.8:
+        score += 20; reasons.append(f"{rating}★ sits in the credible range")
+    elif rating < 3.5 or rating > 4.9:
+        score += 5;  reasons.append(f"{rating}★ is a suspicious extreme")
+    else:
+        score += 15; reasons.append(f"{rating}★ just outside the sweet spot")
+
+    # 4. Rating velocity: huge review counts on a brand-new listing = inflation pattern
+    age_days = _product_age_days(product)
+    if age_days is not None and age_days < 90 and rc > 1000:
+        score -= 10; reasons.append("high volume on a very new listing — possible manipulation")
+
+    score = max(0, min(100, score))
+    label = "high" if score >= 70 else ("medium" if score >= 40 else "low")
+    return {"confidence_score": score, "confidence_label": label, "confidence_reasons": reasons}
+
+
+def enrich_with_confidence(product: dict) -> dict:
+    """Attach adjusted_rating + confidence_* fields to a product dict (idempotent).
+
+    Called from BOTH get_product_data() and cache_builder.get_products_for_keyword()
+    so every product reaching the templates carries the fields regardless of path.
+    """
+    if not isinstance(product, dict):
+        return product
+    product["adjusted_rating"] = bayesian_adjusted_rating(
+        product.get("rating", 0), product.get("review_count", 0))
+    conf = calculate_review_confidence(product)
+    product["confidence_score"]   = conf["confidence_score"]
+    product["confidence_label"]   = conf["confidence_label"]
+    product["confidence_reasons"] = conf["confidence_reasons"]
+    return product
+
+
 def get_product_data(asin: str, force_refresh: bool = False) -> dict | None:
     """Get product data, preferring cache; falls back to stale cache if no live source."""
     cache_file = CACHE_DIR / f"{asin}.json"
@@ -338,7 +446,7 @@ def get_product_data(asin: str, force_refresh: bool = False) -> dict | None:
     if cached and not force_refresh:
         age = time.time() - cache_file.stat().st_mtime
         if age < 86400:  # 24 hours
-            return cached
+            return enrich_with_confidence(cached)
 
     print(f"  [data] Fetching ASIN {asin}...")
     product = None
@@ -357,7 +465,7 @@ def get_product_data(asin: str, force_refresh: bool = False) -> dict | None:
         # (seed/fallback data doesn't expire the way live prices do). This keeps
         # comparison/review posts working without the PA-API/Apify keys.
         if cached:
-            return cached
+            return enrich_with_confidence(cached)
         print(f"  [data] Could not fetch {asin}")
         return None
 
@@ -372,6 +480,7 @@ def get_product_data(asin: str, force_refresh: bool = False) -> dict | None:
         f"https://www.amazon.com/dp/{asin}?tag={AMAZON_ASSOC_TAG}"
     )
 
+    enrich_with_confidence(product)   # add adjusted_rating + confidence_* before caching
     cache_file.write_text(json.dumps(product, indent=2))
     time.sleep(1)  # rate limit courtesy
     return product

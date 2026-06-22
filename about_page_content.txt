@@ -1,0 +1,102 @@
+==============================================================================
+ MAVRINO ABOUT PAGE — content only.
+ Paste everything below this header into the About page using the WordPress
+ "Code editor" / "Edit as HTML" mode so the wp: block comments are preserved.
+ (The author/persona recommendation for Steve lives in PERSONA_RECOMMENDATION.md,
+ kept out of this file on purpose so it can never end up on the live site.)
+==============================================================================
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">About Mavrino</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mavrino is a product-review publication for US shoppers. We rank the things people actually buy — air fryers, monitors, tents, luggage, and dozens of other categories — using real customer-review data instead of recycled manufacturer specs. Our goal is simple: help you make a confident buying decision in minutes, and be honest with you about how sure we are.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Who's behind Mavrino</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mavrino was founded by <strong>Steve</strong>, an Australian-based investor and entrepreneur. He built Mavrino to solve a problem he kept hitting as a buyer: most US product-review sites either copy manufacturer specs word-for-word, invent fake reviewer personas to seem trustworthy, or bury their honest verdict under a pile of affiliate links. None of that helps you decide what to buy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Steve sets the editorial direction, chooses which product categories we cover, defines the quality standards every guide has to meet, and makes the final call on what gets published. He doesn't pretend to personally test every product — instead he's built a process that analyses what thousands of real owners report, and holds it to a consistent standard.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Our author voice: Mavrino Editorial</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Posts on Mavrino are bylined <strong>"Mavrino Editorial."</strong> That's deliberate. We don't invent individual reviewer personas with fake bios and stock-photo headshots — that's dishonest, and you can always tell. Instead, Mavrino Editorial is the honest, consistent voice of the publication itself.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Think of it the way <em>The Economist</em> or <em>Which?</em> works: the publication has a clear editorial voice and a defined set of standards, and the institution's credibility matters more than whose individual name sits on the byline. When you read "Mavrino Editorial," you're reading the brand's standards applied to real data — not a character we made up to sell you something.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How we work — our methodology</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Every guide follows the same process, in this order:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<li><strong>Keyword research from real buyer intent.</strong> We start from what people are genuinely searching for and trying to decide between — not from whatever's easiest to write.</li>
+<li><strong>Live Amazon product data collection.</strong> We pull current products, prices and specs for the category so the guide reflects what's actually on sale right now.</li>
+<li><strong>Real customer-review analysis.</strong> We analyse thousands of verified buyer reviews to surface what owners consistently praise and complain about — the things specs never tell you.</li>
+<li><strong>Statistical bias correction.</strong> We apply a Bayesian adjustment to ratings and a confidence score to every product, so noisy or thin data can't masquerade as a clear winner (more on this below).</li>
+<li><strong>AI-assisted synthesis.</strong> We use Claude (an AI model from Anthropic) to analyse the assembled data and write structured, plain-English verdicts. The AI is deliberately constrained: it only works from the real data we give it — prices, ratings, review themes, and our scores — and it is instructed never to invent specifications or experiences.</li>
+<li><strong>Editorial quality standards.</strong> Guides that don't meet our bar — too little data, contradictory signals, nothing genuinely worth recommending — are held back rather than published to hit a quota.</li>
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>We're upfront about this: <strong>the words are written with AI assistance.</strong> What makes that trustworthy isn't pretending otherwise — it's that the AI is grounded in real customer data and held to a human-defined standard, rather than free-styling marketing copy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why we score confidence</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Online ratings are noisier than they look, for three reasons:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Only about <strong>1–3% of buyers</strong> ever leave a review, so a star rating is a small, self-selected sample — not the whole picture.</li>
+<li><strong>Extreme experiences are over-represented.</strong> People who had an amazing or a terrible time are far more likely to post than the quietly satisfied majority.</li>
+<li><strong>Fake reviews exist</strong> on Amazon and everywhere else, which can inflate a rating or a review count.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>So we don't take a raw star rating at face value. We apply a <strong>Bayesian statistical adjustment</strong> that pulls thin-sample ratings toward a sensible baseline — so a perfect 5.0 from 30 reviews can't outrank a 4.6 from 9,000. We <strong>weight verified purchases more heavily</strong> than unverified ones. And crucially, when the data behind a pick is thinner or noisier than we'd like, <strong>we flag it rather than hide it.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That's what a <strong>confidence badge</strong> on one of our posts means: we found the data thinner than usual, and we're telling you — so you can verify before buying — instead of pretending we're more certain than we are. "Moderate data" means treat the verdict as solid but not bulletproof; "Limited review data" means do a little of your own checking first. We'd rather lose a click than mislead you.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How we make money</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Disclosure:</strong> Mavrino earns commissions from qualifying purchases made through links on this site, and we run advertising. This is how we keep the lights on. It does <strong>not</strong> affect our rankings or verdicts — our scores come from the data, and commissions never buy a higher placement. If a product isn't worth recommending, we don't recommend it, regardless of what it pays.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Get in touch</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Questions, corrections, or a category you'd like us to cover? Email us at <a href="mailto:hello@mavrino.com">hello@mavrino.com</a>. We read everything, and we fix mistakes quickly when we get them wrong.</p>
+<!-- /wp:paragraph -->

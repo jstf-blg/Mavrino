@@ -470,6 +470,16 @@ def get_products_for_keyword(keyword: str, count: int = 3) -> list[dict]:
     except Exception:
         pass
 
+    # Attach bias-corrected rating + review-confidence so the writer and the WP
+    # templates can use adjusted_rating and show a confidence badge. Seed-catalogue
+    # products take THIS path (they never hit amazon_data.get_product_data).
+    try:
+        import amazon_data as _ad
+        for _p in final:
+            _ad.enrich_with_confidence(_p)
+    except Exception:
+        pass
+
     return final
 
 

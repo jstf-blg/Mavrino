@@ -1,8 +1,11 @@
 name: Daily Content Pipeline
 
 on:
-  # Scheduled publishing is now handled by drip.yml (per-category, evenly spaced).
-  # This bulk pipeline is kept for manual one-off runs only.
+  schedule:
+    # Weekly catalogue refresh: re-run published posts through the upgraded
+    # confidence-scoring generator (see the "Weekly post rewrite" step below).
+    - cron: '0 5 * * 0'   # Sundays 05:00 UTC
+  # One-off bulk publishing is manual-only (routine publishing is drip.yml).
   workflow_dispatch:
     inputs:
       dry_run:
@@ -79,6 +82,7 @@ jobs:
           git config user.email "pipeline@noreply.github.com"
 
       - name: Run pipeline
+        if: github.event_name == 'workflow_dispatch'
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python run_pipeline.py --dry-run
@@ -88,9 +92,16 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: Weekly post rewrite
+        if: github.event.schedule == '0 5 * * 0'
+        run: python pipeline/post_updater.py --batch-size 50
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
       - name: Commit config state
         run: |
           git add config/ || true
+          git add logs/post_update_log.json || true
           git diff --cached --quiet || git commit -m "Pipeline state update $(date +%Y-%m-%d)"
           git push || true
 

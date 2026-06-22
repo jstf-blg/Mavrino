@@ -35,6 +35,11 @@ BANNED_PHRASES = [
     "overall, this", "all in all",
     "without further ado", "that being said",
     "needless to say", "first and foremost",
+    # review-attribution clichés — vague, unverifiable social proof. State the
+    # specific data point instead (e.g. "rated 4.6 across 9,000 reviews").
+    "according to reviews", "customers love", "users report", "highly rated",
+    "reviewers say", "people love", "buyers love", "shoppers say",
+    "overwhelmingly positive", "rave reviews",
 ]
 
 # ── Post type prompt templates ─────────────────────────────────────────────────
@@ -73,10 +78,20 @@ SEO MECHANICS:
 - Cover the topic semantically — related subtopics, specs, use-cases, and natural keyword variations (no stuffing).
 - Skimmable AND deep: clear takeaways up top, real substance below; cut filler (it erodes E-E-A-T).
 
+DATA CONFIDENCE & BIAS CORRECTION (critical — this is what separates us from spec-copying sites):
+- You ALWAYS use the adjusted_rating (bias-corrected), never the raw rating, when comparing products or
+  citing a score. The adjusted rating already corrects for small-sample inflation.
+- You calibrate verdict strength to each product's confidence_label:
+  - HIGH confidence = a strong, definitive verdict with no hedging.
+  - MEDIUM confidence = a clear verdict, but state ONE specific caveat (e.g. "on a still-modest review base").
+  - LOW confidence = be openly honest about the data limitation and include a brief caution note.
+- When confidence is medium or low, NAME the specific limitation (thin review count, unverified purchases,
+  a suspiciously perfect rating) rather than using vague hedging words.
+
 FORBIDDEN phrases (never use these): {banned}
 
 Always respond with valid JSON only. No markdown fences, no preamble.""".format(
-    banned=", ".join(f'"{p}"' for p in BANNED_PHRASES[:12])
+    banned=", ".join(f'"{p}"' for p in BANNED_PHRASES)
 )
 
 
@@ -89,6 +104,11 @@ def _format_product_for_prompt(product: dict) -> str:
         f"Brand: {product.get('brand', 'N/A')}",
         f"Price: ${product.get('price', 0):.2f}",
         f"Rating: {product.get('rating', 0)}/5 ({product.get('review_count', 0):,} reviews)",
+        f"Confidence: {product.get('confidence_label', 'unknown')} "
+        f"({product.get('confidence_score', '?')}/100) — "
+        f"{', '.join(product.get('confidence_reasons', [])) or 'no confidence data'}.",
+        f"Adjusted rating: {product.get('adjusted_rating', product.get('rating', 0))}. "
+        f"Use this adjusted rating, not the raw rating.",
         f"Mavrino Score: {product.get('mavrino_score', 'N/A')}/10 (our proprietary score — you may reference it)",
         f"Features: {'; '.join(product.get('features', [])[:4])}",
         f"% Positive reviews: {ra.get('pct_positive', 0)}%",
@@ -181,6 +201,8 @@ Return JSON with this exact structure:
     {{"q": "question", "a": "answer, 2-3 sentences"}}
   ]
 }}
+
+DATA HONESTY: If any product above has LOW confidence, add a "data_warning" field to THAT product's object in the "products" array — one brief, honest sentence naming the specific limitation (e.g. "Based on a thin review base, so treat the rating as provisional."). If all products have HIGH confidence, omit data_warning entirely.
 
 Cover all {n} products in the "products" array{', in ranked order from #1' if is_listicle else ''}."""
 
@@ -340,7 +362,9 @@ Return JSON with this structure:
     {{"q": "Are cheap [product] any good?", "a": "Honest answer based on review data"}},
     {{"q": "question", "a": "answer"}}
   ]
-}}"""
+}}
+
+DATA HONESTY: If any product above has LOW confidence, add a "data_warning" field to THAT product's object in the "products" array — one brief, honest sentence naming the specific limitation. If all products have HIGH confidence, omit data_warning entirely."""
 
 
 # ── Semantic product-fit selection ─────────────────────────────────────────────
