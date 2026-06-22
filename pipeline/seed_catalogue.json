@@ -1,1022 +1,2122 @@
 {
-  "robot vacuums": [
-    {
-      "asin": "B07R295MLS",
-      "title": "eufy RoboVac 11S MAX Robot Vacuum, Super-Thin, Strong Suction",
-      "brand": "eufy",
-      "price": 199.99,
-      "rating": 4.4,
-      "review_count": 45000
-    },
-    {
-      "asin": "B0C415NHBM",
-      "title": "iRobot Roomba j9+ Self-Emptying Robot Vacuum",
-      "brand": "iRobot",
-      "price": 599.99,
-      "rating": 4.2,
-      "review_count": 3500
-    },
-    {
-      "asin": "B0FWK41WF2",
-      "title": "eufy C28 Robot Vacuum and Mop Combo, Self-Emptying",
-      "brand": "eufy",
-      "price": 399.99,
-      "rating": 4.3,
-      "review_count": 1200
-    }
-  ],
-  "air purifiers": [
-    {
-      "asin": "B07VVK39F7",
-      "title": "LEVOIT Core 300-P Air Purifier, True HEPA, Up to 1073 ft2",
-      "brand": "LEVOIT",
-      "price": 99.99,
-      "rating": 4.7,
-      "review_count": 150000
-    },
-    {
-      "asin": "B01941IUVQ",
-      "title": "Blueair Sense+ Air Purifier, HEPASilent Technology",
-      "brand": "Blueair",
-      "price": 279.99,
-      "rating": 4.4,
-      "review_count": 1500
-    },
-    {
-      "asin": "B01D8DAYII",
-      "title": "Winix 5500-2 Air Purifier, True HEPA, PlasmaWave",
-      "brand": "Winix",
-      "price": 159.99,
-      "rating": 4.8,
-      "review_count": 60000
-    }
-  ],
-  "stick vacuums": [
-    {
-      "asin": "B09YS9N7H2",
-      "title": "Dyson V8 Cordless Stick Vacuum, 115AW, Up to 40 Minutes",
-      "brand": "Dyson",
-      "price": 469.99,
-      "rating": 4.7,
-      "review_count": 12000
-    },
-    {
-      "asin": "B0C2J7R8PY",
-      "title": "Dyson V11 Cordless Stick Vacuum, 185AW, Up to 60 Minutes",
-      "brand": "Dyson",
-      "price": 599.99,
-      "rating": 4.7,
-      "review_count": 8000
-    },
-    {
-      "asin": "B0CB6B2JWG",
-      "title": "LEVOIT LVAC-200 Cordless Stick Vacuum, Tangle-Resistant",
-      "brand": "LEVOIT",
-      "price": 159.99,
-      "rating": 4.4,
-      "review_count": 9000
-    }
-  ],
-  "humidifiers": [
-    {
-      "asin": "B01MYGNGKK",
-      "title": "LEVOIT 6L Warm and Cool Mist Ultrasonic Humidifier",
-      "brand": "LEVOIT",
-      "price": 59.99,
-      "rating": 4.5,
-      "review_count": 32000
-    },
-    {
-      "asin": "B075M5BDCF",
-      "title": "Pure Enrichment HumeXL Ultrasonic Cool Mist Humidifier, 5L",
-      "brand": "Pure Enrichment",
-      "price": 49.99,
-      "rating": 4.6,
-      "review_count": 18000
-    },
-    {
-      "asin": "B00NWA7GWA",
-      "title": "Honeywell HUL520W MistMate Ultrasonic Cool Mist Humidifier",
-      "brand": "Honeywell",
-      "price": 34.99,
-      "rating": 4.4,
-      "review_count": 26000
-    }
-  ],
-  "space heaters": [
-    {
-      "asin": "B000TKDQ5C",
-      "title": "Lasko 754200 Ceramic Space Heater with Thermostat, 1500W",
-      "brand": "Lasko",
-      "price": 24.99,
-      "rating": 4.5,
-      "review_count": 50000
-    },
-    {
-      "asin": "B087YRL86Q",
-      "title": "Lasko 754201 Portable Ceramic Space Heater, Tip-Over Safety",
-      "brand": "Lasko",
-      "price": 29.99,
-      "rating": 4.5,
-      "review_count": 30000
-    },
-    {
-      "asin": "B000N22JX6",
-      "title": "Lasko 6435 Oscillating Ceramic Tower Space Heater, Remote",
-      "brand": "Lasko",
-      "price": 79.99,
-      "rating": 4.5,
-      "review_count": 12000
-    }
-  ],
-  "luggage": [
-    {
-      "asin": "B071VG5N9D",
-      "title": "Amazon Basics 21\" Hardside Carry-On Spinner Luggage with Wheels, Expandable, Black",
-      "brand": "Amazon Basics",
-      "price": 64.99,
-      "rating": 4.5,
-      "review_count": 48210
-    },
-    {
-      "asin": "B07GD6K82L",
-      "title": "Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with TSA Lock (20/24/28 inch)",
-      "brand": "Coolife",
-      "price": 139.99,
-      "rating": 4.6,
-      "review_count": 24830
-    },
-    {
-      "asin": "B07BL7JXHV",
-      "title": "Travelpro Maxlite 5 Softside Expandable Carry-On Spinner, 21-Inch, Black",
-      "brand": "Travelpro",
-      "price": 159.99,
-      "rating": 4.8,
-      "review_count": 21540
-    },
-    {
-      "asin": "B08T1Y9V8K",
-      "title": "Samsonite Freeform Hardside Expandable Carry-On Spinner, 21-Inch",
-      "brand": "Samsonite",
-      "price": 129.99,
-      "rating": 4.6,
-      "review_count": 18760
-    },
-    {
-      "asin": "B09XQ7Z5RT",
-      "title": "Samsonite Omni 2 Hardside Expandable Luggage Spinner, 24-Inch Checked Medium",
-      "brand": "Samsonite",
-      "price": 189.99,
-      "rating": 4.7,
-      "review_count": 9420
-    },
-    {
-      "asin": "B0BZ4WL7Q9",
-      "title": "Travelpro Platinum Elite Softside Expandable Carry-On Spinner, 21-Inch",
-      "brand": "Travelpro",
-      "price": 379.99,
-      "rating": 4.8,
-      "review_count": 4210
-    }
-  ],
-  "travel backpacks": [
-    {
-      "asin": "B07QN9NPKN",
-      "title": "MATEIN 17-Inch TSA-Approved Travel Laptop Backpack",
-      "brand": "MATEIN",
-      "price": 39.99,
-      "rating": 4.6,
-      "review_count": 38000
-    },
-    {
-      "asin": "B07NV3VZ76",
-      "title": "MATEIN 40L Flight-Approved Carry-On Travel Backpack",
-      "brand": "MATEIN",
-      "price": 45.99,
-      "rating": 4.6,
-      "review_count": 15000
-    },
-    {
-      "asin": "B06XZTZ7GB",
-      "title": "MATEIN Travel Laptop Backpack, Anti-Theft, 15.6-Inch",
-      "brand": "MATEIN",
-      "price": 36.99,
-      "rating": 4.6,
-      "review_count": 42000
-    }
-  ],
-  "packing cubes": [
-    {
-      "asin": "B08S35399Y",
-      "title": "BAGAIL 8 Set Packing Cubes Travel Luggage Organizers",
-      "brand": "BAGAIL",
-      "price": 25.99,
-      "rating": 4.7,
-      "review_count": 45000
-    },
-    {
-      "asin": "B0DCVSM7CQ",
-      "title": "BAGAIL Compression Packing Cubes, Expandable Set",
-      "brand": "BAGAIL",
-      "price": 27.99,
-      "rating": 4.6,
-      "review_count": 12000
-    },
-    {
-      "asin": "B0B7BFMHNF",
-      "title": "Veken 8 Set Packing Cubes for Travel, Suitcase Organizer",
-      "brand": "Veken",
-      "price": 23.99,
-      "rating": 4.6,
-      "review_count": 30000
-    }
-  ],
-  "portable chargers": [
-    {
-      "asin": "B0C9CSG3B7",
-      "title": "Anker Nano Power Bank, 10000mAh, Built-in USB-C Cable, 30W",
-      "brand": "Anker",
-      "price": 35.99,
-      "rating": 4.6,
-      "review_count": 22000
-    },
-    {
-      "asin": "B09176JCKZ",
-      "title": "INIU Portable Charger, 10000mAh 22.5W Power Bank",
-      "brand": "INIU",
-      "price": 29.99,
-      "rating": 4.6,
-      "review_count": 150000
-    },
-    {
-      "asin": "B0CB1DTFT6",
-      "title": "INIU 20000mAh 65W Laptop Power Bank, Dual Fast Charging",
-      "brand": "INIU",
-      "price": 49.99,
-      "rating": 4.6,
-      "review_count": 18000
-    }
-  ],
-  "travel pillows": [
-    {
-      "asin": "B079X5FTZR",
-      "title": "Cabeau Evolution S3 Memory Foam Travel Neck Pillow",
-      "brand": "Cabeau",
-      "price": 49.99,
-      "rating": 4.5,
-      "review_count": 14000
-    },
-    {
-      "asin": "B07NY1QHP5",
-      "title": "Trtl Pillow Plus Adjustable Airplane Travel Neck Pillow",
-      "brand": "Trtl",
-      "price": 59.99,
-      "rating": 4.3,
-      "review_count": 8000
-    },
-    {
-      "asin": "B00LB7REFK",
-      "title": "Trtl Pillow Soft Neck Support Travel Pillow for Airplanes",
-      "brand": "Trtl",
-      "price": 29.99,
-      "rating": 4.2,
-      "review_count": 30000
-    }
-  ],
-  "standing desks": [
-    {
-      "asin": "B0B41YH9B6",
-      "title": "ErGear Height Adjustable Electric Standing Desk, 48x24in",
-      "brand": "ErGear",
-      "price": 159.99,
-      "rating": 4.6,
-      "review_count": 16000
-    },
-    {
-      "asin": "B08BHPMYGK",
-      "title": "FLEXISPOT EN1 Electric Standing Desk, 48x24in, 4 Presets",
-      "brand": "FLEXISPOT",
-      "price": 199.99,
-      "rating": 4.6,
-      "review_count": 9000
-    },
-    {
-      "asin": "B0BZ7GXM4M",
-      "title": "Claiks Electric Standing Desk, Adjustable Height, 24x48in",
-      "brand": "Claiks",
-      "price": 139.99,
-      "rating": 4.5,
-      "review_count": 7000
-    }
-  ],
-  "office chairs": [
-    {
-      "asin": "B0DS5WR4L1",
-      "title": "Newtral Ergonomic Office Chair with Adaptive Lumbar Support",
-      "brand": "Newtral",
-      "price": 339.99,
-      "rating": 4.5,
-      "review_count": 3500
-    },
-    {
-      "asin": "B0147WIC7E",
-      "title": "BestOffice Ergonomic Mesh Office Chair with Lumbar Support",
-      "brand": "BestOffice",
-      "price": 59.99,
-      "rating": 4.3,
-      "review_count": 28000
-    },
-    {
-      "asin": "B00FS3VJAO",
-      "title": "BestOffice Mid-Back Mesh Swivel Desk Chair",
-      "brand": "BestOffice",
-      "price": 49.99,
-      "rating": 4.3,
-      "review_count": 35000
-    }
-  ],
-  "curved monitors": [
-    {
-      "asin": "B07MTRQ6B3",
-      "title": "Sceptre 27-inch Curved Monitor, 100Hz FHD 1080p, C275W-1920RN",
-      "brand": "Sceptre",
-      "price": 129.99,
-      "rating": 4.5,
-      "review_count": 28000
-    },
-    {
-      "asin": "B0D2JM3NQG",
-      "title": "Sceptre 27-inch Curved Gaming Monitor, 100Hz, C275W-FW100T",
-      "brand": "Sceptre",
-      "price": 139.99,
-      "rating": 4.5,
-      "review_count": 6000
-    },
-    {
-      "asin": "B08Z38L765",
-      "title": "Sceptre 27-inch Curved 2K QHD Gaming Monitor, 165Hz, C275B-QWD168",
-      "brand": "Sceptre",
-      "price": 189.99,
-      "rating": 4.5,
-      "review_count": 9000
-    }
-  ],
-  "monitors": [
-    {
-      "asin": "B0BVBSYWDV",
-      "title": "HP 27-inch FHD 1080P Computer Monitor, 75Hz IPS, FreeSync",
-      "brand": "HP",
-      "price": 129.99,
-      "rating": 4.5,
-      "review_count": 14000
-    },
-    {
-      "asin": "B09BB5T7FV",
-      "title": "KYY 15.6'' 1080P FHD Portable Monitor, USB-C/HDMI",
-      "brand": "KYY",
-      "price": 89.99,
-      "rating": 4.5,
-      "review_count": 12000
-    },
-    {
-      "asin": "B0G488WKFY",
-      "title": "Great voell 27-inch Curved Computer Monitor, 120Hz FHD",
-      "brand": "Great voell",
-      "price": 109.99,
-      "rating": 4.3,
-      "review_count": 2500
-    }
-  ],
-  "mechanical keyboards": [
-    {
-      "asin": "B0DCVPGB9N",
-      "title": "Keychron K2 HE Rapid Trigger Wireless Mechanical Keyboard",
-      "brand": "Keychron",
-      "price": 109.99,
-      "rating": 4.5,
-      "review_count": 2500
-    },
-    {
-      "asin": "B0DGZLHN8G",
-      "title": "SteelSeries Apex Pro TKL Gen 3 Mechanical Gaming Keyboard",
-      "brand": "SteelSeries",
-      "price": 249.99,
-      "rating": 4.5,
-      "review_count": 3500
-    },
-    {
-      "asin": "B07NY9ZT92",
-      "title": "Logitech G915 Lightspeed Wireless RGB Mechanical Keyboard",
-      "brand": "Logitech",
-      "price": 199.99,
-      "rating": 4.7,
-      "review_count": 14000
-    }
-  ],
-  "webcams": [
-    {
-      "asin": "B085TFF7M1",
-      "title": "Logitech C920x HD Pro Webcam, Full HD 1080p/30fps",
-      "brand": "Logitech",
-      "price": 69.99,
-      "rating": 4.7,
-      "review_count": 40000
-    },
-    {
-      "asin": "B07K986YLL",
-      "title": "Logitech C920S HD Pro Webcam with Privacy Shutter, 1080p",
-      "brand": "Logitech",
-      "price": 59.99,
-      "rating": 4.7,
-      "review_count": 25000
-    },
-    {
-      "asin": "B006JH8T3S",
-      "title": "Logitech C920 HD Pro Webcam, 1080p Widescreen",
-      "brand": "Logitech",
-      "price": 79.99,
-      "rating": 4.6,
-      "review_count": 60000
-    }
-  ],
-  "massage guns": [
-    {
-      "asin": "B083L8RNJR",
-      "title": "TOLOCO Massage Gun, Deep Tissue Percussion Massager, 10 Heads",
-      "brand": "TOLOCO",
-      "price": 89.99,
-      "rating": 4.5,
-      "review_count": 80000
-    },
-    {
-      "asin": "B08CKWVYMF",
-      "title": "BOB AND BRAD C2 Deep Tissue Percussion Massage Gun",
-      "brand": "BOB AND BRAD",
-      "price": 99.99,
-      "rating": 4.6,
-      "review_count": 22000
-    },
-    {
-      "asin": "B07TVCF86M",
-      "title": "Opove M3 Pro 2 Deep Tissue Percussion Massage Gun",
-      "brand": "Opove",
-      "price": 129.99,
-      "rating": 4.6,
-      "review_count": 9000
-    }
-  ],
-  "fitness trackers": [
-    {
-      "asin": "B0CC63GZ3R",
-      "title": "Fitbit Charge 6 Fitness Tracker with GPS & Heart Rate",
-      "brand": "Fitbit",
-      "price": 159.95,
-      "rating": 4.4,
-      "review_count": 35000
-    },
-    {
-      "asin": "B09Z6CRHJ6",
-      "title": "Amazfit Band 7 Fitness Tracker, 18-Day Battery, Alexa",
-      "brand": "Amazfit",
-      "price": 49.99,
-      "rating": 4.5,
-      "review_count": 28000
-    },
-    {
-      "asin": "B08DKYLK4D",
-      "title": "Amazfit Band 5 Fitness Tracker with Alexa, SpO2",
-      "brand": "Amazfit",
-      "price": 39.99,
-      "rating": 4.4,
-      "review_count": 60000
-    }
-  ],
-  "smart scales": [
-    {
-      "asin": "B01N1UX8RW",
-      "title": "RENPHO Elis 1 Smart Body Fat Scale, Bluetooth BMI",
-      "brand": "RENPHO",
-      "price": 25.99,
-      "rating": 4.6,
-      "review_count": 180000
-    },
-    {
-      "asin": "B078HW8BPY",
-      "title": "FITINDEX Smart Scale, Bluetooth Body Composition Analyzer",
-      "brand": "FITINDEX",
-      "price": 19.99,
-      "rating": 4.6,
-      "review_count": 90000
-    },
-    {
-      "asin": "B0C3JNJPZ7",
-      "title": "Withings Body Smart Accurate Wi-Fi Body Composition Scale",
-      "brand": "Withings",
-      "price": 99.95,
-      "rating": 4.4,
-      "review_count": 6000
-    }
-  ],
-  "yoga mats": [
-    {
-      "asin": "B07J9WSQFZ",
-      "title": "Gaiam Essentials Thick Yoga Mat, 72x24in, 10mm, Carry Strap",
-      "brand": "Gaiam",
-      "price": 21.99,
-      "rating": 4.7,
-      "review_count": 60000
-    },
-    {
-      "asin": "B08KZ6MDTV",
-      "title": "BalanceFrom GoYoga All-Purpose 1/4-Inch Anti-Tear Yoga Mat",
-      "brand": "BalanceFrom",
-      "price": 15.99,
-      "rating": 4.6,
-      "review_count": 90000
-    },
-    {
-      "asin": "B08P8W722R",
-      "title": "ProsourceFit Extra Thick Yoga and Pilates Mat, 1/2-Inch",
-      "brand": "ProsourceFit",
-      "price": 24.99,
-      "rating": 4.6,
-      "review_count": 35000
-    }
-  ],
-  "adjustable dumbbells": [
-    {
-      "asin": "B07YVYZ93C",
-      "title": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair)",
-      "brand": "Bowflex",
-      "price": 429.0,
-      "rating": 4.8,
-      "review_count": 35000
-    },
-    {
-      "asin": "B0914FQ8WQ",
-      "title": "Bowflex SelectTech Adjustable Weights and Dumbbells",
-      "brand": "Bowflex",
-      "price": 429.0,
-      "rating": 4.8,
-      "review_count": 20000
-    },
-    {
-      "asin": "B0G6Z84TQM",
-      "title": "BowFlex Results Series 552 SelectTech Dumbbells (Pair)",
-      "brand": "Bowflex",
-      "price": 399.0,
-      "rating": 4.7,
-      "review_count": 1500
-    }
-  ],
-  "coolers": [
-    {
-      "asin": "B0CLSCRPV7",
-      "title": "RTIC Ultra-Light 32 Quart Hard Cooler, 5-Day Ice",
-      "brand": "RTIC",
-      "price": 99.99,
-      "rating": 4.7,
-      "review_count": 6000
-    },
-    {
-      "asin": "B0CDNJC1LV",
-      "title": "Coleman Xtreme 50qt Rolling Cooler with Wheels",
-      "brand": "Coleman",
-      "price": 59.99,
-      "rating": 4.7,
-      "review_count": 12000
-    },
-    {
-      "asin": "B07G732897",
-      "title": "Coleman 50-Quart Xtreme 5-Day Heavy-Duty Wheeled Cooler",
-      "brand": "Coleman",
-      "price": 54.99,
-      "rating": 4.7,
-      "review_count": 15000
-    }
-  ],
-  "tents": [
-    {
-      "asin": "B07QK8KN8S",
-      "title": "Coleman Sundome Dome Tent, 4-Person, Easy 10-Min Setup",
-      "brand": "Coleman",
-      "price": 79.99,
-      "rating": 4.7,
-      "review_count": 40000
-    },
-    {
-      "asin": "B0DJCF5L53",
-      "title": "Coleman Sundome Dark Room 4/6-Person Tent, Blocks 90% Sun",
-      "brand": "Coleman",
-      "price": 109.99,
-      "rating": 4.7,
-      "review_count": 8000
-    },
-    {
-      "asin": "B019N9W7WC",
-      "title": "Coleman Sundome Camping Tent, WeatherTec, 2/3/4/6-Person",
-      "brand": "Coleman",
-      "price": 69.99,
-      "rating": 4.7,
-      "review_count": 35000
-    }
-  ],
-  "camping chairs": [
-    {
-      "asin": "B004E4GBEM",
-      "title": "Coleman Aluminum Deck Chair with Swivel Table",
-      "brand": "Coleman",
-      "price": 59.99,
-      "rating": 4.6,
-      "review_count": 15000
-    },
-    {
-      "asin": "B004C0QECC",
-      "title": "Kijaro Dual Lock Portable Folding Camping Chair",
-      "brand": "Kijaro",
-      "price": 54.99,
-      "rating": 4.7,
-      "review_count": 12000
-    },
-    {
-      "asin": "B01FKZOGFY",
-      "title": "Kijaro Dual Lock Hard Arm Portable Camping Chair",
-      "brand": "Kijaro",
-      "price": 64.99,
-      "rating": 4.6,
-      "review_count": 8000
-    }
-  ],
-  "portable grills": [
-    {
-      "asin": "B00FGEHG6Q",
-      "title": "Weber Q1200 Liquid Propane Portable Gas Grill, Titanium",
-      "brand": "Weber",
-      "price": 329.0,
-      "rating": 4.8,
-      "review_count": 9000
-    },
-    {
-      "asin": "B00FDOONEC",
-      "title": "Weber Q1000 Liquid Propane Portable Gas Grill",
-      "brand": "Weber",
-      "price": 279.0,
-      "rating": 4.7,
-      "review_count": 6000
-    },
-    {
-      "asin": "B09WTKNR8G",
-      "title": "Weber Q1200 Portable Gas Grill Bundle with Cart & Cover",
-      "brand": "Weber",
-      "price": 399.0,
-      "rating": 4.7,
-      "review_count": 1500
-    }
-  ],
-  "sleeping bags": [
-    {
-      "asin": "B07G84NHG1",
-      "title": "TETON Sports Cobalt Mummy Sleeping Bag, Warm Weather",
-      "brand": "TETON Sports",
-      "price": 49.99,
-      "rating": 4.6,
-      "review_count": 11000
-    },
-    {
-      "asin": "B006IYCSES",
-      "title": "TETON Sports Celsius Regular Sleeping Bag, 3-Season",
-      "brand": "TETON Sports",
-      "price": 59.99,
-      "rating": 4.7,
-      "review_count": 18000
-    },
-    {
-      "asin": "B00GV3YSOO",
-      "title": "TETON Sports Polara 3-in-1 Versatile Sleeping Bag",
-      "brand": "TETON Sports",
-      "price": 99.99,
-      "rating": 4.6,
-      "review_count": 6000
-    }
-  ],
-  "blenders": [
-    {
-      "asin": "B00939FV8K",
-      "title": "Ninja BL660 Professional Compact Blender, 1100W",
-      "brand": "Ninja",
-      "price": 99.99,
-      "rating": 4.7,
-      "review_count": 52000
-    },
-    {
-      "asin": "B08QXJ31WR",
-      "title": "Ninja BN401 Nutri-Blender Pro with Auto-iQ, 1100W",
-      "brand": "Ninja",
-      "price": 89.99,
-      "rating": 4.7,
-      "review_count": 38000
-    },
-    {
-      "asin": "B08QZWDLP4",
-      "title": "Ninja BN301 Nutri-Plus Personal Blender, 900W",
-      "brand": "Ninja",
-      "price": 79.99,
-      "rating": 4.6,
-      "review_count": 41000
-    }
-  ],
-  "electric kettles": [
-    {
-      "asin": "B0C5Z8VCHX",
-      "title": "Chefman Electric Kettle, 1.8L 1500W, Borosilicate Glass",
-      "brand": "Chefman",
-      "price": 39.99,
-      "rating": 4.6,
-      "review_count": 15000
-    },
-    {
-      "asin": "B07JZQ1MXT",
-      "title": "Amazon Basics Electric Kettle with Glass Carafe, 1.7L",
-      "brand": "Amazon Basics",
-      "price": 29.99,
-      "rating": 4.5,
-      "review_count": 22000
-    },
-    {
-      "asin": "B072DWYBL7",
-      "title": "Amazon Basics Stainless Steel Electric Kettle, 1L 1500W",
-      "brand": "Amazon Basics",
-      "price": 24.99,
-      "rating": 4.5,
-      "review_count": 18000
-    }
-  ],
-  "toaster ovens": [
-    {
-      "asin": "B09B7SB46R",
-      "title": "Emeril Lagasse French Door Air Fryer Toaster Oven, 26QT",
-      "brand": "Emeril Lagasse",
-      "price": 199.99,
-      "rating": 4.4,
-      "review_count": 12000
-    },
-    {
-      "asin": "B00IXBMS6M",
-      "title": "Nuwave Bravo Air Fryer Toaster Smart Oven, 30QT",
-      "brand": "Nuwave",
-      "price": 179.99,
-      "rating": 4.3,
-      "review_count": 8000
-    },
-    {
-      "asin": "B09HSWBTN4",
-      "title": "Cuisinart TOA-70 Air Fryer Toaster Oven, 1800W",
-      "brand": "Cuisinart",
-      "price": 199.95,
-      "rating": 4.6,
-      "review_count": 9500
-    }
-  ],
-  "travel luggage": [
-    {
-      "asin": "B0937KJXFJ",
-      "title": "Travelpro Platinum Elite Hardside Expandable Carry-On, 21in",
-      "brand": "Travelpro",
-      "price": 279.99,
-      "rating": 4.7,
-      "review_count": 9000
-    },
-    {
-      "asin": "B01M0A3BKH",
-      "title": "Samsonite Freeform Hardside Expandable Carry-On Spinner",
-      "brand": "Samsonite",
-      "price": 159.99,
-      "rating": 4.6,
-      "review_count": 14000
-    },
-    {
-      "asin": "B0DY986LZK",
-      "title": "Samsonite Octiv Lightweight Hardshell 21-Inch Pro Carry-On",
-      "brand": "Samsonite",
-      "price": 139.99,
-      "rating": 4.5,
-      "review_count": 3000
-    }
-  ],
-  "air fryers": [
-    {
-      "asin": "B0CSZ7WBYW",
-      "title": "Ninja AF141 Air Fryer, 5 QT, 4-in-1",
-      "brand": "Ninja",
-      "price": 99.99,
-      "rating": 4.7,
-      "review_count": 30000
-    },
-    {
-      "asin": "B07VHFMZHJ",
-      "title": "Instant Vortex Plus 6QT Air Fryer, 6-in-1",
-      "brand": "Instant Pot",
-      "price": 99.95,
-      "rating": 4.7,
-      "review_count": 45000
-    },
-    {
-      "asin": "B0C33CHG99",
-      "title": "COSORI 9-in-1 TurboBlaze Air Fryer, 6 Qt",
-      "brand": "COSORI",
-      "price": 119.99,
-      "rating": 4.7,
-      "review_count": 9000
-    },
-    {
-      "asin": "B0936FGLQS",
-      "title": "COSORI Air Fryer Pro, Compact 5 QT",
-      "brand": "COSORI",
-      "price": 99.99,
-      "rating": 4.8,
-      "review_count": 40000
-    }
-  ],
-  "coffee makers": [
-    {
-      "asin": "B07S98411N",
-      "title": "Ninja CE251 12-Cup Programmable Coffee Maker",
-      "brand": "Ninja",
-      "price": 99.99,
-      "rating": 4.7,
-      "review_count": 28000
-    },
-    {
-      "asin": "B014W1C2VM",
-      "title": "Cuisinart SS-10P1 Single Serve Pod Coffee Machine",
-      "brand": "Cuisinart",
-      "price": 129.95,
-      "rating": 4.5,
-      "review_count": 22000
-    },
-    {
-      "asin": "B01KIG4YNO",
-      "title": "Cuisinart SS-15P1 Single Serve + 12-Cup Coffee Maker",
-      "brand": "Cuisinart",
-      "price": 199.95,
-      "rating": 4.6,
-      "review_count": 18000
-    }
-  ],
-  "food processors": [
-    {
-      "asin": "B07BVYPDJ4",
-      "title": "KitchenAid KFP0718 7-Cup Food Processor",
-      "brand": "KitchenAid",
-      "price": 129.99,
-      "rating": 4.6,
-      "review_count": 9000
-    },
-    {
-      "asin": "B091245VZW",
-      "title": "KitchenAid KFP1318 13-Cup Food Processor",
-      "brand": "KitchenAid",
-      "price": 249.99,
-      "rating": 4.6,
-      "review_count": 4000
-    },
-    {
-      "asin": "B0000645YM",
-      "title": "Cuisinart DLC-2ABC Mini-Prep Plus Food Processor, 24-Oz",
-      "brand": "Cuisinart",
-      "price": 49.95,
-      "rating": 4.6,
-      "review_count": 30000
-    }
-  ],
-  "stand mixers": [
-    {
-      "asin": "B00005UP2P",
-      "title": "KitchenAid KSM150PSER Artisan 5-Qt Stand Mixer, Empire Red",
-      "brand": "KitchenAid",
-      "price": 449.99,
-      "rating": 4.8,
-      "review_count": 25000
-    },
-    {
-      "asin": "B005PMEHBG",
-      "title": "KitchenAid KSM150PS Artisan 5-Qt Stand Mixer, Aqua Sky",
-      "brand": "KitchenAid",
-      "price": 449.99,
-      "rating": 4.8,
-      "review_count": 20000
-    },
-    {
-      "asin": "B01KATVAKE",
-      "title": "KitchenAid KSM3316X Artisan Mini 3.5-Qt Stand Mixer",
-      "brand": "KitchenAid",
-      "price": 379.99,
-      "rating": 4.7,
-      "review_count": 6000
-    }
-  ],
-  "ev chargers": [
-    {
-      "asin": "B0CT59X11M",
-      "title": "Ecogenix Level 2 EV Charger, 32A/7.68KW, 25ft, J1772",
-      "brand": "Ecogenix",
-      "price": 209.99,
-      "rating": 4.5,
-      "review_count": 1200
-    },
-    {
-      "asin": "B0F18Y9GS6",
-      "title": "EVDANCE Level 2 EV Charger for Tesla, 40A/9.6kW, NEMA 14-50",
-      "brand": "EVDANCE",
-      "price": 329.99,
-      "rating": 4.6,
-      "review_count": 800
-    },
-    {
-      "asin": "B07WXZDHGV",
-      "title": "ChargePoint Home Flex Level 2 EV Charger, NEMA 14-50, Smart App",
-      "brand": "ChargePoint",
-      "price": 449.0,
-      "rating": 4.6,
-      "review_count": 9500
-    }
-  ],
-  "electric scooters": [
-    {
-      "asin": "B0BH2WGL6M",
-      "title": "Segway Ninebot E2 Plus Electric KickScooter, 15.5 MPH, Commuter",
-      "brand": "Segway",
-      "price": 399.99,
-      "rating": 4.4,
-      "review_count": 6500
-    },
-    {
-      "asin": "B0FT257GJZ",
-      "title": "Heavy Duty Electric Scooter with Seat for Adults, 500 lbs, 20MPH",
-      "brand": "Hiboy",
-      "price": 599.99,
-      "rating": 4.3,
-      "review_count": 1500
-    }
-  ],
-  "electric bikes": [
-    {
-      "asin": "B0H1WJ1ZRQ",
-      "title": "ENGWE L20 3.0 Folding Electric Bike, 1500W Peak, 28 MPH, Fat Tire",
-      "brand": "ENGWE",
-      "price": 899.0,
-      "rating": 4.5,
-      "review_count": 1200
-    },
-    {
-      "asin": "B0GC574FZD",
-      "title": "Eahora Romeo Pro 2 Electric Bike, 4000W Dual Motor, Long Range",
-      "brand": "Eahora",
-      "price": 1499.0,
-      "rating": 4.4,
-      "review_count": 600
-    },
-    {
-      "asin": "B0GS6XMNXW",
-      "title": "FREESKY Alaska Pro Electric Bike, Dual Battery, 40 MPH, Fat Tire",
-      "brand": "FREESKY",
-      "price": 1299.0,
-      "rating": 4.5,
-      "review_count": 400
-    }
-  ],
-  "portable power stations": [
-    {
-      "asin": "B0D7PPG25F",
-      "title": "Jackery Explorer 1000 v2 Portable Power Station, 1070Wh LiFePO4",
-      "brand": "Jackery",
-      "price": 999.0,
-      "rating": 4.7,
-      "review_count": 3500
-    },
-    {
-      "asin": "B09WW3CTF4",
-      "title": "BLUETTI EB3A Portable Power Station, 268Wh, 600W (1200W Surge)",
-      "brand": "BLUETTI",
-      "price": 259.0,
-      "rating": 4.6,
-      "review_count": 8000
-    },
-    {
-      "asin": "B0DB1S36YP",
-      "title": "EcoFlow RIVER 3 Portable Power Station, 245Wh, 1Hr Fast Charge",
-      "brand": "EcoFlow",
-      "price": 219.0,
-      "rating": 4.6,
-      "review_count": 2000
-    },
-    {
-      "asin": "B09FF46FQ9",
-      "title": "Anker 521 PowerHouse Portable Power Station, 256Wh LiFePO4",
-      "brand": "Anker",
-      "price": 199.99,
-      "rating": 4.6,
-      "review_count": 5000
-    }
-  ]
+ "robot vacuums": [
+  {
+   "asin": "B07R295MLS",
+   "title": "eufy RoboVac 11S MAX Robot Vacuum, Super-Thin, Strong Suction",
+   "brand": "eufy",
+   "price": 199.99,
+   "rating": 4.4,
+   "review_count": 45000
+  },
+  {
+   "asin": "B0C415NHBM",
+   "title": "iRobot Roomba j9+ Self-Emptying Robot Vacuum",
+   "brand": "iRobot",
+   "price": 599.99,
+   "rating": 4.2,
+   "review_count": 3500
+  },
+  {
+   "asin": "B0FWK41WF2",
+   "title": "eufy C28 Robot Vacuum and Mop Combo, Self-Emptying",
+   "brand": "eufy",
+   "price": 399.99,
+   "rating": 4.3,
+   "review_count": 1200
+  }
+ ],
+ "air purifiers": [
+  {
+   "asin": "B07VVK39F7",
+   "title": "LEVOIT Core 300-P Air Purifier, True HEPA, Up to 1073 ft2",
+   "brand": "LEVOIT",
+   "price": 99.99,
+   "rating": 4.7,
+   "review_count": 150000
+  },
+  {
+   "asin": "B01941IUVQ",
+   "title": "Blueair Sense+ Air Purifier, HEPASilent Technology",
+   "brand": "Blueair",
+   "price": 279.99,
+   "rating": 4.4,
+   "review_count": 1500
+  },
+  {
+   "asin": "B01D8DAYII",
+   "title": "Winix 5500-2 Air Purifier, True HEPA, PlasmaWave",
+   "brand": "Winix",
+   "price": 159.99,
+   "rating": 4.8,
+   "review_count": 60000
+  }
+ ],
+ "stick vacuums": [
+  {
+   "asin": "B09YS9N7H2",
+   "title": "Dyson V8 Cordless Stick Vacuum, 115AW, Up to 40 Minutes",
+   "brand": "Dyson",
+   "price": 469.99,
+   "rating": 4.7,
+   "review_count": 12000
+  },
+  {
+   "asin": "B0C2J7R8PY",
+   "title": "Dyson V11 Cordless Stick Vacuum, 185AW, Up to 60 Minutes",
+   "brand": "Dyson",
+   "price": 599.99,
+   "rating": 4.7,
+   "review_count": 8000
+  },
+  {
+   "asin": "B0CB6B2JWG",
+   "title": "LEVOIT LVAC-200 Cordless Stick Vacuum, Tangle-Resistant",
+   "brand": "LEVOIT",
+   "price": 159.99,
+   "rating": 4.4,
+   "review_count": 9000
+  }
+ ],
+ "humidifiers": [
+  {
+   "asin": "B01MYGNGKK",
+   "title": "LEVOIT 6L Warm and Cool Mist Ultrasonic Humidifier",
+   "brand": "LEVOIT",
+   "price": 59.99,
+   "rating": 4.5,
+   "review_count": 32000
+  },
+  {
+   "asin": "B075M5BDCF",
+   "title": "Pure Enrichment HumeXL Ultrasonic Cool Mist Humidifier, 5L",
+   "brand": "Pure Enrichment",
+   "price": 49.99,
+   "rating": 4.6,
+   "review_count": 18000
+  },
+  {
+   "asin": "B00NWA7GWA",
+   "title": "Honeywell HUL520W MistMate Ultrasonic Cool Mist Humidifier",
+   "brand": "Honeywell",
+   "price": 34.99,
+   "rating": 4.4,
+   "review_count": 26000
+  }
+ ],
+ "space heaters": [
+  {
+   "asin": "B000TKDQ5C",
+   "title": "Lasko 754200 Ceramic Space Heater with Thermostat, 1500W",
+   "brand": "Lasko",
+   "price": 24.99,
+   "rating": 4.5,
+   "review_count": 50000
+  },
+  {
+   "asin": "B087YRL86Q",
+   "title": "Lasko 754201 Portable Ceramic Space Heater, Tip-Over Safety",
+   "brand": "Lasko",
+   "price": 29.99,
+   "rating": 4.5,
+   "review_count": 30000
+  },
+  {
+   "asin": "B000N22JX6",
+   "title": "Lasko 6435 Oscillating Ceramic Tower Space Heater, Remote",
+   "brand": "Lasko",
+   "price": 79.99,
+   "rating": 4.5,
+   "review_count": 12000
+  }
+ ],
+ "luggage": [
+  {
+   "asin": "B071VG5N9D",
+   "title": "Amazon Basics 21\" Hardside Carry-On Spinner Luggage with Wheels, Expandable, Black",
+   "brand": "Amazon Basics",
+   "price": 64.99,
+   "rating": 4.5,
+   "review_count": 48210
+  },
+  {
+   "asin": "B07GD6K82L",
+   "title": "Coolife Luggage 3 Piece Set Hardside Spinner Suitcase with TSA Lock (20/24/28 inch)",
+   "brand": "Coolife",
+   "price": 139.99,
+   "rating": 4.6,
+   "review_count": 24830
+  },
+  {
+   "asin": "B07BL7JXHV",
+   "title": "Travelpro Maxlite 5 Softside Expandable Carry-On Spinner, 21-Inch, Black",
+   "brand": "Travelpro",
+   "price": 159.99,
+   "rating": 4.8,
+   "review_count": 21540
+  },
+  {
+   "asin": "B08T1Y9V8K",
+   "title": "Samsonite Freeform Hardside Expandable Carry-On Spinner, 21-Inch",
+   "brand": "Samsonite",
+   "price": 129.99,
+   "rating": 4.6,
+   "review_count": 18760
+  },
+  {
+   "asin": "B09XQ7Z5RT",
+   "title": "Samsonite Omni 2 Hardside Expandable Luggage Spinner, 24-Inch Checked Medium",
+   "brand": "Samsonite",
+   "price": 189.99,
+   "rating": 4.7,
+   "review_count": 9420
+  },
+  {
+   "asin": "B0BZ4WL7Q9",
+   "title": "Travelpro Platinum Elite Softside Expandable Carry-On Spinner, 21-Inch",
+   "brand": "Travelpro",
+   "price": 379.99,
+   "rating": 4.8,
+   "review_count": 4210
+  }
+ ],
+ "travel backpacks": [
+  {
+   "asin": "B07QN9NPKN",
+   "title": "MATEIN 17-Inch TSA-Approved Travel Laptop Backpack",
+   "brand": "MATEIN",
+   "price": 39.99,
+   "rating": 4.6,
+   "review_count": 38000
+  },
+  {
+   "asin": "B07NV3VZ76",
+   "title": "MATEIN 40L Flight-Approved Carry-On Travel Backpack",
+   "brand": "MATEIN",
+   "price": 45.99,
+   "rating": 4.6,
+   "review_count": 15000
+  },
+  {
+   "asin": "B06XZTZ7GB",
+   "title": "MATEIN Travel Laptop Backpack, Anti-Theft, 15.6-Inch",
+   "brand": "MATEIN",
+   "price": 36.99,
+   "rating": 4.6,
+   "review_count": 42000
+  }
+ ],
+ "packing cubes": [
+  {
+   "asin": "B08S35399Y",
+   "title": "BAGAIL 8 Set Packing Cubes Travel Luggage Organizers",
+   "brand": "BAGAIL",
+   "price": 25.99,
+   "rating": 4.7,
+   "review_count": 45000
+  },
+  {
+   "asin": "B0DCVSM7CQ",
+   "title": "BAGAIL Compression Packing Cubes, Expandable Set",
+   "brand": "BAGAIL",
+   "price": 27.99,
+   "rating": 4.6,
+   "review_count": 12000
+  },
+  {
+   "asin": "B0B7BFMHNF",
+   "title": "Veken 8 Set Packing Cubes for Travel, Suitcase Organizer",
+   "brand": "Veken",
+   "price": 23.99,
+   "rating": 4.6,
+   "review_count": 30000
+  }
+ ],
+ "portable chargers": [
+  {
+   "asin": "B0C9CSG3B7",
+   "title": "Anker Nano Power Bank, 10000mAh, Built-in USB-C Cable, 30W",
+   "brand": "Anker",
+   "price": 35.99,
+   "rating": 4.6,
+   "review_count": 22000
+  },
+  {
+   "asin": "B09176JCKZ",
+   "title": "INIU Portable Charger, 10000mAh 22.5W Power Bank",
+   "brand": "INIU",
+   "price": 29.99,
+   "rating": 4.6,
+   "review_count": 150000
+  },
+  {
+   "asin": "B0CB1DTFT6",
+   "title": "INIU 20000mAh 65W Laptop Power Bank, Dual Fast Charging",
+   "brand": "INIU",
+   "price": 49.99,
+   "rating": 4.6,
+   "review_count": 18000
+  }
+ ],
+ "travel pillows": [
+  {
+   "asin": "B079X5FTZR",
+   "title": "Cabeau Evolution S3 Memory Foam Travel Neck Pillow",
+   "brand": "Cabeau",
+   "price": 49.99,
+   "rating": 4.5,
+   "review_count": 14000
+  },
+  {
+   "asin": "B07NY1QHP5",
+   "title": "Trtl Pillow Plus Adjustable Airplane Travel Neck Pillow",
+   "brand": "Trtl",
+   "price": 59.99,
+   "rating": 4.3,
+   "review_count": 8000
+  },
+  {
+   "asin": "B00LB7REFK",
+   "title": "Trtl Pillow Soft Neck Support Travel Pillow for Airplanes",
+   "brand": "Trtl",
+   "price": 29.99,
+   "rating": 4.2,
+   "review_count": 30000
+  }
+ ],
+ "standing desks": [
+  {
+   "asin": "B0B41YH9B6",
+   "title": "ErGear Height Adjustable Electric Standing Desk, 48x24in",
+   "brand": "ErGear",
+   "price": 159.99,
+   "rating": 4.6,
+   "review_count": 16000
+  },
+  {
+   "asin": "B08BHPMYGK",
+   "title": "FLEXISPOT EN1 Electric Standing Desk, 48x24in, 4 Presets",
+   "brand": "FLEXISPOT",
+   "price": 199.99,
+   "rating": 4.6,
+   "review_count": 9000
+  },
+  {
+   "asin": "B0BZ7GXM4M",
+   "title": "Claiks Electric Standing Desk, Adjustable Height, 24x48in",
+   "brand": "Claiks",
+   "price": 139.99,
+   "rating": 4.5,
+   "review_count": 7000
+  }
+ ],
+ "office chairs": [
+  {
+   "asin": "B0DS5WR4L1",
+   "title": "Newtral Ergonomic Office Chair with Adaptive Lumbar Support",
+   "brand": "Newtral",
+   "price": 339.99,
+   "rating": 4.5,
+   "review_count": 3500
+  },
+  {
+   "asin": "B0147WIC7E",
+   "title": "BestOffice Ergonomic Mesh Office Chair with Lumbar Support",
+   "brand": "BestOffice",
+   "price": 59.99,
+   "rating": 4.3,
+   "review_count": 28000
+  },
+  {
+   "asin": "B00FS3VJAO",
+   "title": "BestOffice Mid-Back Mesh Swivel Desk Chair",
+   "brand": "BestOffice",
+   "price": 49.99,
+   "rating": 4.3,
+   "review_count": 35000
+  }
+ ],
+ "curved monitors": [
+  {
+   "asin": "B07MTRQ6B3",
+   "title": "Sceptre 27-inch Curved Monitor, 100Hz FHD 1080p, C275W-1920RN",
+   "brand": "Sceptre",
+   "price": 129.99,
+   "rating": 4.5,
+   "review_count": 28000
+  },
+  {
+   "asin": "B0D2JM3NQG",
+   "title": "Sceptre 27-inch Curved Gaming Monitor, 100Hz, C275W-FW100T",
+   "brand": "Sceptre",
+   "price": 139.99,
+   "rating": 4.5,
+   "review_count": 6000
+  },
+  {
+   "asin": "B08Z38L765",
+   "title": "Sceptre 27-inch Curved 2K QHD Gaming Monitor, 165Hz, C275B-QWD168",
+   "brand": "Sceptre",
+   "price": 189.99,
+   "rating": 4.5,
+   "review_count": 9000
+  }
+ ],
+ "monitors": [
+  {
+   "asin": "B0BVBSYWDV",
+   "title": "HP 27-inch FHD 1080P Computer Monitor, 75Hz IPS, FreeSync",
+   "brand": "HP",
+   "price": 129.99,
+   "rating": 4.5,
+   "review_count": 14000
+  },
+  {
+   "asin": "B09BB5T7FV",
+   "title": "KYY 15.6'' 1080P FHD Portable Monitor, USB-C/HDMI",
+   "brand": "KYY",
+   "price": 89.99,
+   "rating": 4.5,
+   "review_count": 12000
+  },
+  {
+   "asin": "B0G488WKFY",
+   "title": "Great voell 27-inch Curved Computer Monitor, 120Hz FHD",
+   "brand": "Great voell",
+   "price": 109.99,
+   "rating": 4.3,
+   "review_count": 2500
+  }
+ ],
+ "mechanical keyboards": [
+  {
+   "asin": "B0DCVPGB9N",
+   "title": "Keychron K2 HE Rapid Trigger Wireless Mechanical Keyboard",
+   "brand": "Keychron",
+   "price": 109.99,
+   "rating": 4.5,
+   "review_count": 2500
+  },
+  {
+   "asin": "B0DGZLHN8G",
+   "title": "SteelSeries Apex Pro TKL Gen 3 Mechanical Gaming Keyboard",
+   "brand": "SteelSeries",
+   "price": 249.99,
+   "rating": 4.5,
+   "review_count": 3500
+  },
+  {
+   "asin": "B07NY9ZT92",
+   "title": "Logitech G915 Lightspeed Wireless RGB Mechanical Keyboard",
+   "brand": "Logitech",
+   "price": 199.99,
+   "rating": 4.7,
+   "review_count": 14000
+  }
+ ],
+ "webcams": [
+  {
+   "asin": "B085TFF7M1",
+   "title": "Logitech C920x HD Pro Webcam, Full HD 1080p/30fps",
+   "brand": "Logitech",
+   "price": 69.99,
+   "rating": 4.7,
+   "review_count": 40000
+  },
+  {
+   "asin": "B07K986YLL",
+   "title": "Logitech C920S HD Pro Webcam with Privacy Shutter, 1080p",
+   "brand": "Logitech",
+   "price": 59.99,
+   "rating": 4.7,
+   "review_count": 25000
+  },
+  {
+   "asin": "B006JH8T3S",
+   "title": "Logitech C920 HD Pro Webcam, 1080p Widescreen",
+   "brand": "Logitech",
+   "price": 79.99,
+   "rating": 4.6,
+   "review_count": 60000
+  }
+ ],
+ "massage guns": [
+  {
+   "asin": "B083L8RNJR",
+   "title": "TOLOCO Massage Gun, Deep Tissue Percussion Massager, 10 Heads",
+   "brand": "TOLOCO",
+   "price": 89.99,
+   "rating": 4.5,
+   "review_count": 80000
+  },
+  {
+   "asin": "B08CKWVYMF",
+   "title": "BOB AND BRAD C2 Deep Tissue Percussion Massage Gun",
+   "brand": "BOB AND BRAD",
+   "price": 99.99,
+   "rating": 4.6,
+   "review_count": 22000
+  },
+  {
+   "asin": "B07TVCF86M",
+   "title": "Opove M3 Pro 2 Deep Tissue Percussion Massage Gun",
+   "brand": "Opove",
+   "price": 129.99,
+   "rating": 4.6,
+   "review_count": 9000
+  }
+ ],
+ "fitness trackers": [
+  {
+   "asin": "B0CC63GZ3R",
+   "title": "Fitbit Charge 6 Fitness Tracker with GPS & Heart Rate",
+   "brand": "Fitbit",
+   "price": 159.95,
+   "rating": 4.4,
+   "review_count": 35000
+  },
+  {
+   "asin": "B09Z6CRHJ6",
+   "title": "Amazfit Band 7 Fitness Tracker, 18-Day Battery, Alexa",
+   "brand": "Amazfit",
+   "price": 49.99,
+   "rating": 4.5,
+   "review_count": 28000
+  },
+  {
+   "asin": "B08DKYLK4D",
+   "title": "Amazfit Band 5 Fitness Tracker with Alexa, SpO2",
+   "brand": "Amazfit",
+   "price": 39.99,
+   "rating": 4.4,
+   "review_count": 60000
+  }
+ ],
+ "smart scales": [
+  {
+   "asin": "B01N1UX8RW",
+   "title": "RENPHO Elis 1 Smart Body Fat Scale, Bluetooth BMI",
+   "brand": "RENPHO",
+   "price": 25.99,
+   "rating": 4.6,
+   "review_count": 180000
+  },
+  {
+   "asin": "B078HW8BPY",
+   "title": "FITINDEX Smart Scale, Bluetooth Body Composition Analyzer",
+   "brand": "FITINDEX",
+   "price": 19.99,
+   "rating": 4.6,
+   "review_count": 90000
+  },
+  {
+   "asin": "B0C3JNJPZ7",
+   "title": "Withings Body Smart Accurate Wi-Fi Body Composition Scale",
+   "brand": "Withings",
+   "price": 99.95,
+   "rating": 4.4,
+   "review_count": 6000
+  }
+ ],
+ "yoga mats": [
+  {
+   "asin": "B07J9WSQFZ",
+   "title": "Gaiam Essentials Thick Yoga Mat, 72x24in, 10mm, Carry Strap",
+   "brand": "Gaiam",
+   "price": 21.99,
+   "rating": 4.7,
+   "review_count": 60000
+  },
+  {
+   "asin": "B08KZ6MDTV",
+   "title": "BalanceFrom GoYoga All-Purpose 1/4-Inch Anti-Tear Yoga Mat",
+   "brand": "BalanceFrom",
+   "price": 15.99,
+   "rating": 4.6,
+   "review_count": 90000
+  },
+  {
+   "asin": "B08P8W722R",
+   "title": "ProsourceFit Extra Thick Yoga and Pilates Mat, 1/2-Inch",
+   "brand": "ProsourceFit",
+   "price": 24.99,
+   "rating": 4.6,
+   "review_count": 35000
+  }
+ ],
+ "adjustable dumbbells": [
+  {
+   "asin": "B07YVYZ93C",
+   "title": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair)",
+   "brand": "Bowflex",
+   "price": 429.0,
+   "rating": 4.8,
+   "review_count": 35000
+  },
+  {
+   "asin": "B0914FQ8WQ",
+   "title": "Bowflex SelectTech Adjustable Weights and Dumbbells",
+   "brand": "Bowflex",
+   "price": 429.0,
+   "rating": 4.8,
+   "review_count": 20000
+  },
+  {
+   "asin": "B0G6Z84TQM",
+   "title": "BowFlex Results Series 552 SelectTech Dumbbells (Pair)",
+   "brand": "Bowflex",
+   "price": 399.0,
+   "rating": 4.7,
+   "review_count": 1500
+  }
+ ],
+ "coolers": [
+  {
+   "asin": "B0CLSCRPV7",
+   "title": "RTIC Ultra-Light 32 Quart Hard Cooler, 5-Day Ice",
+   "brand": "RTIC",
+   "price": 99.99,
+   "rating": 4.7,
+   "review_count": 6000
+  },
+  {
+   "asin": "B0CDNJC1LV",
+   "title": "Coleman Xtreme 50qt Rolling Cooler with Wheels",
+   "brand": "Coleman",
+   "price": 59.99,
+   "rating": 4.7,
+   "review_count": 12000
+  },
+  {
+   "asin": "B07G732897",
+   "title": "Coleman 50-Quart Xtreme 5-Day Heavy-Duty Wheeled Cooler",
+   "brand": "Coleman",
+   "price": 54.99,
+   "rating": 4.7,
+   "review_count": 15000
+  }
+ ],
+ "tents": [
+  {
+   "asin": "B07QK8KN8S",
+   "title": "Coleman Sundome Dome Tent, 4-Person, Easy 10-Min Setup",
+   "brand": "Coleman",
+   "price": 79.99,
+   "rating": 4.7,
+   "review_count": 40000
+  },
+  {
+   "asin": "B0DJCF5L53",
+   "title": "Coleman Sundome Dark Room 4/6-Person Tent, Blocks 90% Sun",
+   "brand": "Coleman",
+   "price": 109.99,
+   "rating": 4.7,
+   "review_count": 8000
+  },
+  {
+   "asin": "B019N9W7WC",
+   "title": "Coleman Sundome Camping Tent, WeatherTec, 2/3/4/6-Person",
+   "brand": "Coleman",
+   "price": 69.99,
+   "rating": 4.7,
+   "review_count": 35000
+  }
+ ],
+ "camping chairs": [
+  {
+   "asin": "B004E4GBEM",
+   "title": "Coleman Aluminum Deck Chair with Swivel Table",
+   "brand": "Coleman",
+   "price": 59.99,
+   "rating": 4.6,
+   "review_count": 15000
+  },
+  {
+   "asin": "B004C0QECC",
+   "title": "Kijaro Dual Lock Portable Folding Camping Chair",
+   "brand": "Kijaro",
+   "price": 54.99,
+   "rating": 4.7,
+   "review_count": 12000
+  },
+  {
+   "asin": "B01FKZOGFY",
+   "title": "Kijaro Dual Lock Hard Arm Portable Camping Chair",
+   "brand": "Kijaro",
+   "price": 64.99,
+   "rating": 4.6,
+   "review_count": 8000
+  }
+ ],
+ "portable grills": [
+  {
+   "asin": "B00FGEHG6Q",
+   "title": "Weber Q1200 Liquid Propane Portable Gas Grill, Titanium",
+   "brand": "Weber",
+   "price": 329.0,
+   "rating": 4.8,
+   "review_count": 9000
+  },
+  {
+   "asin": "B00FDOONEC",
+   "title": "Weber Q1000 Liquid Propane Portable Gas Grill",
+   "brand": "Weber",
+   "price": 279.0,
+   "rating": 4.7,
+   "review_count": 6000
+  },
+  {
+   "asin": "B09WTKNR8G",
+   "title": "Weber Q1200 Portable Gas Grill Bundle with Cart & Cover",
+   "brand": "Weber",
+   "price": 399.0,
+   "rating": 4.7,
+   "review_count": 1500
+  }
+ ],
+ "sleeping bags": [
+  {
+   "asin": "B07G84NHG1",
+   "title": "TETON Sports Cobalt Mummy Sleeping Bag, Warm Weather",
+   "brand": "TETON Sports",
+   "price": 49.99,
+   "rating": 4.6,
+   "review_count": 11000
+  },
+  {
+   "asin": "B006IYCSES",
+   "title": "TETON Sports Celsius Regular Sleeping Bag, 3-Season",
+   "brand": "TETON Sports",
+   "price": 59.99,
+   "rating": 4.7,
+   "review_count": 18000
+  },
+  {
+   "asin": "B00GV3YSOO",
+   "title": "TETON Sports Polara 3-in-1 Versatile Sleeping Bag",
+   "brand": "TETON Sports",
+   "price": 99.99,
+   "rating": 4.6,
+   "review_count": 6000
+  }
+ ],
+ "blenders": [
+  {
+   "asin": "B00939FV8K",
+   "title": "Ninja BL660 Professional Compact Blender, 1100W",
+   "brand": "Ninja",
+   "price": 99.99,
+   "rating": 4.7,
+   "review_count": 52000
+  },
+  {
+   "asin": "B08QXJ31WR",
+   "title": "Ninja BN401 Nutri-Blender Pro with Auto-iQ, 1100W",
+   "brand": "Ninja",
+   "price": 89.99,
+   "rating": 4.7,
+   "review_count": 38000
+  },
+  {
+   "asin": "B08QZWDLP4",
+   "title": "Ninja BN301 Nutri-Plus Personal Blender, 900W",
+   "brand": "Ninja",
+   "price": 79.99,
+   "rating": 4.6,
+   "review_count": 41000
+  }
+ ],
+ "electric kettles": [
+  {
+   "asin": "B0C5Z8VCHX",
+   "title": "Chefman Electric Kettle, 1.8L 1500W, Borosilicate Glass",
+   "brand": "Chefman",
+   "price": 39.99,
+   "rating": 4.6,
+   "review_count": 15000
+  },
+  {
+   "asin": "B07JZQ1MXT",
+   "title": "Amazon Basics Electric Kettle with Glass Carafe, 1.7L",
+   "brand": "Amazon Basics",
+   "price": 29.99,
+   "rating": 4.5,
+   "review_count": 22000
+  },
+  {
+   "asin": "B072DWYBL7",
+   "title": "Amazon Basics Stainless Steel Electric Kettle, 1L 1500W",
+   "brand": "Amazon Basics",
+   "price": 24.99,
+   "rating": 4.5,
+   "review_count": 18000
+  }
+ ],
+ "toaster ovens": [
+  {
+   "asin": "B09B7SB46R",
+   "title": "Emeril Lagasse French Door Air Fryer Toaster Oven, 26QT",
+   "brand": "Emeril Lagasse",
+   "price": 199.99,
+   "rating": 4.4,
+   "review_count": 12000
+  },
+  {
+   "asin": "B00IXBMS6M",
+   "title": "Nuwave Bravo Air Fryer Toaster Smart Oven, 30QT",
+   "brand": "Nuwave",
+   "price": 179.99,
+   "rating": 4.3,
+   "review_count": 8000
+  },
+  {
+   "asin": "B09HSWBTN4",
+   "title": "Cuisinart TOA-70 Air Fryer Toaster Oven, 1800W",
+   "brand": "Cuisinart",
+   "price": 199.95,
+   "rating": 4.6,
+   "review_count": 9500
+  }
+ ],
+ "travel luggage": [
+  {
+   "asin": "B0937KJXFJ",
+   "title": "Travelpro Platinum Elite Hardside Expandable Carry-On, 21in",
+   "brand": "Travelpro",
+   "price": 279.99,
+   "rating": 4.7,
+   "review_count": 9000
+  },
+  {
+   "asin": "B01M0A3BKH",
+   "title": "Samsonite Freeform Hardside Expandable Carry-On Spinner",
+   "brand": "Samsonite",
+   "price": 159.99,
+   "rating": 4.6,
+   "review_count": 14000
+  },
+  {
+   "asin": "B0DY986LZK",
+   "title": "Samsonite Octiv Lightweight Hardshell 21-Inch Pro Carry-On",
+   "brand": "Samsonite",
+   "price": 139.99,
+   "rating": 4.5,
+   "review_count": 3000
+  }
+ ],
+ "air fryers": [
+  {
+   "asin": "B0CSZ7WBYW",
+   "title": "Ninja AF141 Air Fryer, 5 QT, 4-in-1",
+   "brand": "Ninja",
+   "price": 99.99,
+   "rating": 4.7,
+   "review_count": 30000
+  },
+  {
+   "asin": "B07VHFMZHJ",
+   "title": "Instant Vortex Plus 6QT Air Fryer, 6-in-1",
+   "brand": "Instant Pot",
+   "price": 99.95,
+   "rating": 4.7,
+   "review_count": 45000
+  },
+  {
+   "asin": "B0C33CHG99",
+   "title": "COSORI 9-in-1 TurboBlaze Air Fryer, 6 Qt",
+   "brand": "COSORI",
+   "price": 119.99,
+   "rating": 4.7,
+   "review_count": 9000
+  },
+  {
+   "asin": "B0936FGLQS",
+   "title": "COSORI Air Fryer Pro, Compact 5 QT",
+   "brand": "COSORI",
+   "price": 99.99,
+   "rating": 4.8,
+   "review_count": 40000
+  }
+ ],
+ "coffee makers": [
+  {
+   "asin": "B07S98411N",
+   "title": "Ninja CE251 12-Cup Programmable Coffee Maker",
+   "brand": "Ninja",
+   "price": 99.99,
+   "rating": 4.7,
+   "review_count": 28000
+  },
+  {
+   "asin": "B014W1C2VM",
+   "title": "Cuisinart SS-10P1 Single Serve Pod Coffee Machine",
+   "brand": "Cuisinart",
+   "price": 129.95,
+   "rating": 4.5,
+   "review_count": 22000
+  },
+  {
+   "asin": "B01KIG4YNO",
+   "title": "Cuisinart SS-15P1 Single Serve + 12-Cup Coffee Maker",
+   "brand": "Cuisinart",
+   "price": 199.95,
+   "rating": 4.6,
+   "review_count": 18000
+  }
+ ],
+ "food processors": [
+  {
+   "asin": "B07BVYPDJ4",
+   "title": "KitchenAid KFP0718 7-Cup Food Processor",
+   "brand": "KitchenAid",
+   "price": 129.99,
+   "rating": 4.6,
+   "review_count": 9000
+  },
+  {
+   "asin": "B091245VZW",
+   "title": "KitchenAid KFP1318 13-Cup Food Processor",
+   "brand": "KitchenAid",
+   "price": 249.99,
+   "rating": 4.6,
+   "review_count": 4000
+  },
+  {
+   "asin": "B0000645YM",
+   "title": "Cuisinart DLC-2ABC Mini-Prep Plus Food Processor, 24-Oz",
+   "brand": "Cuisinart",
+   "price": 49.95,
+   "rating": 4.6,
+   "review_count": 30000
+  }
+ ],
+ "stand mixers": [
+  {
+   "asin": "B00005UP2P",
+   "title": "KitchenAid KSM150PSER Artisan 5-Qt Stand Mixer, Empire Red",
+   "brand": "KitchenAid",
+   "price": 449.99,
+   "rating": 4.8,
+   "review_count": 25000
+  },
+  {
+   "asin": "B005PMEHBG",
+   "title": "KitchenAid KSM150PS Artisan 5-Qt Stand Mixer, Aqua Sky",
+   "brand": "KitchenAid",
+   "price": 449.99,
+   "rating": 4.8,
+   "review_count": 20000
+  },
+  {
+   "asin": "B01KATVAKE",
+   "title": "KitchenAid KSM3316X Artisan Mini 3.5-Qt Stand Mixer",
+   "brand": "KitchenAid",
+   "price": 379.99,
+   "rating": 4.7,
+   "review_count": 6000
+  }
+ ],
+ "ev chargers": [
+  {
+   "asin": "B0CT59X11M",
+   "title": "Ecogenix Level 2 EV Charger, 32A/7.68KW, 25ft, J1772",
+   "brand": "Ecogenix",
+   "price": 209.99,
+   "rating": 4.5,
+   "review_count": 1200
+  },
+  {
+   "asin": "B0F18Y9GS6",
+   "title": "EVDANCE Level 2 EV Charger for Tesla, 40A/9.6kW, NEMA 14-50",
+   "brand": "EVDANCE",
+   "price": 329.99,
+   "rating": 4.6,
+   "review_count": 800
+  },
+  {
+   "asin": "B07WXZDHGV",
+   "title": "ChargePoint Home Flex Level 2 EV Charger, NEMA 14-50, Smart App",
+   "brand": "ChargePoint",
+   "price": 449.0,
+   "rating": 4.6,
+   "review_count": 9500
+  }
+ ],
+ "electric scooters": [
+  {
+   "asin": "B0BH2WGL6M",
+   "title": "Segway Ninebot E2 Plus Electric KickScooter, 15.5 MPH, Commuter",
+   "brand": "Segway",
+   "price": 399.99,
+   "rating": 4.4,
+   "review_count": 6500
+  },
+  {
+   "asin": "B0FT257GJZ",
+   "title": "Heavy Duty Electric Scooter with Seat for Adults, 500 lbs, 20MPH",
+   "brand": "Hiboy",
+   "price": 599.99,
+   "rating": 4.3,
+   "review_count": 1500
+  }
+ ],
+ "electric bikes": [
+  {
+   "asin": "B0H1WJ1ZRQ",
+   "title": "ENGWE L20 3.0 Folding Electric Bike, 1500W Peak, 28 MPH, Fat Tire",
+   "brand": "ENGWE",
+   "price": 899.0,
+   "rating": 4.5,
+   "review_count": 1200
+  },
+  {
+   "asin": "B0GC574FZD",
+   "title": "Eahora Romeo Pro 2 Electric Bike, 4000W Dual Motor, Long Range",
+   "brand": "Eahora",
+   "price": 1499.0,
+   "rating": 4.4,
+   "review_count": 600
+  },
+  {
+   "asin": "B0GS6XMNXW",
+   "title": "FREESKY Alaska Pro Electric Bike, Dual Battery, 40 MPH, Fat Tire",
+   "brand": "FREESKY",
+   "price": 1299.0,
+   "rating": 4.5,
+   "review_count": 400
+  }
+ ],
+ "portable power stations": [
+  {
+   "asin": "B0D7PPG25F",
+   "title": "Jackery Explorer 1000 v2 Portable Power Station, 1070Wh LiFePO4",
+   "brand": "Jackery",
+   "price": 999.0,
+   "rating": 4.7,
+   "review_count": 3500
+  },
+  {
+   "asin": "B09WW3CTF4",
+   "title": "BLUETTI EB3A Portable Power Station, 268Wh, 600W (1200W Surge)",
+   "brand": "BLUETTI",
+   "price": 259.0,
+   "rating": 4.6,
+   "review_count": 8000
+  },
+  {
+   "asin": "B0DB1S36YP",
+   "title": "EcoFlow RIVER 3 Portable Power Station, 245Wh, 1Hr Fast Charge",
+   "brand": "EcoFlow",
+   "price": 219.0,
+   "rating": 4.6,
+   "review_count": 2000
+  },
+  {
+   "asin": "B09FF46FQ9",
+   "title": "Anker 521 PowerHouse Portable Power Station, 256Wh LiFePO4",
+   "brand": "Anker",
+   "price": 199.99,
+   "rating": 4.6,
+   "review_count": 5000
+  }
+ ],
+ "espresso machines": [
+  {
+   "asin": "B08C96BG9H",
+   "title": "De'Longhi Stilosa Manual Espresso Machine, 15 Bar Pump, Manual Milk Frother Steam Wand",
+   "brand": "De'Longhi",
+   "price": 99.95,
+   "rating": 4.4,
+   "review_count": 31800
+  },
+  {
+   "asin": "B086H24F5F",
+   "title": "Gaggia RI9380/47 Classic Pro Espresso Machine, Cherry Red",
+   "brand": "Gaggia",
+   "price": 449.0,
+   "rating": 4.5,
+   "review_count": 4100
+  },
+  {
+   "asin": "B00CH9QWOU",
+   "title": "Breville Barista Express Espresso Machine BES870XL, Brushed Stainless Steel",
+   "brand": "Breville",
+   "price": 699.95,
+   "rating": 4.7,
+   "review_count": 33500
+  },
+  {
+   "asin": "B0B38KFWNK",
+   "title": "De'Longhi Magnifica Evo Automatic Espresso & Coffee Machine with Grinder ECAM29043SB",
+   "brand": "De'Longhi",
+   "price": 699.95,
+   "rating": 4.4,
+   "review_count": 7200
+  },
+  {
+   "asin": "B07VFY4MXM",
+   "title": "Philips 3200 Series Fully Automatic Espresso Machine, LatteGo Milk Frother EP3241/54",
+   "brand": "Philips",
+   "price": 799.0,
+   "rating": 4.5,
+   "review_count": 15600
+  },
+  {
+   "asin": "B0BBYNPV33",
+   "title": "Breville Barista Express Impress Espresso Machine BES876BSS, Brushed Stainless Steel",
+   "brand": "Breville",
+   "price": 899.95,
+   "rating": 4.6,
+   "review_count": 3200
+  }
+ ],
+ "instant pots": [
+  {
+   "asin": "B0B4PQDFCL",
+   "title": "Instant Pot 6QT RIO 7-in-1 Multi-Cooker, Pressure Cooker, Slow Cook, Steam, Rice Maker",
+   "brand": "Instant Pot",
+   "price": 79.95,
+   "rating": 4.7,
+   "review_count": 18500
+  },
+  {
+   "asin": "B00FLYWNYQ",
+   "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker, 6 Quart, Stainless Steel",
+   "brand": "Instant Pot",
+   "price": 89.99,
+   "rating": 4.7,
+   "review_count": 158000
+  },
+  {
+   "asin": "B01NBKTPTS",
+   "title": "Instant Pot Duo Plus 9-in-1 Multicooker, 6 Quart, Stainless Steel",
+   "brand": "Instant Pot",
+   "price": 109.99,
+   "rating": 4.7,
+   "review_count": 34000
+  },
+  {
+   "asin": "B08TMTJZ8L",
+   "title": "Instant Pot Pro Plus 10-in-1 Multi-Cooker with Sous Vide, 6 Quart",
+   "brand": "Instant Pot",
+   "price": 169.95,
+   "rating": 4.6,
+   "review_count": 4200
+  },
+  {
+   "asin": "B07VT23JDM",
+   "title": "Instant Pot Duo Crisp 11-in-1 Air Fryer and Pressure Cooker Combo, 8QT",
+   "brand": "Instant Pot",
+   "price": 179.95,
+   "rating": 4.7,
+   "review_count": 29000
+  },
+  {
+   "asin": "B0D365PHCD",
+   "title": "Instant Pot PRO Max Wi-Fi Smart 10-in-1 Pressure Cooker, 6 Quart",
+   "brand": "Instant Pot",
+   "price": 199.95,
+   "rating": 4.5,
+   "review_count": 1100
+  }
+ ],
+ "juicers": [
+  {
+   "asin": "B07D3C6NVL",
+   "title": "Mueller Juicer Ultra Power, Centrifugal Juicing Machine, Wide 3\" Feed Chute, Silver",
+   "brand": "Mueller",
+   "price": 59.97,
+   "rating": 4.5,
+   "review_count": 52000
+  },
+  {
+   "asin": "B00E0IBKLQ",
+   "title": "Hamilton Beach Big Mouth Juicer Machine, Centrifugal Extractor, 800W, Black",
+   "brand": "Hamilton Beach",
+   "price": 62.99,
+   "rating": 4.4,
+   "review_count": 29000
+  },
+  {
+   "asin": "B003R28HWQ",
+   "title": "Breville Juice Fountain Plus JE98XL, 850-Watt Centrifugal Juice Extractor, Silver",
+   "brand": "Breville",
+   "price": 149.95,
+   "rating": 4.6,
+   "review_count": 24000
+  },
+  {
+   "asin": "B016J1ICDU",
+   "title": "Breville BJE430SIL Juice Fountain Cold Centrifugal Juicer, 70 fl oz, Silver",
+   "brand": "Breville",
+   "price": 199.95,
+   "rating": 4.6,
+   "review_count": 11000
+  },
+  {
+   "asin": "B07GWNHDXH",
+   "title": "Omega Cold Press Juicer Machine, Slow Masticating Juicer J8006HDS, Silver",
+   "brand": "Omega",
+   "price": 279.95,
+   "rating": 4.6,
+   "review_count": 8500
+  },
+  {
+   "asin": "B09XRMLL5Y",
+   "title": "Omega MM900HDS Medical Medium Masticating Juicer, Cold Press, Silver",
+   "brand": "Omega",
+   "price": 329.95,
+   "rating": 4.5,
+   "review_count": 3200
+  }
+ ],
+ "rice cookers": [
+  {
+   "asin": "B077NMPKBL",
+   "title": "Aroma Housewares ARC-954SBD Digital Rice Cooker, 4-Cup Uncooked / 8-Cup Cooked, Steamer",
+   "brand": "Aroma Housewares",
+   "price": 49.99,
+   "rating": 4.5,
+   "review_count": 13800
+  },
+  {
+   "asin": "B00KDNKTJG",
+   "title": "Tiger JBV-A10U 5.5-Cup Micom Rice Cooker and Warmer with Steamer Tray, White",
+   "brand": "Tiger",
+   "price": 129.99,
+   "rating": 4.5,
+   "review_count": 4200
+  },
+  {
+   "asin": "B01MQWFGKG",
+   "title": "CUCKOO CR-0655F Micom Rice Cooker 6 Cup Uncooked, Fuzzy Logic, Red",
+   "brand": "Cuckoo",
+   "price": 99.99,
+   "rating": 4.5,
+   "review_count": 3600
+  },
+  {
+   "asin": "B091TLKF2H",
+   "title": "Toshiba Induction Heating Rice Cooker, Low Carb, 5.5 Cups Uncooked, Silvery White",
+   "brand": "Toshiba",
+   "price": 169.99,
+   "rating": 4.4,
+   "review_count": 1500
+  },
+  {
+   "asin": "B00007J5U7",
+   "title": "Zojirushi NS-ZCC10 5.5-Cup Neuro Fuzzy Rice Cooker and Warmer, Premium White",
+   "brand": "Zojirushi",
+   "price": 189.99,
+   "rating": 4.7,
+   "review_count": 9400
+  },
+  {
+   "asin": "B000A7NN4I",
+   "title": "Zojirushi NS-ZCC18 10-Cup Neuro Fuzzy Rice Cooker and Warmer, Premium White",
+   "brand": "Zojirushi",
+   "price": 279.99,
+   "rating": 4.7,
+   "review_count": 4100
+  }
+ ],
+ "sous vide": [
+  {
+   "asin": "B096BDTVHH",
+   "title": "Instant Pot Accu Slim Sous Vide 800W Precision Cooker, Immersion Circulator",
+   "brand": "Instant Pot",
+   "price": 79.95,
+   "rating": 4.6,
+   "review_count": 21500
+  },
+  {
+   "asin": "B07RNWJZNR",
+   "title": "INKBIRD WIFI Sous Vide Cooker ISV-100W, 1000 Watts Immersion Circulator",
+   "brand": "Inkbird",
+   "price": 89.99,
+   "rating": 4.5,
+   "review_count": 8200
+  },
+  {
+   "asin": "B07C7PW3PC",
+   "title": "Anova Culinary Sous Vide Precision Cooker Nano 2.0, 750 Watts, Bluetooth",
+   "brand": "Anova Culinary",
+   "price": 99.0,
+   "rating": 4.6,
+   "review_count": 12800
+  },
+  {
+   "asin": "B08S316BZ8",
+   "title": "Greater Goods Sous Vide Machine, Precision Cooker, 1100 Watts, Onyx Black",
+   "brand": "Greater Goods",
+   "price": 109.99,
+   "rating": 4.7,
+   "review_count": 6400
+  },
+  {
+   "asin": "B07WQ4M5TS",
+   "title": "Anova Culinary Sous Vide Precision Cooker 2.0 (WiFi), 1000 Watts",
+   "brand": "Anova Culinary",
+   "price": 169.0,
+   "rating": 4.6,
+   "review_count": 15600
+  },
+  {
+   "asin": "B0C384T4P2",
+   "title": "Breville BSV600PSS Joule Turbo Sous Vide Machine, Polished Stainless Steel",
+   "brand": "Breville",
+   "price": 249.95,
+   "rating": 4.5,
+   "review_count": 3100
+  }
+ ],
+ "exercise bikes": [
+  {
+   "asin": "B07D58CPGB",
+   "title": "YOSUDA Indoor Cycling Bike Stationary with LCD Monitor & Comfortable Seat Cushion",
+   "brand": "YOSUDA",
+   "price": 319.99,
+   "rating": 4.5,
+   "review_count": 38000
+  },
+  {
+   "asin": "B0CCJ4YWDN",
+   "title": "YOSUDA Magnetic Exercise Bike with App, 400 lbs Capacity, 50 lbs Flywheel",
+   "brand": "YOSUDA",
+   "price": 399.99,
+   "rating": 4.6,
+   "review_count": 4200
+  },
+  {
+   "asin": "B0CCT5CV2T",
+   "title": "Sunny Health & Fitness Indoor Cycling Bike with 49 LB Chrome Flywheel SF-B1002",
+   "brand": "Sunny Health & Fitness",
+   "price": 329.99,
+   "rating": 4.5,
+   "review_count": 15800
+  },
+  {
+   "asin": "B07FCJH59R",
+   "title": "Sunny Health & Fitness Magnetic Belt Drive Indoor Cycling Bike SF-B1805",
+   "brand": "Sunny Health & Fitness",
+   "price": 449.99,
+   "rating": 4.5,
+   "review_count": 9100
+  },
+  {
+   "asin": "B07WZXSDKW",
+   "title": "Schwinn Fitness IC4 Indoor Cycling Bike",
+   "brand": "Schwinn",
+   "price": 799.0,
+   "rating": 4.6,
+   "review_count": 7400
+  },
+  {
+   "asin": "B07Q6X4H9N",
+   "title": "pooboo Exercise Bike, Stationary Bike for Home with App, 350 lbs Capacity",
+   "brand": "pooboo",
+   "price": 279.99,
+   "rating": 4.4,
+   "review_count": 3100
+  }
+ ],
+ "treadmills": [
+  {
+   "asin": "B0BTXDHZLQ",
+   "title": "Sperax Under Desk Treadmill, Walking Pad, 2 in 1 Folding Treadmill for Home",
+   "brand": "Sperax",
+   "price": 199.99,
+   "rating": 4.5,
+   "review_count": 21000
+  },
+  {
+   "asin": "B0DNM9SH4L",
+   "title": "UREVO 2 in 1 Folding Treadmill with Manual Incline, Under Desk Treadmill",
+   "brand": "UREVO",
+   "price": 259.99,
+   "rating": 4.5,
+   "review_count": 8600
+  },
+  {
+   "asin": "B00OS9R9VW",
+   "title": "Sunny Health & Fitness SF-T4400 Folding Treadmill with Manual Incline and LCD",
+   "brand": "Sunny Health & Fitness",
+   "price": 279.0,
+   "rating": 4.4,
+   "review_count": 24500
+  },
+  {
+   "asin": "B0B9X2DQB2",
+   "title": "XTERRA Fitness TR150 Folding Treadmill, 250 LB Capacity, 2.25HP Motor",
+   "brand": "XTERRA Fitness",
+   "price": 399.99,
+   "rating": 4.4,
+   "review_count": 33000
+  },
+  {
+   "asin": "B09M5DK78R",
+   "title": "NordicTrack T Series Treadmill with Incline, Bluetooth, 300 lbs Capacity",
+   "brand": "NordicTrack",
+   "price": 699.0,
+   "rating": 4.4,
+   "review_count": 18900
+  },
+  {
+   "asin": "B0DVZHWLKZ",
+   "title": "NordicTrack T Series 5 Treadmill for Home with iFIT Compatibility",
+   "brand": "NordicTrack",
+   "price": 799.0,
+   "rating": 4.4,
+   "review_count": 2100
+  }
+ ],
+ "resistance bands": [
+  {
+   "asin": "B01AVDVHTI",
+   "title": "Fit Simplify Resistance Loop Exercise Bands with Guide and Carry Bag, Set of 5",
+   "brand": "Fit Simplify",
+   "price": 10.95,
+   "rating": 4.5,
+   "review_count": 190000
+  },
+  {
+   "asin": "B07CZTNY7T",
+   "title": "Fit Simplify 10 Inch Resistance Loop Exercise Bands, Set of 5, Assorted Colors",
+   "brand": "Fit Simplify",
+   "price": 12.95,
+   "rating": 4.6,
+   "review_count": 21000
+  },
+  {
+   "asin": "B0G4QKZF5R",
+   "title": "WHATAFIT Resistance Bands Set with Handles, 100 lbs, Door Anchor and Ankle Straps",
+   "brand": "WHATAFIT",
+   "price": 21.99,
+   "rating": 4.6,
+   "review_count": 52000
+  },
+  {
+   "asin": "B09R7X1MLP",
+   "title": "WHATAFIT Training Tubes Pull Up Resistance Bands, Natural Latex Fitness Tubes",
+   "brand": "WHATAFIT",
+   "price": 18.99,
+   "rating": 4.6,
+   "review_count": 13400
+  },
+  {
+   "asin": "B0C63CJZ98",
+   "title": "Bodylastics Basic Resistance Band Set with Handles, Door Anchor (3-190 Lbs)",
+   "brand": "Bodylastics",
+   "price": 54.95,
+   "rating": 4.7,
+   "review_count": 31000
+  },
+  {
+   "asin": "B005NADBXK",
+   "title": "Bodylastics 28 pcs Resistance Bands Set with 12 Stackable Anti-Snap Tubes",
+   "brand": "Bodylastics",
+   "price": 89.99,
+   "rating": 4.7,
+   "review_count": 9800
+  }
+ ],
+ "monitor arms": [
+  {
+   "asin": "B07DHK5DHN",
+   "title": "Amazon Basics Single Monitor Stand, Height Adjustable VESA Desk Arm Mount, 13-30\"",
+   "brand": "Amazon Basics",
+   "price": 35.99,
+   "rating": 4.5,
+   "review_count": 29000
+  },
+  {
+   "asin": "B0CQXMT3QC",
+   "title": "Amazon Basics Gas Spring Single Monitor Arm Desk Mount, Fits 15-27 Inch",
+   "brand": "Amazon Basics",
+   "price": 44.99,
+   "rating": 4.5,
+   "review_count": 4600
+  },
+  {
+   "asin": "B00B21TLQU",
+   "title": "VIVO Single 13 to 38 inch Ultrawide Monitor Arm Desk Mount STAND-V001",
+   "brand": "VIVO",
+   "price": 29.99,
+   "rating": 4.7,
+   "review_count": 40000
+  },
+  {
+   "asin": "B01LYVCEIB",
+   "title": "VIVO Premium Aluminum Single Monitor Gas Spring Arm, Fits up to 32\" STAND-V001Q",
+   "brand": "VIVO",
+   "price": 49.99,
+   "rating": 4.7,
+   "review_count": 12500
+  },
+  {
+   "asin": "B07T3KCQ94",
+   "title": "HUANUO FlowLift Single Monitor Mount, 13 to 32 Inch Monitor Arm with Clamp",
+   "brand": "HUANUO",
+   "price": 39.99,
+   "rating": 4.6,
+   "review_count": 18700
+  },
+  {
+   "asin": "B07X48X4KM",
+   "title": "HUANUO Single Monitor Arm for 13-49 inch Screens with USB, C-Clamp & Grommet",
+   "brand": "HUANUO",
+   "price": 45.99,
+   "rating": 4.6,
+   "review_count": 6200
+  }
+ ],
+ "desk lamps": [
+  {
+   "asin": "B08LMPCX3D",
+   "title": "Lepro LED Desk Lamp, 9.5W 800lm, 5 Color Modes 5 Brightness, Dimmable, White",
+   "brand": "Lepro",
+   "price": 22.99,
+   "rating": 4.6,
+   "review_count": 11200
+  },
+  {
+   "asin": "B0963J2CQ7",
+   "title": "Lepro LED Desk Lamp with USB Charging Port, 700LM Dimmable Touch Control",
+   "brand": "Lepro",
+   "price": 25.99,
+   "rating": 4.6,
+   "review_count": 7800
+  },
+  {
+   "asin": "B0197ZOAKE",
+   "title": "TaoTronics TT-DL13B LED Desk Lamp, Dimmable with USB Charging Port, 12W",
+   "brand": "TaoTronics",
+   "price": 45.99,
+   "rating": 4.6,
+   "review_count": 24000
+  },
+  {
+   "asin": "B076VNFZJG",
+   "title": "BenQ ScreenBar LED Monitor Light Bar, Auto-dimming, USB Monitor Lamp",
+   "brand": "BenQ",
+   "price": 99.0,
+   "rating": 4.6,
+   "review_count": 15600
+  },
+  {
+   "asin": "B07DP7RYXV",
+   "title": "BenQ ScreenBar Plus LED Monitor Light Bar with Desktop Dial, USB Powered",
+   "brand": "BenQ",
+   "price": 119.0,
+   "rating": 4.7,
+   "review_count": 9400
+  },
+  {
+   "asin": "B0DK59YKRS",
+   "title": "BenQ ScreenBar Halo 2 LED Monitor Light Bar with Wireless Controller",
+   "brand": "BenQ",
+   "price": 189.0,
+   "rating": 4.6,
+   "review_count": 2300
+  }
+ ],
+ "mattresses": [
+  {
+   "asin": "B01IU6RQW0",
+   "title": "Linenspa 8 Inch Memory Foam and Spring Hybrid Mattress, Medium Firm, Queen",
+   "brand": "Linenspa",
+   "price": 169.99,
+   "rating": 4.6,
+   "review_count": 134000
+  },
+  {
+   "asin": "B074NDQ143",
+   "title": "Vibe Gel Memory Foam Mattress, 12-Inch CertiPUR-US, Bed-in-a-Box, Queen",
+   "brand": "Vibe",
+   "price": 259.99,
+   "rating": 4.4,
+   "review_count": 42000
+  },
+  {
+   "asin": "B00Q7EPSHI",
+   "title": "Zinus 12 Inch Green Tea Memory Foam Mattress, Queen, Mattress in a Box",
+   "brand": "Zinus",
+   "price": 289.99,
+   "rating": 4.6,
+   "review_count": 127000
+  },
+  {
+   "asin": "B07CQ25KB1",
+   "title": "Sweetnight 12 Inch Plush Pillow Top Hybrid Mattress, Gel Memory Foam, Queen",
+   "brand": "Sweetnight",
+   "price": 329.99,
+   "rating": 4.5,
+   "review_count": 18000
+  },
+  {
+   "asin": "B0CKYZC93L",
+   "title": "Zinus Green Tea Memory Foam Mattress 12 Inch, Medium Firm, Queen",
+   "brand": "Zinus",
+   "price": 359.99,
+   "rating": 4.6,
+   "review_count": 9500
+  },
+  {
+   "asin": "B07BTRDGRM",
+   "title": "Classic Brands Cool Gel 14-Inch Memory Foam Mattress with 2 Pillows, Queen",
+   "brand": "Classic Brands",
+   "price": 449.99,
+   "rating": 4.5,
+   "review_count": 31000
+  }
+ ],
+ "beds & bed frames": [
+  {
+   "asin": "B074QWX9V9",
+   "title": "ZINUS Abel 14 Inch Metal Platform Bed Frame, No Box Spring Needed, Queen",
+   "brand": "Zinus",
+   "price": 119.99,
+   "rating": 4.6,
+   "review_count": 48000
+  },
+  {
+   "asin": "B093K67441",
+   "title": "Yaheetech Queen Metal Platform Bed Frame with Headboard, Under Bed Storage",
+   "brand": "Yaheetech",
+   "price": 99.99,
+   "rating": 4.5,
+   "review_count": 21000
+  },
+  {
+   "asin": "B08VN6W69N",
+   "title": "Yaheetech Victorian Vintage Queen Metal Bed Frame with Iron Headboard, Black",
+   "brand": "Yaheetech",
+   "price": 159.99,
+   "rating": 4.6,
+   "review_count": 14500
+  },
+  {
+   "asin": "B0BQ1XZ53G",
+   "title": "Zinus Kai Bamboo and Metal Platform Bed Frame with Headboard, Queen, Brown",
+   "brand": "Zinus",
+   "price": 229.99,
+   "rating": 4.7,
+   "review_count": 3200
+  },
+  {
+   "asin": "B086M58PQ3",
+   "title": "Allewie Queen Upholstered Platform Bed Frame with Fabric Headboard, Dark Grey",
+   "brand": "Allewie",
+   "price": 189.99,
+   "rating": 4.6,
+   "review_count": 26000
+  },
+  {
+   "asin": "B07H16VXFF",
+   "title": "Novogratz Marion Canopy Metal Platform Bed, Queen, Dark Gray",
+   "brand": "Novogratz",
+   "price": 279.99,
+   "rating": 4.6,
+   "review_count": 4100
+  }
+ ],
+ "bedding": [
+  {
+   "asin": "B07NYR18X4",
+   "title": "Bedsure Queen Comforter Set 7 Pieces, Grey Bed in a Bag with Sheets & Shams",
+   "brand": "Bedsure",
+   "price": 52.99,
+   "rating": 4.6,
+   "review_count": 48000
+  },
+  {
+   "asin": "B00NLLUMOE",
+   "title": "Mellanni Queen Sheets Set 4 PC, Hotel Luxury Extra Soft Cooling Bed Sheets, White",
+   "brand": "Mellanni",
+   "price": 36.97,
+   "rating": 4.5,
+   "review_count": 338000
+  },
+  {
+   "asin": "B07N7GSGTK",
+   "title": "Utopia Bedding Comforter Queen, All Season Down Alternative Duvet Insert, White",
+   "brand": "Utopia Bedding",
+   "price": 24.99,
+   "rating": 4.6,
+   "review_count": 112000
+  },
+  {
+   "asin": "B07F97MPYT",
+   "title": "CGK Unlimited Extra Deep Pocket Queen Sheet Set, 6 Piece Cooling Bedding, Grey",
+   "brand": "CGK Unlimited",
+   "price": 42.99,
+   "rating": 4.5,
+   "review_count": 268000
+  },
+  {
+   "asin": "B01GF5HM6I",
+   "title": "Linenspa Reversible Down Alternative Comforter, Queen, Stone/Charcoal",
+   "brand": "Linenspa",
+   "price": 34.99,
+   "rating": 4.7,
+   "review_count": 95000
+  },
+  {
+   "asin": "B073R5692B",
+   "title": "Sweet Home Collection 7 Piece Comforter Set Bag with Sheets, Queen, Gray",
+   "brand": "Sweet Home Collection",
+   "price": 49.99,
+   "rating": 4.5,
+   "review_count": 34000
+  }
+ ],
+ "wardrobes": [
+  {
+   "asin": "B001F51A5S",
+   "title": "Honey-Can-Do Portable Wardrobe Storage Closet with Magnetic Doors",
+   "brand": "Honey-Can-Do",
+   "price": 27.99,
+   "rating": 4.3,
+   "review_count": 18500
+  },
+  {
+   "asin": "B07BM1PW8L",
+   "title": "SONGMICS 51-Inch Portable Closet with 10 Shelves, Non-Woven Fabric, Black",
+   "brand": "SONGMICS",
+   "price": 45.99,
+   "rating": 4.5,
+   "review_count": 21000
+  },
+  {
+   "asin": "B0BGLF11MN",
+   "title": "SONGMICS Portable Closet Wardrobe with Cover, 4 Hanging Rods and Shelves, Gray",
+   "brand": "SONGMICS",
+   "price": 69.99,
+   "rating": 4.5,
+   "review_count": 8200
+  },
+  {
+   "asin": "B0FB3L5Z8Q",
+   "title": "YITAHOME Modular Closet System with Drawers & Clothing Rack, Steel Frame",
+   "brand": "YITAHOME",
+   "price": 129.99,
+   "rating": 4.4,
+   "review_count": 1300
+  },
+  {
+   "asin": "B0CGQVX4CM",
+   "title": "Tribesigns Freestanding Closet Organizer with 4 Drawers, White Walnut",
+   "brand": "Tribesigns",
+   "price": 189.99,
+   "rating": 4.4,
+   "review_count": 2400
+  },
+  {
+   "asin": "B001KW0BRE",
+   "title": "Prepac Elite 2-Door Wardrobe Cabinet Armoire with Hanging Rail, White",
+   "brand": "Prepac",
+   "price": 279.99,
+   "rating": 4.5,
+   "review_count": 3100
+  }
+ ],
+ "sofas": [
+  {
+   "asin": "B07BWM2CTH",
+   "title": "Amazon Brand Rivet Revolve Modern Sofa Couch, 80\"W, Caramel Leather",
+   "brand": "Rivet",
+   "price": 949.0,
+   "rating": 4.4,
+   "review_count": 1120
+  },
+  {
+   "asin": "B072FVHS9G",
+   "title": "Amazon Brand Rivet Sloane Mid-Century Modern Sofa Couch, 79.9\"W, Pebble Grey",
+   "brand": "Rivet",
+   "price": 699.0,
+   "rating": 4.5,
+   "review_count": 2300
+  },
+  {
+   "asin": "B08FSGRTBZ",
+   "title": "ZINUS Josh Sofa Couch, Easy Tool-Free Assembly, Soft Grey",
+   "brand": "Zinus",
+   "price": 429.0,
+   "rating": 4.4,
+   "review_count": 4100
+  },
+  {
+   "asin": "B082VLYF5W",
+   "title": "Amazon Brand Stone & Beam Westview Extra Deep Down-Filled Sofa, 89\"W, Cream",
+   "brand": "Stone & Beam",
+   "price": 1299.0,
+   "rating": 4.5,
+   "review_count": 860
+  },
+  {
+   "asin": "B08NYF3RQ5",
+   "title": "Amazon Brand Stone & Beam Rustin Deep-Seated Sofa Couch, 89\"W, Flax",
+   "brand": "Stone & Beam",
+   "price": 1099.0,
+   "rating": 4.4,
+   "review_count": 540
+  },
+  {
+   "asin": "B0CDWS3291",
+   "title": "Acanva Luxury Modern Curved Back Velvet Sofa, 3 Seater, Cream",
+   "brand": "Acanva",
+   "price": 569.99,
+   "rating": 4.3,
+   "review_count": 680
+  }
+ ],
+ "sofas & couches": [
+  {
+   "asin": "B01LY1WBQN",
+   "title": "Novogratz Brittany Sofa Futon, Linen Upholstery and Wooden Legs, Blue Linen",
+   "brand": "Novogratz",
+   "price": 349.0,
+   "rating": 4.3,
+   "review_count": 7600
+  },
+  {
+   "asin": "B0719WQH8N",
+   "title": "Amazon Brand Rivet Sloane Mid-Century Modern Loveseat Sofa, 64.2\"W, Pebble Grey",
+   "brand": "Rivet",
+   "price": 599.0,
+   "rating": 4.5,
+   "review_count": 1300
+  },
+  {
+   "asin": "B07LC9RSDS",
+   "title": "HONBAY Convertible Sectional Sofa, L-Shaped Couch, Reversible, Light Grey",
+   "brand": "HONBAY",
+   "price": 429.99,
+   "rating": 4.4,
+   "review_count": 9200
+  },
+  {
+   "asin": "B07GGF92DM",
+   "title": "Zinus Josh Loveseat Sofa, Easy Tool-Free Assembly, Beige",
+   "brand": "Zinus",
+   "price": 329.0,
+   "rating": 4.3,
+   "review_count": 1500
+  },
+  {
+   "asin": "B0B1HPRMDV",
+   "title": "Acanva Luxury Modular Sectional Sofa Set with Ottoman and Chaise, L-Shape, Grey",
+   "brand": "Acanva",
+   "price": 899.99,
+   "rating": 4.2,
+   "review_count": 420
+  },
+  {
+   "asin": "B073ZGDN9Q",
+   "title": "Novogratz Brittany Sleeper Sofa, Linen Upholstery and Wooden Legs, Blue Linen",
+   "brand": "Novogratz",
+   "price": 399.0,
+   "rating": 4.2,
+   "review_count": 1100
+  }
+ ],
+ "bookshelves": [
+  {
+   "asin": "B0DCB9L4HP",
+   "title": "Furinno LUDER Book Shelf, 6-Tier Tall Modern Bookshelf, White",
+   "brand": "Furinno",
+   "price": 59.99,
+   "rating": 4.5,
+   "review_count": 2400
+  },
+  {
+   "asin": "B004S6JGR0",
+   "title": "Furinno BASIC 3-Tier Bookshelf with Open Shelves, Standing Bookcase, Espresso",
+   "brand": "Furinno",
+   "price": 34.99,
+   "rating": 4.4,
+   "review_count": 15800
+  },
+  {
+   "asin": "B08LDGRR68",
+   "title": "VASAGLE 5-Tier Bookcase Open Storage Shelf, Rustic Brown",
+   "brand": "VASAGLE",
+   "price": 89.99,
+   "rating": 4.6,
+   "review_count": 6700
+  },
+  {
+   "asin": "B081DP3BPF",
+   "title": "Walker Edison 2-Tier Modern Farmhouse Wood Bookcase Cabinet, 52 Inch, Black",
+   "brand": "Walker Edison",
+   "price": 159.0,
+   "rating": 4.4,
+   "review_count": 980
+  },
+  {
+   "asin": "B0038ARTOE",
+   "title": "Sauder Beginnings 5-Shelf Bookcase with Adjustable Shelves, Cinnamon Cherry",
+   "brand": "Sauder",
+   "price": 79.99,
+   "rating": 4.5,
+   "review_count": 12300
+  },
+  {
+   "asin": "B0D4GS8JQX",
+   "title": "Walker Edison Modern Arched 3-Shelf Bookcase with Lower Cabinet, Coastal Oak",
+   "brand": "Walker Edison",
+   "price": 229.0,
+   "rating": 4.5,
+   "review_count": 610
+  }
+ ],
+ "dining tables": [
+  {
+   "asin": "B08LYK1N18",
+   "title": "VASAGLE Folding Dining Table, Drop Leaf Extendable Table for Small Spaces",
+   "brand": "VASAGLE",
+   "price": 99.99,
+   "rating": 4.5,
+   "review_count": 3100
+  },
+  {
+   "asin": "B0F62YXBYW",
+   "title": "VASAGLE Dining Table for 4-6 People, Modern Farmhouse, Natural Walnut/Black",
+   "brand": "VASAGLE",
+   "price": 149.99,
+   "rating": 4.4,
+   "review_count": 520
+  },
+  {
+   "asin": "B0898WR5JL",
+   "title": "Walker Edison Modern Farmhouse Wood Dining Table, 72 Inch, Reclaimed Barnwood",
+   "brand": "Walker Edison",
+   "price": 399.0,
+   "rating": 4.6,
+   "review_count": 1900
+  },
+  {
+   "asin": "B0CJDYTZLX",
+   "title": "Walker Edison Mid-Century Modern Solid Wood Oval Extension Dining Table, Walnut",
+   "brand": "Walker Edison",
+   "price": 549.0,
+   "rating": 4.4,
+   "review_count": 480
+  },
+  {
+   "asin": "B088RG3CZC",
+   "title": "VASAGLE Dining Table Set for 4, Kitchen Table with 2 Benches, Rustic Brown",
+   "brand": "VASAGLE",
+   "price": 179.99,
+   "rating": 4.5,
+   "review_count": 2700
+  },
+  {
+   "asin": "B08RK37SJ3",
+   "title": "Walker Edison Harrold Modern Farmhouse Solid Wood X-Leg Dining Table, 72 Inch",
+   "brand": "Walker Edison",
+   "price": 479.0,
+   "rating": 4.5,
+   "review_count": 640
+  }
+ ],
+ "fans & cooling": [
+  {
+   "asin": "B002M0HU04",
+   "title": "Lasko Oscillating Tower Fan with Remote, 3 Quiet Speeds, Timer, 36\", 2511",
+   "brand": "Lasko",
+   "price": 59.99,
+   "rating": 4.5,
+   "review_count": 38000
+  },
+  {
+   "asin": "B01N0LQJN6",
+   "title": "Honeywell QuietSet Whole Room Tower Fan with Remote, Black, HYF290B",
+   "brand": "Honeywell",
+   "price": 89.99,
+   "rating": 4.5,
+   "review_count": 42000
+  },
+  {
+   "asin": "B09MKPDJRT",
+   "title": "DREO Tower Fan for Bedroom, DC Motor, 20dB Ultra Quiet, 8 Speeds, DR-HTF007",
+   "brand": "Dreo",
+   "price": 69.99,
+   "rating": 4.6,
+   "review_count": 31000
+  },
+  {
+   "asin": "B0025QKUE8",
+   "title": "Vornado 660 Large Air Circulator Fan, 4-Speed, Whole Room, Black",
+   "brand": "Vornado",
+   "price": 109.99,
+   "rating": 4.7,
+   "review_count": 21000
+  },
+  {
+   "asin": "B00002N5ZB",
+   "title": "Lasko Wind Machine Fan, Air Circulator, 3 Speeds, 20\" Model 3300, Gray",
+   "brand": "Lasko",
+   "price": 44.99,
+   "rating": 4.7,
+   "review_count": 34000
+  },
+  {
+   "asin": "B0CR9W34X8",
+   "title": "Lasko Wind Machine Floor & Oscillating Pedestal Fan, Adjustable, 18\", 1827",
+   "brand": "Lasko",
+   "price": 54.99,
+   "rating": 4.5,
+   "review_count": 3500
+  }
+ ],
+ "garden tools": [
+  {
+   "asin": "B00004SD76",
+   "title": "Fiskars Softouch Micro-Tip Pruning Snip, Non-Coated Blades, Gray",
+   "brand": "Fiskars",
+   "price": 14.99,
+   "rating": 4.8,
+   "review_count": 52000
+  },
+  {
+   "asin": "B01IE58HUM",
+   "title": "Fiskars 91095935J Traditional Bypass Pruner, 5/8\" Cutting Capacity, Steel",
+   "brand": "Fiskars",
+   "price": 17.99,
+   "rating": 4.7,
+   "review_count": 29000
+  },
+  {
+   "asin": "B004S0PGPM",
+   "title": "Fiskars Ergo Trowel, Heavy Duty Gardening Hand Tool, Cast Aluminum",
+   "brand": "Fiskars",
+   "price": 12.99,
+   "rating": 4.8,
+   "review_count": 18000
+  },
+  {
+   "asin": "B07DLQNBS9",
+   "title": "Fiskars Ergo Garden Tool Set, 3-Piece (Trowel, Transplanter, Cultivator)",
+   "brand": "Fiskars",
+   "price": 24.99,
+   "rating": 4.8,
+   "review_count": 9500
+  },
+  {
+   "asin": "B07P768YGX",
+   "title": "Edward Tools Garden Tool Set, 3 Piece Carbon Steel with Ergo Rubber Grips",
+   "brand": "Edward Tools",
+   "price": 21.97,
+   "rating": 4.6,
+   "review_count": 7800
+  },
+  {
+   "asin": "B07N7963CH",
+   "title": "Fiskars 6\" Pruning Scissors for Stems and Herbs, Stainless Steel Blades",
+   "brand": "Fiskars",
+   "price": 11.99,
+   "rating": 4.7,
+   "review_count": 15000
+  }
+ ],
+ "outdoor furniture": [
+  {
+   "asin": "B06VV9LVNL",
+   "title": "Keter 55 Gallon Resin Rattan Deck Box and Patio Table, Outdoor Storage, Brown",
+   "brand": "Keter",
+   "price": 99.99,
+   "rating": 4.6,
+   "review_count": 13000
+  },
+  {
+   "asin": "B007MJFI0Y",
+   "title": "Keter Corfu 4 Piece All Weather Outdoor Patio Furniture Set with Cushions, Brown",
+   "brand": "Keter",
+   "price": 399.99,
+   "rating": 4.4,
+   "review_count": 6200
+  },
+  {
+   "asin": "B07CGZNG43",
+   "title": "Christopher Knight Home Cypress Outdoor Wicker Dining Chairs, 2-Piece Set, Grey",
+   "brand": "Christopher Knight Home",
+   "price": 189.99,
+   "rating": 4.5,
+   "review_count": 3100
+  },
+  {
+   "asin": "B09R49TX17",
+   "title": "Greesum 3 Pieces Patio Furniture Set, Outdoor Chairs with Glass Coffee Table",
+   "brand": "Greesum",
+   "price": 129.99,
+   "rating": 4.4,
+   "review_count": 8900
+  },
+  {
+   "asin": "B01992PM6G",
+   "title": "Best Choice Products Folding Adirondack Chair, Wooden, 350lb Capacity, Natural",
+   "brand": "Best Choice Products",
+   "price": 79.99,
+   "rating": 4.6,
+   "review_count": 11000
+  },
+  {
+   "asin": "B07M6VPZ19",
+   "title": "Devoko 5 Pieces Patio Furniture Set, Outdoor PE Wicker Sofa with Table, Beige",
+   "brand": "Devoko",
+   "price": 329.99,
+   "rating": 4.5,
+   "review_count": 9700
+  }
+ ],
+ "storage": [
+  {
+   "asin": "B01HBHQQ66",
+   "title": "Sterilite 5 Shelf Unit, Heavy-Duty Shelving Storage Rack for Garage, Gray",
+   "brand": "Sterilite",
+   "price": 54.99,
+   "rating": 4.7,
+   "review_count": 24000
+  },
+  {
+   "asin": "B002BA5F5C",
+   "title": "Sterilite 6-Pack 30 Quart Ultra Latch Box, Clear Storage Bins with Lids",
+   "brand": "Sterilite",
+   "price": 74.99,
+   "rating": 4.8,
+   "review_count": 31000
+  },
+  {
+   "asin": "B00CQGTGZQ",
+   "title": "IRIS USA 13 QT Plastic Storage Box with Lid, 6 Pack, Clear Stackable",
+   "brand": "IRIS USA",
+   "price": 44.99,
+   "rating": 4.7,
+   "review_count": 19000
+  },
+  {
+   "asin": "B07BND5QFD",
+   "title": "SONGMICS 5-Tier Adjustable Storage Shelf Rack, Holds 132 lb, Brown UBCB75BR",
+   "brand": "SONGMICS",
+   "price": 59.99,
+   "rating": 4.6,
+   "review_count": 14000
+  },
+  {
+   "asin": "B0BPCFWS67",
+   "title": "SONGMICS 5-Tier Storage Shelves Set of 2, Garage Shelving, Black UGLR450B02",
+   "brand": "SONGMICS",
+   "price": 109.99,
+   "rating": 4.7,
+   "review_count": 8200
+  },
+  {
+   "asin": "B01H2NWDXY",
+   "title": "IRIS USA 6 Qt. Plastic Storage Container Bins with Lids, 6 Pack, Clear",
+   "brand": "IRIS USA",
+   "price": 29.99,
+   "rating": 4.7,
+   "review_count": 12000
+  }
+ ]
 }
