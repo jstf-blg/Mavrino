@@ -338,7 +338,12 @@ def build_all_caches() -> dict:
     total   = 0
     results = {}
 
-    for niche in NICHES:
+    # Build the configured NICHES PLUS every niche present in the catalogue, so any
+    # niche we've curated products for is always cached — without having to also list
+    # it in the NICHES env. This is what lets the rewriter refresh non-kitchen posts
+    # and the scheduler build out newly-curated niches.
+    all_niches = list(dict.fromkeys(list(NICHES) + sorted(SEED_PRODUCTS.keys())))
+    for niche in all_niches:
         count        = build_cache_for_niche(niche)
         results[niche] = count
         total        += count
