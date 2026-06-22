@@ -435,7 +435,7 @@ def generate_schema(content: dict, products: list[dict], classification: dict, p
     schema_type = classification.get("schema_type", "Article")
     title       = content.get("title", "")
     description = classification.get("meta_description", "")
-    author      = os.getenv("AUTHOR_NAME", "Mavrino Editorial")
+    author      = "Mavrino Editorial"   # honest brand byline — never a fabricated individual
     date        = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S+00:00")
 
     schemas = []
@@ -446,7 +446,7 @@ def generate_schema(content: dict, products: list[dict], classification: dict, p
         "@type":         "Article",
         "headline":      title,
         "description":   description,
-        "author":        {"@type": "Person", "name": author},
+        "author":        {"@type": "Organization", "name": author},
         "publisher":     {"@type": "Organization", "name": "Mavrino", "url": SITE_URL},
         "datePublished": date,
         "dateModified":  date,
@@ -478,7 +478,7 @@ def generate_schema(content: dict, products: list[dict], classification: dict, p
             "@type":      "Review",
             "name":       title,
             "reviewBody": content.get("intro", "")[:500],
-            "author":     {"@type": "Person", "name": author},
+            "author":     {"@type": "Organization", "name": author},
             "itemReviewed": {
                 "@type":       "Product",
                 "name":        p.get("title", ""),

@@ -14,7 +14,7 @@ Env knobs:
 """
 import os, sys, time
 from datetime import datetime, timezone, timedelta
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, "pipeline")
@@ -85,7 +85,18 @@ def run():
     done_combos = {(_niche(e.get("keyword", "")), e.get("template"))
                    for e in plog if e.get("template") and _niche(e.get("keyword", ""))}
     cands = [(n, tpl) for tpl in templates for n in all_niches if (n, tpl) not in done_combos]
-    cands.sort(key=lambda c: (nc.get(c[0], 0), templates.index(c[1])))
+    # Round-robin across templates so consecutive scheduled slots VARY — otherwise the
+    # thin-niche priority lumps every "cheapest" post together in one run. Within each
+    # template, thinnest niches come first so category coverage still spreads.
+    buckets = defaultdict(list)
+    for n, tpl in sorted(cands, key=lambda c: (nc.get(c[0], 0), c[0])):
+        buckets[tpl].append((n, tpl))
+    interleaved = []
+    while any(buckets[t] for t in templates):
+        for t in templates:
+            if buckets[t]:
+                interleaved.append(buckets[t].pop(0))
+    cands = interleaved
 
     n_fill = min(len(slots), CAP)
     print(f"  empty slots next {HORIZON}h: {len(slots)} | niche×template combos left: {len(cands)} | filling up to {n_fill}\n{'='*56}")

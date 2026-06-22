@@ -544,15 +544,21 @@ def _hero_block(hero_image: dict, hero_media: dict, post_title: str = "") -> str
 
 
 def _author_block(persona: dict = None) -> str:
+    # Always the honest brand byline — never a fabricated individual reviewer.
     persona = persona or {}
-    name = persona.get("name", "Mavrino Editorial")
-    bio  = persona.get("bio") or os.getenv("AUTHOR_BIO", "Mavrino tests home, kitchen, travel and lifestyle products to help US shoppers buy with confidence.")
-    label = f"By {name}" if persona.get("name") else name
+    bio = persona.get("bio") or os.getenv(
+        "AUTHOR_BIO",
+        "Mavrino ranks products by analysing thousands of real customer reviews — with "
+        "bias-corrected ratings and a transparent confidence score, not recycled specs. "
+        "Written with AI assistance, grounded only in real data.")
     return (
         '<!-- wp:group {"className":"author-box","style":{"border":{"width":"1px","color":"#e4e0d8","radius":"8px"},"spacing":{"padding":{"all":"16px"}},"color":{"background":"#f5f2ec"}}} -->\n'
         '<div class="wp-block-group author-box" style="border:1px solid #e4e0d8;border-radius:8px;padding:16px;background-color:#f5f2ec">\n'
         '<!-- wp:paragraph -->\n'
-        f'<p><strong>{label}</strong> — {bio}</p>\n'
+        f'<p><strong>By Mavrino Editorial</strong> — {bio}</p>\n'
+        '<!-- /wp:paragraph -->\n'
+        '<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px"}}} -->\n'
+        '<p style="font-size:13px">Reviewed by Mavrino Editorial · <a href="https://mavrino.com/about/">Our methodology</a></p>\n'
         '<!-- /wp:paragraph -->\n'
         '</div>\n<!-- /wp:group -->'
     )

@@ -20,38 +20,33 @@ def pick(text: str, options: list, salt: str = ""):
     return options[_seed(text, salt) % len(options)] if options else None
 
 
-# ── Editorial personas (rotated per post → varied voice + real bylines) ─────────
+# ── Editorial voice (one honest brand byline; rotated STYLES avoid a templated feel) ─
+# We do NOT use fake named individual reviewers (fabricated bios + stock-photo faces) —
+# readers distrust them and Google penalises them. Every post is bylined "Mavrino
+# Editorial", the honest voice of the publication. We still rotate the writing STYLE
+# below so posts don't all read identically — same byline, varied delivery.
+_EDITORIAL_BIO = (
+    "Mavrino ranks products by analysing thousands of real customer reviews — with "
+    "bias-corrected ratings and a transparent confidence score, not recycled manufacturer "
+    "specs. Our guides are written with AI assistance, grounded only in real data."
+)
+
 PERSONAS = [
-    {
-        "name": "Marcus Reilly",
-        "bio": "Marcus cuts through marketing spin to focus on what actually matters when you're spending your own money.",
-        "voice": "Write as Marcus Reilly: blunt, practical, value-first. Skeptical of marketing claims, "
-                 "quick to call out overpriced features, and focused on what a normal buyer actually needs.",
-    },
-    {
-        "name": "Priya Nair",
-        "bio": "Priya is a specs-and-performance obsessive who reads the manual so you don't have to.",
-        "voice": "Write as Priya Nair: thorough and detail-driven, comfortable with specs and performance "
-                 "numbers but always translating them into plain, real-world terms.",
-    },
-    {
-        "name": "Dana Brooks",
-        "bio": "Dana hunts down the best value for busy households and hates wasting money on hype.",
-        "voice": "Write as Dana Brooks: warm, budget-savvy, family-minded. Emphasises value, running costs "
-                 "and which corners are safe to cut versus which aren't.",
-    },
-    {
-        "name": "Tom Whitfield",
-        "bio": "Tom cares about what's still working in five years, not what looks good on day one.",
-        "voice": "Write as Tom Whitfield: measured and reliability-focused. Weighs build quality, longevity "
-                 "and repairability over flashy features, and flags products that won't last.",
-    },
-    {
-        "name": "Sofia Alvarez",
-        "bio": "Sofia judges products by how they actually feel to live with day to day.",
-        "voice": "Write as Sofia Alvarez: friendly and lifestyle-led. Focuses on ease of use, everyday "
-                 "experience, noise, cleanup and how a product fits into a real home.",
-    },
+    {"name": "Mavrino Editorial", "bio": _EDITORIAL_BIO,
+     "voice": "Write in Mavrino's house voice: blunt, practical and value-first. Skeptical of marketing "
+              "claims, quick to flag overpriced features, focused on what a normal buyer actually needs."},
+    {"name": "Mavrino Editorial", "bio": _EDITORIAL_BIO,
+     "voice": "Write in Mavrino's house voice: thorough and detail-driven, comfortable with specs and "
+              "performance numbers but always translating them into plain, real-world terms."},
+    {"name": "Mavrino Editorial", "bio": _EDITORIAL_BIO,
+     "voice": "Write in Mavrino's house voice: warm, budget-savvy and household-minded — emphasise value, "
+              "running costs, and which corners are safe to cut versus which aren't."},
+    {"name": "Mavrino Editorial", "bio": _EDITORIAL_BIO,
+     "voice": "Write in Mavrino's house voice: measured and reliability-focused — weigh build quality, "
+              "longevity and repairability over flashy features, and flag products that won't last."},
+    {"name": "Mavrino Editorial", "bio": _EDITORIAL_BIO,
+     "voice": "Write in Mavrino's house voice: friendly and experience-led — focus on ease of use, the "
+              "everyday details of living with the product, noise, and cleanup."},
 ]
 
 
