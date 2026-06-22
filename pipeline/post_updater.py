@@ -110,15 +110,24 @@ def select_posts(posts, update_log, batch_size):
     return posts[:batch_size]
 
 
-def fetch_post(site, headers, pid):
-    """Confirm the post still exists; return slug/status/title."""
+def fetch_post(site, headers, pid, attempts=3):
+    """Confirm the post still exists; return slug/status/title.
+
+    Retries transient failures (rate limits / network blips) so a hiccup doesn't
+    mis-mark a live post as deleted. A real 404 returns None immediately."""
     url = f"https://public-api.wordpress.com/rest/v1.1/sites/{site}/posts/{pid}"
-    try:
-        r = requests.get(url, headers=headers, params={"fields": "ID,status,slug,title"}, timeout=25)
-        if r.status_code == 200:
-            return r.json()
-    except Exception:
-        pass
+    for i in range(attempts):
+        try:
+            r = requests.get(url, headers=headers, params={"fields": "ID,status,slug,title"}, timeout=25)
+            if r.status_code == 200:
+                return r.json()
+            if r.status_code == 404:
+                return None            # genuinely gone — don't waste retries
+            # 429 / 5xx / anything else → transient, fall through to backoff + retry
+        except Exception:
+            pass
+        if i < attempts - 1:
+            time.sleep(3 * (i + 1))
     return None
 
 

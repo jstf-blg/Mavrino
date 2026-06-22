@@ -101,9 +101,17 @@ def run():
     n_fill = min(len(slots), CAP)
     print(f"  empty slots next {HORIZON}h: {len(slots)} | niche×template combos left: {len(cands)} | filling up to {n_fill}\n{'='*56}")
 
-    made, si, ci = 0, 0, 0
-    while made < n_fill and ci < len(cands):
-        niche, tmpl = cands[ci]; ci += 1
+    made, si = 0, 0
+    last_tmpl = None
+    pending = list(cands)
+    while made < n_fill and pending:
+        # Hard guard: never schedule the same template twice in a row. Prefer the first
+        # pending candidate whose template differs from the one we last placed (round-robin
+        # ordering already spreads them, but skipped niches could otherwise leave two of the
+        # same template adjacent). Falls back to the first only if every remaining candidate
+        # shares the last template.
+        idx = next((j for j, (n, tp) in enumerate(pending) if tp != last_tmpl), 0)
+        niche, tmpl = pending.pop(idx)
         slug = f"tpl-{tmpl}-{niche}".replace(" ", "-")
         if slug in done:
             continue
@@ -138,11 +146,12 @@ def run():
                          "wp_post_id": res.get("wp_post_id"), "title": res.get("title", ""),
                          "wp_url": res.get("wp_url", ""), "scheduled_for": iso, "template": tmpl})
             made += 1
+            last_tmpl = tmpl
             print(f"  scheduled @ {iso}  [{tmpl}] {niche}")
         rp.save_done(done); rp.save_posts_log(plog)
         time.sleep(1)
 
-    print(f"\n  scheduled this run: {made} | combos remaining: {len(cands) - ci}\n{'='*56}")
+    print(f"\n  scheduled this run: {made} | combos remaining: {len(pending)}\n{'='*56}")
 
 
 if __name__ == "__main__":

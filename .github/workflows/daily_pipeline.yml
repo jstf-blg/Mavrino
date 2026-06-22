@@ -17,11 +17,21 @@ on:
         description: 'Override posts per day'
         required: false
         type: string
+      rewrite:
+        description: 'Run the post REWRITER (refresh existing posts) instead of publishing new ones'
+        required: false
+        default: false
+        type: boolean
+      rewrite_batch:
+        description: 'Rewriter batch size (how many posts to refresh this run)'
+        required: false
+        default: '50'
+        type: string
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 350   # the rewriter can refresh the whole catalogue in one run (~hours)
 
     steps:
       - name: Checkout repository
@@ -82,7 +92,7 @@ jobs:
           git config user.email "pipeline@noreply.github.com"
 
       - name: Run pipeline
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.rewrite != 'true'
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python run_pipeline.py --dry-run
@@ -92,9 +102,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-      - name: Weekly post rewrite
-        if: github.event.schedule == '0 5 * * 0'
-        run: python pipeline/post_updater.py --batch-size 50
+      - name: Post rewrite (weekly cron OR manual rewrite dispatch)
+        if: github.event.schedule == '0 5 * * 0' || github.event.inputs.rewrite == 'true'
+        run: python pipeline/post_updater.py --batch-size ${{ github.event.inputs.rewrite_batch || '50' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
