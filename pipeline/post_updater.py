@@ -37,7 +37,7 @@ import taxonomy_manager as tm
 ROOT        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUBLISH_LOG = os.path.join(ROOT, "logs", "wp_publish_log.json")     # run_pipeline posts (base types)
 POSTS_LOG   = os.path.join(ROOT, "config", "posts_log.json")        # scheduler posts (carry "template")
-UPDATE_LOG  = os.path.join(ROOT, "logs", "post_update_log.json")
+UPDATE_LOG  = os.path.join(ROOT, "config", "post_update_log.json")   # config/ is committed; logs/ is gitignored
 
 SUB_BATCH       = 10   # process this many, then pause
 SUB_BATCH_PAUSE = 30   # seconds between sub-batches (WordPress rate-limit courtesy)

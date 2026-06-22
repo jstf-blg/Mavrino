@@ -111,7 +111,6 @@ jobs:
       - name: Commit config state
         run: |
           git add config/ || true
-          git add logs/post_update_log.json || true
           git diff --cached --quiet || git commit -m "Pipeline state update $(date +%Y-%m-%d)"
           git push || true
 
