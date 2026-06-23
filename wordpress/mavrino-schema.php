@@ -5,7 +5,9 @@
  *              for Google AdSense. (3) Captures zero-result site searches and exposes
  *              them via a secured REST endpoint. (4) Injects the Mavrino visual system
  *              (trust-tone base + warm high-contrast CTA + reserved ad space).
- * Version:     1.3
+ *              (5) Emits Search Console / Bing / Pinterest verification tags and serves
+ *              the IndexNow key file for instant Bing/Yandex indexing.
+ * Version:     1.4
  * Author:      Mavrino
  *
  * INSTALL (one-time):
@@ -27,6 +29,34 @@ if (!defined('MAVRINO_SEARCH_SECRET')) {
     $mav_env = getenv('MAVRINO_SEARCH_SECRET');
     define('MAVRINO_SEARCH_SECRET', $mav_env ? $mav_env : '');
 }
+
+// ── Site verification (paste each token here, then re-upload this plugin) ─────
+// Google Search Console: add a URL-prefix property for https://mavrino.com → choose
+//   the "HTML tag" method → copy the content="..." value into MAVRINO_GOOGLE_VERIFY.
+// Bing Webmaster Tools: same idea → MAVRINO_BING_VERIFY. Pinterest: MAVRINO_PINTEREST_VERIFY.
+if (!defined('MAVRINO_GOOGLE_VERIFY'))    { define('MAVRINO_GOOGLE_VERIFY', ''); }
+if (!defined('MAVRINO_BING_VERIFY'))      { define('MAVRINO_BING_VERIFY', ''); }
+if (!defined('MAVRINO_PINTEREST_VERIFY')) { define('MAVRINO_PINTEREST_VERIFY', ''); }
+
+// IndexNow key — PUBLIC by design (served at /{key}.txt so Bing/Yandex can verify
+// instant URL submissions). Must match the pipeline's INDEXNOW_KEY env var.
+if (!defined('MAVRINO_INDEXNOW_KEY')) {
+    define('MAVRINO_INDEXNOW_KEY', '8ecda0d544414e51af70a9395b0cf8eed6f9e4fc07034acf89cdea18031eac40');
+}
+
+// ── 0. Site-verification meta tags (Search Console / Bing / Pinterest) ───────
+add_action('wp_head', function () {
+    $tags = array(
+        'google-site-verification' => MAVRINO_GOOGLE_VERIFY,
+        'msvalidate.01'            => MAVRINO_BING_VERIFY,
+        'p:domain_verify'          => MAVRINO_PINTEREST_VERIFY,
+    );
+    foreach ($tags as $name => $val) {
+        if ($val) {
+            echo '<meta name="' . esc_attr($name) . '" content="' . esc_attr($val) . '" />' . "\n";
+        }
+    }
+}, 1);
 
 // ── 1. JSON-LD schema into <head> ────────────────────────────────────────────
 add_action('wp_head', function () {
@@ -88,6 +118,16 @@ add_action('init', function () {
     if (!$pub || strpos($pub, 'XXXX') !== false) { return; }
     header('Content-Type: text/plain; charset=utf-8');
     echo "google.com, " . $pub . ", DIRECT, f08c47fec0942fa0\n";
+    exit;
+});
+
+// ── 2b. Serve the IndexNow key file at /{key}.txt ────────────────────────────
+add_action('init', function () {
+    $uri = isset($_SERVER['REQUEST_URI']) ? strtok($_SERVER['REQUEST_URI'], '?') : '';
+    $key = MAVRINO_INDEXNOW_KEY;
+    if (!$key || rtrim($uri, '/') !== '/' . $key . '.txt') { return; }
+    header('Content-Type: text/plain; charset=utf-8');
+    echo $key;
     exit;
 });
 

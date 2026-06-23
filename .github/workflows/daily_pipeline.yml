@@ -59,6 +59,7 @@ jobs:
           WP_USERNAME=${{ secrets.WP_USERNAME }}
           WP_PASSWORD=${{ secrets.WP_PASSWORD }}
           SITE_DOMAIN=https://mavrino.com
+          INDEXNOW_KEY=8ecda0d544414e51af70a9395b0cf8eed6f9e4fc07034acf89cdea18031eac40
           AUTHOR_NAME=Mavrino
           AUTHOR_BIO=${{ secrets.AUTHOR_BIO }}
           AMAZON_ACCESS_KEY=${{ secrets.AMAZON_ACCESS_KEY }}

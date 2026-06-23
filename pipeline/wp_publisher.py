@@ -486,6 +486,28 @@ def _disclosure_block() -> str:
     )
 
 
+def _ping_indexnow(urls):
+    """Notify IndexNow (Bing / Yandex / DuckDuckGo / Seznam) of new or updated URLs so
+    they crawl them within minutes. No-op without an INDEXNOW_KEY env var. The matching
+    key file is served at /{key}.txt by the Mavrino plugin so the engines verify ownership.
+    (Google does not use IndexNow — it still needs Search Console.)"""
+    key = os.getenv("INDEXNOW_KEY", "").strip()
+    if not key:
+        return
+    url_list = [u for u in (urls if isinstance(urls, list) else [urls]) if u]
+    if not url_list:
+        return
+    try:
+        host = "mavrino.com"
+        requests.post("https://api.indexnow.org/indexnow",
+                      json={"host": host, "key": key,
+                            "keyLocation": f"https://{host}/{key}.txt",
+                            "urlList": url_list}, timeout=15)
+        print(f"  [indexnow] submitted {len(url_list)} URL(s)")
+    except Exception as e:
+        print(f"  [indexnow] skip: {e}")
+
+
 def _disp_rating(product: dict):
     """Bias-corrected rating for display; falls back to the raw rating if absent."""
     return _num(product.get("adjusted_rating", product.get("rating", 0)))
@@ -974,6 +996,7 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
             pass
 
         _append_wp_log(log_entry)
+        _ping_indexnow(post_url)
         return log_entry
 
     return None
