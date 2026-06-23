@@ -951,6 +951,8 @@ def publish_to_wordpress(content: dict, products: list[dict], keyword_data: dict
         "categories": category_ids,
         "tags":       tag_ids,
         "format":     "standard",
+        "comments_open": False,   # no comments — the site gets only gambling/casino spam
+        "pings_open":    False,
         "metadata":   seo_metadata,
     }
 
