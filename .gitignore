@@ -2,6 +2,8 @@
 .env
 config/wp_token.json
 config/*token*.json
+credentials.json
+config/gsc_token.json
 
 # Python
 __pycache__/
