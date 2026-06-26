@@ -1328,7 +1328,17 @@
     "for-heavy-riders": 789924333,
     "4000w-motor": 789924334,
     "28-mph": 789924335,
-    "1500w-peak": 789924336
+    "1500w-peak": 789924336,
+    "1-8l-capacity": 789924337,
+    "reliable-charging": 789924338,
+    "32a-40a-amperage": 789924339,
+    "j1772-connector": 789924340,
+    "smart-app-enabled": 789923733,
+    "overnight-charging": 789924341,
+    "32a": 789924342,
+    "7.68kw": 789924343,
+    "for-value-conscious": 789924344,
+    "32a-power": 789924345
   },
   "post_index": [
     {
@@ -8515,11 +8525,108 @@
         "1500w-peak"
       ],
       "published_at": "2026-06-26"
+    },
+    {
+      "slug": "",
+      "title": "The Most Expensive Electric Kettles on Amazon Worth the Splurge in 2026: Honest Verdict",
+      "wp_post_id": 2479,
+      "wp_url": "https://mavrino.com/?p=2479",
+      "parent_category": "Kitchen",
+      "child_category": "Electric Kettles",
+      "tags": [
+        "chefman",
+        "amazon basics",
+        "under-$50",
+        "premium",
+        "budget-friendly",
+        "value-comparison",
+        "borosilicate-glass",
+        "stainless-steel",
+        "1500w",
+        "glass-carafe",
+        "1-8l-capacity"
+      ],
+      "published_at": "2026-06-26"
+    },
+    {
+      "slug": "",
+      "title": "Best EV Chargers for Every Budget in 2026",
+      "wp_post_id": 2484,
+      "wp_url": "https://mavrino.com/?p=2484",
+      "parent_category": "EV & Mobility",
+      "child_category": "EV Chargers",
+      "tags": [
+        "ecogenix",
+        "evdance",
+        "chargepoint",
+        "under-$300",
+        "$300-$500",
+        "budget-friendly",
+        "for-homeowners",
+        "reliable-charging",
+        "fast-charging",
+        "level-2-charging",
+        "32a-40a-amperage",
+        "j1772-connector",
+        "nema-14-50",
+        "smart-app-enabled",
+        "25ft-cable"
+      ],
+      "published_at": "2026-06-26"
+    },
+    {
+      "slug": "",
+      "title": "ChargePoint Home Flex vs Ecogenix Level 2: Is an Expensive EV Charger Worth It in 2026?",
+      "wp_post_id": 2487,
+      "wp_url": "https://mavrino.com/?p=2487",
+      "parent_category": "EV & Mobility",
+      "child_category": "EV Chargers",
+      "tags": [
+        "chargepoint",
+        "ecogenix",
+        "under-$300",
+        "$300-$500",
+        "home-charging",
+        "overnight-charging",
+        "budget-conscious",
+        "value-comparison",
+        "smart-app",
+        "NEMA-14-50",
+        "J1772",
+        "32A",
+        "7.68KW",
+        "25ft-cable"
+      ],
+      "published_at": "2026-06-26"
+    },
+    {
+      "slug": "",
+      "title": "Cheapest vs Most Expensive EV Charger in 2026: Ecogenix vs ChargePoint Home Flex",
+      "wp_post_id": 2490,
+      "wp_url": "https://mavrino.com/?p=2490",
+      "parent_category": "EV & Mobility",
+      "child_category": "EV Chargers",
+      "tags": [
+        "ecogenix",
+        "chargepoint",
+        "under-$300",
+        "$300-$500",
+        "budget-friendly",
+        "for-value-conscious",
+        "smart-features",
+        "compact",
+        "level-2-charger",
+        "j1772-connector",
+        "nema-14-50",
+        "smart-app",
+        "32a-power"
+      ],
+      "published_at": "2026-06-26"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 11,
-    "Electric Kettles": 4,
+    "Electric Kettles": 5,
     "Air Fryers": 8,
     "Blenders": 4,
     "Food Processors": 3,
@@ -8546,7 +8653,7 @@
     "Desk Lamps": 6,
     "Electric Bikes": 6,
     "Electric Scooters": 1,
-    "EV Chargers": 2,
+    "EV Chargers": 5,
     "Humidifiers": 4,
     "Ice Makers": 2,
     "Keyboards & Mice": 2,

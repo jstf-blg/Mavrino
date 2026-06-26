@@ -3494,5 +3494,49 @@
     "wp_url": "https://mavrino.com/?p=2473",
     "scheduled_for": "2026-06-29T18:00:00+00:00",
     "template": "worth_it"
+  },
+  {
+    "date": "2026-06-29",
+    "keyword": "most expensive electric kettles on amazon worth the splurge in 2026",
+    "post_type": "splurge",
+    "slug": "tpl-splurge-electric-kettles",
+    "wp_post_id": 2479,
+    "title": "The Most Expensive Electric Kettles on Amazon Worth the Splurge in 2026: Honest Verdict",
+    "wp_url": "https://mavrino.com/?p=2479",
+    "scheduled_for": "2026-06-29T19:00:00+00:00",
+    "template": "splurge"
+  },
+  {
+    "date": "2026-06-29",
+    "keyword": "best ev chargers for every budget in 2026",
+    "post_type": "every_budget",
+    "slug": "tpl-every_budget-ev-chargers",
+    "wp_post_id": 2484,
+    "title": "Best EV Chargers for Every Budget in 2026",
+    "wp_url": "https://mavrino.com/?p=2484",
+    "scheduled_for": "2026-06-29T20:00:00+00:00",
+    "template": "every_budget"
+  },
+  {
+    "date": "2026-06-29",
+    "keyword": "is an expensive ev charger worth it in 2026",
+    "post_type": "worth_it",
+    "slug": "tpl-worth_it-ev-chargers",
+    "wp_post_id": 2487,
+    "title": "ChargePoint Home Flex vs Ecogenix Level 2: Is an Expensive EV Charger Worth It in 2026?",
+    "wp_url": "https://mavrino.com/?p=2487",
+    "scheduled_for": "2026-06-29T21:00:00+00:00",
+    "template": "worth_it"
+  },
+  {
+    "date": "2026-06-29",
+    "keyword": "cheapest vs most expensive ev charger in 2026",
+    "post_type": "cheapest_vs_expensive",
+    "slug": "tpl-cheapest_vs_expensive-ev-chargers",
+    "wp_post_id": 2490,
+    "title": "Cheapest vs Most Expensive EV Charger in 2026: Ecogenix vs ChargePoint Home Flex",
+    "wp_url": "https://mavrino.com/?p=2490",
+    "scheduled_for": "2026-06-29T22:00:00+00:00",
+    "template": "cheapest_vs_expensive"
   }
 ]
