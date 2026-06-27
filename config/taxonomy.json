@@ -1374,7 +1374,11 @@
     "everyday-use": 789923549,
     "dual-brew": 789924377,
     "12-cup capacity": 789924378,
-    "adjustable-intensity": 789924379
+    "adjustable-intensity": 789924379,
+    "mechanical-keyboard": 789924380,
+    "adjustable-switches": 789924381,
+    "tkl-layout": 789923741,
+    "wireless-connectivity": 789924382
   },
   "post_index": [
     {
@@ -9048,6 +9052,118 @@
         "adjustable-intensity"
       ],
       "published_at": "2026-06-27"
+    },
+    {
+      "slug": "",
+      "title": "We Compared the Most Expensive Robot Vacuums on Amazon Worth the Splurge in 2026 — Here Are the Real Winners",
+      "wp_post_id": 2570,
+      "wp_url": "https://mavrino.com/?p=2570",
+      "parent_category": "Home",
+      "child_category": "Robot Vacuums",
+      "tags": [
+        "irobot",
+        "eufy",
+        "under-$200",
+        "$300-$500",
+        "premium",
+        "for-homeowners",
+        "self-emptying",
+        "strong-suction",
+        "super-thin",
+        "mop-combo"
+      ],
+      "published_at": "2026-06-27"
+    },
+    {
+      "slug": "",
+      "title": "The Best Keyboards & Mice for Every Budget in 2026: Picks That Actually Deliver",
+      "wp_post_id": 2576,
+      "wp_url": "https://mavrino.com/?p=2576",
+      "parent_category": "Home Office",
+      "child_category": "Keyboards & Mice",
+      "tags": [
+        "keychron",
+        "logitech",
+        "steelseries",
+        "under-$150",
+        "under-$200",
+        "under-$300",
+        "for-gamers",
+        "for-typists",
+        "for-remote-workers",
+        "budget-friendly",
+        "mechanical-keyboard",
+        "wireless",
+        "rgb-lighting",
+        "rapid-trigger",
+        "adjustable-switches"
+      ],
+      "published_at": "2026-06-27"
+    },
+    {
+      "slug": "",
+      "title": "SteelSeries Apex Pro TKL Gen 3 vs Keychron K2 HE: Is an Expensive Keyboards & Mice Worth It in 2026?",
+      "wp_post_id": 2579,
+      "wp_url": "https://mavrino.com/?p=2579",
+      "parent_category": "Home Office",
+      "child_category": "Keyboards & Mice",
+      "tags": [
+        "steelseries",
+        "keychron",
+        "under-$150",
+        "under-$300",
+        "budget-friendly",
+        "gaming",
+        "value-for-money",
+        "wireless",
+        "mechanical-switches",
+        "rapid-trigger",
+        "tkl-layout",
+        "gaming-keyboard"
+      ],
+      "published_at": "2026-06-27"
+    },
+    {
+      "slug": "",
+      "title": "Cheapest vs Most Expensive Keyboards & Mice in 2026: Keychron K2 HE vs SteelSeries Apex Pro TKL Gen 3",
+      "wp_post_id": 2582,
+      "wp_url": "https://mavrino.com/?p=2582",
+      "parent_category": "Home Office",
+      "child_category": "Keyboards & Mice",
+      "tags": [
+        "keychron",
+        "steelseries",
+        "under-$150",
+        "under-$300",
+        "budget-friendly",
+        "gaming",
+        "rapid-trigger",
+        "wireless",
+        "mechanical-switches",
+        "tkl-layout"
+      ],
+      "published_at": "2026-06-27"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Keyboard on Amazon — Worth the Hype? (Logitech G915 Lightspeed Review 2026)",
+      "wp_post_id": 2585,
+      "wp_url": "https://mavrino.com/?p=2585",
+      "parent_category": "Home Office",
+      "child_category": "Mechanical Keyboards",
+      "tags": [
+        "logitech",
+        "under-$200",
+        "under-$300",
+        "for-gaming",
+        "wireless",
+        "premium",
+        "mechanical-switches",
+        "rgb-lighting",
+        "wireless-connectivity",
+        "high-rating"
+      ],
+      "published_at": "2026-06-27"
     }
   ],
   "category_counts": {
@@ -9056,7 +9172,7 @@
     "Air Fryers": 8,
     "Blenders": 5,
     "Food Processors": 4,
-    "Robot Vacuums": 4,
+    "Robot Vacuums": 5,
     "Luggage": 6,
     "Standing Desks": 5,
     "Stand Mixers": 3,
@@ -9082,9 +9198,9 @@
     "EV Chargers": 5,
     "Humidifiers": 8,
     "Ice Makers": 3,
-    "Keyboards & Mice": 2,
+    "Keyboards & Mice": 5,
     "Laptop Stands": 2,
-    "Mechanical Keyboards": 2,
+    "Mechanical Keyboards": 3,
     "Travel Pillows": 8,
     "Portable Chargers": 2,
     "Portable Grills": 2,
