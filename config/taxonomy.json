@@ -1404,7 +1404,18 @@
     "single-monitor-mount": 789924453,
     "13-to-38-inch": 789924454,
     "long-flights": 789924455,
-    "soft-support": 789923827
+    "soft-support": 789923827,
+    "dual-charging": 789924456,
+    "built-in-cable": 789924457,
+    "for-laptop-users": 789924458,
+    "65w-fast-charging": 789923800,
+    "22.5w-power": 789924459,
+    "20000mah-capacity": 789923801,
+    "10000mah-capacity": 789924460,
+    "for-laptops": 789923799,
+    "laptop-grade-charging": 789924461,
+    "for-everyday-users": 789924462,
+    "22.5w-fast-charging": 789924463
   },
   "post_index": [
     {
@@ -9589,6 +9600,94 @@
         "travel-friendly"
       ],
       "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "The Best Portable Chargers for Every Budget in 2026: Tested, Ranked, Worth It",
+      "wp_post_id": 2821,
+      "wp_url": "https://mavrino.com/?p=2821",
+      "parent_category": "Travel",
+      "child_category": "Portable Chargers",
+      "tags": [
+        "iniu",
+        "anker",
+        "under-$50",
+        "for-commuters",
+        "for-remote-workers",
+        "budget-friendly",
+        "compact",
+        "fast-charging",
+        "dual-charging",
+        "built-in-cable",
+        "laptop-compatible",
+        "lightweight"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "INIU 65W Laptop Power Bank vs INIU 10000mAh: Is an Expensive Portable Charger Worth It in 2026?",
+      "wp_post_id": 2824,
+      "wp_url": "https://mavrino.com/?p=2824",
+      "parent_category": "Travel",
+      "child_category": "Portable Chargers",
+      "tags": [
+        "iniu",
+        "under-$50",
+        "for-laptop-users",
+        "for-travelers",
+        "budget-conscious",
+        "high-capacity",
+        "65W-fast-charging",
+        "22.5W-power",
+        "20000mAh-capacity",
+        "10000mAh-capacity",
+        "dual-fast-charging",
+        "laptop-compatible"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "INIU 10000mAh vs INIU 20000mAh: Cheapest vs Most Expensive Portable Charger in 2026",
+      "wp_post_id": 2827,
+      "wp_url": "https://mavrino.com/?p=2827",
+      "parent_category": "Travel",
+      "child_category": "Portable Chargers",
+      "tags": [
+        "iniu",
+        "under-$50",
+        "budget",
+        "for-laptops",
+        "for-travel",
+        "fast-charging",
+        "dual-fast-charging",
+        "65W-charging",
+        "22.5W-charging",
+        "laptop-grade-charging"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Portable Charger on Amazon — Worth the Hype? (INIU 10000mAh Review)",
+      "wp_post_id": 2830,
+      "wp_url": "https://mavrino.com/?p=2830",
+      "parent_category": "Travel",
+      "child_category": "Portable Chargers",
+      "tags": [
+        "iniu",
+        "under-$50",
+        "for-everyday-users",
+        "travel-friendly",
+        "compact",
+        "budget",
+        "10000mah-capacity",
+        "22.5w-fast-charging",
+        "lightweight",
+        "highly-rated"
+      ],
+      "published_at": "2026-06-28"
     }
   ],
   "category_counts": {
@@ -9627,7 +9726,7 @@
     "Laptop Stands": 3,
     "Mechanical Keyboards": 7,
     "Travel Pillows": 10,
-    "Portable Chargers": 2,
+    "Portable Chargers": 6,
     "Portable Grills": 2,
     "Portable Power Stations": 2,
     "Smart Scales": 4,
