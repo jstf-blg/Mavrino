@@ -3912,5 +3912,71 @@
     "wp_url": "https://mavrino.com/?p=2637",
     "scheduled_for": "2026-07-01T08:00:00+00:00",
     "template": "every_budget"
+  },
+  {
+    "date": "2026-07-01",
+    "keyword": "best monitors for every budget in 2026",
+    "post_type": "every_budget",
+    "slug": "tpl-every_budget-monitors",
+    "wp_post_id": 2798,
+    "title": "The Best Monitors for Every Budget in 2026",
+    "wp_url": "https://mavrino.com/?p=2798",
+    "scheduled_for": "2026-07-01T09:00:00+00:00",
+    "template": "every_budget"
+  },
+  {
+    "date": "2026-07-01",
+    "keyword": "is an expensive monitor worth it in 2026",
+    "post_type": "worth_it",
+    "slug": "tpl-worth_it-monitors",
+    "wp_post_id": 2801,
+    "title": "VIVO Premium Gas Spring Arm vs. VIVO Standard Arm: Is an Expensive Monitor Mount Worth It in 2026?",
+    "wp_url": "https://mavrino.com/?p=2801",
+    "scheduled_for": "2026-07-01T10:00:00+00:00",
+    "template": "worth_it"
+  },
+  {
+    "date": "2026-07-01",
+    "keyword": "cheapest vs most expensive monitor in 2026",
+    "post_type": "cheapest_vs_expensive",
+    "slug": "tpl-cheapest_vs_expensive-monitors",
+    "wp_post_id": 2804,
+    "title": "Cheapest vs Most Expensive Monitor Arm in 2026: VIVO $29.99 vs $49.99 — Which Should You Buy?",
+    "wp_url": "https://mavrino.com/?p=2804",
+    "scheduled_for": "2026-07-01T11:00:00+00:00",
+    "template": "cheapest_vs_expensive"
+  },
+  {
+    "date": "2026-07-01",
+    "keyword": "the most reviewed monitor on amazon — worth the hype in 2026",
+    "post_type": "most_reviewed",
+    "slug": "tpl-most_reviewed-monitors",
+    "wp_post_id": 2807,
+    "title": "The Most-Reviewed Monitor Arm on Amazon — Worth the Hype? (VIVO STAND-V001 Review)",
+    "wp_url": "https://mavrino.com/?p=2807",
+    "scheduled_for": "2026-07-01T12:00:00+00:00",
+    "template": "most_reviewed"
+  },
+  {
+    "date": "2026-07-01",
+    "keyword": "best pillows for every budget in 2026",
+    "post_type": "every_budget",
+    "slug": "tpl-every_budget-pillows",
+    "wp_post_id": 2813,
+    "title": "Best Pillows for Every Budget in 2026",
+    "wp_url": "https://mavrino.com/?p=2813",
+    "scheduled_for": "2026-07-01T13:00:00+00:00",
+    "template": "every_budget"
+  },
+  {
+    "date": "2026-07-01",
+    "keyword": "is an expensive pillow worth it in 2026",
+    "post_type": "worth_it",
+    "slug": "tpl-worth_it-pillows",
+    "wp_post_id": 2816,
+    "title": "Trtl Pillow Plus vs Trtl Pillow: Is an Expensive Pillow Worth It in 2026?",
+    "wp_url": "https://mavrino.com/?p=2816",
+    "scheduled_for": "2026-07-01T14:00:00+00:00",
+    "template": "worth_it"
   }
 ]

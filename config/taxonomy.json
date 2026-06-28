@@ -1395,7 +1395,16 @@
     "turbo-technology": 789924392,
     "4-in-1-versatility": 789924393,
     "for-kitchens": 789924395,
-    "replacement": 789924396
+    "replacement": 789924396,
+    "workspace-setup": 789924448,
+    "single-monitor": 789924449,
+    "desk-organization": 789924450,
+    "steel-construction": 789924451,
+    "for-desk-workers": 789924452,
+    "single-monitor-mount": 789924453,
+    "13-to-38-inch": 789924454,
+    "long-flights": 789924455,
+    "soft-support": 789923827
   },
   "post_index": [
     {
@@ -9448,6 +9457,138 @@
         "french-door"
       ],
       "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "The Best Monitors for Every Budget in 2026",
+      "wp_post_id": 2798,
+      "wp_url": "https://mavrino.com/?p=2798",
+      "parent_category": "Home Office",
+      "child_category": "Monitor Arms",
+      "tags": [
+        "vivo",
+        "huanuo",
+        "under-$50",
+        "for-home-office",
+        "budget-friendly",
+        "for-beginners",
+        "workspace-setup",
+        "adjustable-height",
+        "clamp-mount",
+        "grommet-mount",
+        "usb-ports",
+        "ultrawide-compatible",
+        "single-monitor"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "VIVO Premium Gas Spring Arm vs. VIVO Standard Arm: Is an Expensive Monitor Mount Worth It in 2026?",
+      "wp_post_id": 2801,
+      "wp_url": "https://mavrino.com/?p=2801",
+      "parent_category": "Home Office",
+      "child_category": "Monitor Arms",
+      "tags": [
+        "vivo",
+        "under-$50",
+        "under-$100",
+        "budget-friendly",
+        "premium-option",
+        "for-desks",
+        "gas-spring",
+        "adjustable",
+        "ultrawide-compatible",
+        "aluminum"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "Cheapest vs Most Expensive Monitor Arm in 2026: VIVO $29.99 vs $49.99 — Which Should You Buy?",
+      "wp_post_id": 2804,
+      "wp_url": "https://mavrino.com/?p=2804",
+      "parent_category": "Home Office",
+      "child_category": "Monitor Arms",
+      "tags": [
+        "vivo",
+        "under-$50",
+        "budget",
+        "for-small-spaces",
+        "desk-organization",
+        "gas-spring",
+        "steel-construction",
+        "aluminum",
+        "ultrawide-compatible",
+        "adjustable-height"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Monitor Arm on Amazon — Worth the Hype? (VIVO STAND-V001 Review)",
+      "wp_post_id": 2807,
+      "wp_url": "https://mavrino.com/?p=2807",
+      "parent_category": "Home Office",
+      "child_category": "Monitor Arms",
+      "tags": [
+        "vivo",
+        "under-$50",
+        "for-desk-workers",
+        "for-home-office",
+        "for-students",
+        "budget-friendly",
+        "space-saving",
+        "single-monitor-mount",
+        "ultrawide-compatible",
+        "adjustable",
+        "13-to-38-inch"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "Best Pillows for Every Budget in 2026",
+      "wp_post_id": 2813,
+      "wp_url": "https://mavrino.com/?p=2813",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "cabeau",
+        "under-$50",
+        "under-$100",
+        "for-travel",
+        "for-airplanes",
+        "budget-friendly",
+        "long-flights",
+        "neck-support",
+        "memory-foam",
+        "adjustable",
+        "soft-support",
+        "travel-friendly"
+      ],
+      "published_at": "2026-06-28"
+    },
+    {
+      "slug": "",
+      "title": "Trtl Pillow Plus vs Trtl Pillow: Is an Expensive Pillow Worth It in 2026?",
+      "wp_post_id": 2816,
+      "wp_url": "https://mavrino.com/?p=2816",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "under-$100",
+        "for-airplanes",
+        "for-travel",
+        "budget-friendly",
+        "neck-support",
+        "adjustable",
+        "travel-friendly"
+      ],
+      "published_at": "2026-06-28"
     }
   ],
   "category_counts": {
@@ -9485,7 +9626,7 @@
     "Keyboards & Mice": 5,
     "Laptop Stands": 3,
     "Mechanical Keyboards": 7,
-    "Travel Pillows": 8,
+    "Travel Pillows": 10,
     "Portable Chargers": 2,
     "Portable Grills": 2,
     "Portable Power Stations": 2,
@@ -9507,7 +9648,7 @@
     "Instant Pots": 6,
     "Juicers": 6,
     "Mattresses": 6,
-    "Monitor Arms": 6,
+    "Monitor Arms": 10,
     "Outdoor Furniture": 6,
     "Resistance Bands": 6,
     "Rice Cookers": 6,
