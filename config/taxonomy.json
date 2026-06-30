@@ -1493,7 +1493,11 @@
     "hard-sided": 789924524,
     "40-liter-capacity": 789924525,
     "for-daily-commute": 789924526,
-    "15.6-inch-capacity": 789924527
+    "15.6-inch-capacity": 789924527,
+    "travel-pillow": 789924528,
+    "wrap-style": 789924529,
+    "for-serious-cooking": 789924530,
+    "workhorse": 789924531
   },
   "post_index": [
     {
@@ -10805,14 +10809,121 @@
         "budget-friendly"
       ],
       "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Best Electric Kettles for Every Budget in 2026",
+      "wp_post_id": 3020,
+      "wp_url": "https://mavrino.com/?p=3020",
+      "parent_category": "Kitchen",
+      "child_category": "Electric Kettles",
+      "tags": [
+        "amazon basics",
+        "chefman",
+        "under-$50",
+        "for-budget",
+        "for-daily-use",
+        "for-coffee-lovers",
+        "stainless-steel",
+        "borosilicate-glass",
+        "1500w-power",
+        "fast-boil"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "Trtl Pillow Plus vs Trtl Pillow: Is an Expensive Travel Pillow Worth It in 2026?",
+      "wp_post_id": 3025,
+      "wp_url": "https://mavrino.com/?p=3025",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "under-$100",
+        "for-airplane-travel",
+        "budget-friendly",
+        "neck-support",
+        "adjustable",
+        "soft-neck-support",
+        "travel-pillow"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "Trtl Pillow vs Trtl Pillow Plus: Cheapest vs Most Expensive Travel Pillow in 2026",
+      "wp_post_id": 3028,
+      "wp_url": "https://mavrino.com/?p=3028",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "under-$100",
+        "for-airplanes",
+        "budget",
+        "neck-support",
+        "for-travel",
+        "wrap-style",
+        "adjustable",
+        "soft-material"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Travel Pillow on Amazon — Worth the Hype? (Trtl Pillow Review 2026)",
+      "wp_post_id": 3031,
+      "wp_url": "https://mavrino.com/?p=3031",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "for-flights",
+        "for-long-trips",
+        "neck-support",
+        "compact",
+        "soft-material",
+        "lightweight",
+        "airline-approved"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Best Food Processors for Every Budget in 2026",
+      "wp_post_id": 3037,
+      "wp_url": "https://mavrino.com/?p=3037",
+      "parent_category": "Kitchen",
+      "child_category": "Food Processors",
+      "tags": [
+        "cuisinart",
+        "kitchenaid",
+        "under-$50",
+        "under-$100",
+        "under-$150",
+        "under-$300",
+        "for-families",
+        "for-every-budget",
+        "budget-friendly",
+        "for-serious-cooking",
+        "7-cup-capacity",
+        "13-cup-capacity",
+        "mini-processor",
+        "workhorse"
+      ],
+      "published_at": "2026-06-30"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 14,
-    "Electric Kettles": 5,
+    "Electric Kettles": 6,
     "Air Fryers": 9,
     "Blenders": 5,
-    "Food Processors": 4,
+    "Food Processors": 5,
     "Robot Vacuums": 5,
     "Luggage": 6,
     "Standing Desks": 5,
@@ -10842,7 +10953,7 @@
     "Keyboards & Mice": 5,
     "Laptop Stands": 3,
     "Mechanical Keyboards": 7,
-    "Travel Pillows": 13,
+    "Travel Pillows": 16,
     "Portable Chargers": 6,
     "Portable Grills": 6,
     "Portable Power Stations": 6,
