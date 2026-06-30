@@ -1486,7 +1486,14 @@
     "tower-form-factor": 789924517,
     "40-minute-runtime": 789924518,
     "115aw-suction": 789924519,
-    "stick-vacuum": 789924520
+    "stick-vacuum": 789924520,
+    "spo2-monitor": 789924521,
+    "adjustable-fit-system": 789924522,
+    "soft-neck-support": 789924523,
+    "hard-sided": 789924524,
+    "40-liter-capacity": 789924525,
+    "for-daily-commute": 789924526,
+    "15.6-inch-capacity": 789924527
   },
   "post_index": [
     {
@@ -10628,6 +10635,176 @@
         "lightweight"
       ],
       "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Best Fitness Trackers for Every Budget in 2026",
+      "wp_post_id": 2986,
+      "wp_url": "https://mavrino.com/?p=2986",
+      "parent_category": "Fitness & Wellness",
+      "child_category": "Fitness Trackers",
+      "tags": [
+        "amazfit",
+        "fitbit",
+        "under-$50",
+        "under-$100",
+        "under-$200",
+        "budget-friendly",
+        "for-beginners",
+        "heart-rate-monitoring",
+        "GPS",
+        "heart-rate-monitor",
+        "alexa-compatible",
+        "SpO2-monitor",
+        "long-battery-life"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "Trtl Pillow Plus vs Trtl Pillow: Is an Expensive Travel Accessory Worth It in 2026?",
+      "wp_post_id": 2991,
+      "wp_url": "https://mavrino.com/?p=2991",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "under-$100",
+        "for-airplanes",
+        "budget-conscious",
+        "travel-essential",
+        "comparison",
+        "adjustable",
+        "neck-support",
+        "soft-material"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "Trtl Pillow vs Trtl Pillow Plus: Cheapest vs Most Expensive Travel Accessory in 2026",
+      "wp_post_id": 2994,
+      "wp_url": "https://mavrino.com/?p=2994",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "under-$100",
+        "for-airplanes",
+        "for-travel",
+        "budget-friendly",
+        "neck-support",
+        "adjustable-fit-system",
+        "soft-material",
+        "compact-design"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Travel Pillow on Amazon — Worth the Hype? (Trtl Pillow Review 2026)",
+      "wp_post_id": 2997,
+      "wp_url": "https://mavrino.com/?p=2997",
+      "parent_category": "Travel",
+      "child_category": "Travel Pillows",
+      "tags": [
+        "trtl",
+        "under-$50",
+        "for-frequent-travelers",
+        "for-airplanes",
+        "neck-support",
+        "long-flights",
+        "soft-neck-support",
+        "portable",
+        "highly-rated"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Best Coolers for Every Budget in 2026",
+      "wp_post_id": 3003,
+      "wp_url": "https://mavrino.com/?p=3003",
+      "parent_category": "Outdoors",
+      "child_category": "Coolers",
+      "tags": [
+        "coleman",
+        "rtic",
+        "under-$50",
+        "under-$100",
+        "for-camping",
+        "for-weekends",
+        "budget-friendly",
+        "portable",
+        "wheeled",
+        "hard-sided",
+        "5-day-ice-retention",
+        "heavy-duty",
+        "ultra-light"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "Is an Expensive Travel Backpack Worth It in 2026? MATEIN 40L vs. MATEIN Laptop Pack Compared",
+      "wp_post_id": 3008,
+      "wp_url": "https://mavrino.com/?p=3008",
+      "parent_category": "Travel",
+      "child_category": "Travel Backpacks",
+      "tags": [
+        "matein",
+        "under-$50",
+        "budget",
+        "for-travelers",
+        "carry-on",
+        "flight-approved",
+        "anti-theft",
+        "laptop-compartment",
+        "40-liter-capacity",
+        "airline-approved"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "MATEIN $36.99 vs $45.99 Travel Backpack: Cheapest vs Most Expensive in 2026",
+      "wp_post_id": 3011,
+      "wp_url": "https://mavrino.com/?p=3011",
+      "parent_category": "Travel",
+      "child_category": "Travel Backpacks",
+      "tags": [
+        "matein",
+        "under-$50",
+        "budget",
+        "for-travelers",
+        "anti-theft",
+        "flight-approved",
+        "15.6-inch-laptop-compartment",
+        "40l-capacity"
+      ],
+      "published_at": "2026-06-30"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Travel Backpack on Amazon — Worth the Hype? (MATEIN 15.6\" Review 2026)",
+      "wp_post_id": 3014,
+      "wp_url": "https://mavrino.com/?p=3014",
+      "parent_category": "Travel",
+      "child_category": "Travel Backpacks",
+      "tags": [
+        "matein",
+        "under-$50",
+        "for-budget-travelers",
+        "for-daily-commute",
+        "anti-theft",
+        "laptop-compatible",
+        "laptop-compartment",
+        "15.6-inch-capacity",
+        "budget-friendly"
+      ],
+      "published_at": "2026-06-30"
     }
   ],
   "category_counts": {
@@ -10643,13 +10820,13 @@
     "Monitors": 6,
     "Camping Chairs": 12,
     "Tents": 6,
-    "Coolers": 6,
+    "Coolers": 7,
     "Yoga Mats": 8,
-    "Travel Backpacks": 11,
+    "Travel Backpacks": 14,
     "Packing Cubes": 8,
     "Massage Guns": 6,
     "Sleeping Bags": 7,
-    "Fitness Trackers": 3,
+    "Fitness Trackers": 4,
     "Adjustable Dumbbells": 6,
     "BBQ & Grills": 5,
     "Bread Makers": 4,
@@ -10665,7 +10842,7 @@
     "Keyboards & Mice": 5,
     "Laptop Stands": 3,
     "Mechanical Keyboards": 7,
-    "Travel Pillows": 10,
+    "Travel Pillows": 13,
     "Portable Chargers": 6,
     "Portable Grills": 6,
     "Portable Power Stations": 6,
