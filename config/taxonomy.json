@@ -1532,7 +1532,13 @@
     "hard-armrests": 789923696,
     "beginner-camping": 789924557,
     "4-person-capacity": 789924558,
-    "10-min-setup": 789924423
+    "10-min-setup": 789924423,
+    "roomba": 789924559,
+    "for-automation": 789924560,
+    "for-convenience": 789924561,
+    "hybrid-vacuum-mop": 789924562,
+    "automatic-dirt-disposal": 789924563,
+    "swivel-base": 789924564
   },
   "post_index": [
     {
@@ -11380,6 +11386,98 @@
         "high-reviews"
       ],
       "published_at": "2026-07-01"
+    },
+    {
+      "slug": "",
+      "title": "The Best Robot Vacuums for Every Budget in 2026",
+      "wp_post_id": 3130,
+      "wp_url": "https://mavrino.com/?p=3130",
+      "parent_category": "Home",
+      "child_category": "Robot Vacuums",
+      "tags": [
+        "eufy",
+        "irobot",
+        "roomba",
+        "under-$200",
+        "under-$300",
+        "$300-$500",
+        "premium",
+        "budget-friendly",
+        "for-automation",
+        "for-convenience",
+        "self-emptying",
+        "strong-suction",
+        "super-thin",
+        "hybrid-vacuum-mop",
+        "automatic-dirt-disposal"
+      ],
+      "published_at": "2026-07-01"
+    },
+    {
+      "slug": "",
+      "title": "Dyson V11 vs LEVOIT LVAC-200: Is an Expensive Stick Vacuum Worth It in 2026?",
+      "wp_post_id": 3135,
+      "wp_url": "https://mavrino.com/?p=3135",
+      "parent_category": "Home",
+      "child_category": "Stick Vacuums",
+      "tags": [
+        "dyson",
+        "levoit",
+        "under-$200",
+        "$300-$500",
+        "budget-friendly",
+        "premium",
+        "for-families",
+        "value-comparison",
+        "cordless",
+        "tangle-resistant",
+        "long-runtime",
+        "powerful-suction"
+      ],
+      "published_at": "2026-07-01"
+    },
+    {
+      "slug": "",
+      "title": "BestOffice Mid-Back Mesh Chair vs Newtral Ergonomic Chair: Cheapest vs Most Expensive Office Chair in 2026",
+      "wp_post_id": 3140,
+      "wp_url": "https://mavrino.com/?p=3140",
+      "parent_category": "Home Office",
+      "child_category": "Office Chairs",
+      "tags": [
+        "bestoffice",
+        "newtral",
+        "under-$50",
+        "$300-$500",
+        "budget",
+        "ergonomic",
+        "value-comparison",
+        "for-budget-conscious",
+        "mesh-back",
+        "lumbar-support",
+        "swivel-base",
+        "mid-back",
+        "adaptive-lumbar"
+      ],
+      "published_at": "2026-07-01"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Backpack on Amazon — Worth the Hype? (MATEIN Travel Laptop Backpack Review)",
+      "wp_post_id": 3144,
+      "wp_url": "https://mavrino.com/?p=3144",
+      "parent_category": "Travel",
+      "child_category": "Travel Backpacks",
+      "tags": [
+        "matein",
+        "under-$50",
+        "for-travel",
+        "budget-friendly",
+        "anti-theft",
+        "laptop-compartment",
+        "15.6-inch",
+        "highly-rated"
+      ],
+      "published_at": "2026-07-01"
     }
   ],
   "category_counts": {
@@ -11388,7 +11486,7 @@
     "Air Fryers": 9,
     "Blenders": 6,
     "Food Processors": 5,
-    "Robot Vacuums": 5,
+    "Robot Vacuums": 6,
     "Luggage": 7,
     "Standing Desks": 6,
     "Stand Mixers": 9,
@@ -11397,7 +11495,7 @@
     "Tents": 8,
     "Coolers": 7,
     "Yoga Mats": 8,
-    "Travel Backpacks": 14,
+    "Travel Backpacks": 15,
     "Packing Cubes": 8,
     "Massage Guns": 7,
     "Sleeping Bags": 7,
@@ -11426,8 +11524,8 @@
     "TV Stands": 4,
     "Webcams": 6,
     "Air Purifiers": 6,
-    "Office Chairs": 4,
-    "Stick Vacuums": 4,
+    "Office Chairs": 5,
+    "Stick Vacuums": 5,
     "Coffee Tables": 1,
     "Bedding": 6,
     "Beds & Bed Frames": 6,
