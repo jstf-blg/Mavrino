@@ -1569,7 +1569,13 @@
     "24-oz-capacity": 789923860,
     "full-size": 789924586,
     "mid-back-support": 789924587,
-    "full-pitcher-capacity": 789924588
+    "full-pitcher-capacity": 789924588,
+    "carry-on-compliant": 789924589,
+    "spo2-monitoring": 789924590,
+    "for-athletes": 789923657,
+    "multiple-massage-heads": 789924591,
+    "adjustable-speed": 789924592,
+    "deep-tissue-relief": 789924593
   },
   "post_index": [
     {
@@ -11925,6 +11931,96 @@
         "personal-blender"
       ],
       "published_at": "2026-07-02"
+    },
+    {
+      "slug": "",
+      "title": "Travelpro Platinum Elite vs Samsonite Octiv: Is Expensive Luggage Worth It in 2026?",
+      "wp_post_id": 3237,
+      "wp_url": "https://mavrino.com/?p=3237",
+      "parent_category": "Travel",
+      "child_category": "Luggage",
+      "tags": [
+        "travelpro",
+        "samsonite",
+        "under-$150",
+        "under-$200",
+        "under-$300",
+        "budget-friendly",
+        "premium",
+        "carry-on",
+        "value-comparison",
+        "hardside-shell",
+        "expandable",
+        "lightweight",
+        "carry-on-compliant"
+      ],
+      "published_at": "2026-07-02"
+    },
+    {
+      "slug": "",
+      "title": "Samsonite Octiv vs Travelpro Platinum Elite: Cheapest vs Most Expensive Luggage in 2026",
+      "wp_post_id": 3240,
+      "wp_url": "https://mavrino.com/?p=3240",
+      "parent_category": "Travel",
+      "child_category": "Luggage",
+      "tags": [
+        "samsonite",
+        "travelpro",
+        "under-$150",
+        "under-$300",
+        "budget-friendly",
+        "carry-on",
+        "value-comparison",
+        "premium",
+        "hardshell",
+        "expandable",
+        "lightweight",
+        "carry-on-sized"
+      ],
+      "published_at": "2026-07-02"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Fitness Tracker on Amazon — Worth the Hype? (Amazfit Band 5 Review)",
+      "wp_post_id": 3244,
+      "wp_url": "https://mavrino.com/?p=3244",
+      "parent_category": "Fitness & Wellness",
+      "child_category": "Fitness Trackers",
+      "tags": [
+        "amazfit",
+        "under-$50",
+        "budget",
+        "for-beginners",
+        "most-reviewed",
+        "alexa-integration",
+        "spo2-monitoring",
+        "long-battery-life"
+      ],
+      "published_at": "2026-07-02"
+    },
+    {
+      "slug": "",
+      "title": "Opove M3 Pro 2 vs TOLOCO Massage Gun: Is an Expensive Massage Gun Worth It in 2026?",
+      "wp_post_id": 3249,
+      "wp_url": "https://mavrino.com/?p=3249",
+      "parent_category": "Fitness & Wellness",
+      "child_category": "Massage Guns",
+      "tags": [
+        "opove",
+        "toloco",
+        "under-$100",
+        "under-$150",
+        "budget-friendly",
+        "value-comparison",
+        "deep-tissue",
+        "for-athletes",
+        "portable",
+        "multiple-massage-heads",
+        "percussion-massage",
+        "adjustable-speed",
+        "deep-tissue-relief"
+      ],
+      "published_at": "2026-07-02"
     }
   ],
   "category_counts": {
@@ -11934,7 +12030,7 @@
     "Blenders": 7,
     "Food Processors": 7,
     "Robot Vacuums": 6,
-    "Luggage": 7,
+    "Luggage": 9,
     "Standing Desks": 7,
     "Stand Mixers": 10,
     "Monitors": 6,
@@ -11944,9 +12040,9 @@
     "Yoga Mats": 8,
     "Travel Backpacks": 15,
     "Packing Cubes": 8,
-    "Massage Guns": 7,
+    "Massage Guns": 8,
     "Sleeping Bags": 7,
-    "Fitness Trackers": 6,
+    "Fitness Trackers": 7,
     "Adjustable Dumbbells": 6,
     "BBQ & Grills": 6,
     "Bread Makers": 4,
