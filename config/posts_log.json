@@ -5320,5 +5320,49 @@
     "wp_url": "https://mavrino.com/?p=3333",
     "scheduled_for": "2026-07-06T16:00:00+00:00",
     "template": "cheapest_vs_expensive"
+  },
+  {
+    "date": "2026-07-06",
+    "keyword": "the most reviewed blender on amazon — worth the hype in 2026",
+    "post_type": "most_reviewed",
+    "slug": "tpl-most_reviewed-blenders",
+    "wp_post_id": 3337,
+    "title": "The Most-Reviewed Blender on Amazon — Worth the Hype? (Ninja BL660 Review 2026)",
+    "wp_url": "https://mavrino.com/?p=3337",
+    "scheduled_for": "2026-07-06T17:00:00+00:00",
+    "template": "most_reviewed"
+  },
+  {
+    "date": "2026-07-06",
+    "keyword": "the most reviewed luggage on amazon — worth the hype in 2026",
+    "post_type": "most_reviewed",
+    "slug": "tpl-most_reviewed-luggage",
+    "wp_post_id": 3341,
+    "title": "The Most-Reviewed Luggage on Amazon — Worth the Hype? (Samsonite Freeform Carry-On Review)",
+    "wp_url": "https://mavrino.com/?p=3341",
+    "scheduled_for": "2026-07-06T18:00:00+00:00",
+    "template": "most_reviewed"
+  },
+  {
+    "date": "2026-07-06",
+    "keyword": "the most reviewed toaster oven on amazon — worth the hype in 2026",
+    "post_type": "most_reviewed",
+    "slug": "tpl-most_reviewed-toaster-ovens",
+    "wp_post_id": 3345,
+    "title": "The Most-Reviewed Toaster Oven on Amazon — Worth the Hype? (Emeril Lagasse French Door Air Fryer Review 2026)",
+    "wp_url": "https://mavrino.com/?p=3345",
+    "scheduled_for": "2026-07-06T19:00:00+00:00",
+    "template": "most_reviewed"
+  },
+  {
+    "date": "2026-07-06",
+    "keyword": "the most reviewed coffee maker on amazon — worth the hype in 2026",
+    "post_type": "most_reviewed",
+    "slug": "tpl-most_reviewed-coffee-makers",
+    "wp_post_id": 3349,
+    "title": "The Most-Reviewed Coffee Maker on Amazon — Worth the Hype? (Ninja CE251 Review)",
+    "wp_url": "https://mavrino.com/?p=3349",
+    "scheduled_for": "2026-07-06T20:00:00+00:00",
+    "template": "most_reviewed"
   }
 ]

@@ -1592,7 +1592,12 @@
     "4.8-star-rating": 789924607,
     "25000-reviews": 789924608,
     "dual-brew-system": 789924609,
-    "6-in-1-functionality": 789924610
+    "6-in-1-functionality": 789924610,
+    "professional-performance": 789924611,
+    "crowd-sourced-reviews": 789924612,
+    "carry-on-luggage": 789924613,
+    "14000-reviews": 789924614,
+    "26-quart-capacity": 789924615
   },
   "post_index": [
     {
@@ -12436,16 +12441,98 @@
         "multi-function"
       ],
       "published_at": "2026-07-03"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Blender on Amazon — Worth the Hype? (Ninja BL660 Review 2026)",
+      "wp_post_id": 3337,
+      "wp_url": "https://mavrino.com/?p=3337",
+      "parent_category": "Kitchen",
+      "child_category": "Blenders",
+      "tags": [
+        "ninja",
+        "under-$100",
+        "under-$150",
+        "budget-friendly",
+        "compact",
+        "for-beginners",
+        "popular-choice",
+        "1100w-motor",
+        "professional-performance",
+        "crowd-sourced-reviews"
+      ],
+      "published_at": "2026-07-03"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Luggage on Amazon — Worth the Hype? (Samsonite Freeform Carry-On Review)",
+      "wp_post_id": 3341,
+      "wp_url": "https://mavrino.com/?p=3341",
+      "parent_category": "Travel",
+      "child_category": "Luggage",
+      "tags": [
+        "samsonite",
+        "under-$200",
+        "for-frequent-travelers",
+        "carry-on-luggage",
+        "budget-friendly",
+        "amazon-bestseller",
+        "hardside-construction",
+        "expandable-capacity",
+        "spinner-wheels",
+        "14000-reviews"
+      ],
+      "published_at": "2026-07-03"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Toaster Oven on Amazon — Worth the Hype? (Emeril Lagasse French Door Air Fryer Review 2026)",
+      "wp_post_id": 3345,
+      "wp_url": "https://mavrino.com/?p=3345",
+      "parent_category": "Kitchen",
+      "child_category": "Toaster Ovens",
+      "tags": [
+        "emeril lagasse",
+        "under-$200",
+        "under-$300",
+        "for-families",
+        "budget-friendly",
+        "most-popular",
+        "french-door-design",
+        "air-fryer-function",
+        "26-quart-capacity",
+        "high-review-count"
+      ],
+      "published_at": "2026-07-03"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Coffee Maker on Amazon — Worth the Hype? (Ninja CE251 Review)",
+      "wp_post_id": 3349,
+      "wp_url": "https://mavrino.com/?p=3349",
+      "parent_category": "Kitchen",
+      "child_category": "Coffee Makers",
+      "tags": [
+        "ninja",
+        "under-$100",
+        "under-$150",
+        "for-families",
+        "budget-friendly",
+        "programmable",
+        "12-cup capacity",
+        "highly-rated"
+      ],
+      "published_at": "2026-07-03"
     }
   ],
   "category_counts": {
-    "Toaster Ovens": 18,
+    "Toaster Ovens": 19,
     "Electric Kettles": 9,
     "Air Fryers": 12,
-    "Blenders": 8,
+    "Blenders": 9,
     "Food Processors": 8,
     "Robot Vacuums": 9,
-    "Luggage": 9,
+    "Luggage": 10,
     "Standing Desks": 9,
     "Stand Mixers": 12,
     "Monitors": 6,
@@ -12462,7 +12549,7 @@
     "BBQ & Grills": 6,
     "Bread Makers": 4,
     "Carry-On Bags": 4,
-    "Coffee Makers": 14,
+    "Coffee Makers": 15,
     "Dehumidifiers": 4,
     "Desk Lamps": 6,
     "Electric Bikes": 8,
