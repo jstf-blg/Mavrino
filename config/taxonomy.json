@@ -1597,7 +1597,8 @@
     "crowd-sourced-reviews": 789924612,
     "carry-on-luggage": 789924613,
     "14000-reviews": 789924614,
-    "26-quart-capacity": 789924615
+    "26-quart-capacity": 789924615,
+    "multiple-functions": 789923572
   },
   "post_index": [
     {
@@ -12523,12 +12524,33 @@
         "highly-rated"
       ],
       "published_at": "2026-07-03"
+    },
+    {
+      "slug": "",
+      "title": "The Most-Reviewed Air Fryer on Amazon — Worth the Hype? (Instant Vortex Plus 6QT Review)",
+      "wp_post_id": 3353,
+      "wp_url": "https://mavrino.com/?p=3353",
+      "parent_category": "Kitchen",
+      "child_category": "Air Fryers",
+      "tags": [
+        "instant",
+        "under-$100",
+        "under-$150",
+        "for-families",
+        "budget-friendly",
+        "best-selling",
+        "6-in-1",
+        "6-quart-capacity",
+        "high-rating",
+        "multiple-functions"
+      ],
+      "published_at": "2026-07-04"
     }
   ],
   "category_counts": {
     "Toaster Ovens": 19,
     "Electric Kettles": 9,
-    "Air Fryers": 12,
+    "Air Fryers": 13,
     "Blenders": 9,
     "Food Processors": 8,
     "Robot Vacuums": 9,
