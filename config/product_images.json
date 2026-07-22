@@ -490,9 +490,9 @@
     "status": "tentative_dead"
   },
   "B07GD6K82L": {
-    "checked_at": "2026-07-07T13:26:49.149475+00:00",
-    "http_status": 200,
-    "fail_count": 3,
+    "checked_at": "2026-07-22T07:30:39.935103+00:00",
+    "http_status": 404,
+    "fail_count": 4,
     "status": "dead_asin",
     "last_block_at": "2026-07-07T13:26:49.149475+00:00",
     "image_url": ""
@@ -1648,7 +1648,7 @@
     "last_ok_at": "2026-06-20T12:12:25.943858+00:00"
   },
   "B07YVYZ93C": {
-    "checked_at": "2026-07-21T07:29:26.285426+00:00",
+    "checked_at": "2026-07-22T07:30:59.454164+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-07-21T07:29:26.285426+00:00"
@@ -1699,13 +1699,13 @@
     "last_ok_at": "2026-07-13T08:10:54.431507+00:00"
   },
   "B08S35399Y": {
-    "checked_at": "2026-07-15T07:08:15.188386+00:00",
+    "checked_at": "2026-07-22T07:31:18.472202+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:15.188386+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61aFuRVWe3L._AC_SL1280_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-07T13:27:11.445216+00:00"
+    "last_ok_at": "2026-07-22T07:31:18.472202+00:00"
   },
   "B08Z38L765": {
     "checked_at": "2026-07-21T07:29:41.161034+00:00",
@@ -1753,13 +1753,13 @@
     "last_block_at": "2026-07-11T07:08:19.648396+00:00"
   },
   "B09HSWBTN4": {
-    "checked_at": "2026-07-15T07:08:19.180886+00:00",
+    "checked_at": "2026-07-22T07:31:24.999334+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:19.180886+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71UIRKGLtYL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-22T18:54:44.568783+00:00"
+    "last_ok_at": "2026-07-22T07:31:24.999334+00:00"
   },
   "B09YS9N7H2": {
     "checked_at": "2026-07-19T07:25:02.305744+00:00",
@@ -1771,13 +1771,13 @@
     "last_ok_at": "2026-07-19T07:25:02.305744+00:00"
   },
   "B0B41YH9B6": {
-    "checked_at": "2026-07-15T07:08:23.981888+00:00",
+    "checked_at": "2026-07-22T07:31:34.429644+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:23.981888+00:00",
     "image_url": "https://m.media-amazon.com/images/I/718KkXOCktL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-22T18:54:50.549888+00:00"
+    "last_ok_at": "2026-07-22T07:31:34.429644+00:00"
   },
   "B0B7BFMHNF": {
     "checked_at": "2026-07-19T07:25:07.054128+00:00",
@@ -1789,13 +1789,13 @@
     "last_ok_at": "2026-07-19T07:25:07.054128+00:00"
   },
   "B0BVBSYWDV": {
-    "checked_at": "2026-07-15T07:08:27.169438+00:00",
+    "checked_at": "2026-07-22T07:31:40.604789+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:27.169438+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61wbRgioK-L._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-07T13:27:26.640671+00:00"
+    "last_ok_at": "2026-07-22T07:31:40.604789+00:00"
   },
   "B0BZ7GXM4M": {
     "checked_at": "2026-07-19T07:25:13.135989+00:00",
@@ -1834,22 +1834,22 @@
     "last_ok_at": "2026-07-19T07:25:19.188131+00:00"
   },
   "B0C5Z8VCHX": {
-    "checked_at": "2026-07-15T07:08:29.545057+00:00",
+    "checked_at": "2026-07-22T07:31:44.034352+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-06-29T16:48:44.974532+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81hvKNPIHKL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:08:29.545057+00:00"
+    "last_ok_at": "2026-07-22T07:31:44.034352+00:00"
   },
   "B0CB6B2JWG": {
-    "checked_at": "2026-07-15T07:08:33.892511+00:00",
+    "checked_at": "2026-07-22T07:31:50.815457+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:33.892511+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71iS-sWLrNL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:48:49.091808+00:00"
+    "last_ok_at": "2026-07-22T07:31:50.815457+00:00"
   },
   "B0D2JM3NQG": {
     "checked_at": "2026-07-17T07:14:51.323617+00:00",
@@ -2059,13 +2059,13 @@
     "last_ok_at": "2026-07-05T11:18:46.099211+00:00"
   },
   "B07BVYPDJ4": {
-    "checked_at": "2026-07-15T07:07:52.859076+00:00",
+    "checked_at": "2026-07-22T07:30:31.810736+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:52.859076+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71smbtryUfL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-07T13:26:43.872751+00:00"
+    "last_ok_at": "2026-07-22T07:30:31.810736+00:00"
   },
   "B07G732897": {
     "checked_at": "2026-07-17T07:13:09.791092+00:00",
@@ -2077,13 +2077,13 @@
     "last_ok_at": "2026-07-17T07:13:09.791092+00:00"
   },
   "B07J9WSQFZ": {
-    "checked_at": "2026-07-15T07:07:57.648026+00:00",
+    "checked_at": "2026-07-22T07:30:42.872001+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:57.648026+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81SM7tQlqQL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-22T18:54:19.135726+00:00"
+    "last_ok_at": "2026-07-22T07:30:42.872001+00:00"
   },
   "B07K986YLL": {
     "checked_at": "2026-07-19T07:23:58.388266+00:00",
@@ -2095,13 +2095,13 @@
     "last_ok_at": "2026-07-19T07:23:58.388266+00:00"
   },
   "B07NY1QHP5": {
-    "checked_at": "2026-07-15T07:08:00.844019+00:00",
+    "checked_at": "2026-07-22T07:30:49.467877+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:00.844019+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61m8Wt7WYpL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-30T12:31:10.558999+00:00"
+    "last_ok_at": "2026-07-22T07:30:49.467877+00:00"
   },
   "B07QK8KN8S": {
     "checked_at": "2026-07-19T07:24:11.385290+00:00",
@@ -2122,13 +2122,13 @@
     "last_ok_at": "2026-07-19T07:24:17.773109+00:00"
   },
   "B07VHFMZHJ": {
-    "checked_at": "2026-07-15T07:08:04.037797+00:00",
+    "checked_at": "2026-07-22T07:30:55.545321+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:04.037797+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71GPWtT61gL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-22T18:54:27.349510+00:00"
+    "last_ok_at": "2026-07-22T07:30:55.545321+00:00"
   },
   "B07VVK39F7": {
     "checked_at": "2026-07-19T07:24:19.336725+00:00",
@@ -2158,7 +2158,7 @@
     "last_ok_at": "2026-07-11T07:08:04.772118+00:00"
   },
   "B08KZ6MDTV": {
-    "checked_at": "2026-07-21T07:29:31.084726+00:00",
+    "checked_at": "2026-07-22T07:31:12.140298+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-07-21T07:29:31.084726+00:00"
@@ -2182,13 +2182,13 @@
     "last_ok_at": "2026-07-21T07:29:44.137155+00:00"
   },
   "B09176JCKZ": {
-    "checked_at": "2026-07-15T07:08:17.589576+00:00",
+    "checked_at": "2026-07-22T07:31:21.786539+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-06-29T16:48:28.329548+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61dp6J+8AEL._AC_SL1473_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:08:17.589576+00:00"
+    "last_ok_at": "2026-07-22T07:31:21.786539+00:00"
   },
   "B0936FGLQS": {
     "checked_at": "2026-07-19T07:24:46.894861+00:00",
@@ -2235,13 +2235,13 @@
     "last_block_at": "2026-07-19T07:25:20.750132+00:00"
   },
   "B0CB1DTFT6": {
-    "checked_at": "2026-07-15T07:08:32.288458+00:00",
+    "checked_at": "2026-07-22T07:31:47.421963+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-07T13:27:30.660273+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71lJJnUoQ5L._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:08:32.288458+00:00"
+    "last_ok_at": "2026-07-22T07:31:47.421963+00:00"
   },
   "B0CC63GZ3R": {
     "checked_at": "2026-07-20T07:54:20.496867+00:00",
@@ -2253,13 +2253,13 @@
     "last_ok_at": "2026-07-20T07:54:20.496867+00:00"
   },
   "B0CDNJC1LV": {
-    "checked_at": "2026-07-15T07:08:35.488778+00:00",
+    "checked_at": "2026-07-22T07:31:54.009704+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:35.488778+00:00",
-    "image_url": "https://m.media-amazon.com/images/I/81y9Rt60zbL._AC_SL1500_.jpg",
+    "image_url": "https://m.media-amazon.com/images/I/7110dqZ8KbL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-22T18:55:00.203689+00:00"
+    "last_ok_at": "2026-07-22T07:31:54.009704+00:00"
   },
   "B0CLSCRPV7": {
     "checked_at": "2026-07-17T07:14:45.333213+00:00",
@@ -2280,7 +2280,7 @@
     "last_ok_at": "2026-06-18T08:46:47.900523+00:00"
   },
   "B0DJCF5L53": {
-    "checked_at": "2026-07-21T07:30:11.838449+00:00",
+    "checked_at": "2026-07-22T07:32:02.964109+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-07-16T07:17:28.540766+00:00"
@@ -2313,28 +2313,28 @@
     "last_block_at": "2026-07-21T07:29:49.201065+00:00"
   },
   "B0BH2WGL6M": {
-    "checked_at": "2026-07-21T07:29:54.651077+00:00",
+    "checked_at": "2026-07-22T07:31:37.269295+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-07-20T07:54:11.521650+00:00"
   },
   "B0CT59X11M": {
-    "checked_at": "2026-07-15T07:08:37.855746+00:00",
+    "checked_at": "2026-07-22T07:31:57.036048+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-07T13:27:37.069800+00:00",
-    "image_url": "https://m.media-amazon.com/images/I/81RVRZA2djL._AC_SL1500_.jpg",
+    "image_url": "https://m.media-amazon.com/images/I/71LVRiXZb3L._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:08:37.855746+00:00"
+    "last_ok_at": "2026-07-22T07:31:57.036048+00:00"
   },
   "B0D7PPG25F": {
-    "checked_at": "2026-07-15T07:08:39.445914+00:00",
+    "checked_at": "2026-07-22T07:32:00.090348+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:39.445914+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61JVKysP1nL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-21T12:25:21.415464+00:00"
+    "last_ok_at": "2026-07-22T07:32:00.090348+00:00"
   },
   "B0DB1S36YP": {
     "checked_at": "2026-07-21T07:30:04.114971+00:00",
@@ -2364,13 +2364,13 @@
     "last_ok_at": "2026-07-20T07:54:31.062816+00:00"
   },
   "B0GC574FZD": {
-    "checked_at": "2026-07-15T07:08:44.718908+00:00",
+    "checked_at": "2026-07-22T07:32:09.081007+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:44.718908+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71UdeL-5mXL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-21T12:25:30.661412+00:00"
+    "last_ok_at": "2026-07-22T07:32:09.081007+00:00"
   },
   "B0GS6XMNXW": {
     "checked_at": "2026-07-21T07:30:24.300560+00:00",
@@ -2409,13 +2409,13 @@
     "last_block_at": "2026-07-01T13:43:46.322520+00:00"
   },
   "B00007J5U7": {
-    "checked_at": "2026-07-15T07:07:35.500865+00:00",
+    "checked_at": "2026-07-22T07:30:03.842292+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:35.500865+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61x9NkiKkUS._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-07T13:26:18.941728+00:00"
+    "last_ok_at": "2026-07-22T07:30:03.842292+00:00"
   },
   "B000A7NN4I": {
     "checked_at": "2026-07-17T07:12:00.362871+00:00",
@@ -2444,13 +2444,13 @@
     "last_block_at": "2026-07-01T13:43:54.842834+00:00"
   },
   "B0025QKUE8": {
-    "checked_at": "2026-07-15T07:07:37.087721+00:00",
+    "checked_at": "2026-07-22T07:30:07.260126+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:37.087721+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81Utio8Y49L._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:46:57.707357+00:00"
+    "last_ok_at": "2026-07-22T07:30:07.260126+00:00"
   },
   "B002BA5F5C": {
     "checked_at": "2026-07-20T07:53:04.321460+00:00",
@@ -2506,13 +2506,13 @@
     "last_ok_at": "2026-07-17T07:12:12.595639+00:00"
   },
   "B005NADBXK": {
-    "checked_at": "2026-07-15T07:07:38.677504+00:00",
+    "checked_at": "2026-07-22T07:30:10.431757+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:38.677504+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61DsxYxtQdL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-30T12:30:22.672098+00:00"
+    "last_ok_at": "2026-07-22T07:30:10.431757+00:00"
   },
   "B007MJFI0Y": {
     "checked_at": "2026-07-17T07:12:21.404421+00:00",
@@ -2533,13 +2533,13 @@
     "last_ok_at": "2026-07-20T07:53:14.348060+00:00"
   },
   "B00CH9QWOU": {
-    "checked_at": "2026-07-15T07:07:41.661761+00:00",
+    "checked_at": "2026-07-22T07:30:13.880473+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-06-28T11:24:14.711085+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71BvCt6eAFL._SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:07:41.661761+00:00"
+    "last_ok_at": "2026-07-22T07:30:13.880473+00:00"
   },
   "B00CQGTGZQ": {
     "checked_at": "2026-07-17T07:12:24.318832+00:00",
@@ -2712,22 +2712,22 @@
     "last_ok_at": "2026-06-27T11:12:57.096482+00:00"
   },
   "B01N0LQJN6": {
-    "checked_at": "2026-07-15T07:07:44.270550+00:00",
+    "checked_at": "2026-07-22T07:30:17.184434+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-07T13:26:32.735780+00:00",
-    "image_url": "https://m.media-amazon.com/images/I/61cZSonSYDL._AC_SL1500_.jpg",
+    "image_url": "https://m.media-amazon.com/images/I/711PqQl2QOL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:07:44.270550+00:00"
+    "last_ok_at": "2026-07-22T07:30:17.184434+00:00"
   },
   "B01NBKTPTS": {
-    "checked_at": "2026-07-15T07:07:45.853990+00:00",
+    "checked_at": "2026-07-22T07:30:20.372764+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:45.853990+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71nx65qZq6L._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-30T12:30:45.633587+00:00"
+    "last_ok_at": "2026-07-22T07:30:20.372764+00:00"
   },
   "B06VV9LVNL": {
     "checked_at": "2026-07-17T07:12:51.625380+00:00",
@@ -2784,13 +2784,13 @@
     "last_ok_at": "2026-06-28T11:24:50.146880+00:00"
   },
   "B074QWX9V9": {
-    "checked_at": "2026-07-15T07:07:47.460093+00:00",
+    "checked_at": "2026-07-22T07:30:23.536180+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:47.460093+00:00",
     "image_url": "https://m.media-amazon.com/images/I/9159s-FSwoL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:47:35.968222+00:00"
+    "last_ok_at": "2026-07-22T07:30:23.536180+00:00"
   },
   "B076VNFZJG": {
     "checked_at": "2026-07-21T07:29:01.005930+00:00",
@@ -2811,13 +2811,13 @@
     "last_ok_at": "2026-06-28T11:24:56.258149+00:00"
   },
   "B07BM1PW8L": {
-    "checked_at": "2026-07-15T07:07:49.678412+00:00",
+    "checked_at": "2026-07-22T07:30:26.886782+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-06-29T16:47:37.570725+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71SFUdXzKDL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-15T07:07:49.678412+00:00"
+    "last_ok_at": "2026-07-22T07:30:26.886782+00:00"
   },
   "B07BND5QFD": {
     "checked_at": "2026-07-21T07:29:07.142801+00:00",
@@ -2829,12 +2829,12 @@
     "last_ok_at": "2026-07-21T07:29:07.142801+00:00"
   },
   "B07BTRDGRM": {
-    "checked_at": "2026-07-15T07:07:51.272695+00:00",
-    "http_status": 200,
+    "checked_at": "2026-07-22T07:30:28.581912+00:00",
+    "http_status": 404,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:51.272695+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81LPGglKWUL._AC_SL1500_.jpg",
-    "fail_count": 0,
+    "fail_count": 1,
     "last_ok_at": "2026-06-29T16:47:39.693448+00:00"
   },
   "B07BWM2CTH": {
@@ -2883,22 +2883,22 @@
     "last_ok_at": "2026-07-20T07:53:41.722742+00:00"
   },
   "B07D3C6NVL": {
-    "checked_at": "2026-07-15T07:07:54.462397+00:00",
+    "checked_at": "2026-07-22T07:30:34.861503+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:54.462397+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71los-Uc+CL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-07T13:26:45.941766+00:00"
+    "last_ok_at": "2026-07-22T07:30:34.861503+00:00"
   },
   "B07D58CPGB": {
-    "checked_at": "2026-07-15T07:07:56.054771+00:00",
+    "checked_at": "2026-07-22T07:30:38.175650+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:56.054771+00:00",
     "image_url": "https://m.media-amazon.com/images/I/61IxYeaw07L._AC_SL1200_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-30T12:30:56.942001+00:00"
+    "last_ok_at": "2026-07-22T07:30:38.175650+00:00"
   },
   "B07DHK5DHN": {
     "checked_at": "2026-07-21T07:29:13.411273+00:00",
@@ -2982,13 +2982,13 @@
     "last_ok_at": "2026-07-17T07:13:21.725832+00:00"
   },
   "B07M6VPZ19": {
-    "checked_at": "2026-07-15T07:07:59.235749+00:00",
+    "checked_at": "2026-07-22T07:30:46.385964+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:07:59.235749+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81c5YqdV1ML._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:47:57.724571+00:00"
+    "last_ok_at": "2026-07-22T07:30:46.385964+00:00"
   },
   "B07N7963CH": {
     "checked_at": "2026-07-21T07:29:14.999450+00:00",
@@ -3018,13 +3018,13 @@
     "last_ok_at": "2026-07-17T07:13:24.807612+00:00"
   },
   "B07P768YGX": {
-    "checked_at": "2026-07-15T07:08:02.438738+00:00",
+    "checked_at": "2026-07-22T07:30:52.519113+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:02.438738+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71zFoyFqU8L._AC_SL1200_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:48:01.804988+00:00"
+    "last_ok_at": "2026-07-22T07:30:52.519113+00:00"
   },
   "B07Q6X4H9N": {
     "checked_at": "2026-07-18T06:54:39.912900+00:00",
@@ -3099,13 +3099,13 @@
     "last_ok_at": "2026-07-17T07:13:30.959135+00:00"
   },
   "B081DP3BPF": {
-    "checked_at": "2026-07-15T07:08:07.225311+00:00",
+    "checked_at": "2026-07-22T07:31:02.614427+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:07.225311+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71xmfN4VheL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:48:07.558601+00:00"
+    "last_ok_at": "2026-07-22T07:31:02.614427+00:00"
   },
   "B082VLYF5W": {
     "checked_at": "2026-07-18T06:54:46.413257+00:00",
@@ -3144,22 +3144,22 @@
     "last_ok_at": "2026-06-27T11:14:02.748184+00:00"
   },
   "B0898WR5JL": {
-    "checked_at": "2026-07-15T07:08:08.818381+00:00",
+    "checked_at": "2026-07-22T07:31:05.690809+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:08.818381+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71-gphw9uhL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:48:13.332096+00:00"
+    "last_ok_at": "2026-07-22T07:31:05.690809+00:00"
   },
   "B08C96BG9H": {
-    "checked_at": "2026-07-15T07:08:10.403293+00:00",
+    "checked_at": "2026-07-22T07:31:09.241061+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:10.403293+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81c3ItE+jyL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-30T12:31:20.907168+00:00"
+    "last_ok_at": "2026-07-22T07:31:09.241061+00:00"
   },
   "B08FSGRTBZ": {
     "checked_at": "2026-07-17T07:13:39.464890+00:00",
@@ -3207,13 +3207,13 @@
     "last_ok_at": "2026-07-20T07:54:04.417757+00:00"
   },
   "B08RK37SJ3": {
-    "checked_at": "2026-07-15T07:08:13.595456+00:00",
+    "checked_at": "2026-07-22T07:31:15.187308+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:13.595456+00:00",
     "image_url": "https://m.media-amazon.com/images/I/41vDUqK9k4L._AC_SL1000_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-29T16:48:20.961597+00:00"
+    "last_ok_at": "2026-07-22T07:31:15.187308+00:00"
   },
   "B08S316BZ8": {
     "checked_at": "2026-07-17T07:13:47.842336+00:00",
@@ -3278,7 +3278,7 @@
     "last_ok_at": "2026-06-26T12:34:24.116482+00:00"
   },
   "B09M5DK78R": {
-    "checked_at": "2026-07-21T07:29:47.532683+00:00",
+    "checked_at": "2026-07-22T07:31:27.952234+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-07-21T07:29:47.532683+00:00"
@@ -3319,13 +3319,13 @@
     "last_ok_at": "2026-07-17T07:14:14.546388+00:00"
   },
   "B0B1HPRMDV": {
-    "checked_at": "2026-07-15T07:08:22.397457+00:00",
+    "checked_at": "2026-07-22T07:31:31.243909+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:22.397457+00:00",
     "image_url": "https://m.media-amazon.com/images/I/81YiO+KDG4L._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-07-07T13:27:21.280449+00:00"
+    "last_ok_at": "2026-07-22T07:31:31.243909+00:00"
   },
   "B0B38KFWNK": {
     "checked_at": "2026-07-17T07:14:17.808276+00:00",
@@ -3551,13 +3551,13 @@
     "last_ok_at": "2026-07-05T11:19:43.357609+00:00"
   },
   "B0FB3L5Z8Q": {
-    "checked_at": "2026-07-15T07:08:43.127150+00:00",
+    "checked_at": "2026-07-22T07:32:06.029759+00:00",
     "http_status": 200,
     "status": "ok",
     "last_block_at": "2026-07-15T07:08:43.127150+00:00",
     "image_url": "https://m.media-amazon.com/images/I/71qP7rhFfJL._AC_SL1500_.jpg",
     "fail_count": 0,
-    "last_ok_at": "2026-06-30T12:32:01.648107+00:00"
+    "last_ok_at": "2026-07-22T07:32:06.029759+00:00"
   },
   "B0G4QKZF5R": {
     "checked_at": "2026-07-21T07:30:22.701659+00:00",
