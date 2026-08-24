@@ -1064,5 +1064,14 @@
     "price_changes": [],
     "dead_images": [],
     "errors": 0
+  },
+  {
+    "ran_at": "2026-08-24T03:09:53.002422+00:00",
+    "source": "fallback",
+    "products": 0,
+    "refreshed": 0,
+    "price_changes": [],
+    "dead_images": [],
+    "errors": 0
   }
 ]
