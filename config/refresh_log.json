@@ -1,14 +1,5 @@
 [
   {
-    "ran_at": "2026-07-11T05:19:16.929453+00:00",
-    "source": "fallback",
-    "products": 0,
-    "refreshed": 0,
-    "price_changes": [],
-    "dead_images": [],
-    "errors": 0
-  },
-  {
     "ran_at": "2026-07-12T05:35:06.503003+00:00",
     "source": "fallback",
     "products": 0,
@@ -802,6 +793,15 @@
   },
   {
     "ran_at": "2026-10-08T08:44:10.032594+00:00",
+    "source": "fallback",
+    "products": 0,
+    "refreshed": 0,
+    "price_changes": [],
+    "dead_images": [],
+    "errors": 0
+  },
+  {
+    "ran_at": "2026-10-09T08:48:14.547599+00:00",
     "source": "fallback",
     "products": 0,
     "refreshed": 0,
