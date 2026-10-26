@@ -954,9 +954,9 @@
     "status": "tentative_dead"
   },
   "B08T1Y9V8K": {
-    "checked_at": "2026-10-11T11:07:36.010705+00:00",
-    "http_status": 200,
-    "fail_count": 5,
+    "checked_at": "2026-10-26T10:39:47.308808+00:00",
+    "http_status": 404,
+    "fail_count": 6,
     "status": "dead_asin",
     "last_block_at": "2026-10-11T11:07:36.010705+00:00",
     "image_url": ""
@@ -1215,9 +1215,9 @@
     "status": "tentative_dead"
   },
   "B0BZ4WL7Q9": {
-    "checked_at": "2026-10-11T11:07:42.389566+00:00",
-    "http_status": 200,
-    "fail_count": 6,
+    "checked_at": "2026-10-26T10:39:54.593756+00:00",
+    "http_status": 404,
+    "fail_count": 7,
     "status": "dead_asin",
     "last_block_at": "2026-10-11T11:07:42.389566+00:00",
     "image_url": ""
@@ -1648,7 +1648,7 @@
     "last_ok_at": "2026-09-12T08:58:09.209702+00:00"
   },
   "B07YVYZ93C": {
-    "checked_at": "2026-10-25T09:31:09.513831+00:00",
+    "checked_at": "2026-10-26T10:39:43.600259+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-10-17T08:56:59.534542+00:00"
@@ -2158,7 +2158,7 @@
     "last_ok_at": "2026-09-23T09:40:28.269471+00:00"
   },
   "B08KZ6MDTV": {
-    "checked_at": "2026-10-25T09:31:15.005448+00:00",
+    "checked_at": "2026-10-26T10:39:45.420293+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-10-23T09:40:52.601333+00:00"
@@ -2201,11 +2201,11 @@
     "last_ok_at": "2026-09-23T09:40:37.270474+00:00"
   },
   "B09WTKNR8G": {
-    "checked_at": "2026-10-11T11:07:39.201365+00:00",
-    "http_status": 200,
+    "checked_at": "2026-10-26T10:39:50.981525+00:00",
+    "http_status": 404,
     "status": "dead_asin",
     "last_block_at": "2026-10-11T11:07:39.201365+00:00",
-    "fail_count": 5,
+    "fail_count": 6,
     "image_url": ""
   },
   "B09Z6CRHJ6": {
@@ -2281,7 +2281,7 @@
     "last_ok_at": "2026-10-22T09:47:02.339008+00:00"
   },
   "B0DJCF5L53": {
-    "checked_at": "2026-10-25T09:31:49.724727+00:00",
+    "checked_at": "2026-10-26T10:39:56.466854+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-10-16T09:24:43.005105+00:00"
@@ -2314,7 +2314,7 @@
     "last_block_at": "2026-10-10T10:54:08.518406+00:00"
   },
   "B0BH2WGL6M": {
-    "checked_at": "2026-10-25T09:31:37.056890+00:00",
+    "checked_at": "2026-10-26T10:39:52.828320+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-10-23T09:40:55.809136+00:00"
@@ -3282,7 +3282,7 @@
     "last_ok_at": "2026-07-27T08:23:19.869750+00:00"
   },
   "B09M5DK78R": {
-    "checked_at": "2026-10-25T09:31:29.685539+00:00",
+    "checked_at": "2026-10-26T10:39:49.324985+00:00",
     "http_status": 200,
     "status": "no_image",
     "last_block_at": "2026-10-23T09:40:54.212511+00:00"
