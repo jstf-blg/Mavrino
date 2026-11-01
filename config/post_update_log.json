@@ -4083,5 +4083,255 @@
     "date": "2026-10-25",
     "post_id": 2869,
     "status": "error: ANTHROPIC_BILLING: credit balance too low — add credits at console.anthropic.com → Plans & Billing"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2872,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2875,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2878,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2881,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2884,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2887,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2897,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2900,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2903,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2906,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2912,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2915,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2918,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2921,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2927,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2932,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2935,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2941,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2944,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2947,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2950,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2956,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2959,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2962,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2965,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2971,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2975,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2978,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2981,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2986,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2991,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2994,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 2997,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3003,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3008,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3011,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3014,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3020,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3025,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3028,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3031,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3037,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3043,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3046,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3049,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3052,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3058,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3063,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3066,
+    "status": "skipped_not_found"
+  },
+  {
+    "date": "2026-11-01",
+    "post_id": 3069,
+    "status": "skipped_not_found"
   }
 ]
